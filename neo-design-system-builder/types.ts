@@ -2,6 +2,7 @@
 export enum ViewType {
   COLOR_TOKENS = 'Cores',
   TYPOGRAPHY = 'Tipografia',
+  TYPOGRAPHY_VALIDATOR = 'Typography Validator',
   SPACING = 'Espaçamento',
   ELEVATIONS = 'Elevações',
   ICONS = 'Ícones',

@@ -2,10 +2,13 @@
 export enum ViewType {
   COLOR_TOKENS = 'Cores',
   TYPOGRAPHY = 'Tipografia',
+  TYPOGRAPHY_VALIDATOR = 'Typography Validator',
   SPACING = 'Espaçamento',
+  SPACING_VALIDATOR = 'Spacing Validator',
   ELEVATIONS = 'Elevações',
   BORDER_RADIUS = 'Border Radius',
   BREAKPOINTS = 'Breakpoints',
+  CONTRAST_CHECKER = 'Contrast Checker',
   ICONS = 'Ícones',
   ICONS_CUSTOM = 'UI Icons Library',
   ICONS_LIBRARY = 'Icons Library (3.8k)',
