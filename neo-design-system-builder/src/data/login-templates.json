@@ -1,0 +1,187 @@
+{
+  "name": "Login & Register Templates",
+  "description": "20 pre-designed login and registration screens",
+  "total": 20,
+  "templates": [
+    {
+      "id": "login-version-1",
+      "name": "Login Version 1",
+      "filename": "Login Version 1.svg",
+      "path": "Login Version 1.svg",
+      "url": "/assets/templates/login/Login Version 1.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-10",
+      "name": "Login Version 10",
+      "filename": "Login Version 10.svg",
+      "path": "Login Version 10.svg",
+      "url": "/assets/templates/login/Login Version 10.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-2",
+      "name": "Login Version 2",
+      "filename": "Login Version 2.svg",
+      "path": "Login Version 2.svg",
+      "url": "/assets/templates/login/Login Version 2.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-3",
+      "name": "Login Version 3",
+      "filename": "Login Version 3.svg",
+      "path": "Login Version 3.svg",
+      "url": "/assets/templates/login/Login Version 3.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-4",
+      "name": "Login Version 4",
+      "filename": "Login Version 4.svg",
+      "path": "Login Version 4.svg",
+      "url": "/assets/templates/login/Login Version 4.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-5",
+      "name": "Login Version 5",
+      "filename": "Login Version 5.svg",
+      "path": "Login Version 5.svg",
+      "url": "/assets/templates/login/Login Version 5.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-6",
+      "name": "Login Version 6",
+      "filename": "Login Version 6.svg",
+      "path": "Login Version 6.svg",
+      "url": "/assets/templates/login/Login Version 6.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-7",
+      "name": "Login Version 7",
+      "filename": "Login Version 7.svg",
+      "path": "Login Version 7.svg",
+      "url": "/assets/templates/login/Login Version 7.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-8",
+      "name": "Login Version 8",
+      "filename": "Login Version 8.svg",
+      "path": "Login Version 8.svg",
+      "url": "/assets/templates/login/Login Version 8.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "login-version-9",
+      "name": "Login Version 9",
+      "filename": "Login Version 9.svg",
+      "path": "Login Version 9.svg",
+      "url": "/assets/templates/login/Login Version 9.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-1",
+      "name": "Sign Up Version 1",
+      "filename": "Sign Up Version 1.svg",
+      "path": "Sign Up Version 1.svg",
+      "url": "/assets/templates/login/Sign Up Version 1.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-10",
+      "name": "Sign Up Version 10",
+      "filename": "Sign Up Version 10.svg",
+      "path": "Sign Up Version 10.svg",
+      "url": "/assets/templates/login/Sign Up Version 10.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-2",
+      "name": "Sign Up Version 2",
+      "filename": "Sign Up Version 2.svg",
+      "path": "Sign Up Version 2.svg",
+      "url": "/assets/templates/login/Sign Up Version 2.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-3",
+      "name": "Sign Up Version 3",
+      "filename": "Sign Up Version 3.svg",
+      "path": "Sign Up Version 3.svg",
+      "url": "/assets/templates/login/Sign Up Version 3.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-4",
+      "name": "Sign Up Version 4",
+      "filename": "Sign Up Version 4.svg",
+      "path": "Sign Up Version 4.svg",
+      "url": "/assets/templates/login/Sign Up Version 4.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-5",
+      "name": "Sign Up Version 5",
+      "filename": "Sign Up Version 5.svg",
+      "path": "Sign Up Version 5.svg",
+      "url": "/assets/templates/login/Sign Up Version 5.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-6",
+      "name": "Sign Up Version 6",
+      "filename": "Sign Up Version 6.svg",
+      "path": "Sign Up Version 6.svg",
+      "url": "/assets/templates/login/Sign Up Version 6.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-7",
+      "name": "Sign Up Version 7",
+      "filename": "Sign Up Version 7.svg",
+      "path": "Sign Up Version 7.svg",
+      "url": "/assets/templates/login/Sign Up Version 7.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-8",
+      "name": "Sign Up Version 8",
+      "filename": "Sign Up Version 8.svg",
+      "path": "Sign Up Version 8.svg",
+      "url": "/assets/templates/login/Sign Up Version 8.svg",
+      "extension": "svg",
+      "category": "login"
+    },
+    {
+      "id": "sign-up-version-9",
+      "name": "Sign Up Version 9",
+      "filename": "Sign Up Version 9.svg",
+      "path": "Sign Up Version 9.svg",
+      "url": "/assets/templates/login/Sign Up Version 9.svg",
+      "extension": "svg",
+      "category": "login"
+    }
+  ]
+}

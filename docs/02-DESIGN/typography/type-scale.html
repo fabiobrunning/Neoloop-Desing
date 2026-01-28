@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neoloop - Escala Tipográfica</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tokens CSS -->
+  <link rel="stylesheet" href="../../../src/tokens/colors.css">
+  <link rel="stylesheet" href="../../../src/tokens/typography.css">
+  <link rel="stylesheet" href="../../../src/tokens/spacing.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      padding: var(--spacing-8);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: var(--max-width-6xl);
+      margin: 0 auto;
+    }
+
+    .header {
+      margin-bottom: var(--spacing-12);
+      border-bottom: var(--border-width-2) solid var(--border-default);
+      padding-bottom: var(--spacing-6);
+    }
+
+    .section {
+      margin-bottom: var(--spacing-12);
+    }
+
+    .section-title {
+      font-size: var(--heading-lg-size);
+      font-weight: var(--heading-lg-weight);
+      margin-bottom: var(--spacing-6);
+      color: var(--text-brand);
+    }
+
+    .type-sample {
+      margin-bottom: var(--spacing-8);
+      padding: var(--spacing-6);
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      border: var(--border-width-1) solid var(--border-default);
+    }
+
+    .type-label {
+      font-size: var(--caption-md-size);
+      font-weight: var(--caption-md-weight);
+      color: var(--text-secondary);
+      margin-bottom: var(--spacing-2);
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .type-specs {
+      font-size: var(--caption-sm-size);
+      color: var(--text-tertiary);
+      margin-top: var(--spacing-2);
+      font-family: var(--font-mono);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-6);
+      margin-top: var(--spacing-6);
+    }
+
+    code {
+      background-color: var(--bg-tertiary);
+      padding: 2px 6px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9em;
+    }
+
+    .color-pills {
+      display: flex;
+      gap: var(--spacing-2);
+      margin-top: var(--spacing-4);
+    }
+
+    .pill {
+      padding: var(--spacing-1) var(--spacing-3);
+      border-radius: var(--radius-full);
+      font-size: var(--caption-sm-size);
+      border: var(--border-width-1) solid var(--border-default);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1 class="display-md" style="margin-bottom: var(--spacing-2);">Neoloop Design System</h1>
+      <p class="body-lg" style="color: var(--text-secondary);">Escala Tipográfica Completa</p>
+      <div class="color-pills">
+        <span class="pill">Inter Font Family</span>
+        <span class="pill">Modular Scale 1.250</span>
+        <span class="pill">Base 16px</span>
+      </div>
+    </div>
+
+    <!-- Display Styles -->
+    <section class="section">
+      <h2 class="section-title">Display - Títulos Grandes</h2>
+
+      <div class="type-sample">
+        <div class="type-label">Display XL</div>
+        <div class="display-xl">The quick brown fox jumps</div>
+        <div class="type-specs">72px • Bold (700) • Line Height 1.25 • -0.025em</div>
+      </div>
+
+      <div class="type-sample">
+        <div class="type-label">Display LG</div>
+        <div class="display-lg">The quick brown fox jumps over</div>
+        <div class="type-specs">60px • Bold (700) • Line Height 1.25 • -0.025em</div>
+      </div>
+
+      <div class="type-sample">
+        <div class="type-label">Display MD</div>
+        <div class="display-md">The quick brown fox jumps over the lazy dog</div>
+        <div class="type-specs">48px • Semibold (600) • Line Height 1.25</div>
+      </div>
+
+      <div class="type-sample">
+        <div class="type-label">Display SM</div>
+        <div class="display-sm">The quick brown fox jumps over the lazy dog with ease</div>
+        <div class="type-specs">36px • Semibold (600) • Line Height 1.375</div>
+      </div>
+    </section>
+
+    <!-- Heading Styles -->
+    <section class="section">
+      <h2 class="section-title">Heading - Subtítulos</h2>
+
+      <div class="grid">
+        <div class="type-sample">
+          <div class="type-label">Heading XL</div>
+          <div class="heading-xl">The quick brown fox jumps over the lazy dog</div>
+          <div class="type-specs">30px • Semibold (600) • 1.375</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Heading LG</div>
+          <div class="heading-lg">The quick brown fox jumps over the lazy dog</div>
+          <div class="type-specs">24px • Semibold (600) • 1.5</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Heading MD</div>
+          <div class="heading-md">The quick brown fox jumps over the lazy dog</div>
+          <div class="type-specs">20px • Semibold (600) • 1.5</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Heading SM</div>
+          <div class="heading-sm">The quick brown fox jumps over the lazy dog</div>
+          <div class="type-specs">16px • Semibold (600) • 1.5</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Heading XS</div>
+          <div class="heading-xs">The quick brown fox jumps over the lazy dog</div>
+          <div class="type-specs">14px • Semibold (600) • 1.5</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Body Styles -->
+    <section class="section">
+      <h2 class="section-title">Body - Texto Corrido</h2>
+
+      <div class="grid">
+        <div class="type-sample">
+          <div class="type-label">Body LG</div>
+          <div class="body-lg">
+            The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="type-specs">18px • Regular (400) • 1.625</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Body MD (Default)</div>
+          <div class="body-md">
+            The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="type-specs">16px • Regular (400) • 1.5</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Body SM</div>
+          <div class="body-sm">
+            The quick brown fox jumps over the lazy dog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="type-specs">14px • Regular (400) • 1.5</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Caption Styles -->
+    <section class="section">
+      <h2 class="section-title">Caption - Textos Auxiliares</h2>
+
+      <div class="grid">
+        <div class="type-sample">
+          <div class="type-label">Caption LG</div>
+          <div class="caption-lg">
+            The quick brown fox jumps over the lazy dog. Small text for labels and captions.
+          </div>
+          <div class="type-specs">14px • Medium (500) • 1.5</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Caption MD</div>
+          <div class="caption-md">
+            The quick brown fox jumps over the lazy dog. Smaller text for metadata and timestamps.
+          </div>
+          <div class="type-specs">12px • Medium (500) • 1.5</div>
+        </div>
+
+        <div class="type-sample">
+          <div class="type-label">Caption SM</div>
+          <div class="caption-sm">
+            The quick brown fox jumps over the lazy dog. Smallest text for fine print.
+          </div>
+          <div class="type-specs">12px • Regular (400) • 1.25</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Style -->
+    <section class="section">
+      <h2 class="section-title">Code - Monospace</h2>
+
+      <div class="type-sample">
+        <div class="type-label">Code</div>
+        <code class="code">const greeting = "Hello, World!";</code>
+        <div class="type-specs">14px • JetBrains Mono • Regular (400) • 1.5</div>
+      </div>
+    </section>
+
+    <!-- Usage Example -->
+    <section class="section">
+      <h2 class="section-title">Exemplo de Uso</h2>
+
+      <div class="type-sample">
+        <h3 class="heading-lg" style="margin-bottom: var(--spacing-4);">Como usar tokens CSS</h3>
+        <pre style="background: var(--bg-tertiary); padding: var(--spacing-4); border-radius: var(--radius-md); overflow-x: auto; font-family: var(--font-mono); font-size: var(--caption-lg-size);"><code>/* Método 1: Usar tokens diretamente */
+.my-title {
+  font-size: var(--display-md-size);
+  font-weight: var(--display-md-weight);
+  line-height: var(--display-md-line-height);
+}
+
+/* Método 2: Usar classes utilitárias */
+&lt;h1 class="display-md"&gt;Meu Título&lt;/h1&gt;
+&lt;p class="body-md"&gt;Meu parágrafo&lt;/p&gt;</code></pre>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: var(--spacing-16); padding-top: var(--spacing-8); border-top: var(--border-width-1) solid var(--border-default);">
+      <p class="caption-md" style="color: var(--text-tertiary); text-align: center;">
+        Neoloop Design System v1.0.0 • 2026 • Fabio Brunning
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

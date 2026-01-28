@@ -1,0 +1,43 @@
+{
+  "name": "Sidebar Components",
+  "description": "Sidebar navigation components (light/dark themes)",
+  "total": 4,
+  "components": [
+    {
+      "id": "group-2",
+      "name": "Group 2",
+      "filename": "Group 2.svg",
+      "path": "Group 2.svg",
+      "url": "/assets/components/sidebar/Group 2.svg",
+      "extension": "svg",
+      "category": "sidebar"
+    },
+    {
+      "id": "main-page",
+      "name": "Main Page",
+      "filename": "Main page.svg",
+      "path": "Main page.svg",
+      "url": "/assets/components/sidebar/Main page.svg",
+      "extension": "svg",
+      "category": "sidebar"
+    },
+    {
+      "id": "dark",
+      "name": "Dark",
+      "filename": "Dark.svg",
+      "path": "Sidebar (Community)/Dark.svg",
+      "url": "/assets/components/sidebar/Sidebar (Community)/Dark.svg",
+      "extension": "svg",
+      "category": "Sidebar (Community)"
+    },
+    {
+      "id": "light",
+      "name": "Light",
+      "filename": "Light.svg",
+      "path": "Sidebar (Community)/Light.svg",
+      "url": "/assets/components/sidebar/Sidebar (Community)/Light.svg",
+      "extension": "svg",
+      "category": "Sidebar (Community)"
+    }
+  ]
+}

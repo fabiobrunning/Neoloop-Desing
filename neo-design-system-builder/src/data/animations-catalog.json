@@ -1,0 +1,16 @@
+{
+  "name": "Animations",
+  "description": "Animation demos and motion design references",
+  "total": 1,
+  "animations": [
+    {
+      "id": "-demo-a",
+      "name": "▶️ Demo A",
+      "filename": "▶️ Demo A.svg",
+      "path": "▶️ Demo A.svg",
+      "url": "/assets/animations/▶️ Demo A.svg",
+      "extension": "svg",
+      "category": "animations"
+    }
+  ]
+}

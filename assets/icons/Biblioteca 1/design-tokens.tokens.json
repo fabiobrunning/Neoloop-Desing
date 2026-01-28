@@ -1,0 +1,28 @@
+{
+  "gradient": {
+    "badge style 01": {
+      "description": "",
+      "type": "custom-gradient",
+      "value": {
+        "gradientType": "linear",
+        "rotation": 82.43746755613358,
+        "stops": [
+          {
+            "position": 0,
+            "color": "#ff3b57ff"
+          },
+          {
+            "position": 1,
+            "color": "#ffda1aff"
+          }
+        ]
+      },
+      "extensions": {
+        "org.lukasoppermann.figmaDesignTokens": {
+          "styleId": "S:1823b8d9bb58466caffddfc44ef3582f4a155f9c,",
+          "exportKey": "gradient"
+        }
+      }
+    }
+  }
+}

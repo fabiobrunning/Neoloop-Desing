@@ -1,0 +1,676 @@
+{
+  "name": "Backgrounds Library",
+  "description": "Background patterns and templates from Figma",
+  "total": 73,
+  "categories": {
+    "backstage": {
+      "name": "Backstage Design System",
+      "total": 6,
+      "backgrounds": [
+        {
+          "id": "generic",
+          "name": "Generic",
+          "filename": "Generic.svg",
+          "path": "Homepage/Dark Mode/Generic.svg",
+          "url": "/assets/backgrounds/backstage/Homepage/Dark Mode/Generic.svg",
+          "extension": "svg",
+          "category": "Dark Mode"
+        },
+        {
+          "id": "main",
+          "name": "Main",
+          "filename": "Main.svg",
+          "path": "Homepage/Dark Mode/Main.svg",
+          "url": "/assets/backgrounds/backstage/Homepage/Dark Mode/Main.svg",
+          "extension": "svg",
+          "category": "Dark Mode"
+        },
+        {
+          "id": "tutorial-1",
+          "name": "Tutorial 1",
+          "filename": "Tutorial 1.svg",
+          "path": "Homepage/Dark Mode/Tutorial 1.svg",
+          "url": "/assets/backgrounds/backstage/Homepage/Dark Mode/Tutorial 1.svg",
+          "extension": "svg",
+          "category": "Dark Mode"
+        },
+        {
+          "id": "tutorial-2",
+          "name": "Tutorial 2",
+          "filename": "Tutorial 2.svg",
+          "path": "Homepage/Dark Mode/Tutorial 2.svg",
+          "url": "/assets/backgrounds/backstage/Homepage/Dark Mode/Tutorial 2.svg",
+          "extension": "svg",
+          "category": "Dark Mode"
+        },
+        {
+          "id": "tutorial-3",
+          "name": "Tutorial 3",
+          "filename": "Tutorial 3.svg",
+          "path": "Homepage/Dark Mode/Tutorial 3.svg",
+          "url": "/assets/backgrounds/backstage/Homepage/Dark Mode/Tutorial 3.svg",
+          "extension": "svg",
+          "category": "Dark Mode"
+        },
+        {
+          "id": "suggested-template-items",
+          "name": "Suggested Template Items",
+          "filename": "Suggested Template Items.svg",
+          "path": "Suggested Template Items.svg",
+          "url": "/assets/backgrounds/backstage/Suggested Template Items.svg",
+          "extension": "svg",
+          "category": "backstage"
+        }
+      ]
+    },
+    "blackWhite": {
+      "name": "Black & White UI Kit",
+      "total": 67,
+      "backgrounds": [
+        {
+          "id": "rectangle-57",
+          "name": "Rectangle 57",
+          "filename": "Rectangle 57.svg",
+          "path": "Rectangle 57.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 57.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-570",
+          "name": "Rectangle 570",
+          "filename": "Rectangle 570.svg",
+          "path": "Rectangle 570.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 570.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-606",
+          "name": "Rectangle 606",
+          "filename": "Rectangle 606.svg",
+          "path": "Rectangle 606.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 606.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-607",
+          "name": "Rectangle 607",
+          "filename": "Rectangle 607.svg",
+          "path": "Rectangle 607.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 607.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-608",
+          "name": "Rectangle 608",
+          "filename": "Rectangle 608.svg",
+          "path": "Rectangle 608.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 608.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-609",
+          "name": "Rectangle 609",
+          "filename": "Rectangle 609.svg",
+          "path": "Rectangle 609.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 609.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-610",
+          "name": "Rectangle 610",
+          "filename": "Rectangle 610.svg",
+          "path": "Rectangle 610.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 610.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-611",
+          "name": "Rectangle 611",
+          "filename": "Rectangle 611.svg",
+          "path": "Rectangle 611.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 611.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-612",
+          "name": "Rectangle 612",
+          "filename": "Rectangle 612.svg",
+          "path": "Rectangle 612.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 612.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-613",
+          "name": "Rectangle 613",
+          "filename": "Rectangle 613.svg",
+          "path": "Rectangle 613.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 613.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-614",
+          "name": "Rectangle 614",
+          "filename": "Rectangle 614.svg",
+          "path": "Rectangle 614.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 614.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-615",
+          "name": "Rectangle 615",
+          "filename": "Rectangle 615.svg",
+          "path": "Rectangle 615.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 615.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-616",
+          "name": "Rectangle 616",
+          "filename": "Rectangle 616.svg",
+          "path": "Rectangle 616.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 616.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-617",
+          "name": "Rectangle 617",
+          "filename": "Rectangle 617.svg",
+          "path": "Rectangle 617.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 617.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-618",
+          "name": "Rectangle 618",
+          "filename": "Rectangle 618.svg",
+          "path": "Rectangle 618.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 618.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-619",
+          "name": "Rectangle 619",
+          "filename": "Rectangle 619.svg",
+          "path": "Rectangle 619.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 619.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-620",
+          "name": "Rectangle 620",
+          "filename": "Rectangle 620.svg",
+          "path": "Rectangle 620.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 620.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-621",
+          "name": "Rectangle 621",
+          "filename": "Rectangle 621.svg",
+          "path": "Rectangle 621.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 621.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-622",
+          "name": "Rectangle 622",
+          "filename": "Rectangle 622.svg",
+          "path": "Rectangle 622.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 622.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-623",
+          "name": "Rectangle 623",
+          "filename": "Rectangle 623.svg",
+          "path": "Rectangle 623.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 623.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-624",
+          "name": "Rectangle 624",
+          "filename": "Rectangle 624.svg",
+          "path": "Rectangle 624.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 624.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-625",
+          "name": "Rectangle 625",
+          "filename": "Rectangle 625.svg",
+          "path": "Rectangle 625.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 625.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-626",
+          "name": "Rectangle 626",
+          "filename": "Rectangle 626.svg",
+          "path": "Rectangle 626.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 626.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-627",
+          "name": "Rectangle 627",
+          "filename": "Rectangle 627.svg",
+          "path": "Rectangle 627.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 627.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-80",
+          "name": "Rectangle 80",
+          "filename": "Rectangle 80.svg",
+          "path": "Rectangle 80.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 80.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-84",
+          "name": "Rectangle 84",
+          "filename": "Rectangle 84.svg",
+          "path": "Rectangle 84.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 84.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle-85",
+          "name": "Rectangle 85",
+          "filename": "Rectangle 85.svg",
+          "path": "Rectangle 85.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle 85.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "rectangle",
+          "name": "Rectangle",
+          "filename": "Rectangle.svg",
+          "path": "Rectangle.svg",
+          "url": "/assets/backgrounds/black-white/Rectangle.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "heading-x3-1",
+          "name": "Heading X3 1",
+          "filename": "Heading X3-1.svg",
+          "path": "Type/Primary/Heading X3-1.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X3-1.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x3-2",
+          "name": "Heading X3 2",
+          "filename": "Heading X3-2.svg",
+          "path": "Type/Primary/Heading X3-2.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X3-2.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x3-3",
+          "name": "Heading X3 3",
+          "filename": "Heading X3-3.svg",
+          "path": "Type/Primary/Heading X3-3.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X3-3.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x3-4",
+          "name": "Heading X3 4",
+          "filename": "Heading X3-4.svg",
+          "path": "Type/Primary/Heading X3-4.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X3-4.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x3-5",
+          "name": "Heading X3 5",
+          "filename": "Heading X3-5.svg",
+          "path": "Type/Primary/Heading X3-5.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X3-5.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x3",
+          "name": "Heading X3",
+          "filename": "Heading X3.svg",
+          "path": "Type/Primary/Heading X3.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X3.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-1",
+          "name": "Heading X6 1",
+          "filename": "Heading X6-1.svg",
+          "path": "Type/Primary/Heading X6-1.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-1.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-10",
+          "name": "Heading X6 10",
+          "filename": "Heading X6-10.svg",
+          "path": "Type/Primary/Heading X6-10.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-10.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-11",
+          "name": "Heading X6 11",
+          "filename": "Heading X6-11.svg",
+          "path": "Type/Primary/Heading X6-11.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-11.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-12",
+          "name": "Heading X6 12",
+          "filename": "Heading X6-12.svg",
+          "path": "Type/Primary/Heading X6-12.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-12.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-13",
+          "name": "Heading X6 13",
+          "filename": "Heading X6-13.svg",
+          "path": "Type/Primary/Heading X6-13.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-13.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-14",
+          "name": "Heading X6 14",
+          "filename": "Heading X6-14.svg",
+          "path": "Type/Primary/Heading X6-14.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-14.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-15",
+          "name": "Heading X6 15",
+          "filename": "Heading X6-15.svg",
+          "path": "Type/Primary/Heading X6-15.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-15.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-16",
+          "name": "Heading X6 16",
+          "filename": "Heading X6-16.svg",
+          "path": "Type/Primary/Heading X6-16.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-16.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-17",
+          "name": "Heading X6 17",
+          "filename": "Heading X6-17.svg",
+          "path": "Type/Primary/Heading X6-17.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-17.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-18",
+          "name": "Heading X6 18",
+          "filename": "Heading X6-18.svg",
+          "path": "Type/Primary/Heading X6-18.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-18.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-19",
+          "name": "Heading X6 19",
+          "filename": "Heading X6-19.svg",
+          "path": "Type/Primary/Heading X6-19.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-19.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-2",
+          "name": "Heading X6 2",
+          "filename": "Heading X6-2.svg",
+          "path": "Type/Primary/Heading X6-2.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-2.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-20",
+          "name": "Heading X6 20",
+          "filename": "Heading X6-20.svg",
+          "path": "Type/Primary/Heading X6-20.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-20.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-21",
+          "name": "Heading X6 21",
+          "filename": "Heading X6-21.svg",
+          "path": "Type/Primary/Heading X6-21.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-21.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-22",
+          "name": "Heading X6 22",
+          "filename": "Heading X6-22.svg",
+          "path": "Type/Primary/Heading X6-22.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-22.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-23",
+          "name": "Heading X6 23",
+          "filename": "Heading X6-23.svg",
+          "path": "Type/Primary/Heading X6-23.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-23.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-24",
+          "name": "Heading X6 24",
+          "filename": "Heading X6-24.svg",
+          "path": "Type/Primary/Heading X6-24.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-24.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-25",
+          "name": "Heading X6 25",
+          "filename": "Heading X6-25.svg",
+          "path": "Type/Primary/Heading X6-25.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-25.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-26",
+          "name": "Heading X6 26",
+          "filename": "Heading X6-26.svg",
+          "path": "Type/Primary/Heading X6-26.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-26.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-27",
+          "name": "Heading X6 27",
+          "filename": "Heading X6-27.svg",
+          "path": "Type/Primary/Heading X6-27.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-27.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-28",
+          "name": "Heading X6 28",
+          "filename": "Heading X6-28.svg",
+          "path": "Type/Primary/Heading X6-28.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-28.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-29",
+          "name": "Heading X6 29",
+          "filename": "Heading X6-29.svg",
+          "path": "Type/Primary/Heading X6-29.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-29.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-3",
+          "name": "Heading X6 3",
+          "filename": "Heading X6-3.svg",
+          "path": "Type/Primary/Heading X6-3.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-3.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-4",
+          "name": "Heading X6 4",
+          "filename": "Heading X6-4.svg",
+          "path": "Type/Primary/Heading X6-4.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-4.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-5",
+          "name": "Heading X6 5",
+          "filename": "Heading X6-5.svg",
+          "path": "Type/Primary/Heading X6-5.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-5.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-6",
+          "name": "Heading X6 6",
+          "filename": "Heading X6-6.svg",
+          "path": "Type/Primary/Heading X6-6.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-6.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-7",
+          "name": "Heading X6 7",
+          "filename": "Heading X6-7.svg",
+          "path": "Type/Primary/Heading X6-7.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-7.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-8",
+          "name": "Heading X6 8",
+          "filename": "Heading X6-8.svg",
+          "path": "Type/Primary/Heading X6-8.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-8.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6-9",
+          "name": "Heading X6 9",
+          "filename": "Heading X6-9.svg",
+          "path": "Type/Primary/Heading X6-9.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6-9.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "heading-x6",
+          "name": "Heading X6",
+          "filename": "Heading X6.svg",
+          "path": "Type/Primary/Heading X6.svg",
+          "url": "/assets/backgrounds/black-white/Type/Primary/Heading X6.svg",
+          "extension": "svg",
+          "category": "Primary"
+        },
+        {
+          "id": "typeface",
+          "name": "Typeface",
+          "filename": "Typeface.svg",
+          "path": "Typeface.svg",
+          "url": "/assets/backgrounds/black-white/Typeface.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "vector-1",
+          "name": "Vector 1",
+          "filename": "Vector-1.svg",
+          "path": "Vector-1.svg",
+          "url": "/assets/backgrounds/black-white/Vector-1.svg",
+          "extension": "svg",
+          "category": "black-white"
+        },
+        {
+          "id": "vector",
+          "name": "Vector",
+          "filename": "Vector.svg",
+          "path": "Vector.svg",
+          "url": "/assets/backgrounds/black-white/Vector.svg",
+          "extension": "svg",
+          "category": "black-white"
+        }
+      ]
+    }
+  }
+}

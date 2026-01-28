@@ -1,0 +1,148 @@
+/**
+ * Design Tokens - watchOS Colors
+ * Exportado do Figma via plugin Design Tokens
+ * Gerado automaticamente
+ */
+
+:root {
+  /* ========================================
+     CORES - watchOS Color Palette
+     ======================================== */
+
+  /* Vermelhos e Rosas */
+  --color-red: #df1125;
+  --color-neon-pink: #fb212f;
+  --color-electric-pink: #fc3644;
+  --color-hibiscus: #fb0049;
+  --color-pink: #fd4154;
+  --color-pink-citrus: #ea383a;
+  --color-pomegranate: #d80e4f;
+  --color-dragon-fruit: #f12e6d;
+  --color-camellia: #bf3138;
+  --color-red-rose: #ab1438;
+  --color-plum: #81323d;
+
+  /* Laranjas */
+  --color-orange: #fc4e12;
+  --color-clementine: #fd513b;
+  --color-apricot: #fc5c42;
+  --color-papaya: #fd7036;
+  --color-kumquat: #fd7441;
+  --color-light-orange: #fd820b;
+  --color-peach: #e0694e;
+  --color-flamingo: #ca6f59;
+  --color-rose-gold: #e99475;
+  --color-pink-sand: #feb69c;
+  --color-vintage-rose: #f29c98;
+  --color-grapefruit: #fda27e;
+
+  /* Amarelos */
+  --color-cream: #ffe0ab;
+  --color-mellow-yellow: #f7f6af;
+  --color-canary-yellow: #ffda3a;
+  --color-pollen: #e8c511;
+  --color-flash-light: #faed0b;
+  --color-lemon-cream: #ffeb6d;
+  --color-flash: #dff81e;
+
+  /* Verdes */
+  --color-green: #80e220;
+  --color-spearmint: #77ea7e;
+  --color-mint: #a2ec8e;
+  --color-beryl: #d0f2b1;
+  --color-sea-foam: #cff1d6;
+  --color-turquoise: #91cec2;
+
+  /* Azuis */
+  --color-blue: #1ea5fc;
+  --color-light-blue: #5ebad9;
+  --color-cerulian: #87b9e7;
+  --color-surf-blue: #1871ac;
+  --color-pacific-green: #0f6d8e;
+  --color-blue-cobalt: #3a6b8e;
+  --color-dark-teal: #2c6184;
+  --color-blue-horizon: #1e538f;
+  --color-denim-blue: #4b709a;
+  --color-linen-blue: #455785;
+  --color-deep-navy: #3a4565;
+  --color-midnight-blue: #383b65;
+
+  /* Roxos */
+  --color-purple: #8962f8;
+  --color-ultra-violet: #5f41b2;
+  --color-lilac: #a990dd;
+  --color-ocean-blue: #6273bd;
+  --color-delft-blue: #4662b2;
+  --color-indigo: #474e95;
+  --color-lavender-gray: #757397;
+  --color-lavender: #a58998;
+
+  /* Cinzas e Verdes Escuros */
+  --color-mist-blue: #a7ab99;
+  --color-storm-gray: #578887;
+  --color-cactus: #5b7971;
+  --color-pine-green: #4e6c54;
+  --color-cyprus-green: #525d49;
+  --color-northern-blue: #638a8d;
+  --color-azure: #788991;
+  --color-alaskan-blue: #525c73;
+
+  /* Marrons e Dourados */
+  --color-khaki: #7a6e49;
+  --color-dark-olive: #7c7a66;
+  --color-soft-white: #d8c9af;
+  --color-antique-white: #cda986;
+  --color-yellow-gold: #cc996d;
+  --color-gold: #b08053;
+  --color-camel: #a97d4f;
+  --color-walnut: #a17455;
+  --color-stone: #a28872;
+  --color-pebble: #9f8d7e;
+  --color-cocoa: #8b7d7d;
+  --color-coastal-gray: #715d50;
+}
+
+/* ========================================
+   CLASSES UTILITÁRIAS DE CORES
+   ======================================== */
+
+/* Backgrounds */
+.bg-hibiscus { background-color: var(--color-hibiscus); }
+.bg-dragon-fruit { background-color: var(--color-dragon-fruit); }
+.bg-purple { background-color: var(--color-purple); }
+.bg-blue { background-color: var(--color-blue); }
+.bg-green { background-color: var(--color-green); }
+.bg-sea-foam { background-color: var(--color-sea-foam); }
+
+/* Text Colors */
+.text-hibiscus { color: var(--color-hibiscus); }
+.text-purple { color: var(--color-purple); }
+.text-blue { color: var(--color-blue); }
+.text-pine-green { color: var(--color-pine-green); }
+
+/* ========================================
+   GRADIENTES
+   ======================================== */
+
+:root {
+  /* Badge Gradient (do Figma) */
+  --gradient-badge: linear-gradient(82.44deg, #ff3b57 0%, #ffda1a 100%);
+}
+
+/* Classe utilitária para badge gradient */
+.bg-gradient-badge {
+  background: var(--gradient-badge);
+}
+
+/* Gradientes adicionais úteis */
+.bg-gradient-purple-blue {
+  background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+}
+
+.bg-gradient-hibiscus-dragon {
+  background: linear-gradient(135deg, var(--color-hibiscus), var(--color-dragon-fruit));
+}
+
+.bg-gradient-green-mint {
+  background: linear-gradient(135deg, var(--color-green), var(--color-mint));
+}

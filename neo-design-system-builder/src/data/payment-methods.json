@@ -1,0 +1,127 @@
+{
+  "name": "Payment Methods",
+  "description": "Payment method logos and icons",
+  "total": 12,
+  "logos": [
+    {
+      "id": "size-large-payment-method-amex",
+      "name": "Size=Large, Payment Method=AMEX",
+      "filename": "Size=large, Payment method=AMEX.svg",
+      "path": "Size=large, Payment method=AMEX.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=AMEX.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodamex"
+    },
+    {
+      "id": "size-large-payment-method-alipay",
+      "name": "Size=Large, Payment Method=Alipay",
+      "filename": "Size=large, Payment method=Alipay.svg",
+      "path": "Size=large, Payment method=Alipay.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Alipay.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodalipay"
+    },
+    {
+      "id": "size-large-payment-method-amazon",
+      "name": "Size=Large, Payment Method=Amazon",
+      "filename": "Size=large, Payment method=Amazon.svg",
+      "path": "Size=large, Payment method=Amazon.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Amazon.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodamazon"
+    },
+    {
+      "id": "size-large-payment-method-applepay",
+      "name": "Size=Large, Payment Method=ApplePay",
+      "filename": "Size=large, Payment method=ApplePay.svg",
+      "path": "Size=large, Payment method=ApplePay.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=ApplePay.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodapplepay"
+    },
+    {
+      "id": "size-large-payment-method-bitcoin",
+      "name": "Size=Large, Payment Method=Bitcoin",
+      "filename": "Size=large, Payment method=Bitcoin.svg",
+      "path": "Size=large, Payment method=Bitcoin.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Bitcoin.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodbitcoin"
+    },
+    {
+      "id": "size-large-payment-method-etherium",
+      "name": "Size=Large, Payment Method=Etherium",
+      "filename": "Size=large, Payment method=Etherium.svg",
+      "path": "Size=large, Payment method=Etherium.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Etherium.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodetherium"
+    },
+    {
+      "id": "size-large-payment-method-googlepay",
+      "name": "Size=Large, Payment Method=GooglePay",
+      "filename": "Size=large, Payment method=GooglePay.svg",
+      "path": "Size=large, Payment method=GooglePay.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=GooglePay.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodgooglepay"
+    },
+    {
+      "id": "size-large-payment-method-maestro",
+      "name": "Size=Large, Payment Method=Maestro",
+      "filename": "Size=large, Payment method=Maestro.svg",
+      "path": "Size=large, Payment method=Maestro.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Maestro.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodmaestro"
+    },
+    {
+      "id": "size-large-payment-method-mastercard",
+      "name": "Size=Large, Payment Method=Mastercard",
+      "filename": "Size=large, Payment method=Mastercard.svg",
+      "path": "Size=large, Payment method=Mastercard.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Mastercard.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodmastercard"
+    },
+    {
+      "id": "size-large-payment-method-paypal",
+      "name": "Size=Large, Payment Method=PayPal",
+      "filename": "Size=large, Payment method=PayPal.svg",
+      "path": "Size=large, Payment method=PayPal.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=PayPal.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodpaypal"
+    },
+    {
+      "id": "size-large-payment-method-stripe",
+      "name": "Size=Large, Payment Method=Stripe",
+      "filename": "Size=large, Payment method=Stripe.svg",
+      "path": "Size=large, Payment method=Stripe.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Stripe.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodstripe"
+    },
+    {
+      "id": "size-large-payment-method-visa",
+      "name": "Size=Large, Payment Method=Visa",
+      "filename": "Size=large, Payment method=Visa.svg",
+      "path": "Size=large, Payment method=Visa.svg",
+      "url": "/assets/icons/payment/Size=large, Payment method=Visa.svg",
+      "extension": "svg",
+      "category": "payment",
+      "method": "sizelargepaymentmethodvisa"
+    }
+  ]
+}

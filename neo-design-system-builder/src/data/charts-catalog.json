@@ -1,0 +1,685 @@
+{
+  "name": "Charts Library",
+  "description": "Pre-built chart components from Figma",
+  "total": 74,
+  "categories": {
+    "circle": {
+      "name": "Circle Charts",
+      "total": 36,
+      "charts": [
+        {
+          "id": "pie-chart-example-1",
+          "name": "Pie Chart Example 1",
+          "filename": "Pie Chart Example-1.svg",
+          "path": "Pie Chart Example-1.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-1.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-10",
+          "name": "Pie Chart Example 10",
+          "filename": "Pie Chart Example-10.svg",
+          "path": "Pie Chart Example-10.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-10.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-11",
+          "name": "Pie Chart Example 11",
+          "filename": "Pie Chart Example-11.svg",
+          "path": "Pie Chart Example-11.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-11.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-12",
+          "name": "Pie Chart Example 12",
+          "filename": "Pie Chart Example-12.svg",
+          "path": "Pie Chart Example-12.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-12.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-13",
+          "name": "Pie Chart Example 13",
+          "filename": "Pie Chart Example-13.svg",
+          "path": "Pie Chart Example-13.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-13.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-14",
+          "name": "Pie Chart Example 14",
+          "filename": "Pie Chart Example-14.svg",
+          "path": "Pie Chart Example-14.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-14.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-15",
+          "name": "Pie Chart Example 15",
+          "filename": "Pie Chart Example-15.svg",
+          "path": "Pie Chart Example-15.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-15.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-16",
+          "name": "Pie Chart Example 16",
+          "filename": "Pie Chart Example-16.svg",
+          "path": "Pie Chart Example-16.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-16.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-17",
+          "name": "Pie Chart Example 17",
+          "filename": "Pie Chart Example-17.svg",
+          "path": "Pie Chart Example-17.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-17.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-18",
+          "name": "Pie Chart Example 18",
+          "filename": "Pie Chart Example-18.svg",
+          "path": "Pie Chart Example-18.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-18.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-19",
+          "name": "Pie Chart Example 19",
+          "filename": "Pie Chart Example-19.svg",
+          "path": "Pie Chart Example-19.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-19.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-2",
+          "name": "Pie Chart Example 2",
+          "filename": "Pie Chart Example-2.svg",
+          "path": "Pie Chart Example-2.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-2.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-20",
+          "name": "Pie Chart Example 20",
+          "filename": "Pie Chart Example-20.svg",
+          "path": "Pie Chart Example-20.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-20.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-21",
+          "name": "Pie Chart Example 21",
+          "filename": "Pie Chart Example-21.svg",
+          "path": "Pie Chart Example-21.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-21.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-22",
+          "name": "Pie Chart Example 22",
+          "filename": "Pie Chart Example-22.svg",
+          "path": "Pie Chart Example-22.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-22.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-23",
+          "name": "Pie Chart Example 23",
+          "filename": "Pie Chart Example-23.svg",
+          "path": "Pie Chart Example-23.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-23.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-24",
+          "name": "Pie Chart Example 24",
+          "filename": "Pie Chart Example-24.svg",
+          "path": "Pie Chart Example-24.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-24.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-25",
+          "name": "Pie Chart Example 25",
+          "filename": "Pie Chart Example-25.svg",
+          "path": "Pie Chart Example-25.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-25.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-26",
+          "name": "Pie Chart Example 26",
+          "filename": "Pie Chart Example-26.svg",
+          "path": "Pie Chart Example-26.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-26.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-27",
+          "name": "Pie Chart Example 27",
+          "filename": "Pie Chart Example-27.svg",
+          "path": "Pie Chart Example-27.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-27.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-28",
+          "name": "Pie Chart Example 28",
+          "filename": "Pie Chart Example-28.svg",
+          "path": "Pie Chart Example-28.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-28.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-29",
+          "name": "Pie Chart Example 29",
+          "filename": "Pie Chart Example-29.svg",
+          "path": "Pie Chart Example-29.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-29.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-3",
+          "name": "Pie Chart Example 3",
+          "filename": "Pie Chart Example-3.svg",
+          "path": "Pie Chart Example-3.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-3.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-30",
+          "name": "Pie Chart Example 30",
+          "filename": "Pie Chart Example-30.svg",
+          "path": "Pie Chart Example-30.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-30.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-31",
+          "name": "Pie Chart Example 31",
+          "filename": "Pie Chart Example-31.svg",
+          "path": "Pie Chart Example-31.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-31.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-32",
+          "name": "Pie Chart Example 32",
+          "filename": "Pie Chart Example-32.svg",
+          "path": "Pie Chart Example-32.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-32.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-33",
+          "name": "Pie Chart Example 33",
+          "filename": "Pie Chart Example-33.svg",
+          "path": "Pie Chart Example-33.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-33.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-34",
+          "name": "Pie Chart Example 34",
+          "filename": "Pie Chart Example-34.svg",
+          "path": "Pie Chart Example-34.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-34.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-35",
+          "name": "Pie Chart Example 35",
+          "filename": "Pie Chart Example-35.svg",
+          "path": "Pie Chart Example-35.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-35.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-4",
+          "name": "Pie Chart Example 4",
+          "filename": "Pie Chart Example-4.svg",
+          "path": "Pie Chart Example-4.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-4.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-5",
+          "name": "Pie Chart Example 5",
+          "filename": "Pie Chart Example-5.svg",
+          "path": "Pie Chart Example-5.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-5.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-6",
+          "name": "Pie Chart Example 6",
+          "filename": "Pie Chart Example-6.svg",
+          "path": "Pie Chart Example-6.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-6.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-7",
+          "name": "Pie Chart Example 7",
+          "filename": "Pie Chart Example-7.svg",
+          "path": "Pie Chart Example-7.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-7.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-8",
+          "name": "Pie Chart Example 8",
+          "filename": "Pie Chart Example-8.svg",
+          "path": "Pie Chart Example-8.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-8.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example-9",
+          "name": "Pie Chart Example 9",
+          "filename": "Pie Chart Example-9.svg",
+          "path": "Pie Chart Example-9.svg",
+          "url": "/assets/charts/circle/Pie Chart Example-9.svg",
+          "extension": "svg",
+          "category": "circle"
+        },
+        {
+          "id": "pie-chart-example",
+          "name": "Pie Chart Example",
+          "filename": "Pie Chart Example.svg",
+          "path": "Pie Chart Example.svg",
+          "url": "/assets/charts/circle/Pie Chart Example.svg",
+          "extension": "svg",
+          "category": "circle"
+        }
+      ]
+    },
+    "tCharts": {
+      "name": "T Charts",
+      "total": 38,
+      "charts": [
+        {
+          "id": "-1",
+          "name": "交错正负轴标签 1",
+          "filename": "交错正负轴标签-1.svg",
+          "path": "交错正负轴标签-1.svg",
+          "url": "/assets/charts/t-charts/交错正负轴标签-1.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-",
+          "name": "交错正负轴标签",
+          "filename": "交错正负轴标签.svg",
+          "path": "交错正负轴标签.svg",
+          "url": "/assets/charts/t-charts/交错正负轴标签.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-1",
+          "name": "双向条形图 1",
+          "filename": "双向条形图-1.svg",
+          "path": "双向条形图-1.svg",
+          "url": "/assets/charts/t-charts/双向条形图-1.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-",
+          "name": "双向条形图",
+          "filename": "双向条形图.svg",
+          "path": "双向条形图.svg",
+          "url": "/assets/charts/t-charts/双向条形图.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-02-1",
+          "name": "基础条形图 02 1",
+          "filename": "基础条形图 02-1.svg",
+          "path": "基础条形图 02-1.svg",
+          "url": "/assets/charts/t-charts/基础条形图 02-1.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-02",
+          "name": "基础条形图 02",
+          "filename": "基础条形图 02.svg",
+          "path": "基础条形图 02.svg",
+          "url": "/assets/charts/t-charts/基础条形图 02.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-1",
+          "name": "基础条形图 1",
+          "filename": "基础条形图-1.svg",
+          "path": "基础条形图-1.svg",
+          "url": "/assets/charts/t-charts/基础条形图-1.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-2",
+          "name": "基础条形图 2",
+          "filename": "基础条形图-2.svg",
+          "path": "基础条形图-2.svg",
+          "url": "/assets/charts/t-charts/基础条形图-2.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-3",
+          "name": "基础条形图 3",
+          "filename": "基础条形图-3.svg",
+          "path": "基础条形图-3.svg",
+          "url": "/assets/charts/t-charts/基础条形图-3.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-",
+          "name": "基础条形图",
+          "filename": "基础条形图.svg",
+          "path": "基础条形图.svg",
+          "url": "/assets/charts/t-charts/基础条形图.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-1",
+          "name": "堆叠条形图 1",
+          "filename": "堆叠条形图-1.svg",
+          "path": "堆叠条形图-1.svg",
+          "url": "/assets/charts/t-charts/堆叠条形图-1.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-",
+          "name": "堆叠条形图",
+          "filename": "堆叠条形图.svg",
+          "path": "堆叠条形图.svg",
+          "url": "/assets/charts/t-charts/堆叠条形图.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-1",
+          "name": "极坐标柱状图标签 1",
+          "filename": "极坐标柱状图标签-1.svg",
+          "path": "极坐标柱状图标签-1.svg",
+          "url": "/assets/charts/t-charts/极坐标柱状图标签-1.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "-",
+          "name": "极坐标柱状图标签",
+          "filename": "极坐标柱状图标签.svg",
+          "path": "极坐标柱状图标签.svg",
+          "url": "/assets/charts/t-charts/极坐标柱状图标签.svg",
+          "extension": "svg",
+          "category": "t-charts"
+        },
+        {
+          "id": "bar-graph-1",
+          "name": "Bar Graph 柱形图 1",
+          "filename": "Bar Graph 柱形图-1.svg",
+          "path": "Bar Graph 柱形图-1.svg",
+          "url": "/assets/charts/t-charts-1/Bar Graph 柱形图-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "bar-graph-",
+          "name": "Bar Graph 柱形图",
+          "filename": "Bar Graph 柱形图.svg",
+          "path": "Bar Graph 柱形图.svg",
+          "url": "/assets/charts/t-charts-1/Bar Graph 柱形图.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-02-1",
+          "name": "基础柱状图 02 1",
+          "filename": "基础柱状图 02-1.svg",
+          "path": "基础柱状图 02-1.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图 02-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-02",
+          "name": "基础柱状图 02",
+          "filename": "基础柱状图 02.svg",
+          "path": "基础柱状图 02.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图 02.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-1",
+          "name": "基础柱状图 1",
+          "filename": "基础柱状图-1.svg",
+          "path": "基础柱状图-1.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-2",
+          "name": "基础柱状图 2",
+          "filename": "基础柱状图-2.svg",
+          "path": "基础柱状图-2.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图-2.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-3",
+          "name": "基础柱状图 3",
+          "filename": "基础柱状图-3.svg",
+          "path": "基础柱状图-3.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图-3.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-4",
+          "name": "基础柱状图 4",
+          "filename": "基础柱状图-4.svg",
+          "path": "基础柱状图-4.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图-4.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-5",
+          "name": "基础柱状图 5",
+          "filename": "基础柱状图-5.svg",
+          "path": "基础柱状图-5.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图-5.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-",
+          "name": "基础柱状图",
+          "filename": "基础柱状图.svg",
+          "path": "基础柱状图.svg",
+          "url": "/assets/charts/t-charts-1/基础柱状图.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-01-1",
+          "name": "堆叠柱状图01 1",
+          "filename": "堆叠柱状图01-1.svg",
+          "path": "堆叠柱状图01-1.svg",
+          "url": "/assets/charts/t-charts-1/堆叠柱状图01-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-01",
+          "name": "堆叠柱状图01",
+          "filename": "堆叠柱状图01.svg",
+          "path": "堆叠柱状图01.svg",
+          "url": "/assets/charts/t-charts-1/堆叠柱状图01.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-02-1",
+          "name": "堆叠柱状图02 1",
+          "filename": "堆叠柱状图02-1.svg",
+          "path": "堆叠柱状图02-1.svg",
+          "url": "/assets/charts/t-charts-1/堆叠柱状图02-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-02",
+          "name": "堆叠柱状图02",
+          "filename": "堆叠柱状图02.svg",
+          "path": "堆叠柱状图02.svg",
+          "url": "/assets/charts/t-charts-1/堆叠柱状图02.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-1",
+          "name": "大数据量柱图 1",
+          "filename": "大数据量柱图-1.svg",
+          "path": "大数据量柱图-1.svg",
+          "url": "/assets/charts/t-charts-1/大数据量柱图-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-",
+          "name": "大数据量柱图",
+          "filename": "大数据量柱图.svg",
+          "path": "大数据量柱图.svg",
+          "url": "/assets/charts/t-charts-1/大数据量柱图.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-1",
+          "name": "带背景色的柱状图 1",
+          "filename": "带背景色的柱状图-1.svg",
+          "path": "带背景色的柱状图-1.svg",
+          "url": "/assets/charts/t-charts-1/带背景色的柱状图-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-",
+          "name": "带背景色的柱状图",
+          "filename": "带背景色的柱状图.svg",
+          "path": "带背景色的柱状图.svg",
+          "url": "/assets/charts/t-charts-1/带背景色的柱状图.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-1",
+          "name": "极坐标柱状图 1",
+          "filename": "极坐标柱状图-1.svg",
+          "path": "极坐标柱状图-1.svg",
+          "url": "/assets/charts/t-charts-1/极坐标柱状图-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-",
+          "name": "极坐标柱状图",
+          "filename": "极坐标柱状图.svg",
+          "path": "极坐标柱状图.svg",
+          "url": "/assets/charts/t-charts-1/极坐标柱状图.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-1",
+          "name": "瀑布图（柱状图模拟） 1",
+          "filename": "瀑布图（柱状图模拟）-1.svg",
+          "path": "瀑布图（柱状图模拟）-1.svg",
+          "url": "/assets/charts/t-charts-1/瀑布图（柱状图模拟）-1.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "-",
+          "name": "瀑布图（柱状图模拟）",
+          "filename": "瀑布图（柱状图模拟）.svg",
+          "path": "瀑布图（柱状图模拟）.svg",
+          "url": "/assets/charts/t-charts-1/瀑布图（柱状图模拟）.svg",
+          "extension": "svg",
+          "category": "t-charts-1"
+        },
+        {
+          "id": "dark",
+          "name": "Dark",
+          "filename": "Dark.svg",
+          "path": "Dark.svg",
+          "url": "/assets/charts/t-charts-2/Dark.svg",
+          "extension": "svg",
+          "category": "t-charts-2"
+        },
+        {
+          "id": "light",
+          "name": "Light",
+          "filename": "Light.svg",
+          "path": "Light.svg",
+          "url": "/assets/charts/t-charts-2/Light.svg",
+          "extension": "svg",
+          "category": "t-charts-2"
+        }
+      ]
+    }
+  }
+}

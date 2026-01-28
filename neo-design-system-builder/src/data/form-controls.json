@@ -1,0 +1,34 @@
+{
+  "name": "Form Controls",
+  "description": "Checkbox, Radio Button, and Switch components",
+  "total": 3,
+  "components": [
+    {
+      "id": "checkbox",
+      "name": "Checkbox",
+      "filename": "Checkbox.svg",
+      "path": "Checkbox.svg",
+      "url": "/assets/components/form-controls/Checkbox.svg",
+      "extension": "svg",
+      "category": "form-controls"
+    },
+    {
+      "id": "radio-button",
+      "name": "Radio Button",
+      "filename": "Radio Button.svg",
+      "path": "Radio Button.svg",
+      "url": "/assets/components/form-controls/Radio Button.svg",
+      "extension": "svg",
+      "category": "form-controls"
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "filename": "Switch.svg",
+      "path": "Switch.svg",
+      "url": "/assets/components/form-controls/Switch.svg",
+      "extension": "svg",
+      "category": "form-controls"
+    }
+  ]
+}

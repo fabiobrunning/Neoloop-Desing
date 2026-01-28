@@ -1,0 +1,304 @@
+{
+  "name": "UI Icons",
+  "description": "10,000+ Free Icons from Figma Community",
+  "total": 33,
+  "icons": [
+    {
+      "id": "artificial-intelligence-machine-learning-1",
+      "name": "Artificial Intelligence Machine Learning 1",
+      "filename": "Artificial-Intelligence-Machine-Learning-1.svg",
+      "path": "Artificial-Intelligence-Machine-Learning-1.svg",
+      "url": "/assets/icons/ui/10k-free/Artificial-Intelligence-Machine-Learning-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "artificial-intelligence-machine-learning",
+      "name": "Artificial Intelligence Machine Learning",
+      "filename": "Artificial-Intelligence-Machine-Learning.svg",
+      "path": "Artificial-Intelligence-Machine-Learning.svg",
+      "url": "/assets/icons/ui/10k-free/Artificial-Intelligence-Machine-Learning.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "computer-devices-1",
+      "name": "Computer Devices 1",
+      "filename": "Computer-Devices-1.svg",
+      "path": "Computer-Devices-1.svg",
+      "url": "/assets/icons/ui/10k-free/Computer-Devices-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "computer-devices",
+      "name": "Computer Devices",
+      "filename": "Computer-Devices.svg",
+      "path": "Computer-Devices.svg",
+      "url": "/assets/icons/ui/10k-free/Computer-Devices.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "culture-1",
+      "name": "Culture 1",
+      "filename": "Culture-1.svg",
+      "path": "Culture-1.svg",
+      "url": "/assets/icons/ui/10k-free/Culture-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "culture",
+      "name": "Culture",
+      "filename": "Culture.svg",
+      "path": "Culture.svg",
+      "url": "/assets/icons/ui/10k-free/Culture.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "entertainment-1",
+      "name": "Entertainment 1",
+      "filename": "Entertainment-1.svg",
+      "path": "Entertainment-1.svg",
+      "url": "/assets/icons/ui/10k-free/Entertainment-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "filename": "Entertainment.svg",
+      "path": "Entertainment.svg",
+      "url": "/assets/icons/ui/10k-free/Entertainment.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "food-drink-1",
+      "name": "Food Drink 1",
+      "filename": "Food-drink-1.svg",
+      "path": "Food-drink-1.svg",
+      "url": "/assets/icons/ui/10k-free/Food-drink-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "food-drink",
+      "name": "Food Drink",
+      "filename": "Food-drink.svg",
+      "path": "Food-drink.svg",
+      "url": "/assets/icons/ui/10k-free/Food-drink.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "health-1",
+      "name": "Health 1",
+      "filename": "Health-1.svg",
+      "path": "Health-1.svg",
+      "url": "/assets/icons/ui/10k-free/Health-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "filename": "Health.svg",
+      "path": "Health.svg",
+      "url": "/assets/icons/ui/10k-free/Health.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "images-photography-1",
+      "name": "Images Photography 1",
+      "filename": "Images-Photography-1.svg",
+      "path": "Images-Photography-1.svg",
+      "url": "/assets/icons/ui/10k-free/Images-Photography-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "images-photography",
+      "name": "Images Photography",
+      "filename": "Images-Photography.svg",
+      "path": "Images-Photography.svg",
+      "url": "/assets/icons/ui/10k-free/Images-Photography.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "interface-essential-1",
+      "name": "Interface Essential 1",
+      "filename": "Interface-Essential-1.svg",
+      "path": "Interface-Essential-1.svg",
+      "url": "/assets/icons/ui/10k-free/Interface-Essential-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "interface-essential",
+      "name": "Interface Essential",
+      "filename": "Interface-Essential.svg",
+      "path": "Interface-Essential.svg",
+      "url": "/assets/icons/ui/10k-free/Interface-Essential.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "mail-1",
+      "name": "Mail 1",
+      "filename": "Mail-1.svg",
+      "path": "Mail-1.svg",
+      "url": "/assets/icons/ui/10k-free/Mail-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "mail",
+      "name": "Mail",
+      "filename": "Mail.svg",
+      "path": "Mail.svg",
+      "url": "/assets/icons/ui/10k-free/Mail.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "map-travel-1",
+      "name": "Map Travel 1",
+      "filename": "Map-Travel-1.svg",
+      "path": "Map-Travel-1.svg",
+      "url": "/assets/icons/ui/10k-free/Map-Travel-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "map-travel",
+      "name": "Map Travel",
+      "filename": "Map-Travel.svg",
+      "path": "Map-Travel.svg",
+      "url": "/assets/icons/ui/10k-free/Map-Travel.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "money-shopping-1",
+      "name": "Money Shopping 1",
+      "filename": "Money-Shopping-1.svg",
+      "path": "Money-Shopping-1.svg",
+      "url": "/assets/icons/ui/10k-free/Money-Shopping-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "money-shopping",
+      "name": "Money Shopping",
+      "filename": "Money-Shopping.svg",
+      "path": "Money-Shopping.svg",
+      "url": "/assets/icons/ui/10k-free/Money-Shopping.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "nature-ecology-1",
+      "name": "Nature Ecology 1",
+      "filename": "Nature-Ecology-1.svg",
+      "path": "Nature-Ecology-1.svg",
+      "url": "/assets/icons/ui/10k-free/Nature-Ecology-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "nature-ecology-2",
+      "name": "Nature Ecology 2",
+      "filename": "Nature-Ecology-2.svg",
+      "path": "Nature-Ecology-2.svg",
+      "url": "/assets/icons/ui/10k-free/Nature-Ecology-2.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "nature-ecology",
+      "name": "Nature Ecology",
+      "filename": "Nature-Ecology.svg",
+      "path": "Nature-Ecology.svg",
+      "url": "/assets/icons/ui/10k-free/Nature-Ecology.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "phone-1",
+      "name": "Phone 1",
+      "filename": "Phone-1.svg",
+      "path": "Phone-1.svg",
+      "url": "/assets/icons/ui/10k-free/Phone-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "phone",
+      "name": "Phone",
+      "filename": "Phone.svg",
+      "path": "Phone.svg",
+      "url": "/assets/icons/ui/10k-free/Phone.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "programming-1",
+      "name": "Programming 1",
+      "filename": "Programming-1.svg",
+      "path": "Programming-1.svg",
+      "url": "/assets/icons/ui/10k-free/Programming-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "programming",
+      "name": "Programming",
+      "filename": "Programming.svg",
+      "path": "Programming.svg",
+      "url": "/assets/icons/ui/10k-free/Programming.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "shipping-1",
+      "name": "Shipping 1",
+      "filename": "Shipping-1.svg",
+      "path": "Shipping-1.svg",
+      "url": "/assets/icons/ui/10k-free/Shipping-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "shipping",
+      "name": "Shipping",
+      "filename": "Shipping.svg",
+      "path": "Shipping.svg",
+      "url": "/assets/icons/ui/10k-free/Shipping.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "work-education-1",
+      "name": "Work Education 1",
+      "filename": "Work-Education-1.svg",
+      "path": "Work-Education-1.svg",
+      "url": "/assets/icons/ui/10k-free/Work-Education-1.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    },
+    {
+      "id": "work-education",
+      "name": "Work Education",
+      "filename": "Work-Education.svg",
+      "path": "Work-Education.svg",
+      "url": "/assets/icons/ui/10k-free/Work-Education.svg",
+      "extension": "svg",
+      "category": "10k-free"
+    }
+  ]
+}

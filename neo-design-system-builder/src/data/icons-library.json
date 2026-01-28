@@ -1,0 +1,5426 @@
+{
+  "name": "Icons Library",
+  "description": "3,883 professional icons in 3 styles (line, dual, solid)",
+  "total": 3883,
+  "note": "Catalog shows first 200 icons per style. All icons available in /assets/icons/library/",
+  "styles": {
+    "line": {
+      "name": "Line Style",
+      "total": 1310,
+      "sample": [
+        {
+          "id": "a-small-set-of-zodiac-and-celestial-symbols-designed-for-themed-interfaces-lifestyle-apps-and-horoscope-related-features-",
+          "name": "A Small Set Of Zodiac And Celestial Symbols Designed For Themed Interfaces, Lifestyle Apps, And Horoscope Related Features.",
+          "filename": "A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "path": "A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "url": "/assets/icons/library/line/A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "archive",
+          "name": "Archive",
+          "filename": "Archive.svg",
+          "path": "Archive.svg",
+          "url": "/assets/icons/library/line/Archive.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "arrow",
+          "name": "Arrow",
+          "filename": "Arrow.svg",
+          "path": "Arrow.svg",
+          "url": "/assets/icons/library/line/Arrow.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "astrology",
+          "name": "Astrology",
+          "filename": "Astrology.svg",
+          "path": "Astrology.svg",
+          "url": "/assets/icons/library/line/Astrology.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "brand-icons-representing-major-platforms-and-services-optimized-for-authentication-flows-integrations-social-logins-connection-settings-and-third-party-interaction-interfaces-",
+          "name": "Brand Icons Representing Major Platforms And Services, Optimized For Authentication Flows, Integrations, Social Logins, Connection Settings, And Third Party Interaction Interfaces.",
+          "filename": "Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "path": "Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "url": "/assets/icons/library/line/Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "building",
+          "name": "Building",
+          "filename": "Building.svg",
+          "path": "Building.svg",
+          "url": "/assets/icons/library/line/Building.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "filename": "Business.svg",
+          "path": "Business.svg",
+          "url": "/assets/icons/library/line/Business.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "call",
+          "name": "Call",
+          "filename": "Call.svg",
+          "path": "Call.svg",
+          "url": "/assets/icons/library/line/Call.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "car",
+          "name": "Car",
+          "filename": "Car.svg",
+          "path": "Car.svg",
+          "url": "/assets/icons/library/line/Car.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "communication-icons-for-inboxes-chats-notifications-message-states-and-sending-or-receiving-actions-used-across-messaging-platforms-dashboards-and-support-interfaces-",
+          "name": "Communication Icons For Inboxes, Chats, Notifications, Message States, And Sending Or Receiving Actions Used Across Messaging Platforms, Dashboards, And Support Interfaces.",
+          "filename": "Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "path": "Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "url": "/assets/icons/library/line/Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "company-logos",
+          "name": "Company Logos",
+          "filename": "Company Logos.svg",
+          "path": "Company Logos.svg",
+          "url": "/assets/icons/library/line/Company Logos.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-1",
+          "name": "Component 2 1",
+          "filename": "Component 2-1.svg",
+          "path": "Component 2-1.svg",
+          "url": "/assets/icons/library/line/Component 2-1.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-10",
+          "name": "Component 2 10",
+          "filename": "Component 2-10.svg",
+          "path": "Component 2-10.svg",
+          "url": "/assets/icons/library/line/Component 2-10.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-11",
+          "name": "Component 2 11",
+          "filename": "Component 2-11.svg",
+          "path": "Component 2-11.svg",
+          "url": "/assets/icons/library/line/Component 2-11.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-12",
+          "name": "Component 2 12",
+          "filename": "Component 2-12.svg",
+          "path": "Component 2-12.svg",
+          "url": "/assets/icons/library/line/Component 2-12.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-13",
+          "name": "Component 2 13",
+          "filename": "Component 2-13.svg",
+          "path": "Component 2-13.svg",
+          "url": "/assets/icons/library/line/Component 2-13.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-14",
+          "name": "Component 2 14",
+          "filename": "Component 2-14.svg",
+          "path": "Component 2-14.svg",
+          "url": "/assets/icons/library/line/Component 2-14.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-15",
+          "name": "Component 2 15",
+          "filename": "Component 2-15.svg",
+          "path": "Component 2-15.svg",
+          "url": "/assets/icons/library/line/Component 2-15.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-16",
+          "name": "Component 2 16",
+          "filename": "Component 2-16.svg",
+          "path": "Component 2-16.svg",
+          "url": "/assets/icons/library/line/Component 2-16.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-17",
+          "name": "Component 2 17",
+          "filename": "Component 2-17.svg",
+          "path": "Component 2-17.svg",
+          "url": "/assets/icons/library/line/Component 2-17.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-18",
+          "name": "Component 2 18",
+          "filename": "Component 2-18.svg",
+          "path": "Component 2-18.svg",
+          "url": "/assets/icons/library/line/Component 2-18.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-19",
+          "name": "Component 2 19",
+          "filename": "Component 2-19.svg",
+          "path": "Component 2-19.svg",
+          "url": "/assets/icons/library/line/Component 2-19.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-2",
+          "name": "Component 2 2",
+          "filename": "Component 2-2.svg",
+          "path": "Component 2-2.svg",
+          "url": "/assets/icons/library/line/Component 2-2.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-20",
+          "name": "Component 2 20",
+          "filename": "Component 2-20.svg",
+          "path": "Component 2-20.svg",
+          "url": "/assets/icons/library/line/Component 2-20.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-21",
+          "name": "Component 2 21",
+          "filename": "Component 2-21.svg",
+          "path": "Component 2-21.svg",
+          "url": "/assets/icons/library/line/Component 2-21.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-22",
+          "name": "Component 2 22",
+          "filename": "Component 2-22.svg",
+          "path": "Component 2-22.svg",
+          "url": "/assets/icons/library/line/Component 2-22.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-23",
+          "name": "Component 2 23",
+          "filename": "Component 2-23.svg",
+          "path": "Component 2-23.svg",
+          "url": "/assets/icons/library/line/Component 2-23.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-24",
+          "name": "Component 2 24",
+          "filename": "Component 2-24.svg",
+          "path": "Component 2-24.svg",
+          "url": "/assets/icons/library/line/Component 2-24.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-25",
+          "name": "Component 2 25",
+          "filename": "Component 2-25.svg",
+          "path": "Component 2-25.svg",
+          "url": "/assets/icons/library/line/Component 2-25.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-26",
+          "name": "Component 2 26",
+          "filename": "Component 2-26.svg",
+          "path": "Component 2-26.svg",
+          "url": "/assets/icons/library/line/Component 2-26.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-27",
+          "name": "Component 2 27",
+          "filename": "Component 2-27.svg",
+          "path": "Component 2-27.svg",
+          "url": "/assets/icons/library/line/Component 2-27.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-28",
+          "name": "Component 2 28",
+          "filename": "Component 2-28.svg",
+          "path": "Component 2-28.svg",
+          "url": "/assets/icons/library/line/Component 2-28.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-3",
+          "name": "Component 2 3",
+          "filename": "Component 2-3.svg",
+          "path": "Component 2-3.svg",
+          "url": "/assets/icons/library/line/Component 2-3.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-4",
+          "name": "Component 2 4",
+          "filename": "Component 2-4.svg",
+          "path": "Component 2-4.svg",
+          "url": "/assets/icons/library/line/Component 2-4.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-5",
+          "name": "Component 2 5",
+          "filename": "Component 2-5.svg",
+          "path": "Component 2-5.svg",
+          "url": "/assets/icons/library/line/Component 2-5.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-6",
+          "name": "Component 2 6",
+          "filename": "Component 2-6.svg",
+          "path": "Component 2-6.svg",
+          "url": "/assets/icons/library/line/Component 2-6.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-7",
+          "name": "Component 2 7",
+          "filename": "Component 2-7.svg",
+          "path": "Component 2-7.svg",
+          "url": "/assets/icons/library/line/Component 2-7.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-8",
+          "name": "Component 2 8",
+          "filename": "Component 2-8.svg",
+          "path": "Component 2-8.svg",
+          "url": "/assets/icons/library/line/Component 2-8.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2-9",
+          "name": "Component 2 9",
+          "filename": "Component 2-9.svg",
+          "path": "Component 2-9.svg",
+          "url": "/assets/icons/library/line/Component 2-9.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "component-2",
+          "name": "Component 2",
+          "filename": "Component 2.svg",
+          "path": "Component 2.svg",
+          "url": "/assets/icons/library/line/Component 2.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "computers-devices-electronics",
+          "name": "Computers, Devices, Electronics",
+          "filename": "Computers, Devices, Electronics.svg",
+          "path": "Computers, Devices, Electronics.svg",
+          "url": "/assets/icons/library/line/Computers, Devices, Electronics.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "content-edit",
+          "name": "Content, Edit",
+          "filename": "Content, Edit.svg",
+          "path": "Content, Edit.svg",
+          "url": "/assets/icons/library/line/Content, Edit.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "core-ui-icons-covering-common-actions-and-states-designed-for-dashboards-apps-and-general-interface-patterns-requiring-clarity-usability-and-consistent-interaction-elements-",
+          "name": "Core UI Icons Covering Common Actions And States, Designed For Dashboards, Apps, And General Interface Patterns Requiring Clarity, Usability, And Consistent Interaction Elements.",
+          "filename": "Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "path": "Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "url": "/assets/icons/library/line/Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "crypto-currency",
+          "name": "Crypto Currency",
+          "filename": "Crypto Currency.svg",
+          "path": "Crypto Currency.svg",
+          "url": "/assets/icons/library/line/Crypto Currency.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "delivery",
+          "name": "Delivery",
+          "filename": "Delivery.svg",
+          "path": "Delivery.svg",
+          "url": "/assets/icons/library/line/Delivery.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "design-tools",
+          "name": "Design Tools",
+          "filename": "Design Tools.svg",
+          "path": "Design Tools.svg",
+          "url": "/assets/icons/library/line/Design Tools.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "device-icons-representing-hardware-electronics-peripherals-and-device-states-used-across-system-dashboards-tech-products-settings-screens-and-connectivity-interfaces-",
+          "name": "Device Icons Representing Hardware, Electronics, Peripherals, And Device States Used Across System Dashboards, Tech Products, Settings Screens, And Connectivity Interfaces.",
+          "filename": "Device icons representing hardware, electronics, peripherals, and device states used across system dashboards, tech products, settings screens, and connectivity interfaces..svg",
+          "path": "Device icons representing hardware, electronics, peripherals, and device states used across system dashboards, tech products, settings screens, and connectivity interfaces..svg",
+          "url": "/assets/icons/library/line/Device icons representing hardware, electronics, peripherals, and device states used across system dashboards, tech products, settings screens, and connectivity interfaces..svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "directional-icons-supporting-navigation-movement-sorting-pagination-hierarchical-flows-and-interface-transitions-across-modern-dashboards-applications-and-interactive-systems-",
+          "name": "Directional Icons Supporting Navigation, Movement, Sorting, Pagination, Hierarchical Flows, And Interface Transitions Across Modern Dashboards, Applications, And Interactive Systems.",
+          "filename": "Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "path": "Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "url": "/assets/icons/library/line/Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "emails-messages",
+          "name": "Emails, Messages",
+          "filename": "Emails, Messages.svg",
+          "path": "Emails, Messages.svg",
+          "url": "/assets/icons/library/line/Emails, Messages.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "essential",
+          "name": "Essential",
+          "filename": "Essential.svg",
+          "path": "Essential.svg",
+          "url": "/assets/icons/library/line/Essential.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "files",
+          "name": "Files",
+          "filename": "Files.svg",
+          "path": "Files.svg",
+          "url": "/assets/icons/library/line/Files.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "for-e-commerce-actions-carts-payments-products-and-retail-interactions-used-across-storefronts-checkout-flows-and-shopping-dashboards-",
+          "name": "For E Commerce Actions, Carts, Payments, Products, And Retail Interactions Used Across Storefronts, Checkout Flows, And Shopping Dashboards.",
+          "filename": "For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "path": "For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "url": "/assets/icons/library/line/For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-100",
+          "name": "Frame 100",
+          "filename": "Frame 100.svg",
+          "path": "Frame 100.svg",
+          "url": "/assets/icons/library/line/Frame 100.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-101",
+          "name": "Frame 101",
+          "filename": "Frame 101.svg",
+          "path": "Frame 101.svg",
+          "url": "/assets/icons/library/line/Frame 101.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-102",
+          "name": "Frame 102",
+          "filename": "Frame 102.svg",
+          "path": "Frame 102.svg",
+          "url": "/assets/icons/library/line/Frame 102.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1024",
+          "name": "Frame 1024",
+          "filename": "Frame 1024.svg",
+          "path": "Frame 1024.svg",
+          "url": "/assets/icons/library/line/Frame 1024.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1025",
+          "name": "Frame 1025",
+          "filename": "Frame 1025.svg",
+          "path": "Frame 1025.svg",
+          "url": "/assets/icons/library/line/Frame 1025.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1026",
+          "name": "Frame 1026",
+          "filename": "Frame 1026.svg",
+          "path": "Frame 1026.svg",
+          "url": "/assets/icons/library/line/Frame 1026.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1027",
+          "name": "Frame 1027",
+          "filename": "Frame 1027.svg",
+          "path": "Frame 1027.svg",
+          "url": "/assets/icons/library/line/Frame 1027.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1028",
+          "name": "Frame 1028",
+          "filename": "Frame 1028.svg",
+          "path": "Frame 1028.svg",
+          "url": "/assets/icons/library/line/Frame 1028.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1029",
+          "name": "Frame 1029",
+          "filename": "Frame 1029.svg",
+          "path": "Frame 1029.svg",
+          "url": "/assets/icons/library/line/Frame 1029.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-103",
+          "name": "Frame 103",
+          "filename": "Frame 103.svg",
+          "path": "Frame 103.svg",
+          "url": "/assets/icons/library/line/Frame 103.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1030",
+          "name": "Frame 1030",
+          "filename": "Frame 1030.svg",
+          "path": "Frame 1030.svg",
+          "url": "/assets/icons/library/line/Frame 1030.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1031",
+          "name": "Frame 1031",
+          "filename": "Frame 1031.svg",
+          "path": "Frame 1031.svg",
+          "url": "/assets/icons/library/line/Frame 1031.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1032",
+          "name": "Frame 1032",
+          "filename": "Frame 1032.svg",
+          "path": "Frame 1032.svg",
+          "url": "/assets/icons/library/line/Frame 1032.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1033",
+          "name": "Frame 1033",
+          "filename": "Frame 1033.svg",
+          "path": "Frame 1033.svg",
+          "url": "/assets/icons/library/line/Frame 1033.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1034",
+          "name": "Frame 1034",
+          "filename": "Frame 1034.svg",
+          "path": "Frame 1034.svg",
+          "url": "/assets/icons/library/line/Frame 1034.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1035",
+          "name": "Frame 1035",
+          "filename": "Frame 1035.svg",
+          "path": "Frame 1035.svg",
+          "url": "/assets/icons/library/line/Frame 1035.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1036",
+          "name": "Frame 1036",
+          "filename": "Frame 1036.svg",
+          "path": "Frame 1036.svg",
+          "url": "/assets/icons/library/line/Frame 1036.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1037",
+          "name": "Frame 1037",
+          "filename": "Frame 1037.svg",
+          "path": "Frame 1037.svg",
+          "url": "/assets/icons/library/line/Frame 1037.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1038",
+          "name": "Frame 1038",
+          "filename": "Frame 1038.svg",
+          "path": "Frame 1038.svg",
+          "url": "/assets/icons/library/line/Frame 1038.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1039",
+          "name": "Frame 1039",
+          "filename": "Frame 1039.svg",
+          "path": "Frame 1039.svg",
+          "url": "/assets/icons/library/line/Frame 1039.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-104",
+          "name": "Frame 104",
+          "filename": "Frame 104.svg",
+          "path": "Frame 104.svg",
+          "url": "/assets/icons/library/line/Frame 104.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1042",
+          "name": "Frame 1042",
+          "filename": "Frame 1042.svg",
+          "path": "Frame 1042.svg",
+          "url": "/assets/icons/library/line/Frame 1042.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1043",
+          "name": "Frame 1043",
+          "filename": "Frame 1043.svg",
+          "path": "Frame 1043.svg",
+          "url": "/assets/icons/library/line/Frame 1043.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1044",
+          "name": "Frame 1044",
+          "filename": "Frame 1044.svg",
+          "path": "Frame 1044.svg",
+          "url": "/assets/icons/library/line/Frame 1044.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1045",
+          "name": "Frame 1045",
+          "filename": "Frame 1045.svg",
+          "path": "Frame 1045.svg",
+          "url": "/assets/icons/library/line/Frame 1045.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1046",
+          "name": "Frame 1046",
+          "filename": "Frame 1046.svg",
+          "path": "Frame 1046.svg",
+          "url": "/assets/icons/library/line/Frame 1046.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1047",
+          "name": "Frame 1047",
+          "filename": "Frame 1047.svg",
+          "path": "Frame 1047.svg",
+          "url": "/assets/icons/library/line/Frame 1047.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1048",
+          "name": "Frame 1048",
+          "filename": "Frame 1048.svg",
+          "path": "Frame 1048.svg",
+          "url": "/assets/icons/library/line/Frame 1048.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1049",
+          "name": "Frame 1049",
+          "filename": "Frame 1049.svg",
+          "path": "Frame 1049.svg",
+          "url": "/assets/icons/library/line/Frame 1049.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-105",
+          "name": "Frame 105",
+          "filename": "Frame 105.svg",
+          "path": "Frame 105.svg",
+          "url": "/assets/icons/library/line/Frame 105.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1050",
+          "name": "Frame 1050",
+          "filename": "Frame 1050.svg",
+          "path": "Frame 1050.svg",
+          "url": "/assets/icons/library/line/Frame 1050.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1053",
+          "name": "Frame 1053",
+          "filename": "Frame 1053.svg",
+          "path": "Frame 1053.svg",
+          "url": "/assets/icons/library/line/Frame 1053.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1054",
+          "name": "Frame 1054",
+          "filename": "Frame 1054.svg",
+          "path": "Frame 1054.svg",
+          "url": "/assets/icons/library/line/Frame 1054.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1055",
+          "name": "Frame 1055",
+          "filename": "Frame 1055.svg",
+          "path": "Frame 1055.svg",
+          "url": "/assets/icons/library/line/Frame 1055.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1056",
+          "name": "Frame 1056",
+          "filename": "Frame 1056.svg",
+          "path": "Frame 1056.svg",
+          "url": "/assets/icons/library/line/Frame 1056.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1057",
+          "name": "Frame 1057",
+          "filename": "Frame 1057.svg",
+          "path": "Frame 1057.svg",
+          "url": "/assets/icons/library/line/Frame 1057.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1058",
+          "name": "Frame 1058",
+          "filename": "Frame 1058.svg",
+          "path": "Frame 1058.svg",
+          "url": "/assets/icons/library/line/Frame 1058.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1059",
+          "name": "Frame 1059",
+          "filename": "Frame 1059.svg",
+          "path": "Frame 1059.svg",
+          "url": "/assets/icons/library/line/Frame 1059.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-106",
+          "name": "Frame 106",
+          "filename": "Frame 106.svg",
+          "path": "Frame 106.svg",
+          "url": "/assets/icons/library/line/Frame 106.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1060",
+          "name": "Frame 1060",
+          "filename": "Frame 1060.svg",
+          "path": "Frame 1060.svg",
+          "url": "/assets/icons/library/line/Frame 1060.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1061",
+          "name": "Frame 1061",
+          "filename": "Frame 1061.svg",
+          "path": "Frame 1061.svg",
+          "url": "/assets/icons/library/line/Frame 1061.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1062",
+          "name": "Frame 1062",
+          "filename": "Frame 1062.svg",
+          "path": "Frame 1062.svg",
+          "url": "/assets/icons/library/line/Frame 1062.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1063",
+          "name": "Frame 1063",
+          "filename": "Frame 1063.svg",
+          "path": "Frame 1063.svg",
+          "url": "/assets/icons/library/line/Frame 1063.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1064",
+          "name": "Frame 1064",
+          "filename": "Frame 1064.svg",
+          "path": "Frame 1064.svg",
+          "url": "/assets/icons/library/line/Frame 1064.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1065",
+          "name": "Frame 1065",
+          "filename": "Frame 1065.svg",
+          "path": "Frame 1065.svg",
+          "url": "/assets/icons/library/line/Frame 1065.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1066",
+          "name": "Frame 1066",
+          "filename": "Frame 1066.svg",
+          "path": "Frame 1066.svg",
+          "url": "/assets/icons/library/line/Frame 1066.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1067",
+          "name": "Frame 1067",
+          "filename": "Frame 1067.svg",
+          "path": "Frame 1067.svg",
+          "url": "/assets/icons/library/line/Frame 1067.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1068",
+          "name": "Frame 1068",
+          "filename": "Frame 1068.svg",
+          "path": "Frame 1068.svg",
+          "url": "/assets/icons/library/line/Frame 1068.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1069",
+          "name": "Frame 1069",
+          "filename": "Frame 1069.svg",
+          "path": "Frame 1069.svg",
+          "url": "/assets/icons/library/line/Frame 1069.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-107",
+          "name": "Frame 107",
+          "filename": "Frame 107.svg",
+          "path": "Frame 107.svg",
+          "url": "/assets/icons/library/line/Frame 107.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1070",
+          "name": "Frame 1070",
+          "filename": "Frame 1070.svg",
+          "path": "Frame 1070.svg",
+          "url": "/assets/icons/library/line/Frame 1070.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1072",
+          "name": "Frame 1072",
+          "filename": "Frame 1072.svg",
+          "path": "Frame 1072.svg",
+          "url": "/assets/icons/library/line/Frame 1072.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1073",
+          "name": "Frame 1073",
+          "filename": "Frame 1073.svg",
+          "path": "Frame 1073.svg",
+          "url": "/assets/icons/library/line/Frame 1073.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1075",
+          "name": "Frame 1075",
+          "filename": "Frame 1075.svg",
+          "path": "Frame 1075.svg",
+          "url": "/assets/icons/library/line/Frame 1075.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1076",
+          "name": "Frame 1076",
+          "filename": "Frame 1076.svg",
+          "path": "Frame 1076.svg",
+          "url": "/assets/icons/library/line/Frame 1076.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1077",
+          "name": "Frame 1077",
+          "filename": "Frame 1077.svg",
+          "path": "Frame 1077.svg",
+          "url": "/assets/icons/library/line/Frame 1077.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1078",
+          "name": "Frame 1078",
+          "filename": "Frame 1078.svg",
+          "path": "Frame 1078.svg",
+          "url": "/assets/icons/library/line/Frame 1078.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1079",
+          "name": "Frame 1079",
+          "filename": "Frame 1079.svg",
+          "path": "Frame 1079.svg",
+          "url": "/assets/icons/library/line/Frame 1079.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-108",
+          "name": "Frame 108",
+          "filename": "Frame 108.svg",
+          "path": "Frame 108.svg",
+          "url": "/assets/icons/library/line/Frame 108.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1082",
+          "name": "Frame 1082",
+          "filename": "Frame 1082.svg",
+          "path": "Frame 1082.svg",
+          "url": "/assets/icons/library/line/Frame 1082.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1083",
+          "name": "Frame 1083",
+          "filename": "Frame 1083.svg",
+          "path": "Frame 1083.svg",
+          "url": "/assets/icons/library/line/Frame 1083.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1084",
+          "name": "Frame 1084",
+          "filename": "Frame 1084.svg",
+          "path": "Frame 1084.svg",
+          "url": "/assets/icons/library/line/Frame 1084.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1085",
+          "name": "Frame 1085",
+          "filename": "Frame 1085.svg",
+          "path": "Frame 1085.svg",
+          "url": "/assets/icons/library/line/Frame 1085.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1086",
+          "name": "Frame 1086",
+          "filename": "Frame 1086.svg",
+          "path": "Frame 1086.svg",
+          "url": "/assets/icons/library/line/Frame 1086.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1087",
+          "name": "Frame 1087",
+          "filename": "Frame 1087.svg",
+          "path": "Frame 1087.svg",
+          "url": "/assets/icons/library/line/Frame 1087.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1088",
+          "name": "Frame 1088",
+          "filename": "Frame 1088.svg",
+          "path": "Frame 1088.svg",
+          "url": "/assets/icons/library/line/Frame 1088.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-109",
+          "name": "Frame 109",
+          "filename": "Frame 109.svg",
+          "path": "Frame 109.svg",
+          "url": "/assets/icons/library/line/Frame 109.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1091",
+          "name": "Frame 1091",
+          "filename": "Frame 1091.svg",
+          "path": "Frame 1091.svg",
+          "url": "/assets/icons/library/line/Frame 1091.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1092",
+          "name": "Frame 1092",
+          "filename": "Frame 1092.svg",
+          "path": "Frame 1092.svg",
+          "url": "/assets/icons/library/line/Frame 1092.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1094",
+          "name": "Frame 1094",
+          "filename": "Frame 1094.svg",
+          "path": "Frame 1094.svg",
+          "url": "/assets/icons/library/line/Frame 1094.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1095",
+          "name": "Frame 1095",
+          "filename": "Frame 1095.svg",
+          "path": "Frame 1095.svg",
+          "url": "/assets/icons/library/line/Frame 1095.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1096",
+          "name": "Frame 1096",
+          "filename": "Frame 1096.svg",
+          "path": "Frame 1096.svg",
+          "url": "/assets/icons/library/line/Frame 1096.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1098",
+          "name": "Frame 1098",
+          "filename": "Frame 1098.svg",
+          "path": "Frame 1098.svg",
+          "url": "/assets/icons/library/line/Frame 1098.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-110",
+          "name": "Frame 110",
+          "filename": "Frame 110.svg",
+          "path": "Frame 110.svg",
+          "url": "/assets/icons/library/line/Frame 110.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1100",
+          "name": "Frame 1100",
+          "filename": "Frame 1100.svg",
+          "path": "Frame 1100.svg",
+          "url": "/assets/icons/library/line/Frame 1100.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1101",
+          "name": "Frame 1101",
+          "filename": "Frame 1101.svg",
+          "path": "Frame 1101.svg",
+          "url": "/assets/icons/library/line/Frame 1101.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1102",
+          "name": "Frame 1102",
+          "filename": "Frame 1102.svg",
+          "path": "Frame 1102.svg",
+          "url": "/assets/icons/library/line/Frame 1102.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1103",
+          "name": "Frame 1103",
+          "filename": "Frame 1103.svg",
+          "path": "Frame 1103.svg",
+          "url": "/assets/icons/library/line/Frame 1103.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1104",
+          "name": "Frame 1104",
+          "filename": "Frame 1104.svg",
+          "path": "Frame 1104.svg",
+          "url": "/assets/icons/library/line/Frame 1104.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1106",
+          "name": "Frame 1106",
+          "filename": "Frame 1106.svg",
+          "path": "Frame 1106.svg",
+          "url": "/assets/icons/library/line/Frame 1106.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1109",
+          "name": "Frame 1109",
+          "filename": "Frame 1109.svg",
+          "path": "Frame 1109.svg",
+          "url": "/assets/icons/library/line/Frame 1109.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-111",
+          "name": "Frame 111",
+          "filename": "Frame 111.svg",
+          "path": "Frame 111.svg",
+          "url": "/assets/icons/library/line/Frame 111.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1110",
+          "name": "Frame 1110",
+          "filename": "Frame 1110.svg",
+          "path": "Frame 1110.svg",
+          "url": "/assets/icons/library/line/Frame 1110.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1111",
+          "name": "Frame 1111",
+          "filename": "Frame 1111.svg",
+          "path": "Frame 1111.svg",
+          "url": "/assets/icons/library/line/Frame 1111.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1112",
+          "name": "Frame 1112",
+          "filename": "Frame 1112.svg",
+          "path": "Frame 1112.svg",
+          "url": "/assets/icons/library/line/Frame 1112.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1113",
+          "name": "Frame 1113",
+          "filename": "Frame 1113.svg",
+          "path": "Frame 1113.svg",
+          "url": "/assets/icons/library/line/Frame 1113.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1114",
+          "name": "Frame 1114",
+          "filename": "Frame 1114.svg",
+          "path": "Frame 1114.svg",
+          "url": "/assets/icons/library/line/Frame 1114.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1115",
+          "name": "Frame 1115",
+          "filename": "Frame 1115.svg",
+          "path": "Frame 1115.svg",
+          "url": "/assets/icons/library/line/Frame 1115.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1116",
+          "name": "Frame 1116",
+          "filename": "Frame 1116.svg",
+          "path": "Frame 1116.svg",
+          "url": "/assets/icons/library/line/Frame 1116.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1119",
+          "name": "Frame 1119",
+          "filename": "Frame 1119.svg",
+          "path": "Frame 1119.svg",
+          "url": "/assets/icons/library/line/Frame 1119.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-112",
+          "name": "Frame 112",
+          "filename": "Frame 112.svg",
+          "path": "Frame 112.svg",
+          "url": "/assets/icons/library/line/Frame 112.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1120",
+          "name": "Frame 1120",
+          "filename": "Frame 1120.svg",
+          "path": "Frame 1120.svg",
+          "url": "/assets/icons/library/line/Frame 1120.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1121",
+          "name": "Frame 1121",
+          "filename": "Frame 1121.svg",
+          "path": "Frame 1121.svg",
+          "url": "/assets/icons/library/line/Frame 1121.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1122",
+          "name": "Frame 1122",
+          "filename": "Frame 1122.svg",
+          "path": "Frame 1122.svg",
+          "url": "/assets/icons/library/line/Frame 1122.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1123",
+          "name": "Frame 1123",
+          "filename": "Frame 1123.svg",
+          "path": "Frame 1123.svg",
+          "url": "/assets/icons/library/line/Frame 1123.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1124",
+          "name": "Frame 1124",
+          "filename": "Frame 1124.svg",
+          "path": "Frame 1124.svg",
+          "url": "/assets/icons/library/line/Frame 1124.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1125",
+          "name": "Frame 1125",
+          "filename": "Frame 1125.svg",
+          "path": "Frame 1125.svg",
+          "url": "/assets/icons/library/line/Frame 1125.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1126",
+          "name": "Frame 1126",
+          "filename": "Frame 1126.svg",
+          "path": "Frame 1126.svg",
+          "url": "/assets/icons/library/line/Frame 1126.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1127",
+          "name": "Frame 1127",
+          "filename": "Frame 1127.svg",
+          "path": "Frame 1127.svg",
+          "url": "/assets/icons/library/line/Frame 1127.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1128",
+          "name": "Frame 1128",
+          "filename": "Frame 1128.svg",
+          "path": "Frame 1128.svg",
+          "url": "/assets/icons/library/line/Frame 1128.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1129",
+          "name": "Frame 1129",
+          "filename": "Frame 1129.svg",
+          "path": "Frame 1129.svg",
+          "url": "/assets/icons/library/line/Frame 1129.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-113",
+          "name": "Frame 113",
+          "filename": "Frame 113.svg",
+          "path": "Frame 113.svg",
+          "url": "/assets/icons/library/line/Frame 113.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1133",
+          "name": "Frame 1133",
+          "filename": "Frame 1133.svg",
+          "path": "Frame 1133.svg",
+          "url": "/assets/icons/library/line/Frame 1133.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1134",
+          "name": "Frame 1134",
+          "filename": "Frame 1134.svg",
+          "path": "Frame 1134.svg",
+          "url": "/assets/icons/library/line/Frame 1134.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1135",
+          "name": "Frame 1135",
+          "filename": "Frame 1135.svg",
+          "path": "Frame 1135.svg",
+          "url": "/assets/icons/library/line/Frame 1135.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1136",
+          "name": "Frame 1136",
+          "filename": "Frame 1136.svg",
+          "path": "Frame 1136.svg",
+          "url": "/assets/icons/library/line/Frame 1136.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1137",
+          "name": "Frame 1137",
+          "filename": "Frame 1137.svg",
+          "path": "Frame 1137.svg",
+          "url": "/assets/icons/library/line/Frame 1137.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1138",
+          "name": "Frame 1138",
+          "filename": "Frame 1138.svg",
+          "path": "Frame 1138.svg",
+          "url": "/assets/icons/library/line/Frame 1138.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-114",
+          "name": "Frame 114",
+          "filename": "Frame 114.svg",
+          "path": "Frame 114.svg",
+          "url": "/assets/icons/library/line/Frame 114.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1141",
+          "name": "Frame 1141",
+          "filename": "Frame 1141.svg",
+          "path": "Frame 1141.svg",
+          "url": "/assets/icons/library/line/Frame 1141.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1142",
+          "name": "Frame 1142",
+          "filename": "Frame 1142.svg",
+          "path": "Frame 1142.svg",
+          "url": "/assets/icons/library/line/Frame 1142.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1143",
+          "name": "Frame 1143",
+          "filename": "Frame 1143.svg",
+          "path": "Frame 1143.svg",
+          "url": "/assets/icons/library/line/Frame 1143.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1144",
+          "name": "Frame 1144",
+          "filename": "Frame 1144.svg",
+          "path": "Frame 1144.svg",
+          "url": "/assets/icons/library/line/Frame 1144.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1145",
+          "name": "Frame 1145",
+          "filename": "Frame 1145.svg",
+          "path": "Frame 1145.svg",
+          "url": "/assets/icons/library/line/Frame 1145.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1146",
+          "name": "Frame 1146",
+          "filename": "Frame 1146.svg",
+          "path": "Frame 1146.svg",
+          "url": "/assets/icons/library/line/Frame 1146.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1147",
+          "name": "Frame 1147",
+          "filename": "Frame 1147.svg",
+          "path": "Frame 1147.svg",
+          "url": "/assets/icons/library/line/Frame 1147.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1148",
+          "name": "Frame 1148",
+          "filename": "Frame 1148.svg",
+          "path": "Frame 1148.svg",
+          "url": "/assets/icons/library/line/Frame 1148.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1149",
+          "name": "Frame 1149",
+          "filename": "Frame 1149.svg",
+          "path": "Frame 1149.svg",
+          "url": "/assets/icons/library/line/Frame 1149.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-115",
+          "name": "Frame 115",
+          "filename": "Frame 115.svg",
+          "path": "Frame 115.svg",
+          "url": "/assets/icons/library/line/Frame 115.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1150",
+          "name": "Frame 1150",
+          "filename": "Frame 1150.svg",
+          "path": "Frame 1150.svg",
+          "url": "/assets/icons/library/line/Frame 1150.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1151",
+          "name": "Frame 1151",
+          "filename": "Frame 1151.svg",
+          "path": "Frame 1151.svg",
+          "url": "/assets/icons/library/line/Frame 1151.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1152",
+          "name": "Frame 1152",
+          "filename": "Frame 1152.svg",
+          "path": "Frame 1152.svg",
+          "url": "/assets/icons/library/line/Frame 1152.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1155",
+          "name": "Frame 1155",
+          "filename": "Frame 1155.svg",
+          "path": "Frame 1155.svg",
+          "url": "/assets/icons/library/line/Frame 1155.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1156",
+          "name": "Frame 1156",
+          "filename": "Frame 1156.svg",
+          "path": "Frame 1156.svg",
+          "url": "/assets/icons/library/line/Frame 1156.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1157",
+          "name": "Frame 1157",
+          "filename": "Frame 1157.svg",
+          "path": "Frame 1157.svg",
+          "url": "/assets/icons/library/line/Frame 1157.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1158",
+          "name": "Frame 1158",
+          "filename": "Frame 1158.svg",
+          "path": "Frame 1158.svg",
+          "url": "/assets/icons/library/line/Frame 1158.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1159",
+          "name": "Frame 1159",
+          "filename": "Frame 1159.svg",
+          "path": "Frame 1159.svg",
+          "url": "/assets/icons/library/line/Frame 1159.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-116",
+          "name": "Frame 116",
+          "filename": "Frame 116.svg",
+          "path": "Frame 116.svg",
+          "url": "/assets/icons/library/line/Frame 116.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1160",
+          "name": "Frame 1160",
+          "filename": "Frame 1160.svg",
+          "path": "Frame 1160.svg",
+          "url": "/assets/icons/library/line/Frame 1160.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1161",
+          "name": "Frame 1161",
+          "filename": "Frame 1161.svg",
+          "path": "Frame 1161.svg",
+          "url": "/assets/icons/library/line/Frame 1161.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1162",
+          "name": "Frame 1162",
+          "filename": "Frame 1162.svg",
+          "path": "Frame 1162.svg",
+          "url": "/assets/icons/library/line/Frame 1162.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1163",
+          "name": "Frame 1163",
+          "filename": "Frame 1163.svg",
+          "path": "Frame 1163.svg",
+          "url": "/assets/icons/library/line/Frame 1163.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1164",
+          "name": "Frame 1164",
+          "filename": "Frame 1164.svg",
+          "path": "Frame 1164.svg",
+          "url": "/assets/icons/library/line/Frame 1164.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1165",
+          "name": "Frame 1165",
+          "filename": "Frame 1165.svg",
+          "path": "Frame 1165.svg",
+          "url": "/assets/icons/library/line/Frame 1165.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1166",
+          "name": "Frame 1166",
+          "filename": "Frame 1166.svg",
+          "path": "Frame 1166.svg",
+          "url": "/assets/icons/library/line/Frame 1166.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1167",
+          "name": "Frame 1167",
+          "filename": "Frame 1167.svg",
+          "path": "Frame 1167.svg",
+          "url": "/assets/icons/library/line/Frame 1167.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1168",
+          "name": "Frame 1168",
+          "filename": "Frame 1168.svg",
+          "path": "Frame 1168.svg",
+          "url": "/assets/icons/library/line/Frame 1168.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1169",
+          "name": "Frame 1169",
+          "filename": "Frame 1169.svg",
+          "path": "Frame 1169.svg",
+          "url": "/assets/icons/library/line/Frame 1169.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-117",
+          "name": "Frame 117",
+          "filename": "Frame 117.svg",
+          "path": "Frame 117.svg",
+          "url": "/assets/icons/library/line/Frame 117.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1170",
+          "name": "Frame 1170",
+          "filename": "Frame 1170.svg",
+          "path": "Frame 1170.svg",
+          "url": "/assets/icons/library/line/Frame 1170.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1171",
+          "name": "Frame 1171",
+          "filename": "Frame 1171.svg",
+          "path": "Frame 1171.svg",
+          "url": "/assets/icons/library/line/Frame 1171.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1172",
+          "name": "Frame 1172",
+          "filename": "Frame 1172.svg",
+          "path": "Frame 1172.svg",
+          "url": "/assets/icons/library/line/Frame 1172.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1173",
+          "name": "Frame 1173",
+          "filename": "Frame 1173.svg",
+          "path": "Frame 1173.svg",
+          "url": "/assets/icons/library/line/Frame 1173.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1174",
+          "name": "Frame 1174",
+          "filename": "Frame 1174.svg",
+          "path": "Frame 1174.svg",
+          "url": "/assets/icons/library/line/Frame 1174.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1175",
+          "name": "Frame 1175",
+          "filename": "Frame 1175.svg",
+          "path": "Frame 1175.svg",
+          "url": "/assets/icons/library/line/Frame 1175.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1176",
+          "name": "Frame 1176",
+          "filename": "Frame 1176.svg",
+          "path": "Frame 1176.svg",
+          "url": "/assets/icons/library/line/Frame 1176.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1177",
+          "name": "Frame 1177",
+          "filename": "Frame 1177.svg",
+          "path": "Frame 1177.svg",
+          "url": "/assets/icons/library/line/Frame 1177.svg",
+          "extension": "svg",
+          "category": "line"
+        },
+        {
+          "id": "frame-1178",
+          "name": "Frame 1178",
+          "filename": "Frame 1178.svg",
+          "path": "Frame 1178.svg",
+          "url": "/assets/icons/library/line/Frame 1178.svg",
+          "extension": "svg",
+          "category": "line"
+        }
+      ]
+    },
+    "dual": {
+      "name": "Dual Tone",
+      "total": 1295,
+      "sample": [
+        {
+          "id": "a-small-set-of-zodiac-and-celestial-symbols-designed-for-themed-interfaces-lifestyle-apps-and-horoscope-related-features-",
+          "name": "A Small Set Of Zodiac And Celestial Symbols Designed For Themed Interfaces, Lifestyle Apps, And Horoscope Related Features.",
+          "filename": "A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "path": "A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "url": "/assets/icons/library/dual/A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "archive",
+          "name": "Archive",
+          "filename": "Archive.svg",
+          "path": "Archive.svg",
+          "url": "/assets/icons/library/dual/Archive.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "arrow",
+          "name": "Arrow",
+          "filename": "Arrow.svg",
+          "path": "Arrow.svg",
+          "url": "/assets/icons/library/dual/Arrow.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "astrology",
+          "name": "Astrology",
+          "filename": "Astrology.svg",
+          "path": "Astrology.svg",
+          "url": "/assets/icons/library/dual/Astrology.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "brand-icons-representing-major-platforms-and-services-optimized-for-authentication-flows-integrations-social-logins-connection-settings-and-third-party-interaction-interfaces-",
+          "name": "Brand Icons Representing Major Platforms And Services, Optimized For Authentication Flows, Integrations, Social Logins, Connection Settings, And Third Party Interaction Interfaces.",
+          "filename": "Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "path": "Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "url": "/assets/icons/library/dual/Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "building",
+          "name": "Building",
+          "filename": "Building.svg",
+          "path": "Building.svg",
+          "url": "/assets/icons/library/dual/Building.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "filename": "Business.svg",
+          "path": "Business.svg",
+          "url": "/assets/icons/library/dual/Business.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "call",
+          "name": "Call",
+          "filename": "Call.svg",
+          "path": "Call.svg",
+          "url": "/assets/icons/library/dual/Call.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "candle-2",
+          "name": "Candle 2",
+          "filename": "Candle-2.svg",
+          "path": "Candle-2.svg",
+          "url": "/assets/icons/library/dual/Candle-2.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "candle",
+          "name": "Candle",
+          "filename": "Candle.svg",
+          "path": "Candle.svg",
+          "url": "/assets/icons/library/dual/Candle.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "car",
+          "name": "Car",
+          "filename": "Car.svg",
+          "path": "Car.svg",
+          "url": "/assets/icons/library/dual/Car.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "ui-icons-1",
+          "name": "UI Icons 1",
+          "filename": "UI Icons-1.svg",
+          "path": "Category/UI Icons-1.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-1.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-10",
+          "name": "UI Icons 10",
+          "filename": "UI Icons-10.svg",
+          "path": "Category/UI Icons-10.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-10.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-11",
+          "name": "UI Icons 11",
+          "filename": "UI Icons-11.svg",
+          "path": "Category/UI Icons-11.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-11.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-12",
+          "name": "UI Icons 12",
+          "filename": "UI Icons-12.svg",
+          "path": "Category/UI Icons-12.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-12.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-13",
+          "name": "UI Icons 13",
+          "filename": "UI Icons-13.svg",
+          "path": "Category/UI Icons-13.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-13.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-14",
+          "name": "UI Icons 14",
+          "filename": "UI Icons-14.svg",
+          "path": "Category/UI Icons-14.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-14.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-15",
+          "name": "UI Icons 15",
+          "filename": "UI Icons-15.svg",
+          "path": "Category/UI Icons-15.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-15.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-16",
+          "name": "UI Icons 16",
+          "filename": "UI Icons-16.svg",
+          "path": "Category/UI Icons-16.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-16.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-2",
+          "name": "UI Icons 2",
+          "filename": "UI Icons-2.svg",
+          "path": "Category/UI Icons-2.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-2.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-3",
+          "name": "UI Icons 3",
+          "filename": "UI Icons-3.svg",
+          "path": "Category/UI Icons-3.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-3.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-4",
+          "name": "UI Icons 4",
+          "filename": "UI Icons-4.svg",
+          "path": "Category/UI Icons-4.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-4.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-5",
+          "name": "UI Icons 5",
+          "filename": "UI Icons-5.svg",
+          "path": "Category/UI Icons-5.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-5.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-6",
+          "name": "UI Icons 6",
+          "filename": "UI Icons-6.svg",
+          "path": "Category/UI Icons-6.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-6.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-7",
+          "name": "UI Icons 7",
+          "filename": "UI Icons-7.svg",
+          "path": "Category/UI Icons-7.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-7.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-8",
+          "name": "UI Icons 8",
+          "filename": "UI Icons-8.svg",
+          "path": "Category/UI Icons-8.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-8.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons-9",
+          "name": "UI Icons 9",
+          "filename": "UI Icons-9.svg",
+          "path": "Category/UI Icons-9.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons-9.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "ui-icons",
+          "name": "UI Icons",
+          "filename": "UI Icons.svg",
+          "path": "Category/UI Icons.svg",
+          "url": "/assets/icons/library/dual/Category/UI Icons.svg",
+          "extension": "svg",
+          "category": "Category"
+        },
+        {
+          "id": "category-2",
+          "name": "Category 2",
+          "filename": "Category-2.svg",
+          "path": "Category-2.svg",
+          "url": "/assets/icons/library/dual/Category-2.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "filename": "Category.svg",
+          "path": "Category.svg",
+          "url": "/assets/icons/library/dual/Category.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "communication-icons-for-inboxes-chats-notifications-message-states-and-sending-or-receiving-actions-used-across-messaging-platforms-dashboards-and-support-interfaces-",
+          "name": "Communication Icons For Inboxes, Chats, Notifications, Message States, And Sending Or Receiving Actions Used Across Messaging Platforms, Dashboards, And Support Interfaces.",
+          "filename": "Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "path": "Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "url": "/assets/icons/library/dual/Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "company-logos",
+          "name": "Company Logos",
+          "filename": "Company Logos.svg",
+          "path": "Company Logos.svg",
+          "url": "/assets/icons/library/dual/Company Logos.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-1",
+          "name": "Component 1 1",
+          "filename": "Component 1-1.svg",
+          "path": "Component 1-1.svg",
+          "url": "/assets/icons/library/dual/Component 1-1.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-10",
+          "name": "Component 1 10",
+          "filename": "Component 1-10.svg",
+          "path": "Component 1-10.svg",
+          "url": "/assets/icons/library/dual/Component 1-10.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-11",
+          "name": "Component 1 11",
+          "filename": "Component 1-11.svg",
+          "path": "Component 1-11.svg",
+          "url": "/assets/icons/library/dual/Component 1-11.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-12",
+          "name": "Component 1 12",
+          "filename": "Component 1-12.svg",
+          "path": "Component 1-12.svg",
+          "url": "/assets/icons/library/dual/Component 1-12.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-13",
+          "name": "Component 1 13",
+          "filename": "Component 1-13.svg",
+          "path": "Component 1-13.svg",
+          "url": "/assets/icons/library/dual/Component 1-13.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-14",
+          "name": "Component 1 14",
+          "filename": "Component 1-14.svg",
+          "path": "Component 1-14.svg",
+          "url": "/assets/icons/library/dual/Component 1-14.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-15",
+          "name": "Component 1 15",
+          "filename": "Component 1-15.svg",
+          "path": "Component 1-15.svg",
+          "url": "/assets/icons/library/dual/Component 1-15.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-16",
+          "name": "Component 1 16",
+          "filename": "Component 1-16.svg",
+          "path": "Component 1-16.svg",
+          "url": "/assets/icons/library/dual/Component 1-16.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-17",
+          "name": "Component 1 17",
+          "filename": "Component 1-17.svg",
+          "path": "Component 1-17.svg",
+          "url": "/assets/icons/library/dual/Component 1-17.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-18",
+          "name": "Component 1 18",
+          "filename": "Component 1-18.svg",
+          "path": "Component 1-18.svg",
+          "url": "/assets/icons/library/dual/Component 1-18.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-19",
+          "name": "Component 1 19",
+          "filename": "Component 1-19.svg",
+          "path": "Component 1-19.svg",
+          "url": "/assets/icons/library/dual/Component 1-19.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-2",
+          "name": "Component 1 2",
+          "filename": "Component 1-2.svg",
+          "path": "Component 1-2.svg",
+          "url": "/assets/icons/library/dual/Component 1-2.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-20",
+          "name": "Component 1 20",
+          "filename": "Component 1-20.svg",
+          "path": "Component 1-20.svg",
+          "url": "/assets/icons/library/dual/Component 1-20.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-21",
+          "name": "Component 1 21",
+          "filename": "Component 1-21.svg",
+          "path": "Component 1-21.svg",
+          "url": "/assets/icons/library/dual/Component 1-21.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-22",
+          "name": "Component 1 22",
+          "filename": "Component 1-22.svg",
+          "path": "Component 1-22.svg",
+          "url": "/assets/icons/library/dual/Component 1-22.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-23",
+          "name": "Component 1 23",
+          "filename": "Component 1-23.svg",
+          "path": "Component 1-23.svg",
+          "url": "/assets/icons/library/dual/Component 1-23.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-24",
+          "name": "Component 1 24",
+          "filename": "Component 1-24.svg",
+          "path": "Component 1-24.svg",
+          "url": "/assets/icons/library/dual/Component 1-24.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-25",
+          "name": "Component 1 25",
+          "filename": "Component 1-25.svg",
+          "path": "Component 1-25.svg",
+          "url": "/assets/icons/library/dual/Component 1-25.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-26",
+          "name": "Component 1 26",
+          "filename": "Component 1-26.svg",
+          "path": "Component 1-26.svg",
+          "url": "/assets/icons/library/dual/Component 1-26.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-27",
+          "name": "Component 1 27",
+          "filename": "Component 1-27.svg",
+          "path": "Component 1-27.svg",
+          "url": "/assets/icons/library/dual/Component 1-27.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-28",
+          "name": "Component 1 28",
+          "filename": "Component 1-28.svg",
+          "path": "Component 1-28.svg",
+          "url": "/assets/icons/library/dual/Component 1-28.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-29",
+          "name": "Component 1 29",
+          "filename": "Component 1-29.svg",
+          "path": "Component 1-29.svg",
+          "url": "/assets/icons/library/dual/Component 1-29.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-3",
+          "name": "Component 1 3",
+          "filename": "Component 1-3.svg",
+          "path": "Component 1-3.svg",
+          "url": "/assets/icons/library/dual/Component 1-3.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-30",
+          "name": "Component 1 30",
+          "filename": "Component 1-30.svg",
+          "path": "Component 1-30.svg",
+          "url": "/assets/icons/library/dual/Component 1-30.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-31",
+          "name": "Component 1 31",
+          "filename": "Component 1-31.svg",
+          "path": "Component 1-31.svg",
+          "url": "/assets/icons/library/dual/Component 1-31.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-4",
+          "name": "Component 1 4",
+          "filename": "Component 1-4.svg",
+          "path": "Component 1-4.svg",
+          "url": "/assets/icons/library/dual/Component 1-4.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-5",
+          "name": "Component 1 5",
+          "filename": "Component 1-5.svg",
+          "path": "Component 1-5.svg",
+          "url": "/assets/icons/library/dual/Component 1-5.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-6",
+          "name": "Component 1 6",
+          "filename": "Component 1-6.svg",
+          "path": "Component 1-6.svg",
+          "url": "/assets/icons/library/dual/Component 1-6.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-7",
+          "name": "Component 1 7",
+          "filename": "Component 1-7.svg",
+          "path": "Component 1-7.svg",
+          "url": "/assets/icons/library/dual/Component 1-7.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-8",
+          "name": "Component 1 8",
+          "filename": "Component 1-8.svg",
+          "path": "Component 1-8.svg",
+          "url": "/assets/icons/library/dual/Component 1-8.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1-9",
+          "name": "Component 1 9",
+          "filename": "Component 1-9.svg",
+          "path": "Component 1-9.svg",
+          "url": "/assets/icons/library/dual/Component 1-9.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "component-1",
+          "name": "Component 1",
+          "filename": "Component 1.svg",
+          "path": "Component 1.svg",
+          "url": "/assets/icons/library/dual/Component 1.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "computers-devices-electronics",
+          "name": "Computers, Devices, Electronics",
+          "filename": "Computers, Devices, Electronics.svg",
+          "path": "Computers, Devices, Electronics.svg",
+          "url": "/assets/icons/library/dual/Computers, Devices, Electronics.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "content-edit",
+          "name": "Content, Edit",
+          "filename": "Content, Edit.svg",
+          "path": "Content, Edit.svg",
+          "url": "/assets/icons/library/dual/Content, Edit.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "core-ui-icons-covering-common-actions-and-states-designed-for-dashboards-apps-and-general-interface-patterns-requiring-clarity-usability-and-consistent-interaction-elements-",
+          "name": "Core UI Icons Covering Common Actions And States, Designed For Dashboards, Apps, And General Interface Patterns Requiring Clarity, Usability, And Consistent Interaction Elements.",
+          "filename": "Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "path": "Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "url": "/assets/icons/library/dual/Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "crypto-currency",
+          "name": "Crypto Currency",
+          "filename": "Crypto Currency.svg",
+          "path": "Crypto Currency.svg",
+          "url": "/assets/icons/library/dual/Crypto Currency.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "delivery",
+          "name": "Delivery",
+          "filename": "Delivery.svg",
+          "path": "Delivery.svg",
+          "url": "/assets/icons/library/dual/Delivery.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "design-tools",
+          "name": "Design Tools",
+          "filename": "Design Tools.svg",
+          "path": "Design Tools.svg",
+          "url": "/assets/icons/library/dual/Design Tools.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "device-icons-representing-hardware-electronics-peripherals-and-device-states-used-across-system-dashboards-tech-products-settings-screens-and-connectivity-interfaces-",
+          "name": "Device Icons Representing Hardware, Electronics, Peripherals, And Device States Used Across System Dashboards, Tech Products, Settings Screens, And Connectivity Interfaces.",
+          "filename": "Device icons representing hardware, electronics, peripherals, and device states used across system dashboards, tech products, settings screens, and connectivity interfaces..svg",
+          "path": "Device icons representing hardware, electronics, peripherals, and device states used across system dashboards, tech products, settings screens, and connectivity interfaces..svg",
+          "url": "/assets/icons/library/dual/Device icons representing hardware, electronics, peripherals, and device states used across system dashboards, tech products, settings screens, and connectivity interfaces..svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "directional-icons-supporting-navigation-movement-sorting-pagination-hierarchical-flows-and-interface-transitions-across-modern-dashboards-applications-and-interactive-systems-",
+          "name": "Directional Icons Supporting Navigation, Movement, Sorting, Pagination, Hierarchical Flows, And Interface Transitions Across Modern Dashboards, Applications, And Interactive Systems.",
+          "filename": "Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "path": "Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "url": "/assets/icons/library/dual/Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "emails-messages",
+          "name": "Emails, Messages",
+          "filename": "Emails, Messages.svg",
+          "path": "Emails, Messages.svg",
+          "url": "/assets/icons/library/dual/Emails, Messages.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "essential",
+          "name": "Essential",
+          "filename": "Essential.svg",
+          "path": "Essential.svg",
+          "url": "/assets/icons/library/dual/Essential.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "files",
+          "name": "Files",
+          "filename": "Files.svg",
+          "path": "Files.svg",
+          "url": "/assets/icons/library/dual/Files.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "for-e-commerce-actions-carts-payments-products-and-retail-interactions-used-across-storefronts-checkout-flows-and-shopping-dashboards-",
+          "name": "For E Commerce Actions, Carts, Payments, Products, And Retail Interactions Used Across Storefronts, Checkout Flows, And Shopping Dashboards.",
+          "filename": "For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "path": "For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "url": "/assets/icons/library/dual/For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-100",
+          "name": "Frame 100",
+          "filename": "Frame 100.svg",
+          "path": "Frame 100.svg",
+          "url": "/assets/icons/library/dual/Frame 100.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-101",
+          "name": "Frame 101",
+          "filename": "Frame 101.svg",
+          "path": "Frame 101.svg",
+          "url": "/assets/icons/library/dual/Frame 101.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-102",
+          "name": "Frame 102",
+          "filename": "Frame 102.svg",
+          "path": "Frame 102.svg",
+          "url": "/assets/icons/library/dual/Frame 102.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1024",
+          "name": "Frame 1024",
+          "filename": "Frame 1024.svg",
+          "path": "Frame 1024.svg",
+          "url": "/assets/icons/library/dual/Frame 1024.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1025",
+          "name": "Frame 1025",
+          "filename": "Frame 1025.svg",
+          "path": "Frame 1025.svg",
+          "url": "/assets/icons/library/dual/Frame 1025.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1026",
+          "name": "Frame 1026",
+          "filename": "Frame 1026.svg",
+          "path": "Frame 1026.svg",
+          "url": "/assets/icons/library/dual/Frame 1026.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1027",
+          "name": "Frame 1027",
+          "filename": "Frame 1027.svg",
+          "path": "Frame 1027.svg",
+          "url": "/assets/icons/library/dual/Frame 1027.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1028",
+          "name": "Frame 1028",
+          "filename": "Frame 1028.svg",
+          "path": "Frame 1028.svg",
+          "url": "/assets/icons/library/dual/Frame 1028.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1029",
+          "name": "Frame 1029",
+          "filename": "Frame 1029.svg",
+          "path": "Frame 1029.svg",
+          "url": "/assets/icons/library/dual/Frame 1029.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-103",
+          "name": "Frame 103",
+          "filename": "Frame 103.svg",
+          "path": "Frame 103.svg",
+          "url": "/assets/icons/library/dual/Frame 103.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1030",
+          "name": "Frame 1030",
+          "filename": "Frame 1030.svg",
+          "path": "Frame 1030.svg",
+          "url": "/assets/icons/library/dual/Frame 1030.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1031",
+          "name": "Frame 1031",
+          "filename": "Frame 1031.svg",
+          "path": "Frame 1031.svg",
+          "url": "/assets/icons/library/dual/Frame 1031.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1032",
+          "name": "Frame 1032",
+          "filename": "Frame 1032.svg",
+          "path": "Frame 1032.svg",
+          "url": "/assets/icons/library/dual/Frame 1032.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1033",
+          "name": "Frame 1033",
+          "filename": "Frame 1033.svg",
+          "path": "Frame 1033.svg",
+          "url": "/assets/icons/library/dual/Frame 1033.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1034",
+          "name": "Frame 1034",
+          "filename": "Frame 1034.svg",
+          "path": "Frame 1034.svg",
+          "url": "/assets/icons/library/dual/Frame 1034.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1035",
+          "name": "Frame 1035",
+          "filename": "Frame 1035.svg",
+          "path": "Frame 1035.svg",
+          "url": "/assets/icons/library/dual/Frame 1035.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1036",
+          "name": "Frame 1036",
+          "filename": "Frame 1036.svg",
+          "path": "Frame 1036.svg",
+          "url": "/assets/icons/library/dual/Frame 1036.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1037",
+          "name": "Frame 1037",
+          "filename": "Frame 1037.svg",
+          "path": "Frame 1037.svg",
+          "url": "/assets/icons/library/dual/Frame 1037.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1038",
+          "name": "Frame 1038",
+          "filename": "Frame 1038.svg",
+          "path": "Frame 1038.svg",
+          "url": "/assets/icons/library/dual/Frame 1038.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1039",
+          "name": "Frame 1039",
+          "filename": "Frame 1039.svg",
+          "path": "Frame 1039.svg",
+          "url": "/assets/icons/library/dual/Frame 1039.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-104",
+          "name": "Frame 104",
+          "filename": "Frame 104.svg",
+          "path": "Frame 104.svg",
+          "url": "/assets/icons/library/dual/Frame 104.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1042",
+          "name": "Frame 1042",
+          "filename": "Frame 1042.svg",
+          "path": "Frame 1042.svg",
+          "url": "/assets/icons/library/dual/Frame 1042.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1043",
+          "name": "Frame 1043",
+          "filename": "Frame 1043.svg",
+          "path": "Frame 1043.svg",
+          "url": "/assets/icons/library/dual/Frame 1043.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1044",
+          "name": "Frame 1044",
+          "filename": "Frame 1044.svg",
+          "path": "Frame 1044.svg",
+          "url": "/assets/icons/library/dual/Frame 1044.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1045",
+          "name": "Frame 1045",
+          "filename": "Frame 1045.svg",
+          "path": "Frame 1045.svg",
+          "url": "/assets/icons/library/dual/Frame 1045.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1046",
+          "name": "Frame 1046",
+          "filename": "Frame 1046.svg",
+          "path": "Frame 1046.svg",
+          "url": "/assets/icons/library/dual/Frame 1046.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1047",
+          "name": "Frame 1047",
+          "filename": "Frame 1047.svg",
+          "path": "Frame 1047.svg",
+          "url": "/assets/icons/library/dual/Frame 1047.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1048",
+          "name": "Frame 1048",
+          "filename": "Frame 1048.svg",
+          "path": "Frame 1048.svg",
+          "url": "/assets/icons/library/dual/Frame 1048.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1049",
+          "name": "Frame 1049",
+          "filename": "Frame 1049.svg",
+          "path": "Frame 1049.svg",
+          "url": "/assets/icons/library/dual/Frame 1049.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-105",
+          "name": "Frame 105",
+          "filename": "Frame 105.svg",
+          "path": "Frame 105.svg",
+          "url": "/assets/icons/library/dual/Frame 105.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1050",
+          "name": "Frame 1050",
+          "filename": "Frame 1050.svg",
+          "path": "Frame 1050.svg",
+          "url": "/assets/icons/library/dual/Frame 1050.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1053",
+          "name": "Frame 1053",
+          "filename": "Frame 1053.svg",
+          "path": "Frame 1053.svg",
+          "url": "/assets/icons/library/dual/Frame 1053.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1054",
+          "name": "Frame 1054",
+          "filename": "Frame 1054.svg",
+          "path": "Frame 1054.svg",
+          "url": "/assets/icons/library/dual/Frame 1054.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1055",
+          "name": "Frame 1055",
+          "filename": "Frame 1055.svg",
+          "path": "Frame 1055.svg",
+          "url": "/assets/icons/library/dual/Frame 1055.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1056",
+          "name": "Frame 1056",
+          "filename": "Frame 1056.svg",
+          "path": "Frame 1056.svg",
+          "url": "/assets/icons/library/dual/Frame 1056.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1057",
+          "name": "Frame 1057",
+          "filename": "Frame 1057.svg",
+          "path": "Frame 1057.svg",
+          "url": "/assets/icons/library/dual/Frame 1057.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1058",
+          "name": "Frame 1058",
+          "filename": "Frame 1058.svg",
+          "path": "Frame 1058.svg",
+          "url": "/assets/icons/library/dual/Frame 1058.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1059",
+          "name": "Frame 1059",
+          "filename": "Frame 1059.svg",
+          "path": "Frame 1059.svg",
+          "url": "/assets/icons/library/dual/Frame 1059.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-106",
+          "name": "Frame 106",
+          "filename": "Frame 106.svg",
+          "path": "Frame 106.svg",
+          "url": "/assets/icons/library/dual/Frame 106.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1060",
+          "name": "Frame 1060",
+          "filename": "Frame 1060.svg",
+          "path": "Frame 1060.svg",
+          "url": "/assets/icons/library/dual/Frame 1060.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1061",
+          "name": "Frame 1061",
+          "filename": "Frame 1061.svg",
+          "path": "Frame 1061.svg",
+          "url": "/assets/icons/library/dual/Frame 1061.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1062",
+          "name": "Frame 1062",
+          "filename": "Frame 1062.svg",
+          "path": "Frame 1062.svg",
+          "url": "/assets/icons/library/dual/Frame 1062.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1063",
+          "name": "Frame 1063",
+          "filename": "Frame 1063.svg",
+          "path": "Frame 1063.svg",
+          "url": "/assets/icons/library/dual/Frame 1063.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1064",
+          "name": "Frame 1064",
+          "filename": "Frame 1064.svg",
+          "path": "Frame 1064.svg",
+          "url": "/assets/icons/library/dual/Frame 1064.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1065",
+          "name": "Frame 1065",
+          "filename": "Frame 1065.svg",
+          "path": "Frame 1065.svg",
+          "url": "/assets/icons/library/dual/Frame 1065.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1066",
+          "name": "Frame 1066",
+          "filename": "Frame 1066.svg",
+          "path": "Frame 1066.svg",
+          "url": "/assets/icons/library/dual/Frame 1066.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1067",
+          "name": "Frame 1067",
+          "filename": "Frame 1067.svg",
+          "path": "Frame 1067.svg",
+          "url": "/assets/icons/library/dual/Frame 1067.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1068",
+          "name": "Frame 1068",
+          "filename": "Frame 1068.svg",
+          "path": "Frame 1068.svg",
+          "url": "/assets/icons/library/dual/Frame 1068.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1069",
+          "name": "Frame 1069",
+          "filename": "Frame 1069.svg",
+          "path": "Frame 1069.svg",
+          "url": "/assets/icons/library/dual/Frame 1069.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-107",
+          "name": "Frame 107",
+          "filename": "Frame 107.svg",
+          "path": "Frame 107.svg",
+          "url": "/assets/icons/library/dual/Frame 107.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1070",
+          "name": "Frame 1070",
+          "filename": "Frame 1070.svg",
+          "path": "Frame 1070.svg",
+          "url": "/assets/icons/library/dual/Frame 1070.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1072",
+          "name": "Frame 1072",
+          "filename": "Frame 1072.svg",
+          "path": "Frame 1072.svg",
+          "url": "/assets/icons/library/dual/Frame 1072.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1073",
+          "name": "Frame 1073",
+          "filename": "Frame 1073.svg",
+          "path": "Frame 1073.svg",
+          "url": "/assets/icons/library/dual/Frame 1073.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1075",
+          "name": "Frame 1075",
+          "filename": "Frame 1075.svg",
+          "path": "Frame 1075.svg",
+          "url": "/assets/icons/library/dual/Frame 1075.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1076",
+          "name": "Frame 1076",
+          "filename": "Frame 1076.svg",
+          "path": "Frame 1076.svg",
+          "url": "/assets/icons/library/dual/Frame 1076.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1077",
+          "name": "Frame 1077",
+          "filename": "Frame 1077.svg",
+          "path": "Frame 1077.svg",
+          "url": "/assets/icons/library/dual/Frame 1077.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1078",
+          "name": "Frame 1078",
+          "filename": "Frame 1078.svg",
+          "path": "Frame 1078.svg",
+          "url": "/assets/icons/library/dual/Frame 1078.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1079",
+          "name": "Frame 1079",
+          "filename": "Frame 1079.svg",
+          "path": "Frame 1079.svg",
+          "url": "/assets/icons/library/dual/Frame 1079.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-108",
+          "name": "Frame 108",
+          "filename": "Frame 108.svg",
+          "path": "Frame 108.svg",
+          "url": "/assets/icons/library/dual/Frame 108.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1082",
+          "name": "Frame 1082",
+          "filename": "Frame 1082.svg",
+          "path": "Frame 1082.svg",
+          "url": "/assets/icons/library/dual/Frame 1082.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1083",
+          "name": "Frame 1083",
+          "filename": "Frame 1083.svg",
+          "path": "Frame 1083.svg",
+          "url": "/assets/icons/library/dual/Frame 1083.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1084",
+          "name": "Frame 1084",
+          "filename": "Frame 1084.svg",
+          "path": "Frame 1084.svg",
+          "url": "/assets/icons/library/dual/Frame 1084.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1085",
+          "name": "Frame 1085",
+          "filename": "Frame 1085.svg",
+          "path": "Frame 1085.svg",
+          "url": "/assets/icons/library/dual/Frame 1085.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1086",
+          "name": "Frame 1086",
+          "filename": "Frame 1086.svg",
+          "path": "Frame 1086.svg",
+          "url": "/assets/icons/library/dual/Frame 1086.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1087",
+          "name": "Frame 1087",
+          "filename": "Frame 1087.svg",
+          "path": "Frame 1087.svg",
+          "url": "/assets/icons/library/dual/Frame 1087.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1088",
+          "name": "Frame 1088",
+          "filename": "Frame 1088.svg",
+          "path": "Frame 1088.svg",
+          "url": "/assets/icons/library/dual/Frame 1088.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-109",
+          "name": "Frame 109",
+          "filename": "Frame 109.svg",
+          "path": "Frame 109.svg",
+          "url": "/assets/icons/library/dual/Frame 109.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1091",
+          "name": "Frame 1091",
+          "filename": "Frame 1091.svg",
+          "path": "Frame 1091.svg",
+          "url": "/assets/icons/library/dual/Frame 1091.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1092",
+          "name": "Frame 1092",
+          "filename": "Frame 1092.svg",
+          "path": "Frame 1092.svg",
+          "url": "/assets/icons/library/dual/Frame 1092.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1094",
+          "name": "Frame 1094",
+          "filename": "Frame 1094.svg",
+          "path": "Frame 1094.svg",
+          "url": "/assets/icons/library/dual/Frame 1094.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1095",
+          "name": "Frame 1095",
+          "filename": "Frame 1095.svg",
+          "path": "Frame 1095.svg",
+          "url": "/assets/icons/library/dual/Frame 1095.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1096",
+          "name": "Frame 1096",
+          "filename": "Frame 1096.svg",
+          "path": "Frame 1096.svg",
+          "url": "/assets/icons/library/dual/Frame 1096.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1098",
+          "name": "Frame 1098",
+          "filename": "Frame 1098.svg",
+          "path": "Frame 1098.svg",
+          "url": "/assets/icons/library/dual/Frame 1098.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-110",
+          "name": "Frame 110",
+          "filename": "Frame 110.svg",
+          "path": "Frame 110.svg",
+          "url": "/assets/icons/library/dual/Frame 110.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1100",
+          "name": "Frame 1100",
+          "filename": "Frame 1100.svg",
+          "path": "Frame 1100.svg",
+          "url": "/assets/icons/library/dual/Frame 1100.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1101",
+          "name": "Frame 1101",
+          "filename": "Frame 1101.svg",
+          "path": "Frame 1101.svg",
+          "url": "/assets/icons/library/dual/Frame 1101.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1102",
+          "name": "Frame 1102",
+          "filename": "Frame 1102.svg",
+          "path": "Frame 1102.svg",
+          "url": "/assets/icons/library/dual/Frame 1102.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1103",
+          "name": "Frame 1103",
+          "filename": "Frame 1103.svg",
+          "path": "Frame 1103.svg",
+          "url": "/assets/icons/library/dual/Frame 1103.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1104",
+          "name": "Frame 1104",
+          "filename": "Frame 1104.svg",
+          "path": "Frame 1104.svg",
+          "url": "/assets/icons/library/dual/Frame 1104.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1106",
+          "name": "Frame 1106",
+          "filename": "Frame 1106.svg",
+          "path": "Frame 1106.svg",
+          "url": "/assets/icons/library/dual/Frame 1106.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1109",
+          "name": "Frame 1109",
+          "filename": "Frame 1109.svg",
+          "path": "Frame 1109.svg",
+          "url": "/assets/icons/library/dual/Frame 1109.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-111",
+          "name": "Frame 111",
+          "filename": "Frame 111.svg",
+          "path": "Frame 111.svg",
+          "url": "/assets/icons/library/dual/Frame 111.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1110",
+          "name": "Frame 1110",
+          "filename": "Frame 1110.svg",
+          "path": "Frame 1110.svg",
+          "url": "/assets/icons/library/dual/Frame 1110.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1111",
+          "name": "Frame 1111",
+          "filename": "Frame 1111.svg",
+          "path": "Frame 1111.svg",
+          "url": "/assets/icons/library/dual/Frame 1111.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1112",
+          "name": "Frame 1112",
+          "filename": "Frame 1112.svg",
+          "path": "Frame 1112.svg",
+          "url": "/assets/icons/library/dual/Frame 1112.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1113",
+          "name": "Frame 1113",
+          "filename": "Frame 1113.svg",
+          "path": "Frame 1113.svg",
+          "url": "/assets/icons/library/dual/Frame 1113.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1114",
+          "name": "Frame 1114",
+          "filename": "Frame 1114.svg",
+          "path": "Frame 1114.svg",
+          "url": "/assets/icons/library/dual/Frame 1114.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1115",
+          "name": "Frame 1115",
+          "filename": "Frame 1115.svg",
+          "path": "Frame 1115.svg",
+          "url": "/assets/icons/library/dual/Frame 1115.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1116",
+          "name": "Frame 1116",
+          "filename": "Frame 1116.svg",
+          "path": "Frame 1116.svg",
+          "url": "/assets/icons/library/dual/Frame 1116.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-112",
+          "name": "Frame 112",
+          "filename": "Frame 112.svg",
+          "path": "Frame 112.svg",
+          "url": "/assets/icons/library/dual/Frame 112.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-113",
+          "name": "Frame 113",
+          "filename": "Frame 113.svg",
+          "path": "Frame 113.svg",
+          "url": "/assets/icons/library/dual/Frame 113.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-114",
+          "name": "Frame 114",
+          "filename": "Frame 114.svg",
+          "path": "Frame 114.svg",
+          "url": "/assets/icons/library/dual/Frame 114.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1141",
+          "name": "Frame 1141",
+          "filename": "Frame 1141.svg",
+          "path": "Frame 1141.svg",
+          "url": "/assets/icons/library/dual/Frame 1141.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1142",
+          "name": "Frame 1142",
+          "filename": "Frame 1142.svg",
+          "path": "Frame 1142.svg",
+          "url": "/assets/icons/library/dual/Frame 1142.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1143",
+          "name": "Frame 1143",
+          "filename": "Frame 1143.svg",
+          "path": "Frame 1143.svg",
+          "url": "/assets/icons/library/dual/Frame 1143.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1144",
+          "name": "Frame 1144",
+          "filename": "Frame 1144.svg",
+          "path": "Frame 1144.svg",
+          "url": "/assets/icons/library/dual/Frame 1144.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1145",
+          "name": "Frame 1145",
+          "filename": "Frame 1145.svg",
+          "path": "Frame 1145.svg",
+          "url": "/assets/icons/library/dual/Frame 1145.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1146",
+          "name": "Frame 1146",
+          "filename": "Frame 1146.svg",
+          "path": "Frame 1146.svg",
+          "url": "/assets/icons/library/dual/Frame 1146.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1147",
+          "name": "Frame 1147",
+          "filename": "Frame 1147.svg",
+          "path": "Frame 1147.svg",
+          "url": "/assets/icons/library/dual/Frame 1147.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1148",
+          "name": "Frame 1148",
+          "filename": "Frame 1148.svg",
+          "path": "Frame 1148.svg",
+          "url": "/assets/icons/library/dual/Frame 1148.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1149",
+          "name": "Frame 1149",
+          "filename": "Frame 1149.svg",
+          "path": "Frame 1149.svg",
+          "url": "/assets/icons/library/dual/Frame 1149.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-115",
+          "name": "Frame 115",
+          "filename": "Frame 115.svg",
+          "path": "Frame 115.svg",
+          "url": "/assets/icons/library/dual/Frame 115.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1150",
+          "name": "Frame 1150",
+          "filename": "Frame 1150.svg",
+          "path": "Frame 1150.svg",
+          "url": "/assets/icons/library/dual/Frame 1150.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1151",
+          "name": "Frame 1151",
+          "filename": "Frame 1151.svg",
+          "path": "Frame 1151.svg",
+          "url": "/assets/icons/library/dual/Frame 1151.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1152",
+          "name": "Frame 1152",
+          "filename": "Frame 1152.svg",
+          "path": "Frame 1152.svg",
+          "url": "/assets/icons/library/dual/Frame 1152.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1155",
+          "name": "Frame 1155",
+          "filename": "Frame 1155.svg",
+          "path": "Frame 1155.svg",
+          "url": "/assets/icons/library/dual/Frame 1155.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1156",
+          "name": "Frame 1156",
+          "filename": "Frame 1156.svg",
+          "path": "Frame 1156.svg",
+          "url": "/assets/icons/library/dual/Frame 1156.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1157",
+          "name": "Frame 1157",
+          "filename": "Frame 1157.svg",
+          "path": "Frame 1157.svg",
+          "url": "/assets/icons/library/dual/Frame 1157.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1158",
+          "name": "Frame 1158",
+          "filename": "Frame 1158.svg",
+          "path": "Frame 1158.svg",
+          "url": "/assets/icons/library/dual/Frame 1158.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1159",
+          "name": "Frame 1159",
+          "filename": "Frame 1159.svg",
+          "path": "Frame 1159.svg",
+          "url": "/assets/icons/library/dual/Frame 1159.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-116",
+          "name": "Frame 116",
+          "filename": "Frame 116.svg",
+          "path": "Frame 116.svg",
+          "url": "/assets/icons/library/dual/Frame 116.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1160",
+          "name": "Frame 1160",
+          "filename": "Frame 1160.svg",
+          "path": "Frame 1160.svg",
+          "url": "/assets/icons/library/dual/Frame 1160.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1161",
+          "name": "Frame 1161",
+          "filename": "Frame 1161.svg",
+          "path": "Frame 1161.svg",
+          "url": "/assets/icons/library/dual/Frame 1161.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1162",
+          "name": "Frame 1162",
+          "filename": "Frame 1162.svg",
+          "path": "Frame 1162.svg",
+          "url": "/assets/icons/library/dual/Frame 1162.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1163",
+          "name": "Frame 1163",
+          "filename": "Frame 1163.svg",
+          "path": "Frame 1163.svg",
+          "url": "/assets/icons/library/dual/Frame 1163.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1164",
+          "name": "Frame 1164",
+          "filename": "Frame 1164.svg",
+          "path": "Frame 1164.svg",
+          "url": "/assets/icons/library/dual/Frame 1164.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1165",
+          "name": "Frame 1165",
+          "filename": "Frame 1165.svg",
+          "path": "Frame 1165.svg",
+          "url": "/assets/icons/library/dual/Frame 1165.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1166",
+          "name": "Frame 1166",
+          "filename": "Frame 1166.svg",
+          "path": "Frame 1166.svg",
+          "url": "/assets/icons/library/dual/Frame 1166.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1167",
+          "name": "Frame 1167",
+          "filename": "Frame 1167.svg",
+          "path": "Frame 1167.svg",
+          "url": "/assets/icons/library/dual/Frame 1167.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1168",
+          "name": "Frame 1168",
+          "filename": "Frame 1168.svg",
+          "path": "Frame 1168.svg",
+          "url": "/assets/icons/library/dual/Frame 1168.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1169",
+          "name": "Frame 1169",
+          "filename": "Frame 1169.svg",
+          "path": "Frame 1169.svg",
+          "url": "/assets/icons/library/dual/Frame 1169.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-117",
+          "name": "Frame 117",
+          "filename": "Frame 117.svg",
+          "path": "Frame 117.svg",
+          "url": "/assets/icons/library/dual/Frame 117.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1170",
+          "name": "Frame 1170",
+          "filename": "Frame 1170.svg",
+          "path": "Frame 1170.svg",
+          "url": "/assets/icons/library/dual/Frame 1170.svg",
+          "extension": "svg",
+          "category": "dual"
+        },
+        {
+          "id": "frame-1171",
+          "name": "Frame 1171",
+          "filename": "Frame 1171.svg",
+          "path": "Frame 1171.svg",
+          "url": "/assets/icons/library/dual/Frame 1171.svg",
+          "extension": "svg",
+          "category": "dual"
+        }
+      ]
+    },
+    "solid": {
+      "name": "Solid",
+      "total": 1278,
+      "sample": [
+        {
+          "id": "a-small-set-of-zodiac-and-celestial-symbols-designed-for-themed-interfaces-lifestyle-apps-and-horoscope-related-features-",
+          "name": "A Small Set Of Zodiac And Celestial Symbols Designed For Themed Interfaces, Lifestyle Apps, And Horoscope Related Features.",
+          "filename": "A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "path": "A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "url": "/assets/icons/library/solid/A small set of zodiac and celestial symbols designed for themed interfaces, lifestyle apps, and horoscope-related features..svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "archive",
+          "name": "Archive",
+          "filename": "Archive.svg",
+          "path": "Archive.svg",
+          "url": "/assets/icons/library/solid/Archive.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "arrow",
+          "name": "Arrow",
+          "filename": "Arrow.svg",
+          "path": "Arrow.svg",
+          "url": "/assets/icons/library/solid/Arrow.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "astrology",
+          "name": "Astrology",
+          "filename": "Astrology.svg",
+          "path": "Astrology.svg",
+          "url": "/assets/icons/library/solid/Astrology.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "brand-icons-representing-major-platforms-and-services-optimized-for-authentication-flows-integrations-social-logins-connection-settings-and-third-party-interaction-interfaces-",
+          "name": "Brand Icons Representing Major Platforms And Services, Optimized For Authentication Flows, Integrations, Social Logins, Connection Settings, And Third Party Interaction Interfaces.",
+          "filename": "Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "path": "Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "url": "/assets/icons/library/solid/Brand icons representing major platforms and services, optimized for authentication flows, integrations, social logins, connection settings, and third-party interaction interfaces..svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "building",
+          "name": "Building",
+          "filename": "Building.svg",
+          "path": "Building.svg",
+          "url": "/assets/icons/library/solid/Building.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "business",
+          "name": "Business",
+          "filename": "Business.svg",
+          "path": "Business.svg",
+          "url": "/assets/icons/library/solid/Business.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "call",
+          "name": "Call",
+          "filename": "Call.svg",
+          "path": "Call.svg",
+          "url": "/assets/icons/library/solid/Call.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "car",
+          "name": "Car",
+          "filename": "Car.svg",
+          "path": "Car.svg",
+          "url": "/assets/icons/library/solid/Car.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "communication-icons-for-inboxes-chats-notifications-message-states-and-sending-or-receiving-actions-used-across-messaging-platforms-dashboards-and-support-interfaces-",
+          "name": "Communication Icons For Inboxes, Chats, Notifications, Message States, And Sending Or Receiving Actions Used Across Messaging Platforms, Dashboards, And Support Interfaces.",
+          "filename": "Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "path": "Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "url": "/assets/icons/library/solid/Communication icons for inboxes, chats, notifications, message states, and sending or receiving actions used across messaging platforms, dashboards, and support interfaces..svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "company-logos",
+          "name": "Company Logos",
+          "filename": "Company Logos.svg",
+          "path": "Company Logos.svg",
+          "url": "/assets/icons/library/solid/Company Logos.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-1",
+          "name": "Component 2 1",
+          "filename": "Component 2-1.svg",
+          "path": "Component 2-1.svg",
+          "url": "/assets/icons/library/solid/Component 2-1.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-10",
+          "name": "Component 2 10",
+          "filename": "Component 2-10.svg",
+          "path": "Component 2-10.svg",
+          "url": "/assets/icons/library/solid/Component 2-10.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-11",
+          "name": "Component 2 11",
+          "filename": "Component 2-11.svg",
+          "path": "Component 2-11.svg",
+          "url": "/assets/icons/library/solid/Component 2-11.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-12",
+          "name": "Component 2 12",
+          "filename": "Component 2-12.svg",
+          "path": "Component 2-12.svg",
+          "url": "/assets/icons/library/solid/Component 2-12.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-13",
+          "name": "Component 2 13",
+          "filename": "Component 2-13.svg",
+          "path": "Component 2-13.svg",
+          "url": "/assets/icons/library/solid/Component 2-13.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-14",
+          "name": "Component 2 14",
+          "filename": "Component 2-14.svg",
+          "path": "Component 2-14.svg",
+          "url": "/assets/icons/library/solid/Component 2-14.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-15",
+          "name": "Component 2 15",
+          "filename": "Component 2-15.svg",
+          "path": "Component 2-15.svg",
+          "url": "/assets/icons/library/solid/Component 2-15.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-16",
+          "name": "Component 2 16",
+          "filename": "Component 2-16.svg",
+          "path": "Component 2-16.svg",
+          "url": "/assets/icons/library/solid/Component 2-16.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-17",
+          "name": "Component 2 17",
+          "filename": "Component 2-17.svg",
+          "path": "Component 2-17.svg",
+          "url": "/assets/icons/library/solid/Component 2-17.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-18",
+          "name": "Component 2 18",
+          "filename": "Component 2-18.svg",
+          "path": "Component 2-18.svg",
+          "url": "/assets/icons/library/solid/Component 2-18.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-19",
+          "name": "Component 2 19",
+          "filename": "Component 2-19.svg",
+          "path": "Component 2-19.svg",
+          "url": "/assets/icons/library/solid/Component 2-19.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-2",
+          "name": "Component 2 2",
+          "filename": "Component 2-2.svg",
+          "path": "Component 2-2.svg",
+          "url": "/assets/icons/library/solid/Component 2-2.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-20",
+          "name": "Component 2 20",
+          "filename": "Component 2-20.svg",
+          "path": "Component 2-20.svg",
+          "url": "/assets/icons/library/solid/Component 2-20.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-21",
+          "name": "Component 2 21",
+          "filename": "Component 2-21.svg",
+          "path": "Component 2-21.svg",
+          "url": "/assets/icons/library/solid/Component 2-21.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-22",
+          "name": "Component 2 22",
+          "filename": "Component 2-22.svg",
+          "path": "Component 2-22.svg",
+          "url": "/assets/icons/library/solid/Component 2-22.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-23",
+          "name": "Component 2 23",
+          "filename": "Component 2-23.svg",
+          "path": "Component 2-23.svg",
+          "url": "/assets/icons/library/solid/Component 2-23.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-24",
+          "name": "Component 2 24",
+          "filename": "Component 2-24.svg",
+          "path": "Component 2-24.svg",
+          "url": "/assets/icons/library/solid/Component 2-24.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-25",
+          "name": "Component 2 25",
+          "filename": "Component 2-25.svg",
+          "path": "Component 2-25.svg",
+          "url": "/assets/icons/library/solid/Component 2-25.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-26",
+          "name": "Component 2 26",
+          "filename": "Component 2-26.svg",
+          "path": "Component 2-26.svg",
+          "url": "/assets/icons/library/solid/Component 2-26.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-27",
+          "name": "Component 2 27",
+          "filename": "Component 2-27.svg",
+          "path": "Component 2-27.svg",
+          "url": "/assets/icons/library/solid/Component 2-27.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-28",
+          "name": "Component 2 28",
+          "filename": "Component 2-28.svg",
+          "path": "Component 2-28.svg",
+          "url": "/assets/icons/library/solid/Component 2-28.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-29",
+          "name": "Component 2 29",
+          "filename": "Component 2-29.svg",
+          "path": "Component 2-29.svg",
+          "url": "/assets/icons/library/solid/Component 2-29.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-3",
+          "name": "Component 2 3",
+          "filename": "Component 2-3.svg",
+          "path": "Component 2-3.svg",
+          "url": "/assets/icons/library/solid/Component 2-3.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-30",
+          "name": "Component 2 30",
+          "filename": "Component 2-30.svg",
+          "path": "Component 2-30.svg",
+          "url": "/assets/icons/library/solid/Component 2-30.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-31",
+          "name": "Component 2 31",
+          "filename": "Component 2-31.svg",
+          "path": "Component 2-31.svg",
+          "url": "/assets/icons/library/solid/Component 2-31.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-4",
+          "name": "Component 2 4",
+          "filename": "Component 2-4.svg",
+          "path": "Component 2-4.svg",
+          "url": "/assets/icons/library/solid/Component 2-4.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-5",
+          "name": "Component 2 5",
+          "filename": "Component 2-5.svg",
+          "path": "Component 2-5.svg",
+          "url": "/assets/icons/library/solid/Component 2-5.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-6",
+          "name": "Component 2 6",
+          "filename": "Component 2-6.svg",
+          "path": "Component 2-6.svg",
+          "url": "/assets/icons/library/solid/Component 2-6.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-7",
+          "name": "Component 2 7",
+          "filename": "Component 2-7.svg",
+          "path": "Component 2-7.svg",
+          "url": "/assets/icons/library/solid/Component 2-7.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-8",
+          "name": "Component 2 8",
+          "filename": "Component 2-8.svg",
+          "path": "Component 2-8.svg",
+          "url": "/assets/icons/library/solid/Component 2-8.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2-9",
+          "name": "Component 2 9",
+          "filename": "Component 2-9.svg",
+          "path": "Component 2-9.svg",
+          "url": "/assets/icons/library/solid/Component 2-9.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "component-2",
+          "name": "Component 2",
+          "filename": "Component 2.svg",
+          "path": "Component 2.svg",
+          "url": "/assets/icons/library/solid/Component 2.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "computers-devices-electronics",
+          "name": "Computers, Devices, Electronics",
+          "filename": "Computers, Devices, Electronics.svg",
+          "path": "Computers, Devices, Electronics.svg",
+          "url": "/assets/icons/library/solid/Computers, Devices, Electronics.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "content-edit",
+          "name": "Content, Edit",
+          "filename": "Content, Edit.svg",
+          "path": "Content, Edit.svg",
+          "url": "/assets/icons/library/solid/Content, Edit.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "core-ui-icons-covering-common-actions-and-states-designed-for-dashboards-apps-and-general-interface-patterns-requiring-clarity-usability-and-consistent-interaction-elements-",
+          "name": "Core UI Icons Covering Common Actions And States, Designed For Dashboards, Apps, And General Interface Patterns Requiring Clarity, Usability, And Consistent Interaction Elements.",
+          "filename": "Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "path": "Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "url": "/assets/icons/library/solid/Core UI icons covering common actions and states, designed for dashboards, apps, and general interface patterns requiring clarity, usability, and consistent interaction elements..svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "crypto-currency",
+          "name": "Crypto Currency",
+          "filename": "Crypto Currency.svg",
+          "path": "Crypto Currency.svg",
+          "url": "/assets/icons/library/solid/Crypto Currency.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "delivery",
+          "name": "Delivery",
+          "filename": "Delivery.svg",
+          "path": "Delivery.svg",
+          "url": "/assets/icons/library/solid/Delivery.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "design-tools",
+          "name": "Design Tools",
+          "filename": "Design Tools.svg",
+          "path": "Design Tools.svg",
+          "url": "/assets/icons/library/solid/Design Tools.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "directional-icons-supporting-navigation-movement-sorting-pagination-hierarchical-flows-and-interface-transitions-across-modern-dashboards-applications-and-interactive-systems-",
+          "name": "Directional Icons Supporting Navigation, Movement, Sorting, Pagination, Hierarchical Flows, And Interface Transitions Across Modern Dashboards, Applications, And Interactive Systems.",
+          "filename": "Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "path": "Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "url": "/assets/icons/library/solid/Directional icons supporting navigation, movement, sorting, pagination, hierarchical flows, and interface transitions across modern dashboards, applications, and interactive systems..svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "emails-messages",
+          "name": "Emails, Messages",
+          "filename": "Emails, Messages.svg",
+          "path": "Emails, Messages.svg",
+          "url": "/assets/icons/library/solid/Emails, Messages.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "essential",
+          "name": "Essential",
+          "filename": "Essential.svg",
+          "path": "Essential.svg",
+          "url": "/assets/icons/library/solid/Essential.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "files",
+          "name": "Files",
+          "filename": "Files.svg",
+          "path": "Files.svg",
+          "url": "/assets/icons/library/solid/Files.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "for-e-commerce-actions-carts-payments-products-and-retail-interactions-used-across-storefronts-checkout-flows-and-shopping-dashboards-",
+          "name": "For E Commerce Actions, Carts, Payments, Products, And Retail Interactions Used Across Storefronts, Checkout Flows, And Shopping Dashboards.",
+          "filename": "For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "path": "For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "url": "/assets/icons/library/solid/For e-commerce actions, carts, payments, products, and retail interactions used across storefronts, checkout flows, and shopping dashboards..svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-100",
+          "name": "Frame 100",
+          "filename": "Frame 100.svg",
+          "path": "Frame 100.svg",
+          "url": "/assets/icons/library/solid/Frame 100.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-101",
+          "name": "Frame 101",
+          "filename": "Frame 101.svg",
+          "path": "Frame 101.svg",
+          "url": "/assets/icons/library/solid/Frame 101.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-102",
+          "name": "Frame 102",
+          "filename": "Frame 102.svg",
+          "path": "Frame 102.svg",
+          "url": "/assets/icons/library/solid/Frame 102.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1024",
+          "name": "Frame 1024",
+          "filename": "Frame 1024.svg",
+          "path": "Frame 1024.svg",
+          "url": "/assets/icons/library/solid/Frame 1024.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1025",
+          "name": "Frame 1025",
+          "filename": "Frame 1025.svg",
+          "path": "Frame 1025.svg",
+          "url": "/assets/icons/library/solid/Frame 1025.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1026",
+          "name": "Frame 1026",
+          "filename": "Frame 1026.svg",
+          "path": "Frame 1026.svg",
+          "url": "/assets/icons/library/solid/Frame 1026.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1027",
+          "name": "Frame 1027",
+          "filename": "Frame 1027.svg",
+          "path": "Frame 1027.svg",
+          "url": "/assets/icons/library/solid/Frame 1027.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1028",
+          "name": "Frame 1028",
+          "filename": "Frame 1028.svg",
+          "path": "Frame 1028.svg",
+          "url": "/assets/icons/library/solid/Frame 1028.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1029",
+          "name": "Frame 1029",
+          "filename": "Frame 1029.svg",
+          "path": "Frame 1029.svg",
+          "url": "/assets/icons/library/solid/Frame 1029.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-103",
+          "name": "Frame 103",
+          "filename": "Frame 103.svg",
+          "path": "Frame 103.svg",
+          "url": "/assets/icons/library/solid/Frame 103.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1030",
+          "name": "Frame 1030",
+          "filename": "Frame 1030.svg",
+          "path": "Frame 1030.svg",
+          "url": "/assets/icons/library/solid/Frame 1030.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1031",
+          "name": "Frame 1031",
+          "filename": "Frame 1031.svg",
+          "path": "Frame 1031.svg",
+          "url": "/assets/icons/library/solid/Frame 1031.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1032",
+          "name": "Frame 1032",
+          "filename": "Frame 1032.svg",
+          "path": "Frame 1032.svg",
+          "url": "/assets/icons/library/solid/Frame 1032.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1033",
+          "name": "Frame 1033",
+          "filename": "Frame 1033.svg",
+          "path": "Frame 1033.svg",
+          "url": "/assets/icons/library/solid/Frame 1033.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1034",
+          "name": "Frame 1034",
+          "filename": "Frame 1034.svg",
+          "path": "Frame 1034.svg",
+          "url": "/assets/icons/library/solid/Frame 1034.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1035",
+          "name": "Frame 1035",
+          "filename": "Frame 1035.svg",
+          "path": "Frame 1035.svg",
+          "url": "/assets/icons/library/solid/Frame 1035.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1036",
+          "name": "Frame 1036",
+          "filename": "Frame 1036.svg",
+          "path": "Frame 1036.svg",
+          "url": "/assets/icons/library/solid/Frame 1036.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1037",
+          "name": "Frame 1037",
+          "filename": "Frame 1037.svg",
+          "path": "Frame 1037.svg",
+          "url": "/assets/icons/library/solid/Frame 1037.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1038",
+          "name": "Frame 1038",
+          "filename": "Frame 1038.svg",
+          "path": "Frame 1038.svg",
+          "url": "/assets/icons/library/solid/Frame 1038.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1039",
+          "name": "Frame 1039",
+          "filename": "Frame 1039.svg",
+          "path": "Frame 1039.svg",
+          "url": "/assets/icons/library/solid/Frame 1039.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-104",
+          "name": "Frame 104",
+          "filename": "Frame 104.svg",
+          "path": "Frame 104.svg",
+          "url": "/assets/icons/library/solid/Frame 104.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1042",
+          "name": "Frame 1042",
+          "filename": "Frame 1042.svg",
+          "path": "Frame 1042.svg",
+          "url": "/assets/icons/library/solid/Frame 1042.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1043",
+          "name": "Frame 1043",
+          "filename": "Frame 1043.svg",
+          "path": "Frame 1043.svg",
+          "url": "/assets/icons/library/solid/Frame 1043.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1044",
+          "name": "Frame 1044",
+          "filename": "Frame 1044.svg",
+          "path": "Frame 1044.svg",
+          "url": "/assets/icons/library/solid/Frame 1044.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1045",
+          "name": "Frame 1045",
+          "filename": "Frame 1045.svg",
+          "path": "Frame 1045.svg",
+          "url": "/assets/icons/library/solid/Frame 1045.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1046",
+          "name": "Frame 1046",
+          "filename": "Frame 1046.svg",
+          "path": "Frame 1046.svg",
+          "url": "/assets/icons/library/solid/Frame 1046.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1047",
+          "name": "Frame 1047",
+          "filename": "Frame 1047.svg",
+          "path": "Frame 1047.svg",
+          "url": "/assets/icons/library/solid/Frame 1047.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1048",
+          "name": "Frame 1048",
+          "filename": "Frame 1048.svg",
+          "path": "Frame 1048.svg",
+          "url": "/assets/icons/library/solid/Frame 1048.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1049",
+          "name": "Frame 1049",
+          "filename": "Frame 1049.svg",
+          "path": "Frame 1049.svg",
+          "url": "/assets/icons/library/solid/Frame 1049.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-105",
+          "name": "Frame 105",
+          "filename": "Frame 105.svg",
+          "path": "Frame 105.svg",
+          "url": "/assets/icons/library/solid/Frame 105.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1050",
+          "name": "Frame 1050",
+          "filename": "Frame 1050.svg",
+          "path": "Frame 1050.svg",
+          "url": "/assets/icons/library/solid/Frame 1050.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1053",
+          "name": "Frame 1053",
+          "filename": "Frame 1053.svg",
+          "path": "Frame 1053.svg",
+          "url": "/assets/icons/library/solid/Frame 1053.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1054",
+          "name": "Frame 1054",
+          "filename": "Frame 1054.svg",
+          "path": "Frame 1054.svg",
+          "url": "/assets/icons/library/solid/Frame 1054.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1055",
+          "name": "Frame 1055",
+          "filename": "Frame 1055.svg",
+          "path": "Frame 1055.svg",
+          "url": "/assets/icons/library/solid/Frame 1055.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1056",
+          "name": "Frame 1056",
+          "filename": "Frame 1056.svg",
+          "path": "Frame 1056.svg",
+          "url": "/assets/icons/library/solid/Frame 1056.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1057",
+          "name": "Frame 1057",
+          "filename": "Frame 1057.svg",
+          "path": "Frame 1057.svg",
+          "url": "/assets/icons/library/solid/Frame 1057.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1058",
+          "name": "Frame 1058",
+          "filename": "Frame 1058.svg",
+          "path": "Frame 1058.svg",
+          "url": "/assets/icons/library/solid/Frame 1058.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1059",
+          "name": "Frame 1059",
+          "filename": "Frame 1059.svg",
+          "path": "Frame 1059.svg",
+          "url": "/assets/icons/library/solid/Frame 1059.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-106",
+          "name": "Frame 106",
+          "filename": "Frame 106.svg",
+          "path": "Frame 106.svg",
+          "url": "/assets/icons/library/solid/Frame 106.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1060",
+          "name": "Frame 1060",
+          "filename": "Frame 1060.svg",
+          "path": "Frame 1060.svg",
+          "url": "/assets/icons/library/solid/Frame 1060.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1061",
+          "name": "Frame 1061",
+          "filename": "Frame 1061.svg",
+          "path": "Frame 1061.svg",
+          "url": "/assets/icons/library/solid/Frame 1061.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1062",
+          "name": "Frame 1062",
+          "filename": "Frame 1062.svg",
+          "path": "Frame 1062.svg",
+          "url": "/assets/icons/library/solid/Frame 1062.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1063",
+          "name": "Frame 1063",
+          "filename": "Frame 1063.svg",
+          "path": "Frame 1063.svg",
+          "url": "/assets/icons/library/solid/Frame 1063.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1064",
+          "name": "Frame 1064",
+          "filename": "Frame 1064.svg",
+          "path": "Frame 1064.svg",
+          "url": "/assets/icons/library/solid/Frame 1064.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1065",
+          "name": "Frame 1065",
+          "filename": "Frame 1065.svg",
+          "path": "Frame 1065.svg",
+          "url": "/assets/icons/library/solid/Frame 1065.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1066",
+          "name": "Frame 1066",
+          "filename": "Frame 1066.svg",
+          "path": "Frame 1066.svg",
+          "url": "/assets/icons/library/solid/Frame 1066.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1067",
+          "name": "Frame 1067",
+          "filename": "Frame 1067.svg",
+          "path": "Frame 1067.svg",
+          "url": "/assets/icons/library/solid/Frame 1067.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1068",
+          "name": "Frame 1068",
+          "filename": "Frame 1068.svg",
+          "path": "Frame 1068.svg",
+          "url": "/assets/icons/library/solid/Frame 1068.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1069",
+          "name": "Frame 1069",
+          "filename": "Frame 1069.svg",
+          "path": "Frame 1069.svg",
+          "url": "/assets/icons/library/solid/Frame 1069.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-107",
+          "name": "Frame 107",
+          "filename": "Frame 107.svg",
+          "path": "Frame 107.svg",
+          "url": "/assets/icons/library/solid/Frame 107.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1070",
+          "name": "Frame 1070",
+          "filename": "Frame 1070.svg",
+          "path": "Frame 1070.svg",
+          "url": "/assets/icons/library/solid/Frame 1070.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1072",
+          "name": "Frame 1072",
+          "filename": "Frame 1072.svg",
+          "path": "Frame 1072.svg",
+          "url": "/assets/icons/library/solid/Frame 1072.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1073",
+          "name": "Frame 1073",
+          "filename": "Frame 1073.svg",
+          "path": "Frame 1073.svg",
+          "url": "/assets/icons/library/solid/Frame 1073.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1075",
+          "name": "Frame 1075",
+          "filename": "Frame 1075.svg",
+          "path": "Frame 1075.svg",
+          "url": "/assets/icons/library/solid/Frame 1075.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1076",
+          "name": "Frame 1076",
+          "filename": "Frame 1076.svg",
+          "path": "Frame 1076.svg",
+          "url": "/assets/icons/library/solid/Frame 1076.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1077",
+          "name": "Frame 1077",
+          "filename": "Frame 1077.svg",
+          "path": "Frame 1077.svg",
+          "url": "/assets/icons/library/solid/Frame 1077.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1078",
+          "name": "Frame 1078",
+          "filename": "Frame 1078.svg",
+          "path": "Frame 1078.svg",
+          "url": "/assets/icons/library/solid/Frame 1078.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1079",
+          "name": "Frame 1079",
+          "filename": "Frame 1079.svg",
+          "path": "Frame 1079.svg",
+          "url": "/assets/icons/library/solid/Frame 1079.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-108",
+          "name": "Frame 108",
+          "filename": "Frame 108.svg",
+          "path": "Frame 108.svg",
+          "url": "/assets/icons/library/solid/Frame 108.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1082",
+          "name": "Frame 1082",
+          "filename": "Frame 1082.svg",
+          "path": "Frame 1082.svg",
+          "url": "/assets/icons/library/solid/Frame 1082.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1083",
+          "name": "Frame 1083",
+          "filename": "Frame 1083.svg",
+          "path": "Frame 1083.svg",
+          "url": "/assets/icons/library/solid/Frame 1083.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1084",
+          "name": "Frame 1084",
+          "filename": "Frame 1084.svg",
+          "path": "Frame 1084.svg",
+          "url": "/assets/icons/library/solid/Frame 1084.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1085",
+          "name": "Frame 1085",
+          "filename": "Frame 1085.svg",
+          "path": "Frame 1085.svg",
+          "url": "/assets/icons/library/solid/Frame 1085.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1086",
+          "name": "Frame 1086",
+          "filename": "Frame 1086.svg",
+          "path": "Frame 1086.svg",
+          "url": "/assets/icons/library/solid/Frame 1086.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1087",
+          "name": "Frame 1087",
+          "filename": "Frame 1087.svg",
+          "path": "Frame 1087.svg",
+          "url": "/assets/icons/library/solid/Frame 1087.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1088",
+          "name": "Frame 1088",
+          "filename": "Frame 1088.svg",
+          "path": "Frame 1088.svg",
+          "url": "/assets/icons/library/solid/Frame 1088.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-109",
+          "name": "Frame 109",
+          "filename": "Frame 109.svg",
+          "path": "Frame 109.svg",
+          "url": "/assets/icons/library/solid/Frame 109.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1091",
+          "name": "Frame 1091",
+          "filename": "Frame 1091.svg",
+          "path": "Frame 1091.svg",
+          "url": "/assets/icons/library/solid/Frame 1091.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1092",
+          "name": "Frame 1092",
+          "filename": "Frame 1092.svg",
+          "path": "Frame 1092.svg",
+          "url": "/assets/icons/library/solid/Frame 1092.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1094",
+          "name": "Frame 1094",
+          "filename": "Frame 1094.svg",
+          "path": "Frame 1094.svg",
+          "url": "/assets/icons/library/solid/Frame 1094.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1095",
+          "name": "Frame 1095",
+          "filename": "Frame 1095.svg",
+          "path": "Frame 1095.svg",
+          "url": "/assets/icons/library/solid/Frame 1095.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1096",
+          "name": "Frame 1096",
+          "filename": "Frame 1096.svg",
+          "path": "Frame 1096.svg",
+          "url": "/assets/icons/library/solid/Frame 1096.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1098",
+          "name": "Frame 1098",
+          "filename": "Frame 1098.svg",
+          "path": "Frame 1098.svg",
+          "url": "/assets/icons/library/solid/Frame 1098.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-110",
+          "name": "Frame 110",
+          "filename": "Frame 110.svg",
+          "path": "Frame 110.svg",
+          "url": "/assets/icons/library/solid/Frame 110.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1100",
+          "name": "Frame 1100",
+          "filename": "Frame 1100.svg",
+          "path": "Frame 1100.svg",
+          "url": "/assets/icons/library/solid/Frame 1100.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1101",
+          "name": "Frame 1101",
+          "filename": "Frame 1101.svg",
+          "path": "Frame 1101.svg",
+          "url": "/assets/icons/library/solid/Frame 1101.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1102",
+          "name": "Frame 1102",
+          "filename": "Frame 1102.svg",
+          "path": "Frame 1102.svg",
+          "url": "/assets/icons/library/solid/Frame 1102.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1103",
+          "name": "Frame 1103",
+          "filename": "Frame 1103.svg",
+          "path": "Frame 1103.svg",
+          "url": "/assets/icons/library/solid/Frame 1103.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1104",
+          "name": "Frame 1104",
+          "filename": "Frame 1104.svg",
+          "path": "Frame 1104.svg",
+          "url": "/assets/icons/library/solid/Frame 1104.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1106",
+          "name": "Frame 1106",
+          "filename": "Frame 1106.svg",
+          "path": "Frame 1106.svg",
+          "url": "/assets/icons/library/solid/Frame 1106.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1109",
+          "name": "Frame 1109",
+          "filename": "Frame 1109.svg",
+          "path": "Frame 1109.svg",
+          "url": "/assets/icons/library/solid/Frame 1109.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-111",
+          "name": "Frame 111",
+          "filename": "Frame 111.svg",
+          "path": "Frame 111.svg",
+          "url": "/assets/icons/library/solid/Frame 111.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1110",
+          "name": "Frame 1110",
+          "filename": "Frame 1110.svg",
+          "path": "Frame 1110.svg",
+          "url": "/assets/icons/library/solid/Frame 1110.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1111",
+          "name": "Frame 1111",
+          "filename": "Frame 1111.svg",
+          "path": "Frame 1111.svg",
+          "url": "/assets/icons/library/solid/Frame 1111.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1112",
+          "name": "Frame 1112",
+          "filename": "Frame 1112.svg",
+          "path": "Frame 1112.svg",
+          "url": "/assets/icons/library/solid/Frame 1112.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1113",
+          "name": "Frame 1113",
+          "filename": "Frame 1113.svg",
+          "path": "Frame 1113.svg",
+          "url": "/assets/icons/library/solid/Frame 1113.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1114",
+          "name": "Frame 1114",
+          "filename": "Frame 1114.svg",
+          "path": "Frame 1114.svg",
+          "url": "/assets/icons/library/solid/Frame 1114.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1115",
+          "name": "Frame 1115",
+          "filename": "Frame 1115.svg",
+          "path": "Frame 1115.svg",
+          "url": "/assets/icons/library/solid/Frame 1115.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1116",
+          "name": "Frame 1116",
+          "filename": "Frame 1116.svg",
+          "path": "Frame 1116.svg",
+          "url": "/assets/icons/library/solid/Frame 1116.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1119",
+          "name": "Frame 1119",
+          "filename": "Frame 1119.svg",
+          "path": "Frame 1119.svg",
+          "url": "/assets/icons/library/solid/Frame 1119.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-112",
+          "name": "Frame 112",
+          "filename": "Frame 112.svg",
+          "path": "Frame 112.svg",
+          "url": "/assets/icons/library/solid/Frame 112.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1120",
+          "name": "Frame 1120",
+          "filename": "Frame 1120.svg",
+          "path": "Frame 1120.svg",
+          "url": "/assets/icons/library/solid/Frame 1120.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1121",
+          "name": "Frame 1121",
+          "filename": "Frame 1121.svg",
+          "path": "Frame 1121.svg",
+          "url": "/assets/icons/library/solid/Frame 1121.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1122",
+          "name": "Frame 1122",
+          "filename": "Frame 1122.svg",
+          "path": "Frame 1122.svg",
+          "url": "/assets/icons/library/solid/Frame 1122.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1123",
+          "name": "Frame 1123",
+          "filename": "Frame 1123.svg",
+          "path": "Frame 1123.svg",
+          "url": "/assets/icons/library/solid/Frame 1123.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1124",
+          "name": "Frame 1124",
+          "filename": "Frame 1124.svg",
+          "path": "Frame 1124.svg",
+          "url": "/assets/icons/library/solid/Frame 1124.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1125",
+          "name": "Frame 1125",
+          "filename": "Frame 1125.svg",
+          "path": "Frame 1125.svg",
+          "url": "/assets/icons/library/solid/Frame 1125.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1126",
+          "name": "Frame 1126",
+          "filename": "Frame 1126.svg",
+          "path": "Frame 1126.svg",
+          "url": "/assets/icons/library/solid/Frame 1126.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1127",
+          "name": "Frame 1127",
+          "filename": "Frame 1127.svg",
+          "path": "Frame 1127.svg",
+          "url": "/assets/icons/library/solid/Frame 1127.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1128",
+          "name": "Frame 1128",
+          "filename": "Frame 1128.svg",
+          "path": "Frame 1128.svg",
+          "url": "/assets/icons/library/solid/Frame 1128.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1129",
+          "name": "Frame 1129",
+          "filename": "Frame 1129.svg",
+          "path": "Frame 1129.svg",
+          "url": "/assets/icons/library/solid/Frame 1129.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-113",
+          "name": "Frame 113",
+          "filename": "Frame 113.svg",
+          "path": "Frame 113.svg",
+          "url": "/assets/icons/library/solid/Frame 113.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1133",
+          "name": "Frame 1133",
+          "filename": "Frame 1133.svg",
+          "path": "Frame 1133.svg",
+          "url": "/assets/icons/library/solid/Frame 1133.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1134",
+          "name": "Frame 1134",
+          "filename": "Frame 1134.svg",
+          "path": "Frame 1134.svg",
+          "url": "/assets/icons/library/solid/Frame 1134.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1135",
+          "name": "Frame 1135",
+          "filename": "Frame 1135.svg",
+          "path": "Frame 1135.svg",
+          "url": "/assets/icons/library/solid/Frame 1135.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1136",
+          "name": "Frame 1136",
+          "filename": "Frame 1136.svg",
+          "path": "Frame 1136.svg",
+          "url": "/assets/icons/library/solid/Frame 1136.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1137",
+          "name": "Frame 1137",
+          "filename": "Frame 1137.svg",
+          "path": "Frame 1137.svg",
+          "url": "/assets/icons/library/solid/Frame 1137.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1138",
+          "name": "Frame 1138",
+          "filename": "Frame 1138.svg",
+          "path": "Frame 1138.svg",
+          "url": "/assets/icons/library/solid/Frame 1138.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-114",
+          "name": "Frame 114",
+          "filename": "Frame 114.svg",
+          "path": "Frame 114.svg",
+          "url": "/assets/icons/library/solid/Frame 114.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1141",
+          "name": "Frame 1141",
+          "filename": "Frame 1141.svg",
+          "path": "Frame 1141.svg",
+          "url": "/assets/icons/library/solid/Frame 1141.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1142",
+          "name": "Frame 1142",
+          "filename": "Frame 1142.svg",
+          "path": "Frame 1142.svg",
+          "url": "/assets/icons/library/solid/Frame 1142.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1143",
+          "name": "Frame 1143",
+          "filename": "Frame 1143.svg",
+          "path": "Frame 1143.svg",
+          "url": "/assets/icons/library/solid/Frame 1143.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1144",
+          "name": "Frame 1144",
+          "filename": "Frame 1144.svg",
+          "path": "Frame 1144.svg",
+          "url": "/assets/icons/library/solid/Frame 1144.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1145",
+          "name": "Frame 1145",
+          "filename": "Frame 1145.svg",
+          "path": "Frame 1145.svg",
+          "url": "/assets/icons/library/solid/Frame 1145.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1146",
+          "name": "Frame 1146",
+          "filename": "Frame 1146.svg",
+          "path": "Frame 1146.svg",
+          "url": "/assets/icons/library/solid/Frame 1146.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1147",
+          "name": "Frame 1147",
+          "filename": "Frame 1147.svg",
+          "path": "Frame 1147.svg",
+          "url": "/assets/icons/library/solid/Frame 1147.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1148",
+          "name": "Frame 1148",
+          "filename": "Frame 1148.svg",
+          "path": "Frame 1148.svg",
+          "url": "/assets/icons/library/solid/Frame 1148.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1149",
+          "name": "Frame 1149",
+          "filename": "Frame 1149.svg",
+          "path": "Frame 1149.svg",
+          "url": "/assets/icons/library/solid/Frame 1149.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-115",
+          "name": "Frame 115",
+          "filename": "Frame 115.svg",
+          "path": "Frame 115.svg",
+          "url": "/assets/icons/library/solid/Frame 115.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1150",
+          "name": "Frame 1150",
+          "filename": "Frame 1150.svg",
+          "path": "Frame 1150.svg",
+          "url": "/assets/icons/library/solid/Frame 1150.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1151",
+          "name": "Frame 1151",
+          "filename": "Frame 1151.svg",
+          "path": "Frame 1151.svg",
+          "url": "/assets/icons/library/solid/Frame 1151.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1152",
+          "name": "Frame 1152",
+          "filename": "Frame 1152.svg",
+          "path": "Frame 1152.svg",
+          "url": "/assets/icons/library/solid/Frame 1152.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1155",
+          "name": "Frame 1155",
+          "filename": "Frame 1155.svg",
+          "path": "Frame 1155.svg",
+          "url": "/assets/icons/library/solid/Frame 1155.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1156",
+          "name": "Frame 1156",
+          "filename": "Frame 1156.svg",
+          "path": "Frame 1156.svg",
+          "url": "/assets/icons/library/solid/Frame 1156.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1157",
+          "name": "Frame 1157",
+          "filename": "Frame 1157.svg",
+          "path": "Frame 1157.svg",
+          "url": "/assets/icons/library/solid/Frame 1157.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1158",
+          "name": "Frame 1158",
+          "filename": "Frame 1158.svg",
+          "path": "Frame 1158.svg",
+          "url": "/assets/icons/library/solid/Frame 1158.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1159",
+          "name": "Frame 1159",
+          "filename": "Frame 1159.svg",
+          "path": "Frame 1159.svg",
+          "url": "/assets/icons/library/solid/Frame 1159.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-116",
+          "name": "Frame 116",
+          "filename": "Frame 116.svg",
+          "path": "Frame 116.svg",
+          "url": "/assets/icons/library/solid/Frame 116.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1160",
+          "name": "Frame 1160",
+          "filename": "Frame 1160.svg",
+          "path": "Frame 1160.svg",
+          "url": "/assets/icons/library/solid/Frame 1160.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1161",
+          "name": "Frame 1161",
+          "filename": "Frame 1161.svg",
+          "path": "Frame 1161.svg",
+          "url": "/assets/icons/library/solid/Frame 1161.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1162",
+          "name": "Frame 1162",
+          "filename": "Frame 1162.svg",
+          "path": "Frame 1162.svg",
+          "url": "/assets/icons/library/solid/Frame 1162.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1163",
+          "name": "Frame 1163",
+          "filename": "Frame 1163.svg",
+          "path": "Frame 1163.svg",
+          "url": "/assets/icons/library/solid/Frame 1163.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1164",
+          "name": "Frame 1164",
+          "filename": "Frame 1164.svg",
+          "path": "Frame 1164.svg",
+          "url": "/assets/icons/library/solid/Frame 1164.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1165",
+          "name": "Frame 1165",
+          "filename": "Frame 1165.svg",
+          "path": "Frame 1165.svg",
+          "url": "/assets/icons/library/solid/Frame 1165.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1166",
+          "name": "Frame 1166",
+          "filename": "Frame 1166.svg",
+          "path": "Frame 1166.svg",
+          "url": "/assets/icons/library/solid/Frame 1166.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1167",
+          "name": "Frame 1167",
+          "filename": "Frame 1167.svg",
+          "path": "Frame 1167.svg",
+          "url": "/assets/icons/library/solid/Frame 1167.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1168",
+          "name": "Frame 1168",
+          "filename": "Frame 1168.svg",
+          "path": "Frame 1168.svg",
+          "url": "/assets/icons/library/solid/Frame 1168.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1169",
+          "name": "Frame 1169",
+          "filename": "Frame 1169.svg",
+          "path": "Frame 1169.svg",
+          "url": "/assets/icons/library/solid/Frame 1169.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-117",
+          "name": "Frame 117",
+          "filename": "Frame 117.svg",
+          "path": "Frame 117.svg",
+          "url": "/assets/icons/library/solid/Frame 117.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1170",
+          "name": "Frame 1170",
+          "filename": "Frame 1170.svg",
+          "path": "Frame 1170.svg",
+          "url": "/assets/icons/library/solid/Frame 1170.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1171",
+          "name": "Frame 1171",
+          "filename": "Frame 1171.svg",
+          "path": "Frame 1171.svg",
+          "url": "/assets/icons/library/solid/Frame 1171.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1172",
+          "name": "Frame 1172",
+          "filename": "Frame 1172.svg",
+          "path": "Frame 1172.svg",
+          "url": "/assets/icons/library/solid/Frame 1172.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1173",
+          "name": "Frame 1173",
+          "filename": "Frame 1173.svg",
+          "path": "Frame 1173.svg",
+          "url": "/assets/icons/library/solid/Frame 1173.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1174",
+          "name": "Frame 1174",
+          "filename": "Frame 1174.svg",
+          "path": "Frame 1174.svg",
+          "url": "/assets/icons/library/solid/Frame 1174.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1175",
+          "name": "Frame 1175",
+          "filename": "Frame 1175.svg",
+          "path": "Frame 1175.svg",
+          "url": "/assets/icons/library/solid/Frame 1175.svg",
+          "extension": "svg",
+          "category": "solid"
+        },
+        {
+          "id": "frame-1176",
+          "name": "Frame 1176",
+          "filename": "Frame 1176.svg",
+          "path": "Frame 1176.svg",
+          "url": "/assets/icons/library/solid/Frame 1176.svg",
+          "extension": "svg",
+          "category": "solid"
+        }
+      ]
+    }
+  }
+}

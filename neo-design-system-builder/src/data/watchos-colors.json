@@ -1,0 +1,781 @@
+{
+  "name": "watchOS Color Palette",
+  "description": "Official watchOS color swatches and gradients",
+  "total": 86,
+  "colors": [
+    {
+      "id": "col-1",
+      "name": "Col 1",
+      "filename": "col 1.svg",
+      "path": "col 1.svg",
+      "url": "/assets/colors/watchos/col 1.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "col-2",
+      "name": "Col 2",
+      "filename": "col 2.svg",
+      "path": "col 2.svg",
+      "url": "/assets/colors/watchos/col 2.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "col-3",
+      "name": "Col 3",
+      "filename": "col 3.svg",
+      "path": "col 3.svg",
+      "url": "/assets/colors/watchos/col 3.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "col-4",
+      "name": "Col 4",
+      "filename": "col 4.svg",
+      "path": "col 4.svg",
+      "url": "/assets/colors/watchos/col 4.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "col-5",
+      "name": "Col 5",
+      "filename": "col 5.svg",
+      "path": "col 5.svg",
+      "url": "/assets/colors/watchos/col 5.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "col-6",
+      "name": "Col 6",
+      "filename": "col 6.svg",
+      "path": "col 6.svg",
+      "url": "/assets/colors/watchos/col 6.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "col-7",
+      "name": "Col 7",
+      "filename": "col 7.svg",
+      "path": "col 7.svg",
+      "url": "/assets/colors/watchos/col 7.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-1",
+      "name": "Color 1",
+      "filename": "color-1.svg",
+      "path": "color-1.svg",
+      "url": "/assets/colors/watchos/color-1.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-10",
+      "name": "Color 10",
+      "filename": "color-10.svg",
+      "path": "color-10.svg",
+      "url": "/assets/colors/watchos/color-10.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-11",
+      "name": "Color 11",
+      "filename": "color-11.svg",
+      "path": "color-11.svg",
+      "url": "/assets/colors/watchos/color-11.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-12",
+      "name": "Color 12",
+      "filename": "color-12.svg",
+      "path": "color-12.svg",
+      "url": "/assets/colors/watchos/color-12.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-13",
+      "name": "Color 13",
+      "filename": "color-13.svg",
+      "path": "color-13.svg",
+      "url": "/assets/colors/watchos/color-13.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-14",
+      "name": "Color 14",
+      "filename": "color-14.svg",
+      "path": "color-14.svg",
+      "url": "/assets/colors/watchos/color-14.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-15",
+      "name": "Color 15",
+      "filename": "color-15.svg",
+      "path": "color-15.svg",
+      "url": "/assets/colors/watchos/color-15.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-16",
+      "name": "Color 16",
+      "filename": "color-16.svg",
+      "path": "color-16.svg",
+      "url": "/assets/colors/watchos/color-16.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-17",
+      "name": "Color 17",
+      "filename": "color-17.svg",
+      "path": "color-17.svg",
+      "url": "/assets/colors/watchos/color-17.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-18",
+      "name": "Color 18",
+      "filename": "color-18.svg",
+      "path": "color-18.svg",
+      "url": "/assets/colors/watchos/color-18.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-19",
+      "name": "Color 19",
+      "filename": "color-19.svg",
+      "path": "color-19.svg",
+      "url": "/assets/colors/watchos/color-19.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-2",
+      "name": "Color 2",
+      "filename": "color-2.svg",
+      "path": "color-2.svg",
+      "url": "/assets/colors/watchos/color-2.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-20",
+      "name": "Color 20",
+      "filename": "color-20.svg",
+      "path": "color-20.svg",
+      "url": "/assets/colors/watchos/color-20.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-21",
+      "name": "Color 21",
+      "filename": "color-21.svg",
+      "path": "color-21.svg",
+      "url": "/assets/colors/watchos/color-21.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-22",
+      "name": "Color 22",
+      "filename": "color-22.svg",
+      "path": "color-22.svg",
+      "url": "/assets/colors/watchos/color-22.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-23",
+      "name": "Color 23",
+      "filename": "color-23.svg",
+      "path": "color-23.svg",
+      "url": "/assets/colors/watchos/color-23.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-24",
+      "name": "Color 24",
+      "filename": "color-24.svg",
+      "path": "color-24.svg",
+      "url": "/assets/colors/watchos/color-24.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-25",
+      "name": "Color 25",
+      "filename": "color-25.svg",
+      "path": "color-25.svg",
+      "url": "/assets/colors/watchos/color-25.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-26",
+      "name": "Color 26",
+      "filename": "color-26.svg",
+      "path": "color-26.svg",
+      "url": "/assets/colors/watchos/color-26.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-27",
+      "name": "Color 27",
+      "filename": "color-27.svg",
+      "path": "color-27.svg",
+      "url": "/assets/colors/watchos/color-27.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-28",
+      "name": "Color 28",
+      "filename": "color-28.svg",
+      "path": "color-28.svg",
+      "url": "/assets/colors/watchos/color-28.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-29",
+      "name": "Color 29",
+      "filename": "color-29.svg",
+      "path": "color-29.svg",
+      "url": "/assets/colors/watchos/color-29.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-3",
+      "name": "Color 3",
+      "filename": "color-3.svg",
+      "path": "color-3.svg",
+      "url": "/assets/colors/watchos/color-3.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-30",
+      "name": "Color 30",
+      "filename": "color-30.svg",
+      "path": "color-30.svg",
+      "url": "/assets/colors/watchos/color-30.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-31",
+      "name": "Color 31",
+      "filename": "color-31.svg",
+      "path": "color-31.svg",
+      "url": "/assets/colors/watchos/color-31.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-32",
+      "name": "Color 32",
+      "filename": "color-32.svg",
+      "path": "color-32.svg",
+      "url": "/assets/colors/watchos/color-32.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-33",
+      "name": "Color 33",
+      "filename": "color-33.svg",
+      "path": "color-33.svg",
+      "url": "/assets/colors/watchos/color-33.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-34",
+      "name": "Color 34",
+      "filename": "color-34.svg",
+      "path": "color-34.svg",
+      "url": "/assets/colors/watchos/color-34.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-35",
+      "name": "Color 35",
+      "filename": "color-35.svg",
+      "path": "color-35.svg",
+      "url": "/assets/colors/watchos/color-35.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-36",
+      "name": "Color 36",
+      "filename": "color-36.svg",
+      "path": "color-36.svg",
+      "url": "/assets/colors/watchos/color-36.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-37",
+      "name": "Color 37",
+      "filename": "color-37.svg",
+      "path": "color-37.svg",
+      "url": "/assets/colors/watchos/color-37.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-38",
+      "name": "Color 38",
+      "filename": "color-38.svg",
+      "path": "color-38.svg",
+      "url": "/assets/colors/watchos/color-38.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-39",
+      "name": "Color 39",
+      "filename": "color-39.svg",
+      "path": "color-39.svg",
+      "url": "/assets/colors/watchos/color-39.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-4",
+      "name": "Color 4",
+      "filename": "color-4.svg",
+      "path": "color-4.svg",
+      "url": "/assets/colors/watchos/color-4.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-40",
+      "name": "Color 40",
+      "filename": "color-40.svg",
+      "path": "color-40.svg",
+      "url": "/assets/colors/watchos/color-40.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-41",
+      "name": "Color 41",
+      "filename": "color-41.svg",
+      "path": "color-41.svg",
+      "url": "/assets/colors/watchos/color-41.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-42",
+      "name": "Color 42",
+      "filename": "color-42.svg",
+      "path": "color-42.svg",
+      "url": "/assets/colors/watchos/color-42.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-43",
+      "name": "Color 43",
+      "filename": "color-43.svg",
+      "path": "color-43.svg",
+      "url": "/assets/colors/watchos/color-43.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-44",
+      "name": "Color 44",
+      "filename": "color-44.svg",
+      "path": "color-44.svg",
+      "url": "/assets/colors/watchos/color-44.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-45",
+      "name": "Color 45",
+      "filename": "color-45.svg",
+      "path": "color-45.svg",
+      "url": "/assets/colors/watchos/color-45.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-46",
+      "name": "Color 46",
+      "filename": "color-46.svg",
+      "path": "color-46.svg",
+      "url": "/assets/colors/watchos/color-46.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-47",
+      "name": "Color 47",
+      "filename": "color-47.svg",
+      "path": "color-47.svg",
+      "url": "/assets/colors/watchos/color-47.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-48",
+      "name": "Color 48",
+      "filename": "color-48.svg",
+      "path": "color-48.svg",
+      "url": "/assets/colors/watchos/color-48.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-49",
+      "name": "Color 49",
+      "filename": "color-49.svg",
+      "path": "color-49.svg",
+      "url": "/assets/colors/watchos/color-49.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-5",
+      "name": "Color 5",
+      "filename": "color-5.svg",
+      "path": "color-5.svg",
+      "url": "/assets/colors/watchos/color-5.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-50",
+      "name": "Color 50",
+      "filename": "color-50.svg",
+      "path": "color-50.svg",
+      "url": "/assets/colors/watchos/color-50.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-51",
+      "name": "Color 51",
+      "filename": "color-51.svg",
+      "path": "color-51.svg",
+      "url": "/assets/colors/watchos/color-51.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-52",
+      "name": "Color 52",
+      "filename": "color-52.svg",
+      "path": "color-52.svg",
+      "url": "/assets/colors/watchos/color-52.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-53",
+      "name": "Color 53",
+      "filename": "color-53.svg",
+      "path": "color-53.svg",
+      "url": "/assets/colors/watchos/color-53.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-54",
+      "name": "Color 54",
+      "filename": "color-54.svg",
+      "path": "color-54.svg",
+      "url": "/assets/colors/watchos/color-54.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-55",
+      "name": "Color 55",
+      "filename": "color-55.svg",
+      "path": "color-55.svg",
+      "url": "/assets/colors/watchos/color-55.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-56",
+      "name": "Color 56",
+      "filename": "color-56.svg",
+      "path": "color-56.svg",
+      "url": "/assets/colors/watchos/color-56.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-57",
+      "name": "Color 57",
+      "filename": "color-57.svg",
+      "path": "color-57.svg",
+      "url": "/assets/colors/watchos/color-57.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-58",
+      "name": "Color 58",
+      "filename": "color-58.svg",
+      "path": "color-58.svg",
+      "url": "/assets/colors/watchos/color-58.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-59",
+      "name": "Color 59",
+      "filename": "color-59.svg",
+      "path": "color-59.svg",
+      "url": "/assets/colors/watchos/color-59.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-6",
+      "name": "Color 6",
+      "filename": "color-6.svg",
+      "path": "color-6.svg",
+      "url": "/assets/colors/watchos/color-6.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-60",
+      "name": "Color 60",
+      "filename": "color-60.svg",
+      "path": "color-60.svg",
+      "url": "/assets/colors/watchos/color-60.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-61",
+      "name": "Color 61",
+      "filename": "color-61.svg",
+      "path": "color-61.svg",
+      "url": "/assets/colors/watchos/color-61.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-62",
+      "name": "Color 62",
+      "filename": "color-62.svg",
+      "path": "color-62.svg",
+      "url": "/assets/colors/watchos/color-62.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-63",
+      "name": "Color 63",
+      "filename": "color-63.svg",
+      "path": "color-63.svg",
+      "url": "/assets/colors/watchos/color-63.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-64",
+      "name": "Color 64",
+      "filename": "color-64.svg",
+      "path": "color-64.svg",
+      "url": "/assets/colors/watchos/color-64.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-65",
+      "name": "Color 65",
+      "filename": "color-65.svg",
+      "path": "color-65.svg",
+      "url": "/assets/colors/watchos/color-65.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-66",
+      "name": "Color 66",
+      "filename": "color-66.svg",
+      "path": "color-66.svg",
+      "url": "/assets/colors/watchos/color-66.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-67",
+      "name": "Color 67",
+      "filename": "color-67.svg",
+      "path": "color-67.svg",
+      "url": "/assets/colors/watchos/color-67.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-68",
+      "name": "Color 68",
+      "filename": "color-68.svg",
+      "path": "color-68.svg",
+      "url": "/assets/colors/watchos/color-68.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-69",
+      "name": "Color 69",
+      "filename": "color-69.svg",
+      "path": "color-69.svg",
+      "url": "/assets/colors/watchos/color-69.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-7",
+      "name": "Color 7",
+      "filename": "color-7.svg",
+      "path": "color-7.svg",
+      "url": "/assets/colors/watchos/color-7.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-70",
+      "name": "Color 70",
+      "filename": "color-70.svg",
+      "path": "color-70.svg",
+      "url": "/assets/colors/watchos/color-70.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-71",
+      "name": "Color 71",
+      "filename": "color-71.svg",
+      "path": "color-71.svg",
+      "url": "/assets/colors/watchos/color-71.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-72",
+      "name": "Color 72",
+      "filename": "color-72.svg",
+      "path": "color-72.svg",
+      "url": "/assets/colors/watchos/color-72.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-73",
+      "name": "Color 73",
+      "filename": "color-73.svg",
+      "path": "color-73.svg",
+      "url": "/assets/colors/watchos/color-73.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-74",
+      "name": "Color 74",
+      "filename": "color-74.svg",
+      "path": "color-74.svg",
+      "url": "/assets/colors/watchos/color-74.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-75",
+      "name": "Color 75",
+      "filename": "color-75.svg",
+      "path": "color-75.svg",
+      "url": "/assets/colors/watchos/color-75.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-76",
+      "name": "Color 76",
+      "filename": "color-76.svg",
+      "path": "color-76.svg",
+      "url": "/assets/colors/watchos/color-76.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-77",
+      "name": "Color 77",
+      "filename": "color-77.svg",
+      "path": "color-77.svg",
+      "url": "/assets/colors/watchos/color-77.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-8",
+      "name": "Color 8",
+      "filename": "color-8.svg",
+      "path": "color-8.svg",
+      "url": "/assets/colors/watchos/color-8.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color-9",
+      "name": "Color 9",
+      "filename": "color-9.svg",
+      "path": "color-9.svg",
+      "url": "/assets/colors/watchos/color-9.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "color",
+      "name": "Color",
+      "filename": "color.svg",
+      "path": "color.svg",
+      "url": "/assets/colors/watchos/color.svg",
+      "extension": "svg",
+      "category": "watchos"
+    },
+    {
+      "id": "white",
+      "name": "White",
+      "filename": "white.svg",
+      "path": "white.svg",
+      "url": "/assets/colors/watchos/white.svg",
+      "extension": "svg",
+      "category": "watchos"
+    }
+  ]
+}

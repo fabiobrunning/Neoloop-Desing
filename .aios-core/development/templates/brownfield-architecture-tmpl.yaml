@@ -1,0 +1,371 @@
+# Brownfield Service Architecture Template
+# Use este template para documentar arquitetura de serviços em projetos existentes
+
+---
+# SERVICE ARCHITECTURE: {{service_name}}
+
+## 1. Overview
+
+### Service Identity
+- **Nome:** {{service_name}}
+- **Versão:** {{version}}
+- **Domínio:** {{business_domain}}
+- **Propósito:** {{purpose}}
+- **Data:** {{date}}
+
+### Context
+```
+Descreva o contexto de negócio e técnico que motivou a criação deste serviço.
+Explique como ele se encaixa no ecossistema existente.
+```
+
+---
+
+## 2. Service Boundaries
+
+### Responsabilidades
+**O que este serviço FAZ:**
+- {{responsibility_1}}
+- {{responsibility_2}}
+- {{responsibility_3}}
+
+**O que este serviço NÃO FAZ (delega):**
+- {{non_responsibility_1}}
+- {{non_responsibility_2}}
+
+### Dependências
+**Serviços/APIs que consome:**
+- {{dependency_1}}: {{dependency_1_purpose}}
+- {{dependency_2}}: {{dependency_2_purpose}}
+
+**Consumidores deste serviço:**
+- {{consumer_1}}: {{consumer_1_use_case}}
+- {{consumer_2}}: {{consumer_2_use_case}}
+
+---
+
+## 3. Technology Stack
+
+### Backend
+- **Framework:** {{backend_framework}}
+  - **Razão:** {{backend_framework_rationale}}
+- **Runtime:** {{runtime}} (e.g., Node.js, Python, Go)
+- **Language:** {{language}} (e.g., TypeScript, Python, Go)
+
+### Database
+- **Primary Database:** {{database}}
+  - **Razão:** {{database_rationale}}
+- **Caching Layer:** {{cache}} (e.g., Redis, in-memory)
+- **Search:** {{search_engine}} (se aplicável)
+
+### API
+- **Style:** {{api_style}} (REST/GraphQL/tRPC/gRPC)
+- **Documentation:** {{api_docs_tool}} (Swagger/OpenAPI)
+- **Versioning:** {{api_versioning_strategy}}
+
+### Authentication & Authorization
+- **Autenticação:** {{auth_method}} (JWT, OAuth, sessions)
+- **Autorização:** {{authz_method}} (RBAC, ABAC, RLS)
+- **Identity Provider:** {{identity_provider}}
+
+---
+
+## 4. Architecture Patterns
+
+### Architectural Style
+- **Pattern:** {{architecture_pattern}} (e.g., Layered, Hexagonal, Clean Architecture)
+- **Service Type:** {{service_type}} (Microservice, Monolith, Serverless)
+
+### Code Organization
+```
+src/
+├── controllers/     # HTTP handlers
+├── services/        # Business logic
+├── repositories/    # Data access
+├── models/          # Domain models
+├── middleware/      # Express/Fastify middleware
+├── utils/           # Utilities
+└── config/          # Configuration
+```
+
+### Design Patterns
+- {{pattern_1}}: {{pattern_1_usage}}
+- {{pattern_2}}: {{pattern_2_usage}}
+
+---
+
+## 5. API Design
+
+### Endpoints Overview
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| {{method_1}} | {{endpoint_1}} | {{description_1}} | {{auth_1}} |
+| {{method_2}} | {{endpoint_2}} | {{description_2}} | {{auth_2}} |
+| {{method_3}} | {{endpoint_3}} | {{description_3}} | {{auth_3}} |
+
+### Request/Response Schemas
+```typescript
+// Example: GET /api/{{resource}}
+interface {{Resource}}Response {
+  id: string;
+  name: string;
+  createdAt: string;
+  // ...
+}
+```
+
+### Error Handling
+- **Error Format:** {{error_format}} (e.g., RFC 7807, custom)
+- **Status Codes:** {{status_codes_strategy}}
+- **Error Logging:** {{error_logging}}
+
+---
+
+## 6. Data Architecture
+
+### Database Schema
+> **Note:** Schema detalhado delegado a @data-engineer (Dara).
+
+**Tables/Collections:**
+- {{table_1}}: {{table_1_purpose}}
+- {{table_2}}: {{table_2_purpose}}
+
+### Data Access Patterns
+- **ORM/Query Builder:** {{orm}} (Prisma, TypeORM, Drizzle, etc.)
+- **Repository Pattern:** {{repository_pattern_used}}
+- **Migrations:** {{migration_strategy}}
+
+### Caching Strategy
+- **Cache Layer:** {{cache_layer}} (Redis, in-memory)
+- **Cache Invalidation:** {{cache_invalidation_strategy}}
+- **TTL Strategy:** {{ttl_strategy}}
+
+---
+
+## 7. Integration Patterns
+
+### Event-Driven
+- **Event Bus:** {{event_bus}} (se aplicável)
+- **Events Published:** {{events_published}}
+- **Events Consumed:** {{events_consumed}}
+
+### Message Queues
+- **Queue System:** {{queue_system}} (RabbitMQ, SQS, etc.)
+- **Queues:** {{queues_list}}
+- **Dead Letter Queue:** {{dlq_strategy}}
+
+### REST/HTTP Integrations
+- **External APIs:** {{external_apis}}
+- **HTTP Client:** {{http_client}} (axios, fetch, etc.)
+- **Retry Strategy:** {{retry_strategy}}
+
+### Webhooks
+- **Outgoing Webhooks:** {{outgoing_webhooks}}
+- **Incoming Webhooks:** {{incoming_webhooks}}
+- **Security:** {{webhook_security}}
+
+---
+
+## 8. Security Architecture
+
+### Authentication
+- **Method:** {{auth_method}}
+- **Token Storage:** {{token_storage}}
+- **Token Expiration:** {{token_expiration}}
+
+### Authorization
+- **Model:** {{authz_model}} (RBAC, ABAC, RLS)
+- **Permissions:** {{permissions_list}}
+- **Roles:** {{roles_list}}
+
+### Input Validation
+- **Validation Library:** {{validation_library}} (Zod, Joi, etc.)
+- **Sanitization:** {{sanitization_strategy}}
+
+### Security Measures
+- **Rate Limiting:** {{rate_limiting}} (per IP, per user)
+- **CORS:** {{cors_policy}}
+- **HTTPS Only:** {{https_enforced}}
+- **Secrets Management:** {{secrets_management}} (env vars, Vault, etc.)
+- **SQL Injection Protection:** {{sql_injection_protection}}
+- **XSS Protection:** {{xss_protection}}
+
+---
+
+## 9. Performance Optimization
+
+### Caching
+- **Strategy:** {{caching_strategy}}
+- **Cache Layers:** {{cache_layers}} (CDN, app-level, DB-level)
+
+### Database Optimization
+- **Indexes:** {{indexes_strategy}}
+- **Query Optimization:** {{query_optimization}}
+- **Connection Pooling:** {{connection_pooling}}
+
+### API Performance
+- **Pagination:** {{pagination_strategy}}
+- **Filtering:** {{filtering_strategy}}
+- **Rate Limiting:** {{rate_limiting_performance}}
+
+### Load Balancing
+- **Strategy:** {{load_balancing}} (if applicable)
+- **Horizontal Scaling:** {{horizontal_scaling}}
+
+---
+
+## 10. Observability
+
+### Logging
+- **Library:** {{logging_library}} (Winston, Pino, Bunyan)
+- **Log Levels:** {{log_levels}}
+- **Log Aggregation:** {{log_aggregation}} (CloudWatch, DataDog, etc.)
+- **Structured Logging:** {{structured_logging}}
+
+### Monitoring
+- **APM Tool:** {{apm_tool}} (Prometheus, DataDog, New Relic)
+- **Metrics:** {{metrics_list}}
+- **Dashboards:** {{dashboards}}
+
+### Tracing
+- **Distributed Tracing:** {{tracing_tool}} (OpenTelemetry, Jaeger)
+- **Trace Context Propagation:** {{trace_propagation}}
+
+### Alerting
+- **Alert System:** {{alert_system}}
+- **Critical Alerts:** {{critical_alerts}}
+- **On-Call:** {{on_call_strategy}}
+
+---
+
+## 11. Deployment Strategy
+
+### Infrastructure
+- **Cloud Provider:** {{cloud_provider}} (AWS, GCP, Azure, Railway, etc.)
+- **Deployment Target:** {{deployment_target}} (EC2, Lambda, Kubernetes, Railway, etc.)
+- **Environment:** {{environments}} (dev, staging, prod)
+
+### CI/CD
+- **Pipeline Tool:** {{cicd_tool}} (GitHub Actions, GitLab CI, etc.)
+- **Build Process:** {{build_process}}
+- **Deployment Process:** {{deployment_process}}
+- **Rollback Strategy:** {{rollback_strategy}}
+
+### Configuration
+- **Environment Variables:** {{env_vars_management}}
+- **Secrets:** {{secrets_management_deployment}}
+- **Feature Flags:** {{feature_flags}} (if applicable)
+
+---
+
+## 12. Testing Strategy
+
+> **Note:** Testes detalhados delegados a @qa.
+
+### Test Pyramid
+- **Unit Tests:** {{unit_tests_coverage}}%
+- **Integration Tests:** {{integration_tests_strategy}}
+- **E2E Tests:** {{e2e_tests_strategy}}
+
+### Testing Tools
+- **Unit:** {{unit_test_framework}}
+- **Integration:** {{integration_test_framework}}
+- **E2E:** {{e2e_test_framework}}
+
+---
+
+## 13. Architecture Decision Records (ADRs)
+
+### Key Decisions
+1. **[ADR-001] {{decision_1_title}}**
+   - **Status:** {{decision_1_status}}
+   - **Context:** {{decision_1_context}}
+   - **Decision:** {{decision_1_decision}}
+   - **Consequences:** {{decision_1_consequences}}
+
+2. **[ADR-002] {{decision_2_title}}**
+   - **Status:** {{decision_2_status}}
+   - **Context:** {{decision_2_context}}
+   - **Decision:** {{decision_2_decision}}
+   - **Consequences:** {{decision_2_consequences}}
+
+---
+
+## 14. Diagrams
+
+### System Context Diagram
+```mermaid
+{{system_context_diagram}}
+```
+
+### Service Architecture Diagram
+```mermaid
+{{service_architecture_diagram}}
+```
+
+### Data Flow Diagram
+```mermaid
+{{data_flow_diagram}}
+```
+
+### Deployment Diagram
+```mermaid
+{{deployment_diagram}}
+```
+
+---
+
+## 15. Migration & Compatibility
+
+### Backward Compatibility
+- **API Versioning:** {{api_versioning}}
+- **Database Migrations:** {{db_migration_strategy}}
+- **Feature Flags:** {{feature_flags_migration}}
+
+### Deprecation Strategy
+- **Deprecation Timeline:** {{deprecation_timeline}}
+- **Sunset Policy:** {{sunset_policy}}
+
+---
+
+## 16. Risks & Mitigation
+
+| Risk | Impact | Probability | Mitigation |
+|------|--------|-------------|------------|
+| {{risk_1}} | {{impact_1}} | {{prob_1}} | {{mitigation_1}} |
+| {{risk_2}} | {{impact_2}} | {{prob_2}} | {{mitigation_2}} |
+
+---
+
+## 17. Future Considerations
+
+### Scalability
+- {{scalability_consideration_1}}
+- {{scalability_consideration_2}}
+
+### Technical Debt
+- {{tech_debt_1}}
+- {{tech_debt_2}}
+
+### Potential Improvements
+- {{improvement_1}}
+- {{improvement_2}}
+
+---
+
+## Appendices
+
+### Glossary
+- **{{term_1}}:** {{definition_1}}
+- **{{term_2}}:** {{definition_2}}
+
+### References
+- {{reference_1}}
+- {{reference_2}}
+
+---
+
+**Prepared by:** {{architect_name}} (@architect)
+**Reviewed by:** {{reviewer_names}}
+**Approved by:** {{approver_name}}
+**Date:** {{approval_date}}

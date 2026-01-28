@@ -1,0 +1,77 @@
+/**
+ * Design Tokens - Typography
+ * Exportado do Figma via plugin Design Tokens
+ * Gerado automaticamente
+ */
+
+:root {
+  /* ========================================
+     TIPOGRAFIA - Title Style
+     ======================================== */
+  --font-title-family: 'SF UI Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-title-size: 22px;
+  --font-title-weight: 500;
+  --font-title-line-height: 26.4px;
+  --font-title-letter-spacing: 0;
+  --font-title-text-transform: none;
+
+  /* ========================================
+     TIPOGRAFIA - Value Style
+     ======================================== */
+  --font-value-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  --font-value-size: 16px;
+  --font-value-weight: 400;
+  --font-value-line-height: 19.2px;
+  --font-value-letter-spacing: 0;
+  --font-value-text-transform: uppercase;
+}
+
+/* ========================================
+   CLASSES UTILITÁRIAS DE TIPOGRAFIA
+   ======================================== */
+
+.text-title {
+  font-family: var(--font-title-family);
+  font-size: var(--font-title-size);
+  font-weight: var(--font-title-weight);
+  line-height: var(--font-title-line-height);
+  letter-spacing: var(--font-title-letter-spacing);
+  text-transform: var(--font-title-text-transform);
+}
+
+.text-value {
+  font-family: var(--font-value-family);
+  font-size: var(--font-value-size);
+  font-weight: var(--font-value-weight);
+  line-height: var(--font-value-line-height);
+  letter-spacing: var(--font-value-letter-spacing);
+  text-transform: var(--font-value-text-transform);
+}
+
+/* ========================================
+   VARIAÇÕES DE TAMANHO (OPCIONAL)
+   ======================================== */
+
+/* Title - Small */
+.text-title-sm {
+  font-family: var(--font-title-family);
+  font-size: 18px;
+  font-weight: var(--font-title-weight);
+  line-height: 22px;
+}
+
+/* Title - Large */
+.text-title-lg {
+  font-family: var(--font-title-family);
+  font-size: 28px;
+  font-weight: var(--font-title-weight);
+  line-height: 34px;
+}
+
+/* Value - Small */
+.text-value-sm {
+  font-family: var(--font-value-family);
+  font-size: 14px;
+  font-weight: var(--font-value-weight);
+  text-transform: var(--font-value-text-transform);
+}
