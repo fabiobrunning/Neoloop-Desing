@@ -13,9 +13,6 @@ export default defineConfig({
     setupFiles: ['./src/test/setup.ts', './tests/setup-a11y.ts'],
     testTimeout: 20000,
     hookTimeout: 20000,
-    coverage: {
-      enabled: false
-    },
   },
   resolve: {
     alias: {

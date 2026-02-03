@@ -8,16 +8,7 @@ export default mergeConfig(
       name: 'performance',
       include: ['**/*.performance.test.{ts,tsx}'],
       testTimeout: 30000,
-      hookTimeout: 30000,
-      coverage: {
-        enabled: false
-      },
-      // Run performance tests sequentially to avoid interference
-      poolOptions: {
-        threads: {
-          singleThread: true
-        }
-      }
+      hookTimeout: 30000
     }
   })
 );
