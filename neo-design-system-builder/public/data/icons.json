@@ -1,0 +1,48 @@
+{
+  "categories": [
+    {
+      "id": "general",
+      "name": "General",
+      "icons": [
+        { "id": "home", "name": "Home", "keywords": ["house", "main"] },
+        { "id": "settings", "name": "Settings", "keywords": ["gear", "config"] },
+        { "id": "user", "name": "User", "keywords": ["person", "profile"] },
+        { "id": "search", "name": "Search", "keywords": ["find", "magnify"] },
+        { "id": "bell", "name": "Bell", "keywords": ["notification", "alert"] }
+      ]
+    },
+    {
+      "id": "navigation",
+      "name": "Navigation",
+      "icons": [
+        { "id": "arrow-left", "name": "Arrow Left", "keywords": ["back", "previous"] },
+        { "id": "arrow-right", "name": "Arrow Right", "keywords": ["forward", "next"] },
+        { "id": "menu", "name": "Menu", "keywords": ["hamburger", "nav"] },
+        { "id": "close", "name": "Close", "keywords": ["x", "exit"] },
+        { "id": "chevron-down", "name": "Chevron Down", "keywords": ["expand", "dropdown"] }
+      ]
+    },
+    {
+      "id": "actions",
+      "name": "Actions",
+      "icons": [
+        { "id": "edit", "name": "Edit", "keywords": ["pencil", "modify"] },
+        { "id": "trash", "name": "Trash", "keywords": ["delete", "remove"] },
+        { "id": "download", "name": "Download", "keywords": ["save", "export"] },
+        { "id": "upload", "name": "Upload", "keywords": ["import", "attach"] },
+        { "id": "copy", "name": "Copy", "keywords": ["duplicate", "clone"] }
+      ]
+    },
+    {
+      "id": "status",
+      "name": "Status",
+      "icons": [
+        { "id": "check", "name": "Check", "keywords": ["success", "done"] },
+        { "id": "x", "name": "X", "keywords": ["error", "fail"] },
+        { "id": "info", "name": "Info", "keywords": ["information", "help"] },
+        { "id": "alert-triangle", "name": "Alert Triangle", "keywords": ["warning", "caution"] },
+        { "id": "loader", "name": "Loader", "keywords": ["loading", "spinner"] }
+      ]
+    }
+  ]
+}

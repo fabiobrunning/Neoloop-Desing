@@ -1,0 +1,346 @@
+# Production Deployment Pipeline
+# Manual trigger only for production environment
+
+name: Deploy to Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_deploy:
+        description: 'Type "DEPLOY" to confirm production deployment'
+        required: true
+      tag:
+        description: 'Release tag (e.g., v1.0.0)'
+        required: false
+      rollback_to:
+        description: 'Rollback to specific deployment (leave empty for new deploy)'
+        required: false
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: '20'
+  WORKING_DIR: ./neo-design-system-builder
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  # Job 1: Validate Deployment Request
+  validate-deployment:
+    name: Validate Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate Confirmation
+        if: ${{ inputs.confirm_deploy != 'DEPLOY' }}
+        run: |
+          echo "::error::Deployment not confirmed. Please type 'DEPLOY' to confirm."
+          exit 1
+
+      - name: Log Deployment Request
+        run: |
+          echo "Production deployment requested by: ${{ github.actor }}"
+          echo "Tag: ${{ inputs.tag || 'latest' }}"
+          echo "Rollback: ${{ inputs.rollback_to || 'N/A' }}"
+
+  # Job 2: Rollback (if requested)
+  rollback:
+    name: Rollback Deployment
+    runs-on: ubuntu-latest
+    needs: validate-deployment
+    if: ${{ inputs.rollback_to != '' }}
+    environment:
+      name: production
+
+    steps:
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Rollback to Previous Deployment
+        run: |
+          echo "Rolling back to: ${{ inputs.rollback_to }}"
+          vercel rollback ${{ inputs.rollback_to }} --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Notify Rollback
+        run: |
+          echo "## Production Rollback" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Rolled back to:** ${{ inputs.rollback_to }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Timestamp:** $(date -u)" >> $GITHUB_STEP_SUMMARY
+
+  # Job 3: Pre-production Tests
+  pre-production-tests:
+    name: Pre-production Tests
+    runs-on: ubuntu-latest
+    needs: validate-deployment
+    if: ${{ inputs.rollback_to == '' }}
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Lint Check
+        run: npm run lint
+
+      - name: Type Check
+        run: npm run typecheck
+
+      - name: Run All Tests
+        run: npm run test:ci
+        env:
+          CI: true
+
+      - name: Security Audit
+        run: npm audit --audit-level=high
+
+  # Job 4: Build for Production
+  build-production:
+    name: Build for Production
+    runs-on: ubuntu-latest
+    needs: pre-production-tests
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+    outputs:
+      build_id: ${{ steps.build_info.outputs.build_id }}
+      version: ${{ steps.build_info.outputs.version }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Application
+        run: npm run build
+        env:
+          NODE_ENV: production
+          VITE_ENV: production
+          VITE_API_URL: ${{ secrets.PRODUCTION_API_URL }}
+
+      - name: Generate Build Info
+        id: build_info
+        run: |
+          VERSION="${{ inputs.tag || format('v{0}', github.run_number) }}"
+          BUILD_ID="${{ github.sha }}-$(date +%s)"
+          echo "build_id=$BUILD_ID" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+          # Create build metadata
+          cat > dist/build-info.json << EOF
+          {
+            "buildId": "$BUILD_ID",
+            "version": "$VERSION",
+            "commit": "${{ github.sha }}",
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "environment": "production"
+          }
+          EOF
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-build-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/dist
+          retention-days: 90
+
+  # Job 5: Deploy to Production
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: build-production
+    environment:
+      name: production
+      url: https://neo-design-system.vercel.app
+    outputs:
+      deployment_url: ${{ steps.deploy.outputs.deployment_url }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: production-build-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/dist
+
+      - name: Pull Vercel Environment
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: ${{ env.WORKING_DIR }}
+
+      - name: Deploy to Production
+        id: deploy
+        run: |
+          DEPLOY_URL=$(vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
+          echo "deployment_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Deployed to: $DEPLOY_URL"
+        working-directory: ${{ env.WORKING_DIR }}
+
+      - name: Create Git Tag
+        if: ${{ inputs.tag != '' }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git tag -a "${{ inputs.tag }}" -m "Release ${{ inputs.tag }}"
+          git push origin "${{ inputs.tag }}"
+
+  # Job 6: Post-deployment Verification
+  post-deploy-verify:
+    name: Post-deployment Verification
+    runs-on: ubuntu-latest
+    needs: deploy-production
+
+    steps:
+      - name: Wait for Deployment Propagation
+        run: sleep 60
+
+      - name: Health Check
+        run: |
+          DEPLOY_URL="${{ needs.deploy-production.outputs.deployment_url }}"
+          echo "Checking production at: $DEPLOY_URL"
+
+          for i in {1..10}; do
+            HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$DEPLOY_URL" || echo "000")
+            if [ "$HTTP_STATUS" = "200" ]; then
+              echo "Production deployment is healthy!"
+              exit 0
+            fi
+            echo "Attempt $i: HTTP $HTTP_STATUS, retrying..."
+            sleep 15
+          done
+
+          echo "::error::Production health check failed"
+          exit 1
+
+      - name: Smoke Tests
+        run: |
+          DEPLOY_URL="${{ needs.deploy-production.outputs.deployment_url }}"
+
+          # Check main page
+          curl -sf "$DEPLOY_URL" > /dev/null || exit 1
+
+          # Check build info
+          curl -sf "$DEPLOY_URL/build-info.json" > /dev/null || echo "Build info not accessible"
+
+          echo "Smoke tests passed!"
+
+      - name: Lighthouse Performance Check
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            ${{ needs.deploy-production.outputs.deployment_url }}
+          budgetPath: ./lighthouse-budget.json
+          uploadArtifacts: true
+        continue-on-error: true
+
+  # Job 7: Create Release
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: [build-production, deploy-production, post-deploy-verify]
+    if: ${{ inputs.tag != '' }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Changelog
+        id: changelog
+        run: |
+          # Get commits since last tag
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          if [ -n "$LAST_TAG" ]; then
+            CHANGELOG=$(git log ${LAST_TAG}..HEAD --pretty=format:"- %s (%h)" --no-merges)
+          else
+            CHANGELOG=$(git log --pretty=format:"- %s (%h)" --no-merges -20)
+          fi
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ inputs.tag }}
+          name: Release ${{ inputs.tag }}
+          body: |
+            ## What's Changed
+
+            ${{ steps.changelog.outputs.changelog }}
+
+            ## Deployment Info
+            - **Build ID:** ${{ needs.build-production.outputs.build_id }}
+            - **Commit:** ${{ github.sha }}
+            - **Deployed by:** ${{ github.actor }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Job 8: Notify
+  notify:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [build-production, deploy-production, post-deploy-verify]
+    if: always()
+
+    steps:
+      - name: Slack Notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ needs.post-deploy-verify.result }}
+          channel: '#deployments'
+          fields: repo,message,commit,author,action,workflow
+          text: |
+            Production Deployment: ${{ needs.post-deploy-verify.result }}
+            Version: ${{ needs.build-production.outputs.version }}
+            URL: ${{ needs.deploy-production.outputs.deployment_url }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true
+
+      - name: Create Deployment Summary
+        run: |
+          echo "## Production Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ${{ needs.post-deploy-verify.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** ${{ needs.build-production.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Build ID:** ${{ needs.build-production.outputs.build_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "**URL:** ${{ needs.deploy-production.outputs.deployment_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Deployed by:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Timestamp:** $(date -u)" >> $GITHUB_STEP_SUMMARY

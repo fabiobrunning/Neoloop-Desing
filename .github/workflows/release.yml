@@ -1,0 +1,143 @@
+# Release Pipeline
+# Automated semantic versioning and changelog
+
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - patch
+          - minor
+          - major
+
+env:
+  NODE_VERSION: '20'
+  WORKING_DIR: ./neo-design-system-builder
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Determine Version Bump
+        id: version
+        run: |
+          # Get commit messages since last tag
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          COMMITS=$(git log ${LAST_TAG}..HEAD --oneline)
+
+          if [ "${{ inputs.release_type }}" != "auto" ] && [ -n "${{ inputs.release_type }}" ]; then
+            BUMP="${{ inputs.release_type }}"
+          elif echo "$COMMITS" | grep -qiE "^.*(BREAKING|!:)"; then
+            BUMP="major"
+          elif echo "$COMMITS" | grep -qiE "^.*(feat|feature)"; then
+            BUMP="minor"
+          else
+            BUMP="patch"
+          fi
+
+          echo "bump=$BUMP" >> $GITHUB_OUTPUT
+          echo "Version bump: $BUMP"
+
+      - name: Bump Version
+        id: bump
+        working-directory: ${{ env.WORKING_DIR }}
+        run: |
+          # Bump version in package.json
+          NEW_VERSION=$(npm version ${{ steps.version.outputs.bump }} --no-git-tag-version)
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "New version: $NEW_VERSION"
+
+      - name: Generate Changelog
+        id: changelog
+        run: |
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+
+          echo "## What's Changed" > CHANGELOG_ENTRY.md
+          echo "" >> CHANGELOG_ENTRY.md
+
+          if [ -n "$LAST_TAG" ]; then
+            # Group commits by type
+            echo "### Features" >> CHANGELOG_ENTRY.md
+            git log ${LAST_TAG}..HEAD --pretty=format:"- %s (%h)" --no-merges | grep -iE "^- (feat|feature)" >> CHANGELOG_ENTRY.md || echo "- No new features" >> CHANGELOG_ENTRY.md
+            echo "" >> CHANGELOG_ENTRY.md
+
+            echo "### Bug Fixes" >> CHANGELOG_ENTRY.md
+            git log ${LAST_TAG}..HEAD --pretty=format:"- %s (%h)" --no-merges | grep -iE "^- fix" >> CHANGELOG_ENTRY.md || echo "- No bug fixes" >> CHANGELOG_ENTRY.md
+            echo "" >> CHANGELOG_ENTRY.md
+
+            echo "### Other Changes" >> CHANGELOG_ENTRY.md
+            git log ${LAST_TAG}..HEAD --pretty=format:"- %s (%h)" --no-merges | grep -viE "^- (feat|feature|fix)" >> CHANGELOG_ENTRY.md || echo "- No other changes" >> CHANGELOG_ENTRY.md
+          else
+            echo "- Initial release" >> CHANGELOG_ENTRY.md
+          fi
+
+          echo "changelog_file=CHANGELOG_ENTRY.md" >> $GITHUB_OUTPUT
+
+      - name: Build Application
+        working-directory: ${{ env.WORKING_DIR }}
+        run: |
+          npm ci
+          npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Commit and Tag
+        run: |
+          git add .
+          git commit -m "chore(release): ${{ steps.bump.outputs.new_version }}"
+          git tag -a "${{ steps.bump.outputs.new_version }}" -m "Release ${{ steps.bump.outputs.new_version }}"
+          git push origin main --follow-tags
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.bump.outputs.new_version }}
+          name: Release ${{ steps.bump.outputs.new_version }}
+          body_path: CHANGELOG_ENTRY.md
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notify Release
+        run: |
+          echo "## Release Created" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** ${{ steps.bump.outputs.new_version }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Type:** ${{ steps.version.outputs.bump }}" >> $GITHUB_STEP_SUMMARY

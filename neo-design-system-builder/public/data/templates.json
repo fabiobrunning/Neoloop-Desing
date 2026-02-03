@@ -1,0 +1,49 @@
+{
+  "templates": [
+    {
+      "id": "template-dashboard",
+      "name": "Dashboard Layout",
+      "category": "Layouts",
+      "description": "Full-featured dashboard with sidebar, header, and widget grid",
+      "preview": "/assets/templates/dashboard.png",
+      "components": ["Sidebar", "Header", "Card", "Chart", "Table"],
+      "tags": ["admin", "analytics", "layout"]
+    },
+    {
+      "id": "template-landing",
+      "name": "Landing Page",
+      "category": "Marketing",
+      "description": "Modern landing page with hero, features, and CTA sections",
+      "preview": "/assets/templates/landing.png",
+      "components": ["Hero", "Feature", "Button", "Form"],
+      "tags": ["marketing", "conversion", "landing"]
+    },
+    {
+      "id": "template-form",
+      "name": "Multi-Step Form",
+      "category": "Forms",
+      "description": "Complex form with validation, steps, and file upload",
+      "preview": "/assets/templates/form.png",
+      "components": ["Input", "Select", "FileUpload", "Stepper"],
+      "tags": ["forms", "validation", "wizard"]
+    },
+    {
+      "id": "template-ecommerce",
+      "name": "E-commerce Product Page",
+      "category": "E-commerce",
+      "description": "Product detail page with gallery, reviews, and cart",
+      "preview": "/assets/templates/ecommerce.png",
+      "components": ["Gallery", "Card", "Rating", "Button"],
+      "tags": ["shop", "product", "commerce"]
+    },
+    {
+      "id": "template-blog",
+      "name": "Blog Post Layout",
+      "category": "Content",
+      "description": "Article layout with TOC, author bio, and comments",
+      "preview": "/assets/templates/blog.png",
+      "components": ["Article", "Sidebar", "Comment", "Author"],
+      "tags": ["blog", "content", "article"]
+    }
+  ]
+}

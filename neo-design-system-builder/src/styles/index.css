@@ -27,6 +27,15 @@
   }
 }
 
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
 .animate-in {
   animation-fill-mode: both;
 }
@@ -37,6 +46,14 @@
 
 .slide-in-from-bottom-4 {
   animation-name: slide-in-from-bottom-4;
+}
+
+.animate-indeterminate {
+  animation: indeterminate 1.5s ease-in-out infinite;
+}
+
+.duration-200 {
+  animation-duration: 200ms;
 }
 
 .duration-500 {

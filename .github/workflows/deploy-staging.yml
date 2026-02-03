@@ -1,0 +1,237 @@
+# Staging Deployment Pipeline
+# Manual trigger for staging environment
+
+name: Deploy to Staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to deploy'
+        required: true
+        default: 'develop'
+      skip_tests:
+        description: 'Skip tests before deployment'
+        required: false
+        type: boolean
+        default: false
+  push:
+    branches:
+      - develop
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: '20'
+  WORKING_DIR: ./neo-design-system-builder
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  # Job 1: Pre-deployment Checks
+  pre-deploy-checks:
+    name: Pre-deployment Checks
+    runs-on: ubuntu-latest
+    if: ${{ !inputs.skip_tests }}
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Lint Check
+        run: npm run lint
+
+      - name: Type Check
+        run: npm run typecheck
+
+      - name: Run Tests
+        run: npm run test
+        env:
+          CI: true
+
+  # Job 2: Build for Staging
+  build-staging:
+    name: Build for Staging
+    runs-on: ubuntu-latest
+    needs: pre-deploy-checks
+    if: always() && (needs.pre-deploy-checks.result == 'success' || inputs.skip_tests)
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+    outputs:
+      build_id: ${{ steps.build_info.outputs.build_id }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Application
+        run: npm run build
+        env:
+          NODE_ENV: staging
+          VITE_ENV: staging
+          VITE_API_URL: ${{ secrets.STAGING_API_URL }}
+
+      - name: Generate Build Info
+        id: build_info
+        run: |
+          BUILD_ID="${{ github.sha }}-$(date +%s)"
+          echo "build_id=$BUILD_ID" >> $GITHUB_OUTPUT
+          echo "Build ID: $BUILD_ID"
+
+          # Create build metadata
+          cat > dist/build-info.json << EOF
+          {
+            "buildId": "$BUILD_ID",
+            "branch": "${{ inputs.branch || github.ref_name }}",
+            "commit": "${{ github.sha }}",
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "environment": "staging"
+          }
+          EOF
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: staging-build-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/dist
+          retention-days: 7
+
+  # Job 3: Deploy to Vercel Staging
+  deploy-vercel:
+    name: Deploy to Vercel (Staging)
+    runs-on: ubuntu-latest
+    needs: build-staging
+    environment:
+      name: staging
+      url: ${{ steps.deploy.outputs.preview_url }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: staging-build-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/dist
+
+      - name: Pull Vercel Environment
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        working-directory: ${{ env.WORKING_DIR }}
+
+      - name: Deploy to Vercel
+        id: deploy
+        run: |
+          DEPLOY_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "preview_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Deployed to: $DEPLOY_URL"
+        working-directory: ${{ env.WORKING_DIR }}
+
+  # Job 4: Post-deployment Verification
+  post-deploy-verify:
+    name: Post-deployment Verification
+    runs-on: ubuntu-latest
+    needs: deploy-vercel
+
+    steps:
+      - name: Wait for Deployment
+        run: sleep 30
+
+      - name: Health Check
+        run: |
+          DEPLOY_URL="${{ needs.deploy-vercel.outputs.preview_url }}"
+          echo "Checking deployment at: $DEPLOY_URL"
+
+          for i in {1..5}; do
+            HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$DEPLOY_URL" || echo "000")
+            if [ "$HTTP_STATUS" = "200" ]; then
+              echo "Deployment is healthy!"
+              exit 0
+            fi
+            echo "Attempt $i: HTTP $HTTP_STATUS, retrying..."
+            sleep 10
+          done
+
+          echo "::error::Deployment health check failed"
+          exit 1
+        continue-on-error: true
+
+      - name: Lighthouse Performance Check
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            ${{ needs.deploy-vercel.outputs.preview_url }}
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+        continue-on-error: true
+
+  # Job 5: Notify
+  notify:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [build-staging, deploy-vercel, post-deploy-verify]
+    if: always()
+
+    steps:
+      - name: Slack Notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          channel: '#deployments'
+          fields: repo,message,commit,author,action,workflow
+          text: |
+            Staging Deployment: ${{ needs.deploy-vercel.result }}
+            URL: ${{ needs.deploy-vercel.outputs.preview_url }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true
+
+      - name: Create Deployment Summary
+        run: |
+          echo "## Staging Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** ${{ needs.deploy-vercel.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Build ID:** ${{ needs.build-staging.outputs.build_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "**URL:** ${{ needs.deploy-vercel.outputs.preview_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** ${{ inputs.branch || github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY

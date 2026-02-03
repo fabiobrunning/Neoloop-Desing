@@ -1,0 +1,180 @@
+# Monitoring & Alerting Pipeline
+# Uptime monitoring, performance alerts, and error tracking
+
+name: Monitoring & Alerts
+
+on:
+  schedule:
+    # Run every 5 minutes for uptime checks
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      check_type:
+        description: 'Type of check to run'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - uptime
+          - performance
+          - errors
+
+env:
+  PRODUCTION_URL: https://neo-design-system.vercel.app
+  STAGING_URL: https://neo-design-system-staging.vercel.app
+  STORYBOOK_URL: https://neo-design-system-storybook.vercel.app
+
+jobs:
+  # Job 1: Uptime Monitoring
+  uptime-check:
+    name: Uptime Check
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.check_type == 'all' || github.event.inputs.check_type == 'uptime' || github.event_name == 'schedule' }}
+    outputs:
+      production_status: ${{ steps.check.outputs.production }}
+      staging_status: ${{ steps.check.outputs.staging }}
+      storybook_status: ${{ steps.check.outputs.storybook }}
+
+    steps:
+      - name: Check Endpoints
+        id: check
+        run: |
+          check_endpoint() {
+            local name=$1
+            local url=$2
+            local start_time=$(date +%s%N)
+
+            HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "$url" || echo "000")
+            local end_time=$(date +%s%N)
+            local response_time=$(( (end_time - start_time) / 1000000 ))
+
+            echo "${name}_status=$HTTP_STATUS" >> $GITHUB_OUTPUT
+            echo "${name}_response_time=$response_time" >> $GITHUB_OUTPUT
+
+            if [ "$HTTP_STATUS" = "200" ]; then
+              echo "$name: UP (HTTP $HTTP_STATUS, ${response_time}ms)"
+              return 0
+            else
+              echo "$name: DOWN (HTTP $HTTP_STATUS)"
+              return 1
+            fi
+          }
+
+          echo "## Uptime Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Environment | Status | Response Time |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------------|--------|---------------|" >> $GITHUB_STEP_SUMMARY
+
+          PROD_RESULT=$(check_endpoint "production" "${{ env.PRODUCTION_URL }}" && echo "UP" || echo "DOWN")
+          STAGING_RESULT=$(check_endpoint "staging" "${{ env.STAGING_URL }}" && echo "UP" || echo "DOWN")
+          STORYBOOK_RESULT=$(check_endpoint "storybook" "${{ env.STORYBOOK_URL }}" && echo "UP" || echo "DOWN")
+
+          echo "| Production | $PROD_RESULT | - |" >> $GITHUB_STEP_SUMMARY
+          echo "| Staging | $STAGING_RESULT | - |" >> $GITHUB_STEP_SUMMARY
+          echo "| Storybook | $STORYBOOK_RESULT | - |" >> $GITHUB_STEP_SUMMARY
+
+          echo "production=$PROD_RESULT" >> $GITHUB_OUTPUT
+          echo "staging=$STAGING_RESULT" >> $GITHUB_OUTPUT
+          echo "storybook=$STORYBOOK_RESULT" >> $GITHUB_OUTPUT
+
+      - name: Alert on Downtime
+        if: contains(steps.check.outputs.production, 'DOWN')
+        run: |
+          echo "::error::Production environment is DOWN!"
+
+  # Job 2: Performance Monitoring
+  performance-check:
+    name: Performance Monitoring
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.check_type == 'all' || github.event.inputs.check_type == 'performance' }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Lighthouse Check
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            ${{ env.PRODUCTION_URL }}
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+        continue-on-error: true
+
+      - name: Check Performance Budgets
+        run: |
+          echo "## Performance Check" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Performance monitoring completed. Check Lighthouse artifacts for details." >> $GITHUB_STEP_SUMMARY
+
+  # Job 3: Send Alerts
+  send-alerts:
+    name: Send Alerts
+    runs-on: ubuntu-latest
+    needs: uptime-check
+    if: |
+      always() &&
+      (needs.uptime-check.outputs.production_status == 'DOWN' ||
+       needs.uptime-check.outputs.staging_status == 'DOWN')
+
+    steps:
+      - name: Slack Alert - Downtime
+        uses: 8398a7/action-slack@v3
+        with:
+          status: failure
+          channel: '#alerts'
+          text: |
+            :rotating_light: DOWNTIME ALERT
+            Production: ${{ needs.uptime-check.outputs.production_status }}
+            Staging: ${{ needs.uptime-check.outputs.staging_status }}
+            Storybook: ${{ needs.uptime-check.outputs.storybook_status }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true
+
+      - name: PagerDuty Alert
+        if: needs.uptime-check.outputs.production_status == 'DOWN'
+        run: |
+          curl -X POST https://events.pagerduty.com/v2/enqueue \
+            -H "Content-Type: application/json" \
+            -d '{
+              "routing_key": "${{ secrets.PAGERDUTY_ROUTING_KEY }}",
+              "event_action": "trigger",
+              "payload": {
+                "summary": "Neo Design System Production is DOWN",
+                "severity": "critical",
+                "source": "github-actions-monitoring"
+              }
+            }' || true
+        continue-on-error: true
+
+  # Job 4: Weekly Report
+  weekly-report:
+    name: Weekly Monitoring Report
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 0 * * 0'
+
+    steps:
+      - name: Generate Weekly Report
+        run: |
+          echo "## Weekly Monitoring Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Report Date:** $(date -u '+%Y-%m-%d')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Uptime checks performed: ~2016 (every 5 min)" >> $GITHUB_STEP_SUMMARY
+          echo "- Check detailed logs in Actions history" >> $GITHUB_STEP_SUMMARY
+
+      - name: Send Weekly Report
+        uses: 8398a7/action-slack@v3
+        with:
+          status: success
+          channel: '#reports'
+          text: |
+            :chart_with_upwards_trend: Weekly Monitoring Report
+            Neo Design System monitoring summary available.
+            Check GitHub Actions for detailed metrics.
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true

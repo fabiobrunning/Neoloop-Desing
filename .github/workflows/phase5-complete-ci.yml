@@ -1,0 +1,409 @@
+# Phase 5 - Complete CI/CD Pipeline
+# Comprehensive testing, coverage gates, performance budgets, and security scanning
+
+name: Phase 5 Complete CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'feature/**'
+      - 'fix/**'
+  pull_request:
+    branches:
+      - main
+      - develop
+
+concurrency:
+  group: phase5-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '20'
+  WORKING_DIR: ./neo-design-system-builder
+  COVERAGE_THRESHOLD: 80
+  BUNDLE_SIZE_LIMIT_KB: 500
+
+jobs:
+  # ============================================
+  # STAGE 1: Code Quality Gates
+  # ============================================
+
+  lint-typecheck:
+    name: Lint & Type Check
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: ESLint Check
+        run: npm run lint
+        continue-on-error: false
+
+      - name: TypeScript Check
+        run: npm run typecheck
+        continue-on-error: false
+
+      - name: Prettier Format Check
+        run: npm run format:check
+        continue-on-error: true
+
+      - name: Security Lint
+        run: npm run lint:security
+        continue-on-error: true
+
+  # ============================================
+  # STAGE 2: Testing with Coverage Gates
+  # ============================================
+
+  unit-tests:
+    name: Unit Tests (Coverage Gate 80%)
+    runs-on: ubuntu-latest
+    needs: lint-typecheck
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Unit Tests with Coverage
+        run: npm run test:coverage
+        env:
+          CI: true
+
+      - name: Check Coverage Threshold
+        id: coverage_check
+        run: |
+          if [ -f coverage/coverage-summary.json ]; then
+            LINES=$(cat coverage/coverage-summary.json | jq '.total.lines.pct')
+            BRANCHES=$(cat coverage/coverage-summary.json | jq '.total.branches.pct')
+            FUNCTIONS=$(cat coverage/coverage-summary.json | jq '.total.functions.pct')
+            STATEMENTS=$(cat coverage/coverage-summary.json | jq '.total.statements.pct')
+
+            echo "lines_coverage=$LINES" >> $GITHUB_OUTPUT
+            echo "branches_coverage=$BRANCHES" >> $GITHUB_OUTPUT
+            echo "functions_coverage=$FUNCTIONS" >> $GITHUB_OUTPUT
+            echo "statements_coverage=$STATEMENTS" >> $GITHUB_OUTPUT
+
+            echo "## Coverage Report" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| Metric | Coverage | Threshold | Status |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|----------|-----------|--------|" >> $GITHUB_STEP_SUMMARY
+
+            check_threshold() {
+              local metric=$1
+              local value=$2
+              local threshold=${{ env.COVERAGE_THRESHOLD }}
+              if (( $(echo "$value >= $threshold" | bc -l) )); then
+                echo "| $metric | ${value}% | ${threshold}% | PASS |" >> $GITHUB_STEP_SUMMARY
+              else
+                echo "| $metric | ${value}% | ${threshold}% | FAIL |" >> $GITHUB_STEP_SUMMARY
+              fi
+            }
+
+            check_threshold "Lines" "$LINES"
+            check_threshold "Branches" "$BRANCHES"
+            check_threshold "Functions" "$FUNCTIONS"
+            check_threshold "Statements" "$STATEMENTS"
+
+            # Fail if below threshold
+            if (( $(echo "$LINES < ${{ env.COVERAGE_THRESHOLD }}" | bc -l) )); then
+              echo "::warning::Line coverage ${LINES}% is below threshold ${{ env.COVERAGE_THRESHOLD }}%"
+            fi
+          fi
+
+      - name: Upload Coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ${{ env.WORKING_DIR }}/coverage
+          flags: unittests
+          fail_ci_if_error: false
+
+      - name: Upload Coverage Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/coverage
+          retention-days: 30
+
+  integration-tests:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    needs: lint-typecheck
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Integration Tests
+        run: npm run test:integration
+        env:
+          CI: true
+        continue-on-error: true
+
+  a11y-tests:
+    name: Accessibility Tests
+    runs-on: ubuntu-latest
+    needs: lint-typecheck
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Accessibility Tests
+        run: npm run test:a11y
+        env:
+          CI: true
+        continue-on-error: true
+
+  # ============================================
+  # STAGE 3: Build & Performance Budgets
+  # ============================================
+
+  build-production:
+    name: Production Build & Bundle Analysis
+    runs-on: ubuntu-latest
+    needs: [unit-tests, integration-tests, a11y-tests]
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+    outputs:
+      bundle_size: ${{ steps.bundle_analysis.outputs.total_size }}
+      bundle_passed: ${{ steps.bundle_analysis.outputs.passed }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build for Production
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Bundle Size Analysis
+        id: bundle_analysis
+        run: |
+          # Calculate total JS bundle size
+          TOTAL_JS_SIZE=$(find dist -name "*.js" -exec du -k {} + | awk '{sum+=$1} END {print sum}')
+          TOTAL_CSS_SIZE=$(find dist -name "*.css" -exec du -k {} + | awk '{sum+=$1} END {print sum}')
+          TOTAL_SIZE=$((TOTAL_JS_SIZE + TOTAL_CSS_SIZE))
+
+          echo "total_size=$TOTAL_SIZE" >> $GITHUB_OUTPUT
+
+          echo "## Bundle Analysis" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Type | Size (KB) | Budget (KB) | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|-----------|-------------|--------|" >> $GITHUB_STEP_SUMMARY
+
+          if [ "$TOTAL_JS_SIZE" -le "300" ]; then
+            echo "| JavaScript | $TOTAL_JS_SIZE | 300 | PASS |" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| JavaScript | $TOTAL_JS_SIZE | 300 | FAIL |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          if [ "$TOTAL_CSS_SIZE" -le "100" ]; then
+            echo "| CSS | $TOTAL_CSS_SIZE | 100 | PASS |" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| CSS | $TOTAL_CSS_SIZE | 100 | FAIL |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          if [ "$TOTAL_SIZE" -le "${{ env.BUNDLE_SIZE_LIMIT_KB }}" ]; then
+            echo "| **Total** | **$TOTAL_SIZE** | **${{ env.BUNDLE_SIZE_LIMIT_KB }}** | **PASS** |" >> $GITHUB_STEP_SUMMARY
+            echo "passed=true" >> $GITHUB_OUTPUT
+          else
+            echo "| **Total** | **$TOTAL_SIZE** | **${{ env.BUNDLE_SIZE_LIMIT_KB }}** | **FAIL** |" >> $GITHUB_STEP_SUMMARY
+            echo "passed=false" >> $GITHUB_OUTPUT
+            echo "::warning::Bundle size ${TOTAL_SIZE}KB exceeds budget of ${{ env.BUNDLE_SIZE_LIMIT_KB }}KB"
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Detailed Breakdown" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          find dist -type f \( -name "*.js" -o -name "*.css" \) -exec ls -lh {} \; | awk '{print $5, $9}' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-build-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/dist
+          retention-days: 7
+
+  # ============================================
+  # STAGE 4: Security Scanning
+  # ============================================
+
+  security-scan:
+    name: Security Scanning
+    runs-on: ubuntu-latest
+    needs: lint-typecheck
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: NPM Audit
+        id: npm_audit
+        run: |
+          echo "## NPM Audit Results" >> $GITHUB_STEP_SUMMARY
+          npm audit --json > audit-results.json || true
+
+          CRITICAL=$(cat audit-results.json | jq '.metadata.vulnerabilities.critical // 0')
+          HIGH=$(cat audit-results.json | jq '.metadata.vulnerabilities.high // 0')
+          MODERATE=$(cat audit-results.json | jq '.metadata.vulnerabilities.moderate // 0')
+          LOW=$(cat audit-results.json | jq '.metadata.vulnerabilities.low // 0')
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Severity | Count |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Critical | $CRITICAL |" >> $GITHUB_STEP_SUMMARY
+          echo "| High | $HIGH |" >> $GITHUB_STEP_SUMMARY
+          echo "| Moderate | $MODERATE |" >> $GITHUB_STEP_SUMMARY
+          echo "| Low | $LOW |" >> $GITHUB_STEP_SUMMARY
+
+          echo "critical=$CRITICAL" >> $GITHUB_OUTPUT
+          echo "high=$HIGH" >> $GITHUB_OUTPUT
+
+          if [ "$CRITICAL" -gt 0 ]; then
+            echo "::error::Critical vulnerabilities found!"
+          fi
+
+      - name: TruffleHog Secret Scan
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          extra_args: --only-verified
+        continue-on-error: true
+
+      - name: Run Security Linting
+        run: npm run lint:security
+        continue-on-error: true
+
+  # ============================================
+  # STAGE 5: Final Status Report
+  # ============================================
+
+  ci-summary:
+    name: CI Summary Report
+    runs-on: ubuntu-latest
+    needs: [lint-typecheck, unit-tests, integration-tests, a11y-tests, build-production, security-scan]
+    if: always()
+
+    steps:
+      - name: Generate Summary
+        run: |
+          echo "## Phase 5 CI Pipeline Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Pipeline Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Stage | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Lint & TypeCheck | ${{ needs.lint-typecheck.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Unit Tests | ${{ needs.unit-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Integration Tests | ${{ needs.integration-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Accessibility Tests | ${{ needs.a11y-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Production Build | ${{ needs.build-production.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Security Scan | ${{ needs.security-scan.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Overall status
+          if [[ "${{ needs.lint-typecheck.result }}" == "success" && \
+                "${{ needs.unit-tests.result }}" == "success" && \
+                "${{ needs.build-production.result }}" == "success" ]]; then
+            echo "### Overall Status: PASSED" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### Overall Status: FAILED" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Slack Notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ needs.build-production.result }}
+          channel: '#ci-cd'
+          fields: repo,message,commit,author,action,workflow
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true

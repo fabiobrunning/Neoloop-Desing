@@ -1,0 +1,283 @@
+# Storybook Deployment Pipeline
+# Deploys Storybook to Vercel/Chromatic for component documentation
+
+name: Deploy Storybook
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'neo-design-system-builder/src/**'
+      - 'neo-design-system-builder/components/**'
+      - 'neo-design-system-builder/.storybook/**'
+      - 'neo-design-system-builder/package.json'
+  pull_request:
+    branches:
+      - main
+      - develop
+  workflow_dispatch:
+    inputs:
+      deploy_target:
+        description: 'Deployment target'
+        required: true
+        default: 'chromatic'
+        type: choice
+        options:
+          - chromatic
+          - vercel
+          - both
+
+concurrency:
+  group: storybook-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '20'
+  WORKING_DIR: ./neo-design-system-builder
+
+jobs:
+  # Job 1: Build Storybook
+  build-storybook:
+    name: Build Storybook
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+    outputs:
+      storybook_build_id: ${{ steps.build_info.outputs.build_id }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Storybook
+        run: npm run build-storybook
+        env:
+          NODE_ENV: production
+
+      - name: Generate Build Info
+        id: build_info
+        run: |
+          BUILD_ID="storybook-${{ github.sha }}-$(date +%s)"
+          echo "build_id=$BUILD_ID" >> $GITHUB_OUTPUT
+
+          # Create build metadata
+          cat > storybook-static/build-info.json << EOF
+          {
+            "buildId": "$BUILD_ID",
+            "commit": "${{ github.sha }}",
+            "branch": "${{ github.ref_name }}",
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "type": "storybook"
+          }
+          EOF
+
+      - name: Upload Storybook Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: storybook-build-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/storybook-static
+          retention-days: 30
+
+  # Job 2: Deploy to Chromatic (Visual Testing)
+  deploy-chromatic:
+    name: Deploy to Chromatic
+    runs-on: ubuntu-latest
+    needs: build-storybook
+    if: |
+      github.event_name == 'push' ||
+      github.event.inputs.deploy_target == 'chromatic' ||
+      github.event.inputs.deploy_target == 'both'
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+    outputs:
+      chromatic_url: ${{ steps.chromatic.outputs.url }}
+      chromatic_build_url: ${{ steps.chromatic.outputs.buildUrl }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ${{ env.WORKING_DIR }}/package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Publish to Chromatic
+        id: chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          workingDir: ${{ env.WORKING_DIR }}
+          buildScriptName: build-storybook
+          autoAcceptChanges: ${{ github.ref == 'refs/heads/main' }}
+          exitOnceUploaded: true
+          onlyChanged: true
+
+      - name: Chromatic Summary
+        run: |
+          echo "## Chromatic Deployment" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Storybook URL:** ${{ steps.chromatic.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Build URL:** ${{ steps.chromatic.outputs.buildUrl }}" >> $GITHUB_STEP_SUMMARY
+
+  # Job 3: Deploy to Vercel (Storybook Static Site)
+  deploy-vercel-storybook:
+    name: Deploy Storybook to Vercel
+    runs-on: ubuntu-latest
+    needs: build-storybook
+    if: |
+      github.event_name == 'push' && github.ref == 'refs/heads/main' ||
+      github.event.inputs.deploy_target == 'vercel' ||
+      github.event.inputs.deploy_target == 'both'
+    environment:
+      name: storybook
+      url: ${{ steps.deploy.outputs.deployment_url }}
+    outputs:
+      deployment_url: ${{ steps.deploy.outputs.deployment_url }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Download Storybook Build
+        uses: actions/download-artifact@v4
+        with:
+          name: storybook-build-${{ github.sha }}
+          path: ${{ env.WORKING_DIR }}/storybook-static
+
+      - name: Create Vercel Config for Storybook
+        run: |
+          cat > ${{ env.WORKING_DIR }}/vercel.storybook.json << 'EOF'
+          {
+            "version": 2,
+            "name": "neo-design-system-storybook",
+            "builds": [
+              {
+                "src": "storybook-static/**/*",
+                "use": "@vercel/static"
+              }
+            ],
+            "routes": [
+              {
+                "src": "/(.*)",
+                "dest": "/storybook-static/$1"
+              }
+            ],
+            "headers": [
+              {
+                "source": "/(.*)",
+                "headers": [
+                  {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "key": "X-Frame-Options",
+                    "value": "DENY"
+                  },
+                  {
+                    "key": "X-XSS-Protection",
+                    "value": "1; mode=block"
+                  },
+                  {
+                    "key": "Referrer-Policy",
+                    "value": "strict-origin-when-cross-origin"
+                  }
+                ]
+              }
+            ]
+          }
+          EOF
+
+      - name: Deploy to Vercel
+        id: deploy
+        run: |
+          cd ${{ env.WORKING_DIR }}
+          DEPLOY_URL=$(vercel deploy storybook-static --prod --token=${{ secrets.VERCEL_TOKEN }} --yes)
+          echo "deployment_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Deployed to: $DEPLOY_URL"
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_STORYBOOK_PROJECT_ID }}
+
+  # Job 4: Performance Check
+  storybook-performance:
+    name: Storybook Performance Check
+    runs-on: ubuntu-latest
+    needs: deploy-vercel-storybook
+    if: needs.deploy-vercel-storybook.result == 'success'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Lighthouse Performance Check
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            ${{ needs.deploy-vercel-storybook.outputs.deployment_url }}
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: './lighthouse-storybook.config.js'
+        continue-on-error: true
+
+  # Job 5: Notify
+  notify-storybook:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [build-storybook, deploy-chromatic, deploy-vercel-storybook]
+    if: always()
+
+    steps:
+      - name: Deployment Summary
+        run: |
+          echo "## Storybook Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Target | Status | URL |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|--------|-----|" >> $GITHUB_STEP_SUMMARY
+          echo "| Chromatic | ${{ needs.deploy-chromatic.result }} | ${{ needs.deploy-chromatic.outputs.chromatic_url }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Vercel | ${{ needs.deploy-vercel-storybook.result }} | ${{ needs.deploy-vercel-storybook.outputs.deployment_url }} |" >> $GITHUB_STEP_SUMMARY
+
+      - name: Slack Notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          channel: '#design-system'
+          text: |
+            Storybook Deployment Complete
+            Chromatic: ${{ needs.deploy-chromatic.outputs.chromatic_url }}
+            Vercel: ${{ needs.deploy-vercel-storybook.outputs.deployment_url }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true

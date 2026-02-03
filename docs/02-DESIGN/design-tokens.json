@@ -1,0 +1,600 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "color": {
+    "gray": {
+      "950": {
+        "value": "#000000",
+        "type": "color",
+        "description": "Primary text, headings"
+      },
+      "900": {
+        "value": "#1A1A1A",
+        "type": "color",
+        "description": "Text secondary, dark backgrounds"
+      },
+      "800": {
+        "value": "#333333",
+        "type": "color",
+        "description": "Text muted, icons"
+      },
+      "700": {
+        "value": "#4D4D4D",
+        "type": "color",
+        "description": "Borders dark, disabled text"
+      },
+      "600": {
+        "value": "#666666",
+        "type": "color",
+        "description": "Placeholders, subtle text"
+      },
+      "500": {
+        "value": "#808080",
+        "type": "color",
+        "description": "Dividers, neutral elements"
+      },
+      "400": {
+        "value": "#999999",
+        "type": "color",
+        "description": "Disabled states, faded elements"
+      },
+      "300": {
+        "value": "#B3B3B3",
+        "type": "color",
+        "description": "Borders light, subtle dividers"
+      },
+      "200": {
+        "value": "#CCCCCC",
+        "type": "color",
+        "description": "Backgrounds light, hover states"
+      },
+      "100": {
+        "value": "#E6E6E6",
+        "type": "color",
+        "description": "Subtle backgrounds, cards"
+      },
+      "50": {
+        "value": "#F5F5F5",
+        "type": "color",
+        "description": "Page backgrounds, very light"
+      }
+    },
+    "white": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "description": "Pure white, text on dark"
+    },
+    "primary": {
+      "950": {
+        "value": "#000000",
+        "type": "color",
+        "description": "Primary CTA, brand elements"
+      },
+      "900": {
+        "value": "#1A1A1A",
+        "type": "color",
+        "description": "Hover states"
+      },
+      "800": {
+        "value": "#333333",
+        "type": "color",
+        "description": "Active states"
+      },
+      "100": {
+        "value": "#E6E6E6",
+        "type": "color",
+        "description": "Light backgrounds"
+      },
+      "50": {
+        "value": "#F5F5F5",
+        "type": "color",
+        "description": "Very light accents"
+      }
+    },
+    "success": {
+      "700": {
+        "value": "#047857",
+        "type": "color",
+        "description": "Success messages, confirmations"
+      },
+      "600": {
+        "value": "#059669",
+        "type": "color",
+        "description": "Success states"
+      },
+      "500": {
+        "value": "#10B981",
+        "type": "color",
+        "description": "Success primary"
+      },
+      "100": {
+        "value": "#D1FAE5",
+        "type": "color",
+        "description": "Success backgrounds"
+      },
+      "50": {
+        "value": "#ECFDF5",
+        "type": "color",
+        "description": "Very light success"
+      }
+    },
+    "warning": {
+      "700": {
+        "value": "#B45309",
+        "type": "color",
+        "description": "Warning messages"
+      },
+      "600": {
+        "value": "#D97706",
+        "type": "color",
+        "description": "Warning states"
+      },
+      "500": {
+        "value": "#F59E0B",
+        "type": "color",
+        "description": "Warning primary"
+      },
+      "100": {
+        "value": "#FEF3C7",
+        "type": "color",
+        "description": "Warning backgrounds"
+      },
+      "50": {
+        "value": "#FFFBEB",
+        "type": "color",
+        "description": "Very light warning"
+      }
+    },
+    "error": {
+      "700": {
+        "value": "#B91C1C",
+        "type": "color",
+        "description": "Error messages, destructive actions"
+      },
+      "600": {
+        "value": "#DC2626",
+        "type": "color",
+        "description": "Error states"
+      },
+      "500": {
+        "value": "#EF4444",
+        "type": "color",
+        "description": "Error primary"
+      },
+      "100": {
+        "value": "#FEE2E2",
+        "type": "color",
+        "description": "Error backgrounds"
+      },
+      "50": {
+        "value": "#FEF2F2",
+        "type": "color",
+        "description": "Very light error"
+      }
+    },
+    "info": {
+      "700": {
+        "value": "#1D4ED8",
+        "type": "color",
+        "description": "Info messages"
+      },
+      "600": {
+        "value": "#2563EB",
+        "type": "color",
+        "description": "Info states"
+      },
+      "500": {
+        "value": "#3B82F6",
+        "type": "color",
+        "description": "Info primary, focus states"
+      },
+      "100": {
+        "value": "#DBEAFE",
+        "type": "color",
+        "description": "Info backgrounds"
+      },
+      "50": {
+        "value": "#EFF6FF",
+        "type": "color",
+        "description": "Very light info"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "type": "fontFamily",
+        "description": "Primary font for UI and content"
+      },
+      "mono": {
+        "value": "'JetBrains Mono', 'Fira Code', 'Consolas', monospace",
+        "type": "fontFamily",
+        "description": "Code and technical content"
+      },
+      "serif": {
+        "value": "'Crimson Pro', 'Georgia', serif",
+        "type": "fontFamily",
+        "description": "Editorial content (optional)"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": "0.75rem",
+        "type": "fontSize",
+        "description": "12px - Captions, labels, badges"
+      },
+      "sm": {
+        "value": "0.875rem",
+        "type": "fontSize",
+        "description": "14px - Small text, secondary info"
+      },
+      "base": {
+        "value": "1rem",
+        "type": "fontSize",
+        "description": "16px - Body text, default"
+      },
+      "lg": {
+        "value": "1.125rem",
+        "type": "fontSize",
+        "description": "18px - Lead paragraphs"
+      },
+      "xl": {
+        "value": "1.25rem",
+        "type": "fontSize",
+        "description": "20px - Small headings"
+      },
+      "2xl": {
+        "value": "1.5rem",
+        "type": "fontSize",
+        "description": "24px - Section headings (H3)"
+      },
+      "3xl": {
+        "value": "2rem",
+        "type": "fontSize",
+        "description": "32px - Page headings (H2)"
+      },
+      "4xl": {
+        "value": "2.5rem",
+        "type": "fontSize",
+        "description": "40px - Hero headings (H1)"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": "400",
+        "type": "fontWeight",
+        "description": "Body text, default"
+      },
+      "medium": {
+        "value": "500",
+        "type": "fontWeight",
+        "description": "Emphasis, buttons"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "fontWeight",
+        "description": "Subheadings"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeight",
+        "description": "Headings"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": "1.25",
+        "type": "lineHeight",
+        "description": "Headings, titles"
+      },
+      "normal": {
+        "value": "1.5",
+        "type": "lineHeight",
+        "description": "Body text, paragraphs"
+      },
+      "relaxed": {
+        "value": "1.75",
+        "type": "lineHeight",
+        "description": "Long-form content"
+      }
+    },
+    "letterSpacing": {
+      "tight": {
+        "value": "-0.025em",
+        "type": "letterSpacing",
+        "description": "Large headings"
+      },
+      "normal": {
+        "value": "0",
+        "type": "letterSpacing",
+        "description": "Default text"
+      },
+      "wide": {
+        "value": "0.025em",
+        "type": "letterSpacing",
+        "description": "Uppercase labels"
+      }
+    }
+  },
+  "spacing": {
+    "0": {
+      "value": "0",
+      "type": "spacing",
+      "description": "Reset, no spacing"
+    },
+    "1": {
+      "value": "0.25rem",
+      "type": "spacing",
+      "description": "4px - Very tight"
+    },
+    "2": {
+      "value": "0.5rem",
+      "type": "spacing",
+      "description": "8px - Tight"
+    },
+    "3": {
+      "value": "0.75rem",
+      "type": "spacing",
+      "description": "12px - Compact"
+    },
+    "4": {
+      "value": "1rem",
+      "type": "spacing",
+      "description": "16px - Default"
+    },
+    "5": {
+      "value": "1.25rem",
+      "type": "spacing",
+      "description": "20px - Medium"
+    },
+    "6": {
+      "value": "1.5rem",
+      "type": "spacing",
+      "description": "24px - Comfortable"
+    },
+    "8": {
+      "value": "2rem",
+      "type": "spacing",
+      "description": "32px - Large"
+    },
+    "10": {
+      "value": "2.5rem",
+      "type": "spacing",
+      "description": "40px - Section spacing"
+    },
+    "12": {
+      "value": "3rem",
+      "type": "spacing",
+      "description": "48px - Large sections"
+    },
+    "14": {
+      "value": "3.5rem",
+      "type": "spacing",
+      "description": "56px - Very large"
+    },
+    "16": {
+      "value": "4rem",
+      "type": "spacing",
+      "description": "64px - Hero spacing"
+    }
+  },
+  "shadow": {
+    "none": {
+      "value": "none",
+      "type": "shadow",
+      "description": "e0 - Flat elements"
+    },
+    "sm": {
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "type": "shadow",
+      "description": "e1 - Subtle lift"
+    },
+    "base": {
+      "value": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
+      "type": "shadow",
+      "description": "e2 - Default elevation"
+    },
+    "md": {
+      "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)",
+      "type": "shadow",
+      "description": "e3 - Dropdowns, popovers"
+    },
+    "lg": {
+      "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)",
+      "type": "shadow",
+      "description": "e4 - Modals, drawers"
+    },
+    "xl": {
+      "value": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)",
+      "type": "shadow",
+      "description": "e5 - Large modals"
+    },
+    "inner": {
+      "value": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+      "type": "shadow",
+      "description": "Inner shadow"
+    },
+    "focus": {
+      "value": "0 0 0 3px rgba(59, 130, 246, 0.5)",
+      "type": "shadow",
+      "description": "Focus ring shadow"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "value": "0",
+      "type": "borderRadius",
+      "description": "Sharp corners"
+    },
+    "sm": {
+      "value": "0.125rem",
+      "type": "borderRadius",
+      "description": "2px - Subtle rounding"
+    },
+    "base": {
+      "value": "0.25rem",
+      "type": "borderRadius",
+      "description": "4px - Default, buttons"
+    },
+    "md": {
+      "value": "0.375rem",
+      "type": "borderRadius",
+      "description": "6px - Inputs"
+    },
+    "lg": {
+      "value": "0.5rem",
+      "type": "borderRadius",
+      "description": "8px - Cards"
+    },
+    "xl": {
+      "value": "0.75rem",
+      "type": "borderRadius",
+      "description": "12px - Large cards"
+    },
+    "2xl": {
+      "value": "1rem",
+      "type": "borderRadius",
+      "description": "16px - Hero elements"
+    },
+    "3xl": {
+      "value": "1.5rem",
+      "type": "borderRadius",
+      "description": "24px - Very large"
+    },
+    "full": {
+      "value": "9999px",
+      "type": "borderRadius",
+      "description": "Pills, circular"
+    }
+  },
+  "zIndex": {
+    "base": {
+      "value": "0",
+      "type": "zIndex",
+      "description": "Default layer"
+    },
+    "dropdown": {
+      "value": "1000",
+      "type": "zIndex",
+      "description": "Dropdown menus"
+    },
+    "sticky": {
+      "value": "1100",
+      "type": "zIndex",
+      "description": "Sticky headers"
+    },
+    "fixed": {
+      "value": "1200",
+      "type": "zIndex",
+      "description": "Fixed elements"
+    },
+    "popover": {
+      "value": "1300",
+      "type": "zIndex",
+      "description": "Popovers, tooltips"
+    },
+    "overlay": {
+      "value": "1400",
+      "type": "zIndex",
+      "description": "Modal backdrops"
+    },
+    "modal": {
+      "value": "1500",
+      "type": "zIndex",
+      "description": "Modal dialogs"
+    },
+    "toast": {
+      "value": "1600",
+      "type": "zIndex",
+      "description": "Notifications"
+    },
+    "tooltip": {
+      "value": "1700",
+      "type": "zIndex",
+      "description": "Tooltips (highest)"
+    }
+  },
+  "animation": {
+    "duration": {
+      "instant": {
+        "value": "0ms",
+        "type": "duration",
+        "description": "No animation"
+      },
+      "fast": {
+        "value": "150ms",
+        "type": "duration",
+        "description": "Quick interactions"
+      },
+      "base": {
+        "value": "300ms",
+        "type": "duration",
+        "description": "Default transitions"
+      },
+      "slow": {
+        "value": "500ms",
+        "type": "duration",
+        "description": "Complex animations"
+      },
+      "slower": {
+        "value": "700ms",
+        "type": "duration",
+        "description": "Large movements"
+      }
+    },
+    "easing": {
+      "linear": {
+        "value": "linear",
+        "type": "cubicBezier",
+        "description": "Constant speed"
+      },
+      "in": {
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "type": "cubicBezier",
+        "description": "Accelerating"
+      },
+      "out": {
+        "value": "cubic-bezier(0, 0, 0.2, 1)",
+        "type": "cubicBezier",
+        "description": "Decelerating"
+      },
+      "inOut": {
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "type": "cubicBezier",
+        "description": "Smooth start & end"
+      }
+    }
+  },
+  "breakpoints": {
+    "xs": {
+      "value": "0px",
+      "type": "breakpoint",
+      "description": "Small phones"
+    },
+    "sm": {
+      "value": "640px",
+      "type": "breakpoint",
+      "description": "Large phones"
+    },
+    "md": {
+      "value": "768px",
+      "type": "breakpoint",
+      "description": "Tablets"
+    },
+    "lg": {
+      "value": "1024px",
+      "type": "breakpoint",
+      "description": "Laptops"
+    },
+    "xl": {
+      "value": "1280px",
+      "type": "breakpoint",
+      "description": "Desktops"
+    },
+    "2xl": {
+      "value": "1536px",
+      "type": "breakpoint",
+      "description": "Large desktops"
+    }
+  }
+}

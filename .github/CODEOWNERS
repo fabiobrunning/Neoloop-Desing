@@ -1,0 +1,30 @@
+# CODEOWNERS - Define code ownership for automatic review assignments
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo
+* @fabiobrunning
+
+# Frontend application
+/neo-design-system-builder/ @fabiobrunning
+
+# Components
+/neo-design-system-builder/components/ @fabiobrunning
+/neo-design-system-builder/src/components/ @fabiobrunning
+
+# Configuration files
+/neo-design-system-builder/*.config.* @fabiobrunning
+/neo-design-system-builder/tsconfig.json @fabiobrunning
+
+# CI/CD and DevOps
+/.github/ @fabiobrunning
+
+# Documentation
+/docs/ @fabiobrunning
+
+# Design assets
+/assets/ @fabiobrunning
+
+# Security-related files (requires security review)
+/.github/workflows/security-scan.yml @fabiobrunning
+/.github/workflows/deploy-production.yml @fabiobrunning
+/.github/dependabot.yml @fabiobrunning
