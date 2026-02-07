@@ -8,6 +8,7 @@ import {
   CardContent,
   CardFooter,
 } from "./Card";
+import { axe } from "../../lib/test-utils";
 
 describe("Card", () => {
   it("renders Card root", () => {
@@ -81,5 +82,22 @@ describe("Card", () => {
     expect(refCallback).toHaveBeenCalled();
     const el = refCallback.mock.calls[0][0] as HTMLDivElement;
     expect(el.tagName).toBe("DIV");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <Card>
+        <CardHeader>
+          <CardTitle>Title</CardTitle>
+          <CardDescription>Description</CardDescription>
+        </CardHeader>
+        <CardContent>Body</CardContent>
+        <CardFooter>Footer</CardFooter>
+      </Card>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

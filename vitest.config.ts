@@ -7,6 +7,25 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     css: false,
+    setupFiles: ["src/lib/test-setup.ts"],
     include: ["src/**/*.test.{ts,tsx}"],
+    coverage: {
+      provider: "v8",
+      include: ["src/**/*.{ts,tsx}"],
+      exclude: [
+        "src/**/*.test.{ts,tsx}",
+        "src/**/*.stories.{ts,tsx}",
+        "src/**/index.ts",
+        "src/lib/test-utils.ts",
+        "src/lib/test-setup.ts",
+        "src/tokens/**",
+      ],
+      thresholds: {
+        branches: 90,
+        functions: 90,
+        lines: 90,
+        statements: 90,
+      },
+    },
   },
 });

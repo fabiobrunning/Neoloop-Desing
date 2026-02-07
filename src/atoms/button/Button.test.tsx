@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Button } from "./Button";
+import { axe } from "../../lib/test-utils";
 
 describe("Button", () => {
   // ── Rendering ──────────────────────────────────────────────────────────
@@ -133,5 +134,13 @@ describe("Button", () => {
   it("supports aria-label override", () => {
     render(<Button aria-label="Close dialog">X</Button>);
     expect(screen.getByRole("button", { name: /close dialog/i })).toBeDefined();
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<Button>Accessible button</Button>);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

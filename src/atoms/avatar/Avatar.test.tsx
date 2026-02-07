@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Avatar, AvatarImage, AvatarFallback } from "./Avatar";
+import { axe } from "../../lib/test-utils";
 
 describe("Avatar", () => {
   it("renders avatar root element", () => {
@@ -90,5 +91,17 @@ describe("Avatar", () => {
       </Avatar>,
     );
     expect(screen.getByTestId("fb").className).toContain("bg-primary");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <Avatar>
+        <AvatarFallback>FB</AvatarFallback>
+      </Avatar>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

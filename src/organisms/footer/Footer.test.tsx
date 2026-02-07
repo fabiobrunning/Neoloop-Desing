@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Footer } from "./Footer";
+import { axe } from "../../lib/test-utils";
 
 const linkGroups = [
   {
@@ -83,5 +84,13 @@ describe("Footer", () => {
     const { container } = render(<Footer className="custom-footer" />);
     const footer = container.querySelector("footer");
     expect(footer?.className).toContain("custom-footer");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<Footer brand="Synkra" copyright="2026" />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

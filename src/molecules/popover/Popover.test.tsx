@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Popover, PopoverTrigger, PopoverContent } from "./Popover";
+import { axe } from "../../lib/test-utils";
 
 describe("Popover", () => {
   const renderPopover = () => (
@@ -59,5 +60,21 @@ describe("Popover", () => {
     await user.click(screen.getByText("Open"));
     const content = await screen.findByText("Content");
     expect(content.closest("[class*='custom-popover']")).toBeDefined();
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const user = userEvent.setup();
+    render(renderPopover());
+    await user.click(screen.getByText("Open popover"));
+    await screen.findByText("Popover content here");
+    const results = await axe(document.body, {
+      rules: {
+        region: { enabled: false },
+        "aria-dialog-name": { enabled: false },
+      },
+    });
+    expect(results).toHaveNoViolations();
   });
 });

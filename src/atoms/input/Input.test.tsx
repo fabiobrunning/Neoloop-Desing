@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Input } from "./Input";
+import { axe } from "../../lib/test-utils";
 
 describe("Input", () => {
   it("renders with default type text", () => {
@@ -63,5 +64,13 @@ describe("Input", () => {
     expect(
       screen.getByPlaceholderText("Described").getAttribute("aria-describedby"),
     ).toBe("help-text");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<Input aria-label="Test input" placeholder="Type here" />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

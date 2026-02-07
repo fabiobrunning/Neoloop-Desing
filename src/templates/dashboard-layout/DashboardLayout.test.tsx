@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { DashboardLayout } from "./DashboardLayout";
 import { SidebarGroup, SidebarItem } from "../../organisms/sidebar";
+import { axe } from "../../lib/test-utils";
 
 describe("DashboardLayout", () => {
   it("renders the layout structure", () => {
@@ -102,5 +103,17 @@ describe("DashboardLayout", () => {
     expect(screen.getByText("User")).toBeDefined();
     expect(screen.getByText("Logout")).toBeDefined();
     expect(screen.getByText("Charts here")).toBeDefined();
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <DashboardLayout pageTitle="Dashboard">
+        <p>Main content</p>
+      </DashboardLayout>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

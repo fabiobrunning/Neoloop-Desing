@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./Tabs";
+import { axe } from "../../lib/test-utils";
 
 describe("Tabs", () => {
   const renderTabs = (defaultValue = "tab1") => (
@@ -80,5 +81,22 @@ describe("Tabs", () => {
       </Tabs>,
     );
     expect(screen.getByRole("tablist").className).toContain("custom-list");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <Tabs defaultValue="tab1">
+        <TabsList>
+          <TabsTrigger value="tab1">Tab 1</TabsTrigger>
+          <TabsTrigger value="tab2">Tab 2</TabsTrigger>
+        </TabsList>
+        <TabsContent value="tab1">Content 1</TabsContent>
+        <TabsContent value="tab2">Content 2</TabsContent>
+      </Tabs>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

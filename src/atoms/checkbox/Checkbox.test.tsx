@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Checkbox } from "./Checkbox";
+import { axe } from "../../lib/test-utils";
 
 describe("Checkbox", () => {
   it("renders unchecked by default", () => {
@@ -65,5 +66,22 @@ describe("Checkbox", () => {
     expect(
       screen.getByRole("checkbox", { name: /controlled/i }).getAttribute("data-state"),
     ).toBe("checked");
+  });
+
+  // ── Indeterminate ──────────────────────────────────────────────────────
+
+  it("renders indeterminate state", () => {
+    render(<Checkbox aria-label="Indeterminate" checked="indeterminate" />);
+    expect(
+      screen.getByRole("checkbox", { name: /indeterminate/i }).getAttribute("data-state"),
+    ).toBe("indeterminate");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<Checkbox aria-label="Accept terms" />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

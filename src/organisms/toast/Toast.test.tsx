@@ -9,6 +9,7 @@ import {
   ToastClose,
   ToastAction,
 } from "./Toast";
+import { axe } from "../../lib/test-utils";
 
 function renderToast(props: Record<string, unknown> = {}) {
   return render(
@@ -97,5 +98,21 @@ describe("Toast", () => {
   it("passes custom className", () => {
     renderToast({ className: "custom-toast", "data-testid": "toast" });
     expect(screen.getByTestId("toast").className).toContain("custom-toast");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    render(
+      <ToastProvider>
+        <Toast open>
+          <ToastTitle>Notification</ToastTitle>
+          <ToastDescription>Something happened</ToastDescription>
+        </Toast>
+        <ToastViewport />
+      </ToastProvider>,
+    );
+    const results = await axe(document.body);
+    expect(results).toHaveNoViolations();
   });
 });

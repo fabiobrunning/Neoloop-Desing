@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Switch } from "./Switch";
+import { axe } from "../../lib/test-utils";
 
 describe("Switch", () => {
   it("renders unchecked by default", () => {
@@ -60,5 +61,13 @@ describe("Switch", () => {
   it("passes custom className", () => {
     render(<Switch aria-label="Styled" className="custom-switch" />);
     expect(screen.getByRole("switch", { name: /styled/i }).className).toContain("custom-switch");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<Switch aria-label="Toggle feature" />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

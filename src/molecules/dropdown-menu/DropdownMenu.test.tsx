@@ -6,10 +6,18 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuCheckboxItem,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubTrigger,
+  DropdownMenuSubContent,
+  DropdownMenuGroup,
 } from "./DropdownMenu";
+import { axe } from "../../lib/test-utils";
 
 describe("DropdownMenu", () => {
   const renderMenu = () => (
@@ -90,5 +98,98 @@ describe("DropdownMenu", () => {
     await screen.findByText("Profile");
     const items = screen.getAllByRole("menuitem");
     expect(items.length).toBeGreaterThanOrEqual(2);
+  });
+
+  // ── CheckboxItem ──────────────────────────────────────────────────────
+
+  it("renders checkbox item", async () => {
+    const user = userEvent.setup();
+    render(
+      <DropdownMenu>
+        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuCheckboxItem checked>Checked item</DropdownMenuCheckboxItem>
+          <DropdownMenuCheckboxItem>Unchecked item</DropdownMenuCheckboxItem>
+        </DropdownMenuContent>
+      </DropdownMenu>,
+    );
+    await user.click(screen.getByText("Open"));
+    expect(await screen.findByText("Checked item")).toBeDefined();
+    expect(screen.getByText("Unchecked item")).toBeDefined();
+  });
+
+  // ── RadioItem ────────────────────────────────────────────────────────
+
+  it("renders radio items", async () => {
+    const user = userEvent.setup();
+    render(
+      <DropdownMenu>
+        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuRadioGroup value="a">
+            <DropdownMenuRadioItem value="a">Option A</DropdownMenuRadioItem>
+            <DropdownMenuRadioItem value="b">Option B</DropdownMenuRadioItem>
+          </DropdownMenuRadioGroup>
+        </DropdownMenuContent>
+      </DropdownMenu>,
+    );
+    await user.click(screen.getByText("Open"));
+    expect(await screen.findByText("Option A")).toBeDefined();
+    expect(screen.getByText("Option B")).toBeDefined();
+  });
+
+  // ── SubMenu ──────────────────────────────────────────────────────────
+
+  it("renders sub-menu trigger and content", async () => {
+    const user = userEvent.setup();
+    render(
+      <DropdownMenu>
+        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuGroup>
+            <DropdownMenuItem>Item</DropdownMenuItem>
+          </DropdownMenuGroup>
+          <DropdownMenuSub>
+            <DropdownMenuSubTrigger>More options</DropdownMenuSubTrigger>
+            <DropdownMenuSubContent>
+              <DropdownMenuItem>Sub item</DropdownMenuItem>
+            </DropdownMenuSubContent>
+          </DropdownMenuSub>
+        </DropdownMenuContent>
+      </DropdownMenu>,
+    );
+    await user.click(screen.getByText("Open"));
+    expect(await screen.findByText("More options")).toBeDefined();
+  });
+
+  // ── Inset variants ───────────────────────────────────────────────────
+
+  it("renders inset item and label", async () => {
+    const user = userEvent.setup();
+    render(
+      <DropdownMenu>
+        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuLabel inset>Inset label</DropdownMenuLabel>
+          <DropdownMenuItem inset>Inset item</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>,
+    );
+    await user.click(screen.getByText("Open"));
+    expect(await screen.findByText("Inset label")).toBeDefined();
+    expect(screen.getByText("Inset item")).toBeDefined();
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const user = userEvent.setup();
+    render(renderMenu());
+    await user.click(screen.getByText("Open menu"));
+    await screen.findByRole("menu");
+    const results = await axe(document.body, {
+      rules: { region: { enabled: false } },
+    });
+    expect(results).toHaveNoViolations();
   });
 });

@@ -7,6 +7,7 @@ import {
   TooltipContent,
   TooltipProvider,
 } from "./Tooltip";
+import { axe } from "../../lib/test-utils";
 
 const renderTooltip = (content = "Tooltip text") => (
   <TooltipProvider delayDuration={0}>
@@ -59,5 +60,18 @@ describe("Tooltip", () => {
     await user.hover(screen.getByText("Hover me"));
     const tooltip = await screen.findByRole("tooltip");
     expect(tooltip.textContent).toBe("Custom tooltip content");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const user = userEvent.setup();
+    render(renderTooltip());
+    await user.hover(screen.getByText("Hover me"));
+    await screen.findByRole("tooltip");
+    const results = await axe(document.body, {
+      rules: { region: { enabled: false } },
+    });
+    expect(results).toHaveNoViolations();
   });
 });

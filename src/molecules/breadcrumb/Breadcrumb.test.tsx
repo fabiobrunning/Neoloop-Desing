@@ -9,6 +9,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
 } from "./Breadcrumb";
+import { axe } from "../../lib/test-utils";
 
 describe("Breadcrumb", () => {
   const renderBreadcrumb = () => (
@@ -117,5 +118,25 @@ describe("Breadcrumb", () => {
     );
     const list = screen.getByRole("list");
     expect(list.className).toContain("custom-list");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Current</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

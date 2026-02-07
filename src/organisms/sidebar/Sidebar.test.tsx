@@ -8,6 +8,7 @@ import {
   SidebarItem,
   SidebarFooter,
 } from "./Sidebar";
+import { axe } from "../../lib/test-utils";
 
 describe("Sidebar", () => {
   it("renders sidebar element", () => {
@@ -86,5 +87,23 @@ describe("Sidebar", () => {
   it("passes custom className to Sidebar", () => {
     render(<Sidebar data-testid="sidebar" className="custom-sidebar" />);
     expect(screen.getByTestId("sidebar").className).toContain("custom-sidebar");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <Sidebar>
+        <SidebarHeader>Logo</SidebarHeader>
+        <SidebarContent>
+          <SidebarGroup label="Menu">
+            <SidebarItem>Home</SidebarItem>
+          </SidebarGroup>
+        </SidebarContent>
+        <SidebarFooter>User</SidebarFooter>
+      </Sidebar>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

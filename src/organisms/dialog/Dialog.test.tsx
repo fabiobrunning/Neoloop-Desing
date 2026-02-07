@@ -10,6 +10,7 @@ import {
   DialogDescription,
   DialogClose,
 } from "./Dialog";
+import { axe } from "../../lib/test-utils";
 
 describe("Dialog", () => {
   it("does not render content by default", () => {
@@ -128,5 +129,22 @@ describe("Dialog", () => {
       </Dialog>,
     );
     expect(screen.getByText("Close Dialog")).toBeDefined();
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    render(
+      <Dialog defaultOpen>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Test Dialog</DialogTitle>
+            <DialogDescription>Dialog description</DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>,
+    );
+    const results = await axe(document.body);
+    expect(results).toHaveNoViolations();
   });
 });

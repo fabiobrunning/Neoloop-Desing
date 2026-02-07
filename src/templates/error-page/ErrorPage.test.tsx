@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { ErrorPage } from "./ErrorPage";
+import { axe } from "../../lib/test-utils";
 
 describe("ErrorPage", () => {
   // ── Default 404 ────────────────────────────────────────────────────────
@@ -112,5 +113,13 @@ describe("ErrorPage", () => {
   it("passes custom className", () => {
     render(<ErrorPage className="custom-error" data-testid="err" />);
     expect(screen.getByTestId("err").className).toContain("custom-error");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<ErrorPage />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

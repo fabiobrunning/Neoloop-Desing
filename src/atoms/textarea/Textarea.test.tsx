@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Textarea } from "./Textarea";
+import { axe } from "../../lib/test-utils";
 
 describe("Textarea", () => {
   it("renders a textarea element", () => {
@@ -49,5 +50,13 @@ describe("Textarea", () => {
   it("renders readonly state", () => {
     render(<Textarea data-testid="ta" readOnly value="Fixed text" />);
     expect(screen.getByTestId("ta").hasAttribute("readOnly")).toBe(true);
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<Textarea aria-label="Message" />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Pagination } from "./Pagination";
+import { axe } from "../../lib/test-utils";
 
 describe("Pagination", () => {
   // ── Rendering ──────────────────────────────────────────────────────────
@@ -80,5 +81,15 @@ describe("Pagination", () => {
   it("has pagination aria-label on nav", () => {
     render(<Pagination page={1} totalPages={5} onPageChange={() => {}} />);
     expect(screen.getByLabelText("pagination")).toBeDefined();
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <Pagination page={3} totalPages={10} onPageChange={() => {}} />,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

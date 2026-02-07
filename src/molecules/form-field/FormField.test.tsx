@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { FormField, Label } from "./FormField";
+import { axe } from "../../lib/test-utils";
 
 describe("Label", () => {
   it("renders label text", () => {
@@ -118,5 +119,13 @@ describe("FormField", () => {
     );
     const wrapper = screen.getByRole("textbox").parentElement;
     expect(wrapper?.className).toContain("custom-field");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<FormField id="email" label="Email" />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

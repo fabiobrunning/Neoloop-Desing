@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { AuthLayout } from "./AuthLayout";
+import { axe } from "../../lib/test-utils";
 
 describe("AuthLayout", () => {
   // ── Rendering ──────────────────────────────────────────────────────────
@@ -84,5 +85,19 @@ describe("AuthLayout", () => {
     expect(screen.getByText("Enter your credentials")).toBeDefined();
     expect(screen.getByText("Submit")).toBeDefined();
     expect(screen.getByText("Footer text")).toBeDefined();
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <AuthLayout heading="Welcome" subheading="Sign in">
+        <form>
+          <input aria-label="Email" type="email" />
+        </form>
+      </AuthLayout>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { SettingsPage, SettingsSection } from "./SettingsPage";
+import { axe } from "../../lib/test-utils";
 
 const navItems = [
   { label: "General", value: "general" },
@@ -118,5 +119,17 @@ describe("SettingsSection", () => {
       </SettingsSection>,
     );
     expect(screen.getByTestId("sec").className).toContain("custom-section");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <SettingsSection title="General" description="Basic settings.">
+        <input aria-label="Setting value" />
+      </SettingsSection>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { DataTable, type DataTableColumn } from "./DataTable";
+import { axe } from "../../lib/test-utils";
 
 interface TestRow {
   id: string;
@@ -167,5 +168,15 @@ describe("DataTable", () => {
     render(<DataTable columns={columns} data={data} getRowKey={(r) => r.id} />);
     const headers = screen.getAllByRole("columnheader");
     expect(headers.length).toBe(2);
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <DataTable columns={columns} data={data} getRowKey={(r) => r.id} />,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

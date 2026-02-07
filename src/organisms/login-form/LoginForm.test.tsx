@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { LoginForm } from "./LoginForm";
+import { axe } from "../../lib/test-utils";
 
 describe("LoginForm", () => {
   it("renders with default props", () => {
@@ -86,5 +87,13 @@ describe("LoginForm", () => {
   it("passes custom className to card", () => {
     render(<LoginForm className="custom-login" data-testid="login" />);
     expect(screen.getByTestId("login").className).toContain("custom-login");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<LoginForm />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

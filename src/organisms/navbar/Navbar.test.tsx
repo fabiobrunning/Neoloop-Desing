@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Navbar } from "./Navbar";
+import { axe } from "../../lib/test-utils";
 
 const navItems = [
   { label: "Dashboard", href: "/dashboard", active: true },
@@ -80,5 +81,13 @@ describe("Navbar", () => {
   it("passes custom className", () => {
     render(<Navbar brand="Test" className="custom-nav" />);
     expect(screen.getByRole("navigation").className).toContain("custom-nav");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<Navbar brand="Synkra" items={navItems} />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

@@ -10,6 +10,7 @@ import {
   SelectLabel,
   SelectSeparator,
 } from "./Select";
+import { axe } from "../../lib/test-utils";
 
 function renderSelect(props: Record<string, unknown> = {}) {
   return render(
@@ -123,5 +124,22 @@ describe("Select", () => {
       </Select>,
     );
     expect(screen.getByTestId("trigger").className).toContain("custom-trigger");
+  });
+
+  // ── A11y ────────────────────────────────────────────────────────────────
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <Select>
+        <SelectTrigger aria-label="Select option">
+          <SelectValue placeholder="Choose..." />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="a">Option A</SelectItem>
+        </SelectContent>
+      </Select>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });
