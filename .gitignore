@@ -33,3 +33,6 @@ npm-debug.log*
 # Cache
 .cache/
 .turbo/
+
+# Design assets (large files)
+assets/
