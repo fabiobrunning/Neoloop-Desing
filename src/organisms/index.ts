@@ -36,3 +36,15 @@ export {
   toastVariants,
   type ToastProps,
 } from "./toast";
+
+export {
+  DataTable,
+  type DataTableProps,
+  type DataTableColumn,
+} from "./data-table";
+
+export { Navbar, type NavbarProps, type NavItem } from "./navbar";
+
+export { Footer, type FooterProps, type FooterLinkGroup } from "./footer";
+
+export { Pagination, type PaginationProps } from "./pagination";
