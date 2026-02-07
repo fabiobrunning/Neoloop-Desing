@@ -8,9 +8,9 @@ Synkra DS is a component library built with **Atomic Design** methodology, using
 
 | Metric | Value |
 |--------|-------|
-| Components | 9 |
+| Components | 15 |
 | Design Tokens | 170 |
-| Test Coverage | 108 tests (100% passing) |
+| Test Coverage | 165 tests (100% passing) |
 | Accessibility | WCAG AA compliant |
 | CSS Approach | Tailwind v4 + CSS tokens |
 
@@ -20,20 +20,28 @@ Synkra DS is a component library built with **Atomic Design** methodology, using
 Atoms → Molecules → Organisms → Templates → Pages
 ```
 
-### Atoms (6)
+### Atoms (9)
 - [Button](./components/Button.md) - Primary action element
 - [Input](./components/Input.md) - Text input field
 - [Checkbox](./components/Checkbox.md) - Binary toggle with Radix
 - [Card](./components/Card.md) - Content container (6 subcomponents)
 - [Switch](./components/Switch.md) - Toggle switch with Radix
 - [Badge](./components/Badge.md) - Status indicator with gradients
+- [Select](./components/Select.md) - Dropdown selection input
+- [Textarea](./components/Textarea.md) - Multi-line text input
+- [Avatar](./components/Avatar.md) - User profile image with fallback
 
 ### Molecules (1)
 - [FormField](./components/FormField.md) - Label + Input + helper/error
 
-### Organisms (2)
+### Organisms (4)
 - [Sidebar](./components/Sidebar.md) - Navigation sidebar (6 subcomponents)
 - [LoginForm](./components/LoginForm.md) - Authentication form
+- [Dialog](./components/Dialog.md) - Modal dialog with overlay
+- [Toast](./components/Toast.md) - Notification toast with variants
+
+### Templates (1)
+- [DashboardLayout](./components/DashboardLayout.md) - Full-page dashboard layout
 
 ## Quick Start
 
