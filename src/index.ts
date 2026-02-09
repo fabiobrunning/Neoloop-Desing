@@ -6,6 +6,9 @@
 // Tokens
 export * from "./tokens";
 
+// Theme
+export * from "./theme";
+
 // Assets
 export * from "./assets/logos";
 export * from "./assets/icons";

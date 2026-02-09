@@ -120,3 +120,31 @@
   --z-popover: 300;
   --z-tooltip: 400;
 }
+
+/* ========== LIGHT THEME OVERRIDES ========== */
+.light {
+  --color-primary: #B8962E;
+  --color-primary-dark: #96790E;
+  --color-primary-light: #D4AF37;
+
+  --color-bg-base: #FFFFFF;
+  --color-bg-elevated: #F9FAFB;
+  --color-bg-surface: #F3F4F6;
+  --color-bg-overlay: rgba(0, 0, 0, 0.4);
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #9CA3AF;
+  --color-text-inverse: #FFFFFF;
+
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+  --color-info: #2563EB;
+
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-subtle: rgba(0, 0, 0, 0.05);
+  --color-border-emphasis: rgba(184, 150, 46, 0.3);
+
+  --shadow-glow: 0 0 20px rgba(184, 150, 46, 0.15);
+}

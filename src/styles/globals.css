@@ -92,6 +92,12 @@ body {
   line-height: var(--leading-base);
   color: var(--color-text-primary);
   background-color: var(--color-bg-base);
+  color-scheme: dark;
+}
+
+.light body,
+.light {
+  color-scheme: light;
 }
 
 /* ============================================================================
@@ -149,6 +155,10 @@ code, pre {
 ::selection {
   background-color: rgba(212, 175, 55, 0.3);
   color: var(--color-text-primary);
+}
+
+.light ::selection {
+  background-color: rgba(184, 150, 46, 0.2);
 }
 
 /* ============================================================================

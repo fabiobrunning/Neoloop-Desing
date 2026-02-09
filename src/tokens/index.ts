@@ -192,6 +192,56 @@ export const tokens: DesignTokens = {
   zIndex,
 };
 
+// ============================================================================
+// LIGHT THEME COLORS
+// ============================================================================
+
+export const lightColors = {
+  primary: {
+    gold: "#B8962E",
+    "gold-dark": "#96790E",
+    "gold-light": "#D4AF37",
+  },
+  background: {
+    base: "#FFFFFF",
+    elevated: "#F9FAFB",
+    surface: "#F3F4F6",
+    overlay: "rgba(0, 0, 0, 0.4)",
+  },
+  text: {
+    primary: "#111827",
+    secondary: "#4B5563",
+    muted: "#9CA3AF",
+    inverse: "#FFFFFF",
+  },
+  semantic: {
+    success: "#16A34A",
+    warning: "#D97706",
+    error: "#DC2626",
+    info: "#2563EB",
+  },
+  border: {
+    default: "rgba(0, 0, 0, 0.1)",
+    subtle: "rgba(0, 0, 0, 0.05)",
+    emphasis: "rgba(184, 150, 46, 0.3)",
+  },
+} as const;
+
+export const darkColors = colors;
+
+type ColorScheme = {
+  primary: { gold: string; "gold-dark": string; "gold-light": string };
+  background: { base: string; elevated: string; surface: string; overlay: string };
+  text: { primary: string; secondary: string; muted: string; inverse: string };
+  semantic: { success: string; warning: string; error: string; info: string };
+  border: { default: string; subtle: string; emphasis: string };
+};
+
+export const themeColors: Record<"dark" | "light", ColorScheme> = {
+  dark: darkColors,
+  light: lightColors,
+};
+
 // Extended palette & charts (from watchOS palette)
 export {
   paletteExtended,
