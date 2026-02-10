@@ -53,10 +53,21 @@ const LoginForm = React.forwardRef<HTMLDivElement, LoginFormProps>(
   ) => {
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
+    const [fieldErrors, setFieldErrors] = React.useState<Record<string, string>>({});
+
+    const validate = (): boolean => {
+      const errors: Record<string, string> = {};
+      if (!email.trim()) errors.email = "Email is required";
+      if (!password) errors.password = "Password is required";
+      setFieldErrors(errors);
+      return Object.keys(errors).length === 0;
+    };
 
     const handleSubmit = (e: React.FormEvent) => {
       e.preventDefault();
-      onSubmit?.({ email, password });
+      if (validate()) {
+        onSubmit?.({ email, password });
+      }
     };
 
     return (
@@ -65,7 +76,7 @@ const LoginForm = React.forwardRef<HTMLDivElement, LoginFormProps>(
         className={cn("w-full max-w-sm", className)}
         {...props}
       >
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} noValidate>
           <CardHeader className="text-center">
             <CardTitle>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
@@ -83,6 +94,7 @@ const LoginForm = React.forwardRef<HTMLDivElement, LoginFormProps>(
               id="login-email"
               label="Email"
               required
+              error={fieldErrors.email}
               inputProps={{
                 type: "email",
                 placeholder: "you@example.com",
@@ -95,6 +107,7 @@ const LoginForm = React.forwardRef<HTMLDivElement, LoginFormProps>(
               id="login-password"
               label="Password"
               required
+              error={fieldErrors.password}
               inputProps={{
                 type: "password",
                 placeholder: "Enter your password",

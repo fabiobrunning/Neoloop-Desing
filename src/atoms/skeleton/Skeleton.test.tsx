@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Skeleton } from "./Skeleton";
+import { axe } from "../../lib/test-utils";
 
 describe("Skeleton", () => {
   it("renders with default variant", () => {
@@ -56,5 +57,15 @@ describe("Skeleton", () => {
     const ref = { current: null } as React.RefObject<HTMLDivElement>;
     render(<Skeleton ref={ref} />);
     expect(ref.current).toBeInstanceOf(HTMLDivElement);
+  });
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <div>
+        <Skeleton data-testid="skeleton" />
+      </div>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

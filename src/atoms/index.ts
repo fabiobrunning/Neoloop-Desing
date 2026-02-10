@@ -30,3 +30,6 @@ export { Avatar, AvatarImage, AvatarFallback, type AvatarProps } from "./avatar"
 export { Alert, alertVariants, type AlertProps } from "./alert";
 export { Progress, progressVariants, type ProgressProps } from "./progress";
 export { Skeleton, type SkeletonProps } from "./skeleton";
+export { Slider, type SliderProps } from "./slider";
+export { Separator } from "./separator";
+export { Toggle, toggleVariants, type ToggleProps } from "./toggle";

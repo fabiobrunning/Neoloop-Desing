@@ -161,6 +161,29 @@ export const zIndex = {
 } as const;
 
 // ============================================================================
+// BREAKPOINT TOKENS
+// ============================================================================
+
+export const breakpoints = {
+  sm: "640px",
+  md: "768px",
+  lg: "1024px",
+  xl: "1280px",
+  "2xl": "1536px",
+} as const;
+
+// ============================================================================
+// FOCUS RING TOKENS
+// ============================================================================
+
+export const focusRing = {
+  width: "2px",
+  offset: "2px",
+  color: "var(--color-primary)",
+  offsetColor: "var(--color-bg-base)",
+} as const;
+
+// ============================================================================
 // TYPE EXPORTS
 // ============================================================================
 
@@ -171,6 +194,8 @@ export type RadiusToken = typeof radius;
 export type ShadowToken = typeof shadows;
 export type MotionToken = typeof motion;
 export type ZIndexToken = typeof zIndex;
+export type BreakpointToken = typeof breakpoints;
+export type FocusRingToken = typeof focusRing;
 
 export type DesignTokens = {
   colors: ColorToken;
@@ -180,6 +205,8 @@ export type DesignTokens = {
   shadows: ShadowToken;
   motion: MotionToken;
   zIndex: ZIndexToken;
+  breakpoints: BreakpointToken;
+  focusRing: FocusRingToken;
 };
 
 export const tokens: DesignTokens = {
@@ -190,6 +217,8 @@ export const tokens: DesignTokens = {
   shadows,
   motion,
   zIndex,
+  breakpoints,
+  focusRing,
 };
 
 // ============================================================================

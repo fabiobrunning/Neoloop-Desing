@@ -1,3 +1,30 @@
+## 0.3.0 (2026-02-10)
+
+
+### Features
+
+* **atoms:** add Separator component (horizontal/vertical, decorative mode)
+* **atoms:** add Slider component (Radix-based, range support, accessible)
+* **atoms:** add Toggle component (CVA variants: default/outline, sizes: sm/md/lg)
+* **molecules:** add NavigationMenu component (dropdown submenus, viewport animation)
+* **organisms:** add Sheet component (slide-over drawer, 4 side variants)
+* **organisms:** add AlertDialog component (destructive confirmation dialogs)
+* **tokens:** add breakpoint tokens (sm/md/lg/xl/2xl)
+* **tokens:** add focus ring tokens (width/offset/color)
+* **docs:** add README.md for npm/GitHub
+* **ci:** add Dependabot config (npm + GitHub Actions)
+
+
+### Improvements
+
+* **LoginForm:** add client-side validation (email/password required)
+* **a11y:** add axe tests to 5 components (SocialIcon, Skeleton, PaymentIcon, ThemeToggle, ThemeProvider)
+* **tests:** add chart-theme.ts test coverage (was 0%)
+* **docs:** add PaymentIcon.md and SocialIcon.md documentation
+
+
+---
+
 ## 0.2.0 (2026-02-10)
 
 

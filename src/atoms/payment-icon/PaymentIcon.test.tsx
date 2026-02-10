@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { PaymentIcon } from "./PaymentIcon";
+import { axe } from "../../lib/test-utils";
 
 describe("PaymentIcon", () => {
   it("renders with correct src", () => {
@@ -40,5 +41,11 @@ describe("PaymentIcon", () => {
   it("has lazy loading", () => {
     render(<PaymentIcon method="GooglePay" />);
     expect(screen.getByRole("img", { name: /googlepay/i }).getAttribute("loading")).toBe("lazy");
+  });
+
+  it("has no a11y violations", async () => {
+    const { container } = render(<PaymentIcon method="Visa" />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

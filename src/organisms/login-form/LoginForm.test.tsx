@@ -1,5 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { LoginForm } from "./LoginForm";
 import { axe } from "../../lib/test-utils";
 
@@ -46,17 +47,23 @@ describe("LoginForm", () => {
     expect(screen.getByText("Invalid credentials")).toBeDefined();
   });
 
-  it("calls onSubmit with email and password", () => {
+  it("shows validation errors on empty submit", async () => {
+    const user = userEvent.setup();
     const onSubmit = vi.fn();
     render(<LoginForm onSubmit={onSubmit} />);
+    await user.click(screen.getByRole("button", { name: "Sign in" }));
+    expect(onSubmit).not.toHaveBeenCalled();
+    expect(screen.getByText("Email is required")).toBeDefined();
+    expect(screen.getByText("Password is required")).toBeDefined();
+  });
 
-    const emailInput = screen.getByPlaceholderText("you@example.com");
-    const passwordInput = screen.getByPlaceholderText("Enter your password");
-
-    fireEvent.change(emailInput, { target: { value: "test@example.com" } });
-    fireEvent.change(passwordInput, { target: { value: "secret123" } });
-    fireEvent.click(screen.getByText("Sign in"));
-
+  it("calls onSubmit with email and password when valid", async () => {
+    const user = userEvent.setup();
+    const onSubmit = vi.fn();
+    render(<LoginForm onSubmit={onSubmit} />);
+    await user.type(screen.getByPlaceholderText("you@example.com"), "test@example.com");
+    await user.type(screen.getByPlaceholderText("Enter your password"), "secret123");
+    await user.click(screen.getByRole("button", { name: "Sign in" }));
     expect(onSubmit).toHaveBeenCalledWith({
       email: "test@example.com",
       password: "secret123",

@@ -129,6 +129,19 @@
   --z-modal: 200;
   --z-popover: 300;
   --z-tooltip: 400;
+
+  /* ========== BREAKPOINTS ========== */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ========== FOCUS RING ========== */
+  --ring-width: 2px;
+  --ring-offset: 2px;
+  --ring-color: var(--color-primary);
+  --ring-offset-color: var(--color-bg-base);
 }
 
 /* ========== LIGHT THEME OVERRIDES ========== */
@@ -160,4 +173,7 @@
   --color-border-emphasis: rgba(184, 150, 46, 0.3);
 
   --shadow-glow: 0 0 20px rgba(184, 150, 46, 0.15);
+
+  --ring-color: var(--color-primary);
+  --ring-offset-color: var(--color-bg-base);
 }

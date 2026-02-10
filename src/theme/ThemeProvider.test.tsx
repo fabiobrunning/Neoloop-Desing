@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, act } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { ThemeProvider, useTheme } from "./ThemeProvider";
+import { axe } from "../lib/test-utils";
 
 // Helper component to expose useTheme for testing
 function ThemeConsumer() {
@@ -153,5 +154,15 @@ describe("ThemeProvider", () => {
     });
     expect(screen.getByTestId("resolved").textContent).toBe("light");
     expect(document.documentElement.classList.contains("light")).toBe(true);
+  });
+
+  it("has no a11y violations", async () => {
+    const { container } = render(
+      <ThemeProvider>
+        <span>App content</span>
+      </ThemeProvider>,
+    );
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

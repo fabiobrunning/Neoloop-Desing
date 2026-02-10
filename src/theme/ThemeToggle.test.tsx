@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { ThemeProvider } from "./ThemeProvider";
 import { ThemeToggle } from "./ThemeToggle";
+import { axe } from "../lib/test-utils";
 
 function renderToggle(defaultTheme: "dark" | "light" | "system" = "system") {
   return render(
@@ -77,5 +78,11 @@ describe("ThemeToggle", () => {
       </ThemeProvider>,
     );
     expect(screen.getByRole("button").className).toContain("custom-class");
+  });
+
+  it("has no a11y violations", async () => {
+    const { container } = renderToggle("dark");
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });
