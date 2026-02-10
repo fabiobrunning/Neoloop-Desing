@@ -21,7 +21,7 @@ describe("ThemeProvider", () => {
   let listeners: Array<(e: MediaQueryListEvent) => void> = [];
 
   beforeEach(() => {
-    localStorage.clear();
+    window.localStorage.clear();
     document.documentElement.classList.remove("light");
     listeners = [];
 
@@ -111,11 +111,11 @@ describe("ThemeProvider", () => {
       </ThemeProvider>,
     );
     await user.click(screen.getByText("Set Light"));
-    expect(localStorage.getItem("synkra-theme")).toBe("light");
+    expect(window.localStorage.getItem("synkra-theme")).toBe("light");
   });
 
   it("reads stored theme from localStorage", () => {
-    localStorage.setItem("synkra-theme", "light");
+    window.localStorage.setItem("synkra-theme", "light");
     render(
       <ThemeProvider>
         <ThemeConsumer />

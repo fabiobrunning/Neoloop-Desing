@@ -26,7 +26,7 @@ function getSystemTheme(): "dark" | "light" {
 function getStoredTheme(): Theme {
   if (typeof window === "undefined") return "system";
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored === "dark" || stored === "light" || stored === "system") {
       return stored;
     }
@@ -69,7 +69,7 @@ export function ThemeProvider({
   const setTheme = React.useCallback((newTheme: Theme) => {
     setThemeState(newTheme);
     try {
-      localStorage.setItem(STORAGE_KEY, newTheme);
+      window.localStorage.setItem(STORAGE_KEY, newTheme);
     } catch {
       // localStorage not available
     }

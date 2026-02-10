@@ -14,7 +14,7 @@ function renderToggle(defaultTheme: "dark" | "light" | "system" = "system") {
 
 describe("ThemeToggle", () => {
   beforeEach(() => {
-    localStorage.clear();
+    window.localStorage.clear();
     document.documentElement.classList.remove("light");
 
     Object.defineProperty(window, "matchMedia", {
