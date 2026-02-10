@@ -16,6 +16,9 @@ export * from "./assets/icons";
 // Utilities
 export { cn } from "./lib/utils";
 
+// Chart Config
+export * from "./lib/chart-config";
+
 // Atoms
 export * from "./atoms";
 

@@ -1,6 +1,6 @@
 # Synkra DS - Pattern Library
 
-> Design System for Lendario brand | v0.1.0
+> Design System for Lendario brand | v0.2.0
 
 ## Overview
 
@@ -8,11 +8,12 @@ Synkra DS is a component library built with **Atomic Design** methodology, using
 
 | Metric | Value |
 |--------|-------|
-| Components | 15 |
+| Components | 35+ |
 | Design Tokens | 170 |
-| Test Coverage | 165 tests (100% passing) |
+| Test Coverage | 354+ tests (100% passing) |
 | Accessibility | WCAG AA compliant |
 | CSS Approach | Tailwind v4 + CSS tokens |
+| Theming | Dark / Light / System |
 
 ## Architecture
 
@@ -20,8 +21,8 @@ Synkra DS is a component library built with **Atomic Design** methodology, using
 Atoms → Molecules → Organisms → Templates → Pages
 ```
 
-### Atoms (9)
-- [Button](./components/Button.md) - Primary action element
+### Atoms (15)
+- [Button](./components/Button.md) - Primary action element (6 variants, 4 sizes)
 - [Input](./components/Input.md) - Text input field
 - [Checkbox](./components/Checkbox.md) - Binary toggle with Radix
 - [Card](./components/Card.md) - Content container (6 subcomponents)
@@ -30,31 +31,54 @@ Atoms → Molecules → Organisms → Templates → Pages
 - [Select](./components/Select.md) - Dropdown selection input
 - [Textarea](./components/Textarea.md) - Multi-line text input
 - [Avatar](./components/Avatar.md) - User profile image with fallback
+- [RadioGroup](./components/RadioGroup.md) - Radio button group with Radix
+- [PaymentIcon](./components/PaymentIcon.md) - Payment method icons (12 brands)
+- [SocialIcon](./components/SocialIcon.md) - Social network icons (85 logos)
+- [Alert](./components/Alert.md) - Contextual feedback messages
+- [Progress](./components/Progress.md) - Progress bar indicator
+- [Skeleton](./components/Skeleton.md) - Loading placeholder with animation
 
-### Molecules (1)
+### Molecules (7)
 - [FormField](./components/FormField.md) - Label + Input + helper/error
+- [Tabs](./components/Tabs.md) - Tabbed content navigation
+- [Tooltip](./components/Tooltip.md) - Hover information popup
+- [Popover](./components/Popover.md) - Click-triggered popup content
+- [DropdownMenu](./components/DropdownMenu.md) - Action menu with submenus
+- [Breadcrumb](./components/Breadcrumb.md) - Navigation breadcrumb trail
+- [Accordion](./components/Accordion.md) - Expandable content sections
 
-### Organisms (4)
+### Organisms (9)
 - [Sidebar](./components/Sidebar.md) - Navigation sidebar (6 subcomponents)
 - [LoginForm](./components/LoginForm.md) - Authentication form
+- [SignupForm](./components/SignupForm.md) - Registration form
 - [Dialog](./components/Dialog.md) - Modal dialog with overlay
 - [Toast](./components/Toast.md) - Notification toast with variants
+- [DataTable](./components/DataTable.md) - Sortable data table
+- [Navbar](./components/Navbar.md) - Top navigation bar
+- [Footer](./components/Footer.md) - Page footer with link groups
+- [Pagination](./components/Pagination.md) - Page navigation controls
 
-### Templates (1)
+### Templates (4)
 - [DashboardLayout](./components/DashboardLayout.md) - Full-page dashboard layout
+- [AuthLayout](./components/AuthLayout.md) - Authentication page layout
+- [SettingsPage](./components/SettingsPage.md) - Settings page with nav sections
+- [ErrorPage](./components/ErrorPage.md) - Error page (404, 500, etc.)
+
+### Utilities
+- [ChartConfig](./components/ChartConfig.md) - Chart theme with 10-color palette
 
 ## Quick Start
 
 ```tsx
-import { Button, Input, Badge } from "synkra-ds";
+import { Button, Input, Badge, ThemeProvider } from "synkra-ds";
 
 function App() {
   return (
-    <div>
+    <ThemeProvider defaultTheme="system">
       <Badge variant="success">Active</Badge>
       <Input placeholder="Email" />
       <Button variant="primary">Submit</Button>
-    </div>
+    </ThemeProvider>
   );
 }
 ```

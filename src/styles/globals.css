@@ -186,3 +186,34 @@ code, pre {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-muted);
 }
+
+/* ============================================================================
+ * PROGRESS BAR ANIMATIONS
+ * ============================================================================ */
+
+@keyframes progress-indeterminate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+.animate-progress-indeterminate {
+  animation: progress-indeterminate 1.5s ease-in-out infinite;
+}
+
+/* ============================================================================
+ * ACCORDION ANIMATIONS
+ * ============================================================================ */
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+.animate-accordion-down {
+  animation: accordion-down 200ms ease-out;
+}
+.animate-accordion-up {
+  animation: accordion-up 200ms ease-out;
+}

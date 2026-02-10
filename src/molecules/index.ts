@@ -39,3 +39,9 @@ export {
   type BreadcrumbProps,
   type BreadcrumbLinkProps,
 } from "./breadcrumb";
+export {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./accordion";

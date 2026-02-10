@@ -48,3 +48,5 @@ export { Navbar, type NavbarProps, type NavItem } from "./navbar";
 export { Footer, type FooterProps, type FooterLinkGroup } from "./footer";
 
 export { Pagination, type PaginationProps } from "./pagination";
+
+export { SignupForm, type SignupFormProps, type SignupFormData } from "./signup-form";

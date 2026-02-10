@@ -27,3 +27,6 @@ export { RadioGroup, RadioGroupItem, type RadioGroupProps, type RadioGroupItemPr
 export { SocialIcon, SOCIAL_NETWORKS, type SocialIconProps, type SocialNetwork, type SocialIconVariant } from "./social-icon";
 export { PaymentIcon, PAYMENT_METHODS, type PaymentIconProps, type PaymentMethod } from "./payment-icon";
 export { Avatar, AvatarImage, AvatarFallback, type AvatarProps } from "./avatar";
+export { Alert, alertVariants, type AlertProps } from "./alert";
+export { Progress, progressVariants, type ProgressProps } from "./progress";
+export { Skeleton, type SkeletonProps } from "./skeleton";

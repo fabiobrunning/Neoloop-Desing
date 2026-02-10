@@ -3,6 +3,15 @@ import { toHaveNoViolations } from "vitest-axe/matchers";
 
 expect.extend({ toHaveNoViolations });
 
+// Radix UI primitives (Checkbox, Select, etc.) use @radix-ui/react-use-size
+// which requires ResizeObserver. jsdom does not provide it.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+(globalThis as any).ResizeObserver = class ResizeObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+};
+
 // Node 22+ ships a built-in localStorage that conflicts with jsdom's Storage.
 // Provide a spec-compliant in-memory Storage so tests work on any Node version.
 function createStorage(): Storage {
