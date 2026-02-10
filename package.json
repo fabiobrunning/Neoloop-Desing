@@ -1,6 +1,6 @@
 {
   "name": "synkra-ds",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": false,
   "description": "Synkra Design System - Token-based component library with Atomic Design",
   "license": "MIT",
