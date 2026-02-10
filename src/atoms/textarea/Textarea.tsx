@@ -11,7 +11,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ className, error, ...props }, ref) => (
     <textarea
       className={cn(
-        "flex min-h-[80px] w-full rounded-lg border bg-bg-elevated px-3 py-2",
+        "flex min-h-[80px] w-full rounded-[var(--radius-input)] border bg-bg-elevated px-3 py-2",
         "text-sm text-text-primary placeholder:text-text-muted",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-emphasis focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base",
         "disabled:cursor-not-allowed disabled:opacity-50",

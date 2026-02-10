@@ -28,6 +28,10 @@
   --color-error: #EF4444;
   --color-info: #3B82F6;
 
+  /* ========== COLORS: State ========== */
+  --color-disabled: #AEAEB2;
+  --color-disabled-bg: rgba(174, 174, 178, 0.15);
+
   /* ========== COLORS: Border ========== */
   --color-border: rgba(255, 255, 255, 0.1);
   --color-border-subtle: rgba(255, 255, 255, 0.05);
@@ -92,6 +96,12 @@
   --radius-xl: 0.75rem;
   --radius-2xl: 1rem;
   --radius-full: 9999px;
+  --radius-input: 0.625rem;
+
+  /* ========== SIZING: Component Heights ========== */
+  --height-input: 3rem;
+  --height-input-sm: 2.5rem;
+  --height-input-lg: 3.5rem;
 
   /* ========== SHADOWS ========== */
   --shadow-none: none;
@@ -141,6 +151,9 @@
   --color-warning: #D97706;
   --color-error: #DC2626;
   --color-info: #2563EB;
+
+  --color-disabled: #C7C7CC;
+  --color-disabled-bg: rgba(199, 199, 204, 0.15);
 
   --color-border: rgba(0, 0, 0, 0.1);
   --color-border-subtle: rgba(0, 0, 0, 0.05);

@@ -30,7 +30,7 @@ describe("Badge", () => {
       </Badge>,
     );
     const el = screen.getByTestId("grad");
-    expect(el.style.background).toContain("linear-gradient");
+    expect(el.style.background).toContain("var(--gradient-badge)");
   });
 
   it("supports different gradient presets", () => {
@@ -40,7 +40,7 @@ describe("Badge", () => {
       </Badge>,
     );
     const el = screen.getByTestId("pb");
-    expect(el.style.background).toContain("linear-gradient");
+    expect(el.style.background).toContain("var(--gradient-purple-blue)");
   });
 
   it("passes custom className", () => {

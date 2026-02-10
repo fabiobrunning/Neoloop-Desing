@@ -31,11 +31,11 @@ export interface BadgeProps
 }
 
 const gradientMap = {
-  badge: "linear-gradient(82.44deg, #ff3b57 0%, #ffda1a 100%)",
-  "purple-blue": "linear-gradient(135deg, #8962f8, #1ea5fc)",
-  hibiscus: "linear-gradient(135deg, #fb0049, #f12e6d)",
-  "green-mint": "linear-gradient(135deg, #80e220, #a2ec8e)",
-  "gold-sunset": "linear-gradient(135deg, #D4AF37, #fc4e12)",
+  badge: "var(--gradient-badge)",
+  "purple-blue": "var(--gradient-purple-blue)",
+  hibiscus: "var(--gradient-hibiscus-dragon)",
+  "green-mint": "var(--gradient-green-mint)",
+  "gold-sunset": "var(--gradient-gold-sunset)",
 } as const;
 
 function Badge({
