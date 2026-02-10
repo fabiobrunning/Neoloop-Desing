@@ -35,14 +35,17 @@
       }
     },
     "./styles": "./src/styles/globals.css",
+    "./fonts": "./src/styles/fonts.css",
     "./tokens/css": "./src/tokens/tokens.css",
     "./tokens/palette": "./src/tokens/palette-extended.css"
   },
   "files": [
     "dist",
     "src/styles/globals.css",
+    "src/styles/fonts.css",
     "src/tokens/tokens.css",
     "src/tokens/palette-extended.css",
+    "src/assets/fonts",
     "src/assets/logos"
   ],
   "sideEffects": [

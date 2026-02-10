@@ -137,6 +137,61 @@
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
 
+  /* ========== TYPOGRAPHY: Scale (Display / Heading / Body / Caption) ========== */
+
+  /* Display */
+  --display-xl-size: 4.5rem;
+  --display-xl-weight: 700;
+  --display-xl-line-height: 1.25;
+  --display-lg-size: 3.75rem;
+  --display-lg-weight: 700;
+  --display-lg-line-height: 1.25;
+  --display-md-size: 3rem;
+  --display-md-weight: 600;
+  --display-md-line-height: 1.25;
+  --display-sm-size: 2.25rem;
+  --display-sm-weight: 600;
+  --display-sm-line-height: 1.375;
+
+  /* Heading */
+  --heading-xl-size: 1.875rem;
+  --heading-xl-weight: 600;
+  --heading-xl-line-height: 1.375;
+  --heading-lg-size: 1.5rem;
+  --heading-lg-weight: 600;
+  --heading-lg-line-height: 1.5;
+  --heading-md-size: 1.25rem;
+  --heading-md-weight: 600;
+  --heading-md-line-height: 1.5;
+  --heading-sm-size: 1rem;
+  --heading-sm-weight: 600;
+  --heading-sm-line-height: 1.5;
+  --heading-xs-size: 0.875rem;
+  --heading-xs-weight: 600;
+  --heading-xs-line-height: 1.5;
+
+  /* Body */
+  --body-lg-size: 1.125rem;
+  --body-lg-weight: 400;
+  --body-lg-line-height: 1.625;
+  --body-md-size: 1rem;
+  --body-md-weight: 400;
+  --body-md-line-height: 1.5;
+  --body-sm-size: 0.875rem;
+  --body-sm-weight: 400;
+  --body-sm-line-height: 1.5;
+
+  /* Caption */
+  --caption-lg-size: 0.875rem;
+  --caption-lg-weight: 500;
+  --caption-lg-line-height: 1.5;
+  --caption-md-size: 0.75rem;
+  --caption-md-weight: 500;
+  --caption-md-line-height: 1.5;
+  --caption-sm-size: 0.75rem;
+  --caption-sm-weight: 400;
+  --caption-sm-line-height: 1.25;
+
   /* ========== FOCUS RING ========== */
   --ring-width: 2px;
   --ring-offset: 2px;

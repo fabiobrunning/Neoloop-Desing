@@ -33,3 +33,4 @@ export { Skeleton, type SkeletonProps } from "./skeleton";
 export { Slider, type SliderProps } from "./slider";
 export { Separator } from "./separator";
 export { Toggle, toggleVariants, type ToggleProps } from "./toggle";
+export { Icon, iconVariants, type IconProps, type IconName } from "./icon";

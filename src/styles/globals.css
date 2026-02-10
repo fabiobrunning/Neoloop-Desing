@@ -5,6 +5,7 @@
  */
 
 @import "tailwindcss";
+@import "./fonts.css";
 @import "../tokens/tokens.css";
 @import "../tokens/palette-extended.css";
 
@@ -186,6 +187,34 @@ code, pre {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-muted);
 }
+
+/* ============================================================================
+ * TYPOGRAPHY SCALE UTILITIES
+ * Semantic classes from the Display/Heading/Body/Caption scale
+ * ============================================================================ */
+
+/* Display */
+.display-xl { font-family: var(--font-display); font-size: var(--display-xl-size); font-weight: var(--display-xl-weight); line-height: var(--display-xl-line-height); }
+.display-lg { font-family: var(--font-display); font-size: var(--display-lg-size); font-weight: var(--display-lg-weight); line-height: var(--display-lg-line-height); }
+.display-md { font-family: var(--font-display); font-size: var(--display-md-size); font-weight: var(--display-md-weight); line-height: var(--display-md-line-height); }
+.display-sm { font-family: var(--font-display); font-size: var(--display-sm-size); font-weight: var(--display-sm-weight); line-height: var(--display-sm-line-height); }
+
+/* Heading */
+.heading-xl { font-family: var(--font-display); font-size: var(--heading-xl-size); font-weight: var(--heading-xl-weight); line-height: var(--heading-xl-line-height); }
+.heading-lg { font-family: var(--font-display); font-size: var(--heading-lg-size); font-weight: var(--heading-lg-weight); line-height: var(--heading-lg-line-height); }
+.heading-md { font-family: var(--font-display); font-size: var(--heading-md-size); font-weight: var(--heading-md-weight); line-height: var(--heading-md-line-height); }
+.heading-sm { font-family: var(--font-display); font-size: var(--heading-sm-size); font-weight: var(--heading-sm-weight); line-height: var(--heading-sm-line-height); }
+.heading-xs { font-family: var(--font-display); font-size: var(--heading-xs-size); font-weight: var(--heading-xs-weight); line-height: var(--heading-xs-line-height); }
+
+/* Body */
+.body-lg { font-family: var(--font-sans); font-size: var(--body-lg-size); font-weight: var(--body-lg-weight); line-height: var(--body-lg-line-height); }
+.body-md { font-family: var(--font-sans); font-size: var(--body-md-size); font-weight: var(--body-md-weight); line-height: var(--body-md-line-height); }
+.body-sm { font-family: var(--font-sans); font-size: var(--body-sm-size); font-weight: var(--body-sm-weight); line-height: var(--body-sm-line-height); }
+
+/* Caption */
+.caption-lg { font-family: var(--font-sans); font-size: var(--caption-lg-size); font-weight: var(--caption-lg-weight); line-height: var(--caption-lg-line-height); }
+.caption-md { font-family: var(--font-sans); font-size: var(--caption-md-size); font-weight: var(--caption-md-weight); line-height: var(--caption-md-line-height); }
+.caption-sm { font-family: var(--font-sans); font-size: var(--caption-sm-size); font-weight: var(--caption-sm-weight); line-height: var(--caption-sm-line-height); }
 
 /* ============================================================================
  * PROGRESS BAR ANIMATIONS

@@ -184,6 +184,40 @@ export const focusRing = {
 } as const;
 
 // ============================================================================
+// TYPOGRAPHY SCALE (Display / Heading / Body / Caption)
+// ============================================================================
+
+export const typographyScale = {
+  display: {
+    xl: { size: "4.5rem", weight: 700, lineHeight: 1.25 },
+    lg: { size: "3.75rem", weight: 700, lineHeight: 1.25 },
+    md: { size: "3rem", weight: 600, lineHeight: 1.25 },
+    sm: { size: "2.25rem", weight: 600, lineHeight: 1.375 },
+  },
+  heading: {
+    xl: { size: "1.875rem", weight: 600, lineHeight: 1.375 },
+    lg: { size: "1.5rem", weight: 600, lineHeight: 1.5 },
+    md: { size: "1.25rem", weight: 600, lineHeight: 1.5 },
+    sm: { size: "1rem", weight: 600, lineHeight: 1.5 },
+    xs: { size: "0.875rem", weight: 600, lineHeight: 1.5 },
+  },
+  body: {
+    lg: { size: "1.125rem", weight: 400, lineHeight: 1.625 },
+    md: { size: "1rem", weight: 400, lineHeight: 1.5 },
+    sm: { size: "0.875rem", weight: 400, lineHeight: 1.5 },
+  },
+  caption: {
+    lg: { size: "0.875rem", weight: 500, lineHeight: 1.5 },
+    md: { size: "0.75rem", weight: 500, lineHeight: 1.5 },
+    sm: { size: "0.75rem", weight: 400, lineHeight: 1.25 },
+  },
+} as const;
+
+export type TypographyScaleToken = typeof typographyScale;
+export type TypographyCategory = keyof typeof typographyScale;
+export type TypographyVariant<C extends TypographyCategory> = keyof (typeof typographyScale)[C];
+
+// ============================================================================
 // TYPE EXPORTS
 // ============================================================================
 
@@ -200,6 +234,7 @@ export type FocusRingToken = typeof focusRing;
 export type DesignTokens = {
   colors: ColorToken;
   typography: TypographyToken;
+  typographyScale: TypographyScaleToken;
   spacing: SpacingToken;
   radius: RadiusToken;
   shadows: ShadowToken;
@@ -212,6 +247,7 @@ export type DesignTokens = {
 export const tokens: DesignTokens = {
   colors,
   typography,
+  typographyScale,
   spacing,
   radius,
   shadows,

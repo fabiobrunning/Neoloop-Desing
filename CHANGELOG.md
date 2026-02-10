@@ -1,3 +1,25 @@
+## 0.3.1 (2026-02-10)
+
+
+### Features
+
+* **tokens:** add semantic typography scale (Display/Heading/Body/Caption) with CSS custom properties and TS exports
+* **atoms:** add Icon component wrapping lucide-react with DS-consistent size presets (xs/sm/md/lg/xl) and a11y support
+* **styles:** add typography utility classes (.display-xl, .heading-md, .body-sm, .caption-lg, etc.)
+
+### Improvements
+
+* **assets/icons:** streamline icon system documentation to reference Icon atom + lucide-react
+* **visual audit:** document color divergences between Figma references (blue/teal scheme) and DS brand (gold scheme)
+
+### Stats
+
+* 504 tests across 46 test files (all passing)
+* 22 atoms, 9 molecules, 11 organisms, 4 templates
+
+
+---
+
 ## 0.3.0 (2026-02-10)
 
 
