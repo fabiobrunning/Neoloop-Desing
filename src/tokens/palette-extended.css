@@ -103,11 +103,9 @@
   --gradient-purple-blue: linear-gradient(135deg, #8962f8, #1ea5fc);
   --gradient-hibiscus-dragon: linear-gradient(135deg, #fb0049, #f12e6d);
   --gradient-green-mint: linear-gradient(135deg, #80e220, #a2ec8e);
-  --gradient-gold-sunset: linear-gradient(135deg, #D4AF37, #fc4e12);
-
   /* ========== CHART PALETTE (10 cores otimizadas para data viz) ========== */
   --chart-1: #1ea5fc;
-  --chart-2: #D4AF37;
+  --chart-2: #2B4BEE;
   --chart-3: #22C55E;
   --chart-4: #8962f8;
   --chart-5: #fc4e12;

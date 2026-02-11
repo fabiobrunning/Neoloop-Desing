@@ -43,7 +43,7 @@ function LoginPage() {
 import { tokens } from "synkra-ds";
 
 // Access token values
-console.log(tokens.colors.primary); // "#D4AF37"
+console.log(tokens.colors.primary); // { blue: "#2B4BEE", ... }
 
 // Or use CSS custom properties directly
 <div style={{ color: "var(--color-primary)" }} />

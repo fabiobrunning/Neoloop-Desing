@@ -57,7 +57,7 @@
 **Design Notes:**
 - Mobile-first design (20 screen variations)
 - Dark mode with accent colors (blue, purple, red)
-- Token-aligned with Lendario dark theme
+- Token-aligned with Synkra dark theme
 - Build with: `*compose login-form`, `*compose signup-form`
 
 ---
@@ -115,7 +115,7 @@
 | Caption MD | 12px | Medium | 1.5 |
 | Caption SM | 12px | Regular | 1.25 |
 
-**Fonts:** Inter (sans), JetBrains Mono (code), Source Serif 4 (reading), Rajdhani (display)
+**Fonts:** Inter (sans + display), JetBrains Mono (code)
 
 ---
 
@@ -125,7 +125,7 @@
 - 77 watchOS colors organized by hue family
 - Integrated as extended palette in `src/tokens/palette-extended.css`
 - 10-color chart palette for data visualization
-- 5 gradient presets (badge, purple-blue, hibiscus, green-mint, gold-sunset)
+- 4 gradient presets (badge, purple-blue, hibiscus, green-mint)
 
 ---
 

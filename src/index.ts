@@ -13,6 +13,9 @@ export * from "./theme";
 export * from "./assets/logos";
 export * from "./assets/icons";
 
+// Icons (inline SVG components)
+export * from "./icons";
+
 // Utilities
 export { cn } from "./lib/utils";
 

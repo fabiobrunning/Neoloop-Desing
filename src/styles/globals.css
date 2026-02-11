@@ -1,7 +1,7 @@
 /*
  * Synkra DS - Global Styles
  * Tailwind v4 with @theme configuration
- * Brand: Lendario | Theme: Dark
+ * Brand: Synkra | Theme: Dark
  */
 
 @import "tailwindcss";
@@ -16,9 +16,10 @@
 
 @theme {
   /* Colors */
-  --color-primary: #D4AF37;
-  --color-primary-dark: #B8962E;
-  --color-primary-light: #E4C84A;
+  --color-primary: #2B4BEE;
+  --color-primary-dark: #1E3A8A;
+  --color-primary-light: #5B7BF2;
+  --color-active: #1DC9A0;
 
   --color-bg-base: #0A0A0F;
   --color-bg-elevated: #111116;
@@ -36,15 +37,15 @@
 
   --color-border: rgba(255, 255, 255, 0.1);
   --color-border-subtle: rgba(255, 255, 255, 0.05);
-  --color-border-emphasis: rgba(212, 175, 55, 0.3);
+  --color-border-emphasis: rgba(43, 75, 238, 0.3);
 
   --color-disabled: #AEAEB2;
   --color-disabled-bg: rgba(174, 174, 178, 0.15);
 
   /* Typography */
   --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Source Serif 4', serif;
-  --font-display: 'Rajdhani', sans-serif;
+  --font-serif: serif;
+  --font-display: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Radius */
@@ -60,7 +61,7 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.3);
+  --shadow-glow: 0 0 20px rgba(43, 75, 238, 0.3);
 
   /* Motion */
   --duration-fast: 100ms;
@@ -158,12 +159,12 @@ code, pre {
  * ============================================================================ */
 
 ::selection {
-  background-color: rgba(212, 175, 55, 0.3);
+  background-color: rgba(43, 75, 238, 0.3);
   color: var(--color-text-primary);
 }
 
 .light ::selection {
-  background-color: rgba(184, 150, 46, 0.2);
+  background-color: rgba(30, 63, 208, 0.2);
 }
 
 /* ============================================================================

@@ -18,7 +18,7 @@ const Switch = React.forwardRef<
       "transition-colors duration-fast ease-in-out",
       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-emphasis focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base",
       "disabled:cursor-not-allowed disabled:opacity-50",
-      "data-[state=checked]:bg-primary data-[state=unchecked]:bg-border",
+      "data-[state=checked]:bg-active data-[state=unchecked]:bg-border",
       size === "sm" ? "h-5 w-9" : "h-6 w-11",
       className,
     )}

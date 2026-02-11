@@ -9,9 +9,13 @@
 
 export const colors = {
   primary: {
-    gold: "#D4AF37",
-    "gold-dark": "#B8962E",
-    "gold-light": "#E4C84A",
+    blue: "#2B4BEE",
+    "blue-dark": "#1E3A8A",
+    "blue-light": "#5B7BF2",
+  },
+  active: {
+    base: "#1DC9A0",
+    dark: "#12B38C",
   },
   background: {
     base: "#0A0A0F",
@@ -34,7 +38,7 @@ export const colors = {
   border: {
     default: "rgba(255, 255, 255, 0.1)",
     subtle: "rgba(255, 255, 255, 0.05)",
-    emphasis: "rgba(212, 175, 55, 0.3)",
+    emphasis: "rgba(43, 75, 238, 0.3)",
   },
 } as const;
 
@@ -45,8 +49,8 @@ export const colors = {
 export const typography = {
   families: {
     sans: "'Inter', sans-serif",
-    serif: "'Source Serif 4', serif",
-    display: "'Rajdhani', sans-serif",
+    serif: "serif",
+    display: "'Inter', sans-serif",
     mono: "'JetBrains Mono', monospace",
   },
   sizes: {
@@ -125,7 +129,7 @@ export const shadows = {
   md: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
   lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
   xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
-  glow: "0 0 20px rgba(212, 175, 55, 0.3)",
+  glow: "0 0 20px rgba(43, 75, 238, 0.3)",
 } as const;
 
 // ============================================================================
@@ -263,9 +267,9 @@ export const tokens: DesignTokens = {
 
 export const lightColors = {
   primary: {
-    gold: "#B8962E",
-    "gold-dark": "#96790E",
-    "gold-light": "#D4AF37",
+    blue: "#1E3FD0",
+    "blue-dark": "#1530A0",
+    "blue-light": "#4B6BF5",
   },
   background: {
     base: "#FFFFFF",
@@ -288,14 +292,14 @@ export const lightColors = {
   border: {
     default: "rgba(0, 0, 0, 0.1)",
     subtle: "rgba(0, 0, 0, 0.05)",
-    emphasis: "rgba(184, 150, 46, 0.3)",
+    emphasis: "rgba(30, 63, 208, 0.3)",
   },
 } as const;
 
 export const darkColors = colors;
 
 type ColorScheme = {
-  primary: { gold: string; "gold-dark": string; "gold-light": string };
+  primary: { blue: string; "blue-dark": string; "blue-light": string };
   background: { base: string; elevated: string; surface: string; overlay: string };
   text: { primary: string; secondary: string; muted: string; inverse: string };
   semantic: { success: string; warning: string; error: string; info: string };

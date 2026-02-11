@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Icon, type IconName } from "./Icon";
+import { iconNames } from "../../icons";
 
 const meta: Meta<typeof Icon> = {
   title: "Atoms/Icon",
@@ -7,8 +8,9 @@ const meta: Meta<typeof Icon> = {
   tags: ["autodocs"],
   argTypes: {
     name: {
-      control: "text",
-      description: "Name of the lucide-react icon",
+      control: "select",
+      options: iconNames,
+      description: "Name of the icon from the registry",
     },
     size: {
       control: "select",
@@ -100,6 +102,36 @@ export const CommonIcons: Story = {
     </div>
   ),
   name: "Common Icons",
+};
+
+// ── All Icons ────────────────────────────────────────────────────────────
+
+export const AllIcons: Story = {
+  render: () => (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(8, 1fr)",
+        gap: "16px",
+      }}
+    >
+      {iconNames.map((name) => (
+        <div
+          key={name}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "6px",
+          }}
+        >
+          <Icon name={name} size="lg" />
+          <span style={{ fontSize: "10px", color: "#A1A1AA" }}>{name}</span>
+        </div>
+      ))}
+    </div>
+  ),
+  name: "All Icons",
 };
 
 // ── With Color ───────────────────────────────────────────────────────────

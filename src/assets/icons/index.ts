@@ -2,15 +2,15 @@
  * Synkra DS - Icon System
  *
  * The primary Icon component lives at src/atoms/icon/Icon.tsx.
- * It wraps lucide-react with DS-consistent defaults (size presets, color tokens).
+ * Individual icons are in src/icons/ — no external dependencies.
  *
  * Usage:
  *   import { Icon } from "synkra-ds";
- *   <Icon name="Home" size="lg" className="text-primary" />
+ *   <Icon name="House" size="lg" className="text-primary" />
  *
- * Or use lucide-react directly for tree-shaking individual icons:
- *   import { Home } from "lucide-react";
- *   <Home size={24} className="text-text-secondary" />
+ * Or import individual icon components for tree-shaking:
+ *   import { HouseIcon } from "synkra-ds";
+ *   <HouseIcon size={24} className="text-text-secondary" />
  */
 
 /** Icon size presets matching the design system */

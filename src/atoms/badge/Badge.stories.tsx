@@ -13,7 +13,7 @@ const meta: Meta<typeof Badge> = {
     },
     gradient: {
       control: "select",
-      options: ["badge", "purple-blue", "hibiscus", "green-mint", "gold-sunset"],
+      options: ["badge", "purple-blue", "hibiscus", "green-mint"],
       description: "Gradient preset (only for gradient variant)",
     },
     children: { control: "text" },
@@ -67,8 +67,8 @@ export const GradientPurpleBlue: Story = {
   args: { variant: "gradient", gradient: "purple-blue", children: "Pro" },
 };
 
-export const GradientGoldSunset: Story = {
-  args: { variant: "gradient", gradient: "gold-sunset", children: "Premium" },
+export const GradientHibiscus: Story = {
+  args: { variant: "gradient", gradient: "hibiscus", children: "Premium" },
 };
 
 // ── Compositions ────────────────────────────────────────────────────────
@@ -85,7 +85,7 @@ export const AllVariants: Story = {
       <Badge variant="info">Info</Badge>
       <Badge variant="gradient" gradient="badge">Hot</Badge>
       <Badge variant="gradient" gradient="purple-blue">Pro</Badge>
-      <Badge variant="gradient" gradient="gold-sunset">Premium</Badge>
+      <Badge variant="gradient" gradient="hibiscus">Premium</Badge>
     </div>
   ),
 };

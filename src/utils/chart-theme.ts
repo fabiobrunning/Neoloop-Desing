@@ -19,7 +19,7 @@
 /** 10-color palette optimized for data visualization (from --chart-* tokens) */
 export const chartColors = [
   "#1ea5fc", // chart-1: blue
-  "#D4AF37", // chart-2: gold (brand)
+  "#2B4BEE", // chart-2: blue (brand)
   "#22C55E", // chart-3: green
   "#8962f8", // chart-4: purple
   "#fc4e12", // chart-5: orange
@@ -50,7 +50,7 @@ export const chartThemeDark = {
       fontSize: "14px",
       boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
     },
-    cursor: { fill: "rgba(212, 175, 55, 0.1)" },
+    cursor: { fill: "rgba(43, 75, 238, 0.1)" },
   },
   legend: {
     wrapperStyle: { color: "#A1A1AA", fontSize: "12px" },
@@ -81,7 +81,7 @@ export const chartThemeLight = {
       fontSize: "14px",
       boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
     },
-    cursor: { fill: "rgba(184, 150, 46, 0.1)" },
+    cursor: { fill: "rgba(30, 63, 208, 0.1)" },
   },
   legend: {
     wrapperStyle: { color: "#4B5563", fontSize: "12px" },

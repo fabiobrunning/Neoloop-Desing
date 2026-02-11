@@ -20,8 +20,8 @@ const Checkbox = React.forwardRef<
       "transition-colors duration-fast ease-in-out",
       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-emphasis focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base",
       "disabled:cursor-not-allowed disabled:opacity-50",
-      "data-[state=checked]:bg-primary data-[state=checked]:border-primary data-[state=checked]:text-text-inverse",
-      "data-[state=indeterminate]:bg-primary data-[state=indeterminate]:border-primary data-[state=indeterminate]:text-text-inverse",
+      "data-[state=checked]:bg-active data-[state=checked]:border-active data-[state=checked]:text-text-inverse",
+      "data-[state=indeterminate]:bg-active data-[state=indeterminate]:border-active data-[state=indeterminate]:text-text-inverse",
       error && "border-error",
       className,
     )}

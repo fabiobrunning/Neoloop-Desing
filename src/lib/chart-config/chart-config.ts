@@ -19,7 +19,7 @@ export const CHART_COLORS = [
 
 export const CHART_COLORS_HEX = {
   chart1: "#1ea5fc",
-  chart2: "#D4AF37",
+  chart2: "#2B4BEE",
   chart3: "#22C55E",
   chart4: "#8962f8",
   chart5: "#fc4e12",

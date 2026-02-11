@@ -1,7 +1,13 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/utils";
-import { AlertCircle, CheckCircle2, AlertTriangle, Info, XCircle } from "lucide-react";
+import {
+  AlertCircleIcon,
+  CheckCircleIcon,
+  AlertTriangleIcon,
+  InfoIcon,
+  XCircleIcon,
+} from "../../icons";
 
 const alertVariants = cva(
   "relative w-full rounded-lg border px-4 py-3 text-sm flex gap-3 items-start [&>svg]:shrink-0 [&>svg]:mt-0.5",
@@ -22,11 +28,11 @@ const alertVariants = cva(
 );
 
 const iconMap = {
-  default: AlertCircle,
-  success: CheckCircle2,
-  warning: AlertTriangle,
-  error: XCircle,
-  info: Info,
+  default: AlertCircleIcon,
+  success: CheckCircleIcon,
+  warning: AlertTriangleIcon,
+  error: XCircleIcon,
+  info: InfoIcon,
 } as const;
 
 export interface AlertProps

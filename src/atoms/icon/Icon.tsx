@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { icons, type LucideIcon } from "lucide-react";
 import { cn } from "../../lib/utils";
+import { iconRegistry, type IconName } from "../../icons";
 
 const iconVariants = cva("shrink-0", {
   variants: {
@@ -27,12 +27,12 @@ const sizeMap = {
   xl: 32,
 } as const;
 
-export type IconName = keyof typeof icons;
+export type { IconName };
 
 export interface IconProps
   extends Omit<React.SVGAttributes<SVGSVGElement>, "name">,
     VariantProps<typeof iconVariants> {
-  /** The name of a lucide-react icon (e.g. "House", "Settings", "User") */
+  /** Name of a registered icon (e.g. "House", "Settings", "User") */
   name: IconName;
   /** Size preset from the design system */
   size?: "xs" | "sm" | "md" | "lg" | "xl";
@@ -42,14 +42,14 @@ export interface IconProps
 
 const Icon = React.forwardRef<SVGSVGElement, IconProps>(
   ({ name, size = "md", label, className, ...props }, ref) => {
-    const LucideIcon: LucideIcon = icons[name];
+    const IconComponent = iconRegistry[name];
 
-    if (!LucideIcon) {
+    if (!IconComponent) {
       return null;
     }
 
     return (
-      <LucideIcon
+      <IconComponent
         ref={ref}
         size={sizeMap[size]}
         className={cn(iconVariants({ size, className }))}
@@ -64,4 +64,4 @@ const Icon = React.forwardRef<SVGSVGElement, IconProps>(
 
 Icon.displayName = "Icon";
 
-export { Icon, iconVariants, icons };
+export { Icon, iconVariants };

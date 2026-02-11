@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
-import { X } from "lucide-react";
+import { XIcon } from "../../icons";
 import { cn } from "../../lib/utils";
 
 /* -- Sheet Root -------------------------------------------------------------- */
@@ -73,7 +73,7 @@ const SheetContent = React.forwardRef<
           "disabled:pointer-events-none",
         )}
       >
-        <X className="h-4 w-4 text-text-secondary" />
+        <XIcon className="h-4 w-4 text-text-secondary" />
         <span className="sr-only">Close</span>
       </DialogPrimitive.Close>
       {children}

@@ -32,7 +32,7 @@ export const WithImage: Story = {
   render: (args) => (
     <Avatar {...args}>
       <AvatarImage
-        src="https://api.dicebear.com/7.x/initials/svg?seed=FB&backgroundColor=D4AF37"
+        src="https://api.dicebear.com/7.x/initials/svg?seed=FB&backgroundColor=2B4BEE"
         alt="Fabio"
       />
       <AvatarFallback>FB</AvatarFallback>

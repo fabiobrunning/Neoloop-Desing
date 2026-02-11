@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Sun, Moon, Monitor } from "lucide-react";
+import { SunIcon, MoonIcon, MonitorIcon } from "../icons";
 import { useTheme } from "./ThemeProvider";
 import { cn } from "../lib/utils";
 
@@ -13,10 +13,10 @@ const LABELS: Record<string, string> = {
   dark: "Dark theme",
 };
 
-const ICONS: Record<string, typeof Sun> = {
-  system: Monitor,
-  light: Sun,
-  dark: Moon,
+const ICONS: Record<string, typeof SunIcon> = {
+  system: MonitorIcon,
+  light: SunIcon,
+  dark: MoonIcon,
 };
 
 export interface ThemeToggleProps {

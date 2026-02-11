@@ -40,7 +40,7 @@ import { Button, Input, Card, Badge } from "synkra-ds";
 ```tsx
 import { tokens } from "synkra-ds";
 
-tokens.colors.primary.gold    // "#D4AF37"
+tokens.colors.primary.blue    // "#2B4BEE"
 tokens.typography.sizes.base   // "1rem"
 tokens.spacing[4]              // "1rem"
 ```

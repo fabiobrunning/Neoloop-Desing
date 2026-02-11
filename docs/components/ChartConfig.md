@@ -22,7 +22,7 @@ import {
 | Token | Hex | Usage |
 |-------|-----|-------|
 | `--chart-1` | `#1ea5fc` | Blue (primary data) |
-| `--chart-2` | `#D4AF37` | Gold (brand accent) |
+| `--chart-2` | `#2B4BEE` | Blue (brand accent) |
 | `--chart-3` | `#22C55E` | Green (success/growth) |
 | `--chart-4` | `#8962f8` | Purple (secondary) |
 | `--chart-5` | `#fc4e12` | Orange (warning) |

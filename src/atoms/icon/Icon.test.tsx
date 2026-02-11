@@ -6,7 +6,7 @@ import { axe } from "../../lib/test-utils";
 describe("Icon", () => {
   // ── Rendering ──────────────────────────────────────────────────────────
 
-  it("renders a known lucide icon", () => {
+  it("renders a known icon", () => {
     render(<Icon name="House" label="Home" />);
     expect(screen.getByRole("img", { name: /home/i })).toBeDefined();
   });

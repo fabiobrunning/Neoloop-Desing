@@ -27,7 +27,7 @@ export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof badgeVariants> {
   /** Gradient name (only used with variant="gradient") */
-  gradient?: "badge" | "purple-blue" | "hibiscus" | "green-mint" | "gold-sunset";
+  gradient?: "badge" | "purple-blue" | "hibiscus" | "green-mint";
 }
 
 const gradientMap = {
@@ -35,7 +35,6 @@ const gradientMap = {
   "purple-blue": "var(--gradient-purple-blue)",
   hibiscus: "var(--gradient-hibiscus-dragon)",
   "green-mint": "var(--gradient-green-mint)",
-  "gold-sunset": "var(--gradient-gold-sunset)",
 } as const;
 
 function Badge({

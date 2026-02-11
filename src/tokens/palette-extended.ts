@@ -102,7 +102,7 @@ export const paletteExtended = {
 /** 10 colors optimized for charts and data visualization */
 export const chartPalette = [
   "#1ea5fc", // blue
-  "#D4AF37", // gold (brand)
+  "#2B4BEE", // blue (brand)
   "#22C55E", // green
   "#8962f8", // purple
   "#fc4e12", // orange
@@ -119,7 +119,6 @@ export const gradients = {
   purpleBlue: "linear-gradient(135deg, #8962f8, #1ea5fc)",
   hibiscusDragon: "linear-gradient(135deg, #fb0049, #f12e6d)",
   greenMint: "linear-gradient(135deg, #80e220, #a2ec8e)",
-  goldSunset: "linear-gradient(135deg, #D4AF37, #fc4e12)",
 } as const;
 
 export type PaletteCategory = keyof typeof paletteExtended;

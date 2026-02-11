@@ -36,3 +36,10 @@ npm-debug.log*
 
 # Design assets (large files)
 assets/
+.aios-core
+.aios/
+squads/
+skills/
+
+# Generated icon manifest
+scripts/icon-manifest.json

@@ -13,7 +13,7 @@ import { Badge } from "synkra-ds";
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `variant` | `"default" \| "secondary" \| "outline" \| "success" \| "warning" \| "error" \| "info" \| "gradient"` | `"default"` | Visual variant |
-| `gradient` | `"badge" \| "purple-blue" \| "hibiscus" \| "green-mint" \| "gold-sunset"` | `"badge"` | Gradient preset (only for `variant="gradient"`) |
+| `gradient` | `"badge" \| "purple-blue" \| "hibiscus" \| "green-mint"` | `"badge"` | Gradient preset (only for `variant="gradient"`) |
 
 ## Usage
 
@@ -21,7 +21,7 @@ import { Badge } from "synkra-ds";
 <Badge>Default</Badge>
 <Badge variant="success">Active</Badge>
 <Badge variant="error">Failed</Badge>
-<Badge variant="gradient" gradient="gold-sunset">Premium</Badge>
+<Badge variant="gradient" gradient="hibiscus">Premium</Badge>
 ```
 
 ## Variants
@@ -43,6 +43,5 @@ import { Badge } from "synkra-ds";
 - **purple-blue**: Purple → Blue (`#8962f8 → #1ea5fc`)
 - **hibiscus**: Pink → Red (`#fb0049 → #f12e6d`)
 - **green-mint**: Green → Mint (`#80e220 → #a2ec8e`)
-- **gold-sunset**: Gold → Orange (`#D4AF37 → #fc4e12`)
 
 ## Tests: 6 | Stories: 11

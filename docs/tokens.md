@@ -1,19 +1,20 @@
 # Token Reference
 
-> 170 design tokens | Lendario brand + watchOS extended palette
+> 170 design tokens | Synkra brand + watchOS extended palette
 
 ## Core Colors (19)
 
 | Token | CSS Variable | Value | Usage |
 |-------|-------------|-------|-------|
-| Primary | `--color-primary` | `#D4AF37` | Brand gold, CTAs, active states |
-| Primary Hover | `--color-primary-hover` | `#C4A030` | Hover on primary elements |
-| Primary Muted | `--color-primary-muted` | `rgba(212,175,55,0.15)` | Backgrounds, subtle highlights |
+| Primary | `--color-primary` | `#2B4BEE` | Brand blue, CTAs, active states |
+| Primary Dark | `--color-primary-dark` | `#1E3A8A` | Hover on primary elements |
+| Primary Light | `--color-primary-light` | `#5B7BF2` | Light variant, subtle highlights |
+| Active | `--color-active` | `#1DC9A0` | Checkbox, switch checked states |
 | Background Base | `--color-bg-base` | `#0A0A0F` | Main background |
 | Background Elevated | `--color-bg-elevated` | `#12121A` | Cards, elevated surfaces |
 | Background Surface | `--color-bg-surface` | `#1A1A24` | Hover, secondary surfaces |
 | Border | `--color-border` | `#2A2A36` | Default borders |
-| Border Emphasis | `--color-border-emphasis` | `#D4AF37` | Focus rings, active borders |
+| Border Emphasis | `--color-border-emphasis` | `rgba(43,75,238,0.3)` | Focus rings, active borders |
 | Text Primary | `--color-text-primary` | `#FAFAF9` | Headings, body text |
 | Text Secondary | `--color-text-secondary` | `#A8A8B3` | Descriptions, labels |
 | Text Muted | `--color-text-muted` | `#6B6B78` | Placeholders, hints |
@@ -41,15 +42,14 @@ Full list in `src/tokens/palette-extended.css`.
 Sequential colors for data visualization:
 `--chart-1` through `--chart-10`
 
-## Gradients (5)
+## Gradients (4)
 
 | Name | CSS Variable | Colors |
 |------|-------------|--------|
 | Badge | `--gradient-badge` | `#ff3b57 → #ffda1a` |
 | Purple Blue | `--gradient-purple-blue` | `#8962f8 → #1ea5fc` |
-| Hibiscus | `--gradient-hibiscus` | `#fb0049 → #f12e6d` |
+| Hibiscus | `--gradient-hibiscus-dragon` | `#fb0049 → #f12e6d` |
 | Green Mint | `--gradient-green-mint` | `#80e220 → #a2ec8e` |
-| Gold Sunset | `--gradient-gold-sunset` | `#D4AF37 → #fc4e12` |
 
 ## Typography (22)
 

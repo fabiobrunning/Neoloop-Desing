@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Bold, Italic, Underline } from "lucide-react";
+import { BoldIcon, ItalicIcon, UnderlineIcon } from "../../icons";
 import { Toggle } from "./Toggle";
 
 const meta: Meta<typeof Toggle> = {
@@ -45,13 +45,13 @@ export const WithIcon: Story = {
   render: () => (
     <div style={{ display: "flex", gap: "8px" }}>
       <Toggle aria-label="Toggle bold">
-        <Bold className="h-4 w-4" />
+        <BoldIcon className="h-4 w-4" />
       </Toggle>
       <Toggle aria-label="Toggle italic">
-        <Italic className="h-4 w-4" />
+        <ItalicIcon className="h-4 w-4" />
       </Toggle>
       <Toggle aria-label="Toggle underline">
-        <Underline className="h-4 w-4" />
+        <UnderlineIcon className="h-4 w-4" />
       </Toggle>
     </div>
   ),
