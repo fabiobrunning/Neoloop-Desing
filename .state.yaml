@@ -1,0 +1,281 @@
+# Synkra DS - State Tracking
+# Managed by Brad (Design System Architect)
+# DO NOT edit manually
+
+project:
+  name: "synkra-ds"
+  brand: "Lendario"
+  version: "0.1.0"
+  created_at: "2026-02-06"
+
+setup:
+  completed_at: "2026-02-06"
+  starting_point: "greenfield"
+  configuration:
+    component_directory: "src"
+    css_approach: "tailwind-v4"
+    component_library: "shadcn-radix"
+    test_framework: "vitest"
+    storybook_enabled: true
+
+  tokens_loaded:
+    source: "design-tokens-spec.yaml (Lendario brand) + watchOS palette"
+    categories:
+      colors_core: 19
+      colors_extended: 77
+      gradients: 5
+      chart_palette: 10
+      typography: 22
+      spacing: 15
+      radius: 7
+      shadows: 6
+      motion: 9
+    total_tokens: 170
+    validation: "passed"
+
+  assets_integrated:
+    logos_social:
+      count: 85
+      variants: ["color (28)", "white (29)", "black (28)"]
+      location: "src/assets/logos/social/"
+    logos_payment:
+      count: 12
+      brands: ["AMEX", "Alipay", "Amazon", "ApplePay", "Bitcoin", "Etherium", "GooglePay", "Maestro", "Mastercard", "PayPal", "Stripe", "Visa"]
+      location: "src/assets/logos/payment/"
+    icons:
+      primary_lib: "lucide-react (tree-shakeable)"
+      figma_libraries: 5
+      total_available: "24,000+"
+      reference: "assets/icons/figma-bibliotecas.md"
+    component_references:
+      checkbox: "assets/checkbox/ (Checkbox, Radio, Switch)"
+      sidebar: "assets/Sidebar/ (Dark, Light)"
+      login: "assets/Login/ (10 Login + 10 Sign Up screens)"
+      charts: "assets/graficos/ (75 chart SVGs)"
+      backgrounds: "assets/background/ (73+ UI kit templates)"
+      documentation: "docs/component-references.md"
+
+  directory_structure:
+    - src/atoms/
+    - src/molecules/
+    - src/organisms/
+    - src/templates/
+    - src/tokens/
+    - src/lib/
+    - src/styles/
+    - src/assets/logos/
+    - src/assets/icons/
+    - docs/
+    - __tests__/
+    - .storybook/
+
+  files_created:
+    - package.json
+    - tsconfig.json
+    - postcss.config.mjs
+    - src/tokens/tokens.yaml
+    - src/tokens/tokens.css
+    - src/tokens/tokens.json
+    - src/tokens/index.ts
+    - src/tokens/palette-extended.css
+    - src/tokens/palette-extended.ts
+    - src/styles/globals.css
+    - src/lib/utils.ts
+    - src/index.ts
+    - src/assets/logos/index.ts
+    - src/assets/icons/index.ts
+    - docs/component-references.md
+    - .storybook/main.ts
+    - .storybook/preview.ts
+
+  dependencies:
+    runtime:
+      - "@radix-ui/react-slot"
+      - "class-variance-authority"
+      - "clsx"
+      - "lucide-react"
+      - "tailwind-merge"
+    dev:
+      - "tailwindcss@4"
+      - "typescript"
+      - "vitest"
+      - "storybook@8"
+      - "@storybook/addon-a11y"
+
+phase: "building_components"
+ready_for: "component_building"
+
+components_built:
+  atoms:
+    - name: "Button"
+      path: "src/atoms/button/"
+      variants: ["primary", "secondary", "outline", "ghost", "destructive", "link"]
+      sizes: ["sm", "md", "lg", "icon"]
+      features: ["loading", "asChild (Slot)", "forwardRef"]
+      tests: 23
+      storybook_stories: 13
+      hardcoded_values: 0
+
+    - name: "Input"
+      path: "src/atoms/input/"
+      features: ["error state", "aria-invalid", "file input", "forwardRef"]
+      tests: 10
+      storybook_stories: 7
+      hardcoded_values: 0
+
+    - name: "Checkbox"
+      path: "src/atoms/checkbox/"
+      features: ["Radix primitive", "indeterminate", "error state", "controlled/uncontrolled"]
+      tests: 8
+      storybook_stories: 6
+      hardcoded_values: 0
+
+    - name: "Card"
+      path: "src/atoms/card/"
+      subcomponents: ["Card", "CardHeader", "CardTitle", "CardDescription", "CardContent", "CardFooter"]
+      tests: 8
+      storybook_stories: 4
+      hardcoded_values: 0
+
+    - name: "Switch"
+      path: "src/atoms/switch/"
+      features: ["Radix primitive", "sm/md sizes", "controlled/uncontrolled", "forwardRef"]
+      tests: 9
+      storybook_stories: 7
+      hardcoded_values: 0
+
+    - name: "Badge"
+      path: "src/atoms/badge/"
+      variants: ["default", "secondary", "outline", "success", "warning", "error", "info", "gradient"]
+      features: ["CVA variants", "5 gradient presets", "inline gradient styles"]
+      tests: 6
+      storybook_stories: 11
+      hardcoded_values: 0
+
+    - name: "Select"
+      path: "src/atoms/select/"
+      subcomponents: ["Select", "SelectTrigger", "SelectContent", "SelectItem", "SelectGroup", "SelectLabel", "SelectValue", "SelectSeparator"]
+      features: ["Radix primitive", "error state", "groups", "separator", "disabled items"]
+      tests: 10
+      storybook_stories: 6
+      hardcoded_values: 0
+
+    - name: "Textarea"
+      path: "src/atoms/textarea/"
+      features: ["error state", "aria-invalid", "resize-y", "rows prop", "forwardRef"]
+      tests: 9
+      storybook_stories: 6
+      hardcoded_values: 0
+
+    - name: "Avatar"
+      path: "src/atoms/avatar/"
+      subcomponents: ["Avatar", "AvatarImage", "AvatarFallback"]
+      sizes: ["sm", "md", "lg", "xl"]
+      features: ["Radix primitive", "image + fallback", "4 sizes", "forwardRef"]
+      tests: 9
+      storybook_stories: 8
+      hardcoded_values: 0
+
+  molecules:
+    - name: "FormField"
+      path: "src/molecules/form-field/"
+      composes: ["Input", "Label (Radix)"]
+      features: ["label + input association", "helper text", "error with role=alert", "required indicator", "aria-describedby"]
+      tests: 15
+      storybook_stories: 6
+      hardcoded_values: 0
+
+  organisms:
+    - name: "Sidebar"
+      path: "src/organisms/sidebar/"
+      subcomponents: ["Sidebar", "SidebarHeader", "SidebarContent", "SidebarGroup", "SidebarItem", "SidebarFooter"]
+      features: ["collapsed state", "active item", "icon slot", "aside landmark", "aria-current"]
+      tests: 10
+      storybook_stories: 4
+      hardcoded_values: 0
+
+    - name: "LoginForm"
+      path: "src/organisms/login-form/"
+      composes: ["Card", "FormField", "Button"]
+      features: ["email/password form", "error banner", "forgot password", "loading state", "footer slot"]
+      tests: 12
+      storybook_stories: 7
+      hardcoded_values: 0
+
+    - name: "Dialog"
+      path: "src/organisms/dialog/"
+      subcomponents: ["Dialog", "DialogTrigger", "DialogContent", "DialogOverlay", "DialogHeader", "DialogFooter", "DialogTitle", "DialogDescription", "DialogClose"]
+      features: ["Radix primitive", "overlay + backdrop blur", "close button", "controlled/uncontrolled", "portal"]
+      tests: 9
+      storybook_stories: 3
+      hardcoded_values: 0
+
+    - name: "Toast"
+      path: "src/organisms/toast/"
+      subcomponents: ["ToastProvider", "ToastViewport", "Toast", "ToastTitle", "ToastDescription", "ToastAction", "ToastClose"]
+      variants: ["default", "success", "error", "warning", "info"]
+      features: ["Radix primitive", "CVA variants", "swipe dismiss", "action button", "auto-dismiss"]
+      tests: 10
+      storybook_stories: 7
+      hardcoded_values: 0
+
+  templates:
+    - name: "DashboardLayout"
+      path: "src/templates/dashboard-layout/"
+      composes: ["Sidebar", "SidebarHeader", "SidebarContent", "SidebarFooter"]
+      features: ["sidebar + header + main", "collapsed mode", "page title", "header actions slot"]
+      tests: 10
+      storybook_stories: 3
+      hardcoded_values: 0
+
+  total_tests: 165
+  total_tests_passing: 165
+  total_components: 15
+
+workflow_history:
+  - command: "*setup"
+    timestamp: "2026-02-06"
+    result: "success"
+    details: "Greenfield setup with Tailwind v4, Shadcn/Radix, Storybook 8"
+
+  - command: "asset-integration"
+    timestamp: "2026-02-06"
+    result: "success"
+    details: "Integrated watchOS palette (77 colors), social logos (85), payment logos (12), icon registry, component references"
+
+  - command: "*build button"
+    timestamp: "2026-02-06"
+    result: "success"
+    details: "Button atom: 6 variants, 4 sizes, 23 tests, Storybook stories"
+
+  - command: "*build input, *build checkbox, *build card, *compose form-field"
+    timestamp: "2026-02-06"
+    result: "success"
+    details: "4 components built in batch: Input (10 tests), Checkbox (8 tests), Card (8 tests), FormField molecule (15 tests). Total: 64/64 passing."
+
+  - command: "*build switch, *build badge, *compose sidebar, *compose login-form, *document"
+    timestamp: "2026-02-06"
+    result: "success"
+    details: "4 components + documentation: Switch (9 tests), Badge (6 tests), Sidebar organism (10 tests), LoginForm organism (12 tests). Documentation: 14 docs files. Total: 108/108 passing."
+
+  - command: "*build select, *build textarea, *build avatar, *compose dialog, *compose toast, *compose dashboard-layout"
+    timestamp: "2026-02-06"
+    result: "success"
+    details: "6 components: Select (10 tests), Textarea (9 tests), Avatar (9 tests), Dialog (9 tests), Toast (10 tests), DashboardLayout template (10 tests). Total: 165/165 passing."
+
+documentation:
+  generated_at: "2026-02-06"
+  files:
+    - docs/index.md
+    - docs/getting-started.md
+    - docs/tokens.md
+    - docs/accessibility.md
+    - docs/components/Button.md
+    - docs/components/Input.md
+    - docs/components/Checkbox.md
+    - docs/components/Card.md
+    - docs/components/Switch.md
+    - docs/components/Badge.md
+    - docs/components/FormField.md
+    - docs/components/Sidebar.md
+    - docs/components/LoginForm.md
