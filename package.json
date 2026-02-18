@@ -29,7 +29,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "generate:icons": "tsx scripts/generate-icons.ts"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",

@@ -15,7 +15,7 @@ export default meta;
 
 type Story = StoryObj<typeof Icon>;
 
-export const Default: Story = { args: { name: "home", size: 24 } };
+export const Default: Story = { args: { name: "accessibility", size: 24 } };
 
 export const AllIcons: Story = {
   render: () => (
