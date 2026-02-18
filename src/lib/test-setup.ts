@@ -10,8 +10,25 @@ if (typeof window !== "undefined" && !window.ResizeObserver) {
   };
 }
 
+// matchMedia mock for jsdom
+if (typeof window !== "undefined" && !window.matchMedia) {
+  Object.defineProperty(window, "matchMedia", {
+    value: (query: string) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: () => {},
+      removeListener: () => {},
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      dispatchEvent: () => false,
+    }),
+    configurable: true,
+  });
+}
+
 // localStorage mock for Node 22+ compat
-if (typeof window !== "undefined" && !window.localStorage) {
+if (typeof window !== "undefined") {
   const store: Record<string, string> = {};
   Object.defineProperty(window, "localStorage", {
     value: {
@@ -22,5 +39,6 @@ if (typeof window !== "undefined" && !window.localStorage) {
       get length() { return Object.keys(store).length; },
       key: (i: number) => Object.keys(store)[i] ?? null,
     },
+    configurable: true,
   });
 }

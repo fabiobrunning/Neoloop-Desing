@@ -8,6 +8,11 @@ describe("Progress", () => {
     expect(container.querySelector("[role=progressbar]")).toBeInTheDocument();
   });
 
+  it("renders without value (defaults to 0)", () => {
+    const { container } = render(<Progress aria-label="Loading" />);
+    expect(container.querySelector("[role=progressbar]")).toBeInTheDocument();
+  });
+
   it("has no a11y violations", async () => {
     const { container } = render(<Progress value={50} aria-label="Loading" />);
     const results = await axe(container);
