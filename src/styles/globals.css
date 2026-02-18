@@ -1,249 +1,158 @@
-/*
- * Synkra DS - Global Styles
- * Tailwind v4 with @theme configuration
- * Brand: Synkra | Theme: Dark
- */
-
 @import "tailwindcss";
-@import "./fonts.css";
 @import "../tokens/tokens.css";
-@import "../tokens/palette-extended.css";
-
-/* ============================================================================
- * TAILWIND v4 THEME CONFIGURATION
- * Maps design tokens to Tailwind utility classes
- * ============================================================================ */
+@import "./fonts.css";
 
 @theme {
-  /* Colors */
-  --color-primary: #2B4BEE;
-  --color-primary-dark: #1E3A8A;
-  --color-primary-light: #5B7BF2;
-  --color-active: #1DC9A0;
+  /* ===== Paleta completa watchOS (79 cores) ===== */
 
-  --color-bg-base: #0A0A0F;
-  --color-bg-elevated: #111116;
-  --color-bg-surface: #1a1a1f;
+  /* Vermelhos e Rosas */
+  --color-red: var(--color-red);
+  --color-neon-pink: var(--color-neon-pink);
+  --color-electric-pink: var(--color-electric-pink);
+  --color-hibiscus: var(--color-hibiscus);
+  --color-pink: var(--color-pink);
+  --color-pink-citrus: var(--color-pink-citrus);
+  --color-pomegranate: var(--color-pomegranate);
+  --color-dragon-fruit: var(--color-dragon-fruit);
+  --color-camellia: var(--color-camellia);
+  --color-red-rose: var(--color-red-rose);
+  --color-plum: var(--color-plum);
 
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #A1A1AA;
-  --color-text-muted: #71717A;
-  --color-text-inverse: #0A0A0F;
+  /* Laranjas */
+  --color-orange: var(--color-orange);
+  --color-clementine: var(--color-clementine);
+  --color-apricot: var(--color-apricot);
+  --color-papaya: var(--color-papaya);
+  --color-kumquat: var(--color-kumquat);
+  --color-light-orange: var(--color-light-orange);
+  --color-peach: var(--color-peach);
+  --color-flamingo: var(--color-flamingo);
+  --color-rose-gold: var(--color-rose-gold);
+  --color-pink-sand: var(--color-pink-sand);
+  --color-vintage-rose: var(--color-vintage-rose);
+  --color-grapefruit: var(--color-grapefruit);
 
-  --color-success: #22C55E;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
-  --color-info: #3B82F6;
+  /* Amarelos */
+  --color-cream: var(--color-cream);
+  --color-mellow-yellow: var(--color-mellow-yellow);
+  --color-canary-yellow: var(--color-canary-yellow);
+  --color-pollen: var(--color-pollen);
+  --color-flash-light: var(--color-flash-light);
+  --color-lemon-cream: var(--color-lemon-cream);
+  --color-flash: var(--color-flash);
 
-  --color-border: rgba(255, 255, 255, 0.1);
-  --color-border-subtle: rgba(255, 255, 255, 0.05);
-  --color-border-emphasis: rgba(43, 75, 238, 0.3);
+  /* Verdes */
+  --color-green: var(--color-green);
+  --color-spearmint: var(--color-spearmint);
+  --color-mint: var(--color-mint);
+  --color-beryl: var(--color-beryl);
+  --color-sea-foam: var(--color-sea-foam);
+  --color-turquoise: var(--color-turquoise);
 
-  --color-disabled: #AEAEB2;
-  --color-disabled-bg: rgba(174, 174, 178, 0.15);
+  /* Azuis */
+  --color-blue: var(--color-blue);
+  --color-light-blue: var(--color-light-blue);
+  --color-cerulian: var(--color-cerulian);
+  --color-surf-blue: var(--color-surf-blue);
+  --color-pacific-green: var(--color-pacific-green);
+  --color-blue-cobalt: var(--color-blue-cobalt);
+  --color-dark-teal: var(--color-dark-teal);
+  --color-blue-horizon: var(--color-blue-horizon);
+  --color-denim-blue: var(--color-denim-blue);
+  --color-linen-blue: var(--color-linen-blue);
+  --color-deep-navy: var(--color-deep-navy);
+  --color-midnight-blue: var(--color-midnight-blue);
+
+  /* Roxos */
+  --color-purple: var(--color-purple);
+  --color-ultra-violet: var(--color-ultra-violet);
+  --color-lilac: var(--color-lilac);
+  --color-ocean-blue: var(--color-ocean-blue);
+  --color-delft-blue: var(--color-delft-blue);
+  --color-indigo: var(--color-indigo);
+  --color-lavender-gray: var(--color-lavender-gray);
+  --color-lavender: var(--color-lavender);
+
+  /* Cinzas e Verdes Escuros */
+  --color-mist-blue: var(--color-mist-blue);
+  --color-storm-gray: var(--color-storm-gray);
+  --color-cactus: var(--color-cactus);
+  --color-pine-green: var(--color-pine-green);
+  --color-cyprus-green: var(--color-cyprus-green);
+  --color-northern-blue: var(--color-northern-blue);
+  --color-azure: var(--color-azure);
+  --color-alaskan-blue: var(--color-alaskan-blue);
+
+  /* Marrons e Dourados */
+  --color-khaki: var(--color-khaki);
+  --color-dark-olive: var(--color-dark-olive);
+  --color-soft-white: var(--color-soft-white);
+  --color-antique-white: var(--color-antique-white);
+  --color-yellow-gold: var(--color-yellow-gold);
+  --color-gold: var(--color-gold);
+  --color-camel: var(--color-camel);
+  --color-walnut: var(--color-walnut);
+  --color-stone: var(--color-stone);
+  --color-pebble: var(--color-pebble);
+  --color-cocoa: var(--color-cocoa);
+  --color-coastal-gray: var(--color-coastal-gray);
+
+  /* ===== Tokens semânticos ===== */
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-surface-overlay: var(--color-surface-overlay);
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-ring: var(--color-ring);
+  --color-input: var(--color-input);
+
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-neutral: var(--color-neutral);
+  --color-neutral-foreground: var(--color-neutral-foreground);
+  --color-accent: var(--color-accent);
+  --color-accent-foreground: var(--color-accent-foreground);
+  --color-destructive: var(--color-destructive);
+  --color-destructive-foreground: var(--color-destructive-foreground);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-info: var(--color-info);
+
+  /* Gradientes */
+  --gradient-badge: var(--gradient-badge);
 
   /* Typography */
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: serif;
-  --font-display: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 
   /* Radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
-  --radius-2xl: 1rem;
-  --radius-input: 0.625rem;
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-full: var(--radius-full);
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 0 20px rgba(43, 75, 238, 0.3);
-
-  /* Motion */
-  --duration-fast: 100ms;
-  --duration-normal: 200ms;
-  --duration-slow: 300ms;
-
-  --ease-in: cubic-bezier(0.4, 0, 1, 1);
-  --ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
 }
 
-/* ============================================================================
- * BASE STYLES
- * ============================================================================ */
-
+/* Base styles */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  border-color: var(--color-border);
 }
 
 body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   font-family: var(--font-sans);
-  font-size: var(--text-base);
-  line-height: var(--leading-base);
-  color: var(--color-text-primary);
-  background-color: var(--color-bg-base);
-  color-scheme: dark;
-}
-
-.light body,
-.light {
-  color-scheme: light;
-}
-
-/* ============================================================================
- * TYPOGRAPHY BASE
- * ============================================================================ */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  font-weight: var(--font-semibold);
-  line-height: 1.2;
-  color: var(--color-text-primary);
-}
-
-h1 { font-size: var(--text-4xl); }
-h2 { font-size: var(--text-3xl); }
-h3 { font-size: var(--text-2xl); }
-h4 { font-size: var(--text-xl); }
-h5 { font-size: var(--text-lg); }
-h6 { font-size: var(--text-base); }
-
-p {
-  color: var(--color-text-secondary);
-  line-height: var(--leading-base);
-}
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color var(--duration-fast) var(--ease-in-out);
-}
-
-a:hover {
-  color: var(--color-primary-light);
-}
-
-code, pre {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-}
-
-/* ============================================================================
- * FOCUS STYLES (Accessibility)
- * ============================================================================ */
-
-:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-  border-radius: var(--radius-sm);
-}
-
-/* ============================================================================
- * SELECTION
- * ============================================================================ */
-
-::selection {
-  background-color: rgba(43, 75, 238, 0.3);
-  color: var(--color-text-primary);
-}
-
-.light ::selection {
-  background-color: rgba(30, 63, 208, 0.2);
-}
-
-/* ============================================================================
- * SCROLLBAR (Dark Theme)
- * ============================================================================ */
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-bg-base);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: var(--radius-full);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-muted);
-}
-
-/* ============================================================================
- * TYPOGRAPHY SCALE UTILITIES
- * Semantic classes from the Display/Heading/Body/Caption scale
- * ============================================================================ */
-
-/* Display */
-.display-xl { font-family: var(--font-display); font-size: var(--display-xl-size); font-weight: var(--display-xl-weight); line-height: var(--display-xl-line-height); }
-.display-lg { font-family: var(--font-display); font-size: var(--display-lg-size); font-weight: var(--display-lg-weight); line-height: var(--display-lg-line-height); }
-.display-md { font-family: var(--font-display); font-size: var(--display-md-size); font-weight: var(--display-md-weight); line-height: var(--display-md-line-height); }
-.display-sm { font-family: var(--font-display); font-size: var(--display-sm-size); font-weight: var(--display-sm-weight); line-height: var(--display-sm-line-height); }
-
-/* Heading */
-.heading-xl { font-family: var(--font-display); font-size: var(--heading-xl-size); font-weight: var(--heading-xl-weight); line-height: var(--heading-xl-line-height); }
-.heading-lg { font-family: var(--font-display); font-size: var(--heading-lg-size); font-weight: var(--heading-lg-weight); line-height: var(--heading-lg-line-height); }
-.heading-md { font-family: var(--font-display); font-size: var(--heading-md-size); font-weight: var(--heading-md-weight); line-height: var(--heading-md-line-height); }
-.heading-sm { font-family: var(--font-display); font-size: var(--heading-sm-size); font-weight: var(--heading-sm-weight); line-height: var(--heading-sm-line-height); }
-.heading-xs { font-family: var(--font-display); font-size: var(--heading-xs-size); font-weight: var(--heading-xs-weight); line-height: var(--heading-xs-line-height); }
-
-/* Body */
-.body-lg { font-family: var(--font-sans); font-size: var(--body-lg-size); font-weight: var(--body-lg-weight); line-height: var(--body-lg-line-height); }
-.body-md { font-family: var(--font-sans); font-size: var(--body-md-size); font-weight: var(--body-md-weight); line-height: var(--body-md-line-height); }
-.body-sm { font-family: var(--font-sans); font-size: var(--body-sm-size); font-weight: var(--body-sm-weight); line-height: var(--body-sm-line-height); }
-
-/* Caption */
-.caption-lg { font-family: var(--font-sans); font-size: var(--caption-lg-size); font-weight: var(--caption-lg-weight); line-height: var(--caption-lg-line-height); }
-.caption-md { font-family: var(--font-sans); font-size: var(--caption-md-size); font-weight: var(--caption-md-weight); line-height: var(--caption-md-line-height); }
-.caption-sm { font-family: var(--font-sans); font-size: var(--caption-sm-size); font-weight: var(--caption-sm-weight); line-height: var(--caption-sm-line-height); }
-
-/* ============================================================================
- * PROGRESS BAR ANIMATIONS
- * ============================================================================ */
-
-@keyframes progress-indeterminate {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(400%); }
-}
-.animate-progress-indeterminate {
-  animation: progress-indeterminate 1.5s ease-in-out infinite;
-}
-
-/* ============================================================================
- * ACCORDION ANIMATIONS
- * ============================================================================ */
-
-@keyframes accordion-down {
-  from { height: 0; }
-  to { height: var(--radix-accordion-content-height); }
-}
-@keyframes accordion-up {
-  from { height: var(--radix-accordion-content-height); }
-  to { height: 0; }
-}
-.animate-accordion-down {
-  animation: accordion-down 200ms ease-out;
-}
-.animate-accordion-up {
-  animation: accordion-up 200ms ease-out;
 }
