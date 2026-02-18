@@ -1,27 +1,3 @@
-/**
- * Synkra DS - Design System Entry Point
- * Export all tokens, components, and utilities
- */
-
-// Tokens
-export * from "./tokens";
-
-// Theme
-export * from "./theme";
-
-// Assets
-export * from "./assets/logos";
-export * from "./assets/icons";
-
-// Icons (inline SVG components)
-export * from "./icons";
-
-// Utilities
-export { cn } from "./lib/utils";
-
-// Chart Config
-export * from "./lib/chart-config";
-
 // Atoms
 export * from "./atoms";
 
@@ -31,5 +7,14 @@ export * from "./molecules";
 // Organisms
 export * from "./organisms";
 
-// Templates
-export * from "./templates";
+// Icons
+export * from "./icons";
+
+// Theme
+export * from "./theme";
+
+// Tokens
+export * from "./tokens";
+
+// Utils
+export { cn } from "./lib/utils";

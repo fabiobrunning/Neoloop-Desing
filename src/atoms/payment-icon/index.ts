@@ -1,1 +1,2 @@
-export { PaymentIcon, PAYMENT_METHODS, type PaymentIconProps, type PaymentMethod } from "./PaymentIcon";
+export { PaymentIcon } from "./PaymentIcon";
+export type { PaymentIconProps } from "./PaymentIcon";

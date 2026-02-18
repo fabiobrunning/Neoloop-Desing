@@ -1,5 +1,3 @@
-import { axe } from "vitest-axe";
-import type { AxeResults } from "vitest-axe";
-
-export { axe };
-export type { AxeResults };
+export { render, screen, within } from "@testing-library/react";
+export { default as userEvent } from "@testing-library/user-event";
+export { axe } from "vitest-axe";

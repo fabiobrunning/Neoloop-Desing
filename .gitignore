@@ -43,3 +43,31 @@ skills/
 
 # Generated icon manifest
 scripts/icon-manifest.json
+
+# Environment & Secrets (AIOS)
+*.key
+*.pem
+
+# Dependencies (AIOS)
+node_modules
+
+# Build & Logs (AIOS)
+build/
+logs/
+
+# AIOS Local (AIOS)
+.aios-core/local/
+.claude/settings.local.json
+.aios/install-log.txt
+
+# AI/Agent tooling (not part of DS)
+.agent/
+.ai_completion/
+.antigravity/
+.gemini/
+.kiro/
+.trae/
+neo-design-system-builder/
+pro-installed-manifest.yaml
+pro-version.json
+*.png

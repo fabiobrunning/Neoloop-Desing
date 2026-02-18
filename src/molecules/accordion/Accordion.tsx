@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "../../icons";
 import { cn } from "../../lib/utils";
 
 const Accordion = AccordionPrimitive.Root;
@@ -9,11 +8,7 @@ const AccordionItem = React.forwardRef<
   React.ComponentRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item
-    ref={ref}
-    className={cn("border-b border-border", className)}
-    {...props}
-  />
+  <AccordionPrimitive.Item ref={ref} className={cn("border-b border-[var(--color-border)]", className)} {...props} />
 ));
 AccordionItem.displayName = "AccordionItem";
 
@@ -25,24 +20,17 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-4 text-sm font-medium",
-        "text-text-primary hover:text-primary",
-        "transition-all duration-normal",
-        "[&[data-state=open]>svg]:rotate-180",
+        "flex flex-1 items-center justify-between py-4 font-medium text-[var(--color-foreground)] transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
         className,
       )}
       {...props}
     >
       {children}
-      <ChevronDownIcon
-        size={16}
-        className="shrink-0 text-text-muted transition-transform duration-normal"
-        aria-hidden="true"
-      />
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 transition-transform duration-200"><path d="m6 9 6 6 6-6"/></svg>
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
-AccordionTrigger.displayName = "AccordionTrigger";
+AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
 const AccordionContent = React.forwardRef<
   React.ComponentRef<typeof AccordionPrimitive.Content>,
@@ -50,12 +38,12 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm text-text-secondary data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >
-    <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    <div className={cn("pb-4 pt-0 text-[var(--color-muted-foreground)]", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ));
-AccordionContent.displayName = "AccordionContent";
+AccordionContent.displayName = AccordionPrimitive.Content.displayName;
 
 export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };

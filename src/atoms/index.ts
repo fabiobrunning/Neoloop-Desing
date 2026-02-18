@@ -1,36 +1,17 @@
-export { Button, buttonVariants, type ButtonProps } from "./button";
-export { Input, type InputProps } from "./input";
-export { Checkbox, type CheckboxProps } from "./checkbox";
-export {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from "./card";
-export { Switch, type SwitchProps } from "./switch";
-export { Badge, badgeVariants, type BadgeProps } from "./badge";
-export {
-  Select,
-  SelectGroup,
-  SelectValue,
-  SelectTrigger,
-  SelectContent,
-  SelectLabel,
-  SelectItem,
-  SelectSeparator,
-  type SelectTriggerProps,
-} from "./select";
-export { Textarea, type TextareaProps } from "./textarea";
-export { RadioGroup, RadioGroupItem, type RadioGroupProps, type RadioGroupItemProps } from "./radio-group";
-export { SocialIcon, SOCIAL_NETWORKS, type SocialIconProps, type SocialNetwork, type SocialIconVariant } from "./social-icon";
-export { PaymentIcon, PAYMENT_METHODS, type PaymentIconProps, type PaymentMethod } from "./payment-icon";
-export { Avatar, AvatarImage, AvatarFallback, type AvatarProps } from "./avatar";
-export { Alert, alertVariants, type AlertProps } from "./alert";
-export { Progress, progressVariants, type ProgressProps } from "./progress";
-export { Skeleton, type SkeletonProps } from "./skeleton";
-export { Slider, type SliderProps } from "./slider";
-export { Separator } from "./separator";
-export { Toggle, toggleVariants, type ToggleProps } from "./toggle";
-export { Icon, iconVariants, type IconProps, type IconName } from "./icon";
+export * from "./button";
+export * from "./input";
+export * from "./badge";
+export * from "./checkbox";
+export * from "./switch";
+export * from "./card";
+export * from "./separator";
+export * from "./icon";
+export * from "./radio-group";
+export * from "./label";
+export * from "./avatar";
+export * from "./progress";
+export * from "./skeleton";
+export * from "./textarea";
+export * from "./select";
+export * from "./social-icon";
+export * from "./payment-icon";

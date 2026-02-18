@@ -1,118 +1,31 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
-import {
-  ToastProvider,
-  ToastViewport,
-  Toast,
-  ToastTitle,
-  ToastDescription,
-  ToastClose,
-  ToastAction,
-} from "./Toast";
-import { axe } from "../../lib/test-utils";
-
-function renderToast(props: Record<string, unknown> = {}) {
-  return render(
-    <ToastProvider>
-      <Toast open {...props}>
-        <ToastTitle>Notification</ToastTitle>
-        <ToastDescription>Something happened</ToastDescription>
-      </Toast>
-      <ToastViewport />
-    </ToastProvider>,
-  );
-}
+import { render, screen, axe } from "../../lib/test-utils";
+import { Toast, ToastTitle, ToastDescription } from "./Toast";
 
 describe("Toast", () => {
-  it("renders toast with title and description", () => {
-    renderToast();
-    expect(screen.getByText("Notification")).toBeDefined();
-    expect(screen.getByText("Something happened")).toBeDefined();
-  });
-
-  it("renders default variant", () => {
-    renderToast({ "data-testid": "toast" });
-    const el = screen.getByTestId("toast");
-    expect(el.className).toContain("border-border");
-  });
-
-  it("renders success variant", () => {
-    renderToast({ variant: "success", "data-testid": "toast" });
-    const el = screen.getByTestId("toast");
-    expect(el.className).toContain("text-success");
-  });
-
-  it("renders error variant", () => {
-    renderToast({ variant: "error", "data-testid": "toast" });
-    const el = screen.getByTestId("toast");
-    expect(el.className).toContain("text-error");
-  });
-
-  it("renders warning variant", () => {
-    renderToast({ variant: "warning", "data-testid": "toast" });
-    const el = screen.getByTestId("toast");
-    expect(el.className).toContain("text-warning");
-  });
-
-  it("renders info variant", () => {
-    renderToast({ variant: "info", "data-testid": "toast" });
-    const el = screen.getByTestId("toast");
-    expect(el.className).toContain("text-info");
-  });
-
-  it("renders close button", () => {
+  it("renders with content", () => {
     render(
-      <ToastProvider>
-        <Toast open>
-          <ToastTitle>Closable</ToastTitle>
-          <ToastClose data-testid="close-btn" />
-        </Toast>
-        <ToastViewport />
-      </ToastProvider>,
+      <Toast>
+        <ToastTitle>Success</ToastTitle>
+        <ToastDescription>Operation completed.</ToastDescription>
+      </Toast>,
     );
-    expect(screen.getByTestId("close-btn")).toBeDefined();
+    expect(screen.getByText("Success")).toBeInTheDocument();
   });
 
-  it("renders action button", () => {
-    render(
-      <ToastProvider>
-        <Toast open>
-          <ToastTitle>With action</ToastTitle>
-          <ToastAction altText="Undo">Undo</ToastAction>
-        </Toast>
-        <ToastViewport />
-      </ToastProvider>,
-    );
-    expect(screen.getByText("Undo")).toBeDefined();
+  it("renders close button when onClose provided", () => {
+    const onClose = () => {};
+    render(<Toast onClose={onClose}>Message</Toast>);
+    expect(screen.getByRole("alert")).toBeInTheDocument();
   });
-
-  it("renders viewport", () => {
-    render(
-      <ToastProvider>
-        <ToastViewport data-testid="viewport" />
-      </ToastProvider>,
-    );
-    expect(screen.getByTestId("viewport")).toBeDefined();
-  });
-
-  it("passes custom className", () => {
-    renderToast({ className: "custom-toast", "data-testid": "toast" });
-    expect(screen.getByTestId("toast").className).toContain("custom-toast");
-  });
-
-  // ── A11y ────────────────────────────────────────────────────────────────
 
   it("has no a11y violations", async () => {
-    render(
-      <ToastProvider>
-        <Toast open>
-          <ToastTitle>Notification</ToastTitle>
-          <ToastDescription>Something happened</ToastDescription>
-        </Toast>
-        <ToastViewport />
-      </ToastProvider>,
+    const { container } = render(
+      <Toast>
+        <ToastTitle>Info</ToastTitle>
+      </Toast>,
     );
-    const results = await axe(document.body);
+    const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
 });

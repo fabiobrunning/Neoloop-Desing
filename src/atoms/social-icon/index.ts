@@ -1,1 +1,2 @@
-export { SocialIcon, SOCIAL_NETWORKS, type SocialIconProps, type SocialNetwork, type SocialIconVariant } from "./SocialIcon";
+export { SocialIcon } from "./SocialIcon";
+export type { SocialIconProps } from "./SocialIcon";

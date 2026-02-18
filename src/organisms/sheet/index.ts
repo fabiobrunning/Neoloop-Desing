@@ -1,13 +1,1 @@
-export {
-  Sheet,
-  SheetTrigger,
-  SheetClose,
-  SheetPortal,
-  SheetOverlay,
-  SheetContent,
-  SheetHeader,
-  SheetFooter,
-  SheetTitle,
-  SheetDescription,
-  sheetVariants,
-} from "./Sheet";
+export { Sheet, SheetTrigger, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "./Sheet";

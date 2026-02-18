@@ -1,55 +1,32 @@
-"use client";
-
 import * as React from "react";
-import { SunIcon, MoonIcon, MonitorIcon } from "../icons";
 import { useTheme } from "./ThemeProvider";
 import { cn } from "../lib/utils";
 
-const CYCLE: Array<"system" | "light" | "dark"> = ["system", "light", "dark"];
+export type ThemeToggleProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const LABELS: Record<string, string> = {
-  system: "System theme",
-  light: "Light theme",
-  dark: "Dark theme",
-};
+export const ThemeToggle = React.forwardRef<HTMLButtonElement, ThemeToggleProps>(
+  ({ className, ...props }, ref) => {
+    const { resolvedTheme, setTheme } = useTheme();
 
-const ICONS: Record<string, typeof SunIcon> = {
-  system: MonitorIcon,
-  light: SunIcon,
-  dark: MoonIcon,
-};
-
-export interface ThemeToggleProps {
-  className?: string;
-}
-
-export function ThemeToggle({ className }: ThemeToggleProps) {
-  const { theme, setTheme } = useTheme();
-
-  const next = () => {
-    const idx = CYCLE.indexOf(theme);
-    setTheme(CYCLE[(idx + 1) % CYCLE.length]);
-  };
-
-  const Icon = ICONS[theme];
-  const label = LABELS[theme];
-
-  return (
-    <button
-      type="button"
-      onClick={next}
-      aria-label={label}
-      className={cn(
-        "inline-flex h-10 w-10 items-center justify-center rounded-md",
-        "text-text-secondary bg-transparent",
-        "hover:bg-border-subtle hover:text-text-primary",
-        "active:bg-border",
-        "transition-colors duration-fast ease-in-out",
-        "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
-        className,
-      )}
-    >
-      <Icon size={20} />
-    </button>
-  );
-}
+    return (
+      <button
+        ref={ref}
+        type="button"
+        className={cn(
+          "inline-flex h-9 w-9 items-center justify-center rounded-[var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-foreground)] transition-colors hover:bg-[var(--color-surface-raised)]",
+          className,
+        )}
+        onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+        aria-label={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} theme`}
+        {...props}
+      >
+        {resolvedTheme === "dark" ? (
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        ) : (
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        )}
+      </button>
+    );
+  },
+);
+ThemeToggle.displayName = "ThemeToggle";

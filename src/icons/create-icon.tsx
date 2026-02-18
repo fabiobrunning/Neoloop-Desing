@@ -1,40 +1,34 @@
 import * as React from "react";
+import { cn } from "../lib/utils";
 
-export interface IconComponentProps extends React.SVGAttributes<SVGSVGElement> {
-  /** Pixel size (width & height) */
+export interface IconProps extends React.SVGAttributes<SVGElement> {
   size?: number | string;
 }
 
-/**
- * Factory to create an icon component from raw SVG children.
- * All icons use 24x24 viewBox, stroke-based, with `currentColor`.
- */
 export function createIcon(
   displayName: string,
-  children: React.ReactNode,
-  { viewBox = "0 0 24 24", fill = "none" }: { viewBox?: string; fill?: string } = {},
+  path: React.ReactNode,
 ) {
-  const Component = React.forwardRef<SVGSVGElement, IconComponentProps>(
+  const Icon = React.forwardRef<SVGSVGElement, IconProps>(
     ({ size = 24, className, ...props }, ref) => (
       <svg
         ref={ref}
         xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
-        viewBox={viewBox}
-        fill={fill}
+        viewBox="0 0 24 24"
+        fill="none"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
-        className={className}
+        className={cn("shrink-0", className)}
         {...props}
       >
-        {children}
+        {path}
       </svg>
     ),
   );
-
-  Component.displayName = displayName;
-  return Component;
+  Icon.displayName = displayName;
+  return Icon;
 }

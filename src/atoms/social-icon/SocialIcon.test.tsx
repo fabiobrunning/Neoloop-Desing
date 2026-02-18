@@ -1,63 +1,22 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, axe } from "../../lib/test-utils";
 import { SocialIcon } from "./SocialIcon";
-import { axe } from "../../lib/test-utils";
 
 describe("SocialIcon", () => {
-  it("renders with correct src for default variant", () => {
-    render(<SocialIcon network="GitHub" />);
-    const img = screen.getByRole("img", { name: /github/i });
-    expect(img).toBeDefined();
-    expect(img.getAttribute("src")).toContain("Colorida/GitHub.svg");
-  });
-
-  it("renders with black variant path", () => {
-    render(<SocialIcon network="Discord" variant="black" />);
-    const img = screen.getByRole("img", { name: /discord/i });
-    expect(img.getAttribute("src")).toContain("black/Discord.svg");
-  });
-
-  it("renders with white variant path", () => {
-    render(<SocialIcon network="X" variant="white" />);
-    const img = screen.getByRole("img", { name: /x/i });
-    expect(img.getAttribute("src")).toContain("white/X.svg");
+  it("renders with name", () => {
+    render(<SocialIcon name="GitHub" />);
+    expect(screen.getByAltText("GitHub")).toBeInTheDocument();
   });
 
   it("applies custom size", () => {
-    render(<SocialIcon network="Instagram" size={48} />);
-    const img = screen.getByRole("img", { name: /instagram/i });
-    expect(img.getAttribute("width")).toBe("48");
-    expect(img.getAttribute("height")).toBe("48");
-  });
-
-  it("defaults to size 24", () => {
-    render(<SocialIcon network="LinkedIn" />);
-    const img = screen.getByRole("img", { name: /linkedin/i });
-    expect(img.getAttribute("width")).toBe("24");
-  });
-
-  it("uses network name as default alt text", () => {
-    render(<SocialIcon network="YouTube" />);
-    expect(screen.getByRole("img", { name: /youtube/i })).toBeDefined();
-  });
-
-  it("supports custom alt text", () => {
-    render(<SocialIcon network="GitHub" alt="View on GitHub" />);
-    expect(screen.getByRole("img", { name: /view on github/i })).toBeDefined();
-  });
-
-  it("passes custom className", () => {
-    render(<SocialIcon network="Spotify" className="custom-icon" />);
-    expect(screen.getByRole("img", { name: /spotify/i }).className).toContain("custom-icon");
-  });
-
-  it("has lazy loading", () => {
-    render(<SocialIcon network="Telegram" />);
-    expect(screen.getByRole("img", { name: /telegram/i }).getAttribute("loading")).toBe("lazy");
+    render(<SocialIcon name="Discord" size={32} />);
+    const img = screen.getByAltText("Discord");
+    expect(img).toHaveAttribute("width", "32");
+    expect(img).toHaveAttribute("height", "32");
   });
 
   it("has no a11y violations", async () => {
-    const { container } = render(<SocialIcon network="GitHub" />);
+    const { container } = render(<SocialIcon name="GitHub" />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

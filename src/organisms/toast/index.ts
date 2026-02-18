@@ -1,11 +1,1 @@
-export {
-  ToastProvider,
-  ToastViewport,
-  Toast,
-  ToastAction,
-  ToastClose,
-  ToastTitle,
-  ToastDescription,
-  toastVariants,
-  type ToastProps,
-} from "./Toast";
+export { Toast, ToastTitle, ToastDescription, toastVariants } from "./Toast";

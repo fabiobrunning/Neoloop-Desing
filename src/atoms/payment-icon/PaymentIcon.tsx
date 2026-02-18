@@ -1,42 +1,51 @@
 import * as React from "react";
 import { cn } from "../../lib/utils";
+import type { PaymentName } from "../../assets/logos";
 
-const PAYMENT_METHODS = [
-  "AMEX", "Alipay", "Amazon", "ApplePay", "Bitcoin",
-  "Etherium", "GooglePay", "Maestro", "Mastercard",
-  "PayPal", "Stripe", "Visa",
-] as const;
-
-export type PaymentMethod = (typeof PAYMENT_METHODS)[number];
+const paymentFileMap: Record<PaymentName, string> = {
+  Alipay: "Size=large, Payment method=Alipay.svg",
+  Amazon: "Size=large, Payment method=Amazon.svg",
+  AMEX: "Size=large, Payment method=AMEX.svg",
+  ApplePay: "Size=large, Payment method=ApplePay.svg",
+  Bitcoin: "Size=large, Payment method=Bitcoin.svg",
+  Etherium: "Size=large, Payment method=Etherium.svg",
+  GooglePay: "Size=large, Payment method=GooglePay.svg",
+  Maestro: "Size=large, Payment method=Maestro.svg",
+  Mastercard: "Size=large, Payment method=Mastercard.svg",
+  PayPal: "Size=large, Payment method=PayPal.svg",
+  Stripe: "Size=large, Payment method=Stripe.svg",
+  Visa: "Size=large, Payment method=Visa.svg",
+};
 
 export interface PaymentIconProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  /** Payment method name */
-  method: PaymentMethod;
-  /** Size in pixels (default 40 — payment icons are wider) */
-  size?: number;
+  name: PaymentName;
+  size?: "sm" | "md" | "lg";
 }
 
-function PaymentIcon({
-  method,
-  size = 40,
-  className,
-  alt,
-  ...props
-}: PaymentIconProps) {
-  const src = `/assets/Logos/pagamento/Size=large, Payment method=${method}.svg`;
+const sizeMap = { sm: 24, md: 40, lg: 56 } as const;
 
-  return (
-    <img
-      src={src}
-      alt={alt ?? method}
-      height={size}
-      className={cn("inline-block shrink-0", className)}
-      loading="lazy"
-      {...props}
-    />
-  );
-}
+const PaymentIcon = React.forwardRef<HTMLImageElement, PaymentIconProps>(
+  ({ name, size = "md", className, alt, ...props }, ref) => {
+    const px = sizeMap[size];
+    const filename = paymentFileMap[name];
+    const src = new URL(
+      `../../assets/logos/payment/${filename}`,
+      import.meta.url,
+    ).href;
 
+    return (
+      <img
+        ref={ref}
+        src={src}
+        alt={alt || name}
+        width={px}
+        height={px}
+        className={cn("inline-block", className)}
+        {...props}
+      />
+    );
+  },
+);
 PaymentIcon.displayName = "PaymentIcon";
 
-export { PaymentIcon, PAYMENT_METHODS };
+export { PaymentIcon };

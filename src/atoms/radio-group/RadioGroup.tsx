@@ -2,64 +2,31 @@ import * as React from "react";
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
 import { cn } from "../../lib/utils";
 
-export interface RadioGroupProps
-  extends React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root> {
-  /** Visual error state */
-  error?: boolean;
-}
-
 const RadioGroup = React.forwardRef<
   React.ComponentRef<typeof RadioGroupPrimitive.Root>,
-  RadioGroupProps
->(({ className, error, ...props }, ref) => (
-  <RadioGroupPrimitive.Root
-    className={cn("grid gap-2", className)}
-    ref={ref}
-    aria-invalid={error || undefined}
-    {...props}
-  />
+  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>
+>(({ className, ...props }, ref) => (
+  <RadioGroupPrimitive.Root className={cn("grid gap-2", className)} {...props} ref={ref} />
 ));
-RadioGroup.displayName = "RadioGroup";
-
-export interface RadioGroupItemProps
-  extends React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item> {
-  /** Visual error state */
-  error?: boolean;
-}
+RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
 
 const RadioGroupItem = React.forwardRef<
   React.ComponentRef<typeof RadioGroupPrimitive.Item>,
-  RadioGroupItemProps
->(({ className, error, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>
+>(({ className, ...props }, ref) => (
   <RadioGroupPrimitive.Item
     ref={ref}
     className={cn(
-      "peer h-5 w-5 shrink-0 rounded-full border",
-      "border-border bg-bg-surface",
-      "transition-colors duration-fast ease-in-out",
-      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-emphasis focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base",
-      "disabled:cursor-not-allowed disabled:opacity-50",
-      "data-[state=checked]:border-primary",
-      error && "border-error",
+      "aspect-square h-5 w-5 rounded-[var(--radius-full)] border border-[var(--color-border)] ring-offset-[var(--color-background)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-ring)] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-[var(--color-accent)] data-[state=checked]:text-[var(--color-accent)]",
       className,
     )}
-    aria-invalid={error || undefined}
     {...props}
   >
     <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
-      <svg
-        width="10"
-        height="10"
-        viewBox="0 0 10 10"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <circle cx="5" cy="5" r="5" className="fill-primary" />
-      </svg>
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5" /></svg>
     </RadioGroupPrimitive.Indicator>
   </RadioGroupPrimitive.Item>
 ));
-RadioGroupItem.displayName = "RadioGroupItem";
+RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
 
 export { RadioGroup, RadioGroupItem };

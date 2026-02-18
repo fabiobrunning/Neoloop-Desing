@@ -1,28 +1,28 @@
-import js from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import reactHooks from 'eslint-plugin-react-hooks';
-import globals from 'globals';
+import tseslint from "@typescript-eslint/eslint-plugin";
+import tsparser from "@typescript-eslint/parser";
 
-export default tseslint.config(
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
+export default [
   {
-    files: ['src/**/*.{ts,tsx}'],
-    plugins: {
-      'react-hooks': reactHooks,
-    },
-    rules: {
-      ...reactHooks.configs.recommended.rules,
-      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-      '@typescript-eslint/no-explicit-any': 'warn',
-    },
+    files: ["src/**/*.{ts,tsx}"],
+    ignores: ["**/*.test.{ts,tsx}", "**/*.stories.{ts,tsx}"],
     languageOptions: {
-      globals: {
-        ...globals.browser,
+      parser: tsparser,
+      parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+        ecmaFeatures: { jsx: true },
       },
     },
+    plugins: {
+      "@typescript-eslint": tseslint,
+    },
+    rules: {
+      ...tseslint.configs.recommended.rules,
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
+      "@typescript-eslint/no-explicit-any": "warn",
+    },
   },
-  {
-    ignores: ['dist/', 'node_modules/', '*.config.*', 'storybook-static/'],
-  }
-);
+];

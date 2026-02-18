@@ -2,73 +2,25 @@ import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { cn } from "../../lib/utils";
 
-export interface CheckboxProps
-  extends React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root> {
-  /** Visual error state */
-  error?: boolean;
-}
-
 const Checkbox = React.forwardRef<
   React.ComponentRef<typeof CheckboxPrimitive.Root>,
-  CheckboxProps
->(({ className, error, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>
+>(({ className, ...props }, ref) => (
   <CheckboxPrimitive.Root
     ref={ref}
     className={cn(
-      "peer h-5 w-5 shrink-0 rounded-sm border",
-      "border-border bg-bg-surface",
-      "transition-colors duration-fast ease-in-out",
-      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-emphasis focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base",
-      "disabled:cursor-not-allowed disabled:opacity-50",
-      "data-[state=checked]:bg-active data-[state=checked]:border-active data-[state=checked]:text-text-inverse",
-      "data-[state=indeterminate]:bg-active data-[state=indeterminate]:border-active data-[state=indeterminate]:text-text-inverse",
-      error && "border-error",
+      "peer h-5 w-5 shrink-0 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-surface)] ring-offset-[var(--color-background)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-ring)] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-[var(--color-accent)] data-[state=checked]:border-[var(--color-accent)] data-[state=checked]:text-white",
       className,
     )}
-    aria-invalid={error || undefined}
     {...props}
   >
-    <CheckboxPrimitive.Indicator
-      className={cn("flex items-center justify-center text-current")}
-    >
-      {props.checked === "indeterminate" ? (
-        <svg
-          width="10"
-          height="2"
-          viewBox="0 0 10 2"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M1 1H9"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-      ) : (
-        <svg
-          width="10"
-          height="8"
-          viewBox="0 0 10 8"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M1 4L3.5 6.5L9 1"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      )}
+    <CheckboxPrimitive.Indicator className="flex items-center justify-center text-current">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="20 6 9 17 4 12" />
+      </svg>
     </CheckboxPrimitive.Indicator>
   </CheckboxPrimitive.Root>
 ));
-
-Checkbox.displayName = "Checkbox";
+Checkbox.displayName = CheckboxPrimitive.Root.displayName;
 
 export { Checkbox };

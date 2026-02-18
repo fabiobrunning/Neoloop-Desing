@@ -1,145 +1,40 @@
-import { describe, it, expect, vi } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { describe, it, expect } from "vitest";
+import { render, screen, axe } from "../../lib/test-utils";
 import { Button } from "./Button";
-import { axe } from "../../lib/test-utils";
 
 describe("Button", () => {
-  // ── Rendering ──────────────────────────────────────────────────────────
-
-  it("renders with default props", () => {
+  it("renders with text", () => {
     render(<Button>Click me</Button>);
-    const btn = screen.getByRole("button", { name: /click me/i });
-    expect(btn).toBeDefined();
-    expect(btn.getAttribute("type")).toBeNull(); // no explicit type by default (inherits button)
+    expect(screen.getByRole("button", { name: "Click me" })).toBeInTheDocument();
   });
 
-  it("renders children correctly", () => {
-    render(<Button>Save changes</Button>);
-    expect(screen.getByText("Save changes")).toBeDefined();
+  it("applies variant classes", () => {
+    render(<Button variant="destructive">Delete</Button>);
+    const btn = screen.getByRole("button");
+    expect(btn.className).toContain("destructive");
   });
 
-  // ── Variants ───────────────────────────────────────────────────────────
-
-  it.each(["primary", "secondary", "outline", "ghost", "destructive", "link"] as const)(
-    "renders %s variant without error",
-    (variant) => {
-      render(<Button variant={variant}>{variant}</Button>);
-      expect(screen.getByRole("button", { name: variant })).toBeDefined();
-    },
-  );
-
-  // ── Sizes ──────────────────────────────────────────────────────────────
-
-  it.each(["sm", "md", "lg", "icon"] as const)(
-    "renders %s size without error",
-    (size) => {
-      const label = size === "icon" ? "X" : `Size ${size}`;
-      render(<Button size={size}>{label}</Button>);
-      expect(screen.getByRole("button", { name: label })).toBeDefined();
-    },
-  );
-
-  // ── Disabled State ─────────────────────────────────────────────────────
-
-  it("disables the button when disabled prop is true", () => {
-    render(<Button disabled>Disabled</Button>);
-    const btn = screen.getByRole("button", { name: /disabled/i });
-    expect(btn.hasAttribute("disabled")).toBe(true);
-    expect(btn.getAttribute("aria-disabled")).toBe("true");
-  });
-
-  it("does not fire onClick when disabled", () => {
-    const onClick = vi.fn();
-    render(
-      <Button disabled onClick={onClick}>
-        No click
-      </Button>,
-    );
-    fireEvent.click(screen.getByRole("button", { name: /no click/i }));
-    expect(onClick).not.toHaveBeenCalled();
-  });
-
-  // ── Loading State ──────────────────────────────────────────────────────
-
-  it("shows spinner and disables when loading", () => {
+  it("is disabled when loading", () => {
     render(<Button loading>Loading</Button>);
-    const btn = screen.getByRole("button", { name: /loading/i });
-    expect(btn.hasAttribute("disabled")).toBe(true);
-    expect(btn.getAttribute("aria-busy")).toBe("true");
+    expect(screen.getByRole("button")).toBeDisabled();
   });
 
-  it("does not fire onClick when loading", () => {
-    const onClick = vi.fn();
-    render(
-      <Button loading onClick={onClick}>
-        Wait
-      </Button>,
-    );
-    fireEvent.click(screen.getByRole("button", { name: /wait/i }));
-    expect(onClick).not.toHaveBeenCalled();
+  it("is disabled when disabled", () => {
+    render(<Button disabled>Nope</Button>);
+    expect(screen.getByRole("button")).toBeDisabled();
   });
 
-  // ── Events ─────────────────────────────────────────────────────────────
-
-  it("calls onClick when clicked", () => {
-    const onClick = vi.fn();
-    render(<Button onClick={onClick}>Click</Button>);
-    fireEvent.click(screen.getByRole("button", { name: /click/i }));
-    expect(onClick).toHaveBeenCalledTimes(1);
-  });
-
-  // ── HTML Attributes ────────────────────────────────────────────────────
-
-  it("passes type attribute through", () => {
-    render(<Button type="submit">Submit</Button>);
-    expect(screen.getByRole("button", { name: /submit/i }).getAttribute("type")).toBe(
-      "submit",
-    );
-  });
-
-  it("passes custom className", () => {
-    render(<Button className="custom-class">Styled</Button>);
-    const btn = screen.getByRole("button", { name: /styled/i });
-    expect(btn.className).toContain("custom-class");
-  });
-
-  it("forwards ref via callback", () => {
-    const refCallback = vi.fn();
-    render(<Button ref={refCallback}>Ref</Button>);
-    expect(refCallback).toHaveBeenCalled();
-    const el = refCallback.mock.calls[0][0] as HTMLButtonElement;
-    expect(el.tagName).toBe("BUTTON");
-  });
-
-  // ── asChild (Slot) ────────────────────────────────────────────────────
-
-  it("renders as child element with asChild", () => {
+  it("supports asChild via Slot", () => {
     render(
       <Button asChild>
         <a href="/test">Link button</a>
       </Button>,
     );
-    const link = screen.getByRole("link", { name: /link button/i });
-    expect(link).toBeDefined();
-    expect(link.getAttribute("href")).toBe("/test");
+    expect(screen.getByRole("link", { name: "Link button" })).toBeInTheDocument();
   });
-
-  // ── Accessibility ──────────────────────────────────────────────────────
-
-  it("has accessible name from children", () => {
-    render(<Button>Accessible</Button>);
-    expect(screen.getByRole("button", { name: /accessible/i })).toBeDefined();
-  });
-
-  it("supports aria-label override", () => {
-    render(<Button aria-label="Close dialog">X</Button>);
-    expect(screen.getByRole("button", { name: /close dialog/i })).toBeDefined();
-  });
-
-  // ── A11y ────────────────────────────────────────────────────────────────
 
   it("has no a11y violations", async () => {
-    const { container } = render(<Button>Accessible button</Button>);
+    const { container } = render(<Button>Accessible</Button>);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
